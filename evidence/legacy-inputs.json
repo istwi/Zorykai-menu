@@ -1,0 +1,33 @@
+[
+  {
+    "name": "skiesshop.zip",
+    "sha256": "3cf928d7586fc15c587a765d0ee72d3fba6dddc8e6cd203ad36ebdea74a91d40",
+    "bytes": 64707
+  },
+  {
+    "name": "SkiesShop-sem-mensagem.jar",
+    "sha256": "37fe4ed0a9a5e40ce4b07ba565dbac13dc3ac6d1c87a5e7bb3a19627ae88cf61",
+    "bytes": 22266663,
+    "metadata": {
+      "id": "skiesshop",
+      "version": "1.0.2",
+      "name": "SkiesShop",
+      "license": null,
+      "contact": null
+    }
+  },
+  {
+    "name": "SkiesGUIs-fabric-1.21.1-1.8.1.jar",
+    "sha256": "bf4ca9147696d2cced96b30474137ac0aedf507f6c86591a28a1eb3d31b9aa1d",
+    "bytes": 11151706,
+    "metadata": {
+      "id": "skiesguis",
+      "version": "1.8.1",
+      "name": "SkiesGUIs",
+      "license": "All-Rights-Reserved",
+      "contact": {
+        "repo": "https://github.com/PokeSkies/SkiesGUIs"
+      }
+    }
+  }
+]

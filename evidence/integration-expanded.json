@@ -1,0 +1,138 @@
+[
+  {
+    "name": "native menu 27 slots",
+    "passed": true
+  },
+  {
+    "name": "all six native inventory sizes",
+    "passed": true
+  },
+  {
+    "name": "all native inventory actions cannot extract icons",
+    "passed": true
+  },
+  {
+    "name": "next page",
+    "passed": true
+  },
+  {
+    "name": "previous page",
+    "passed": true
+  },
+  {
+    "name": "open shop action",
+    "passed": true
+  },
+  {
+    "name": "purchase confirmation 54 slots",
+    "passed": true
+  },
+  {
+    "name": "active confirmation rejects shift drag swap throw clone",
+    "passed": true
+  },
+  {
+    "name": "quick quantity 16 and exact total40",
+    "passed": true
+  },
+  {
+    "name": "real Impactor purchase exact balance and16items",
+    "passed": true
+  },
+  {
+    "name": "duplicate simultaneous requests charged once",
+    "passed": true
+  },
+  {
+    "name": "real sell exact credit and removal",
+    "passed": true
+  },
+  {
+    "name": "right click opens sale confirmation",
+    "passed": true
+  },
+  {
+    "name": "sell all eligible product",
+    "passed": true
+  },
+  {
+    "name": "selling without items rejected",
+    "passed": true
+  },
+  {
+    "name": "native custom components protected from plain-item sale",
+    "passed": true
+  },
+  {
+    "name": "full inventory rejects before withdrawal",
+    "passed": true
+  },
+  {
+    "name": "insufficient funds no delivery no debit",
+    "passed": true
+  },
+  {
+    "name": "stale price revision rejected",
+    "passed": true
+  },
+  {
+    "name": "LuckPerms denial at transaction execution",
+    "passed": true
+  },
+  {
+    "name": "invalid reload retains active snapshot",
+    "passed": true
+  },
+  {
+    "name": "valid reload",
+    "passed": true
+  },
+  {
+    "name": "registered Cobblemon item codec",
+    "passed": true
+  },
+  {
+    "name": "invalid registered id rejected",
+    "passed": true
+  },
+  {
+    "name": "migrated Cobblemon purchase and original price",
+    "passed": true
+  },
+  {
+    "name": "native Cobblemon TM component survives purchase",
+    "passed": true
+  },
+  {
+    "name": "fault injection config loaded",
+    "passed": true
+  },
+  {
+    "name": "provider exception preserves pending transaction",
+    "passed": true
+  },
+  {
+    "name": "unknown finance not retried automatically",
+    "passed": true
+  },
+  {
+    "name": "economy restored",
+    "passed": true
+  },
+  {
+    "name": "admin attestation no debit no item",
+    "passed": true
+  },
+  {
+    "name": "confirmed debit safely refunded after catalog change",
+    "passed": true
+  },
+  {
+    "name": "capacity rechecked after async debit and refunded",
+    "passed": true
+  },
+  {
+    "name": "real disconnect during purchase refunded without delivery",
+    "passed": true
+  }
+]

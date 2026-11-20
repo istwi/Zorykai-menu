@@ -1,0 +1,38 @@
+{
+  "ERROR_NO_BASE_SHOP": [
+    "<gray>Nenhuma loja principal foi configurada! Entre em contato com a administração."
+  ],
+  "ERROR_SHOP_NOT_FOUND": [
+    "<gray>Loja %shop_id% não encontrada! Entre em contato com a administração."
+  ],
+  "ERROR_STORAGE": [
+    "<gray>Ocorreu um erro no sistema de armazenamento! Entre em contato com a administração."
+  ],
+  "ERROR_TRANSACTION": [
+    "<gray>Ocorreu um erro ao entregar seus itens comprados! Entre em contato com a administração."
+  ],
+  "TRANSACTION_BUY": [
+    "<gray>Você comprou %transaction_amount%x %transaction_entry_name% por %transaction_total%!"
+  ],
+  "TRANSACTION_BUY_BALANCE": [
+    "<gray>Você não tem dinheiro suficiente para realizar esta compra!"
+  ],
+  "TRANSACTION_BUY_INVENTORY": [
+    "<gray>Você não tem espaço suficiente no inventário!"
+  ],
+  "TRANSACTION_BUY_REQUIREMENTS": [
+    "<gray>Você não atende aos requisitos para comprar este item!"
+  ],
+  "TRANSACTION_SELL": [
+    "<gray>Você vendeu %transaction_amount%x %transaction_entry_name% por %transaction_total%!"
+  ],
+  "TRANSACTION_SELL_ERROR": [
+    "<gray>Ocorreu um erro ao processar sua venda! Informe este código à administração: %transaction_timestamp%"
+  ],
+  "TRANSACTION_SELL_ITEMS": [
+    "<gray>Você não possui os itens necessários para realizar esta venda!"
+  ],
+  "TRANSACTION_SELL_REQUIREMENTS": [
+    "<gray>Você não atende aos requisitos para vender este item!"
+  ]
+}

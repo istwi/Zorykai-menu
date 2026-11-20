@@ -1,0 +1,463 @@
+{
+  "title": "<gradient:#FF5555:#AA0033><bold>✦ GINÁSIOS</bold></gradient>",
+  "size": 6,
+  "alias_commands": [
+    "ginasios"
+  ],
+  "open_actions": {
+    "sound": {
+      "type": "PLAYSOUND",
+      "sound": "minecraft:ui.button.click"
+    }
+  },
+  "items": {
+    "player_info": {
+      "item": "playerhead",
+      "slots": [
+        10
+      ],
+      "name": "<gradient:#00E5FF:#0072FF><bold>✦ PERFIL DO TREINADOR</bold></gradient>",
+      "lore": [
+        "<gray>Suas informações no Zorykai.",
+        "",
+        "<gradient:#00D9FF:#0072FF><bold>✦</bold></gradient> <#55FFFF>Cargo:</#55FFFF> <white><bold>%luckperms:prefix%</bold></white>",
+        "<gradient:#55FF55:#00AA00><bold>✦</bold></gradient> <#55FF55>Pokédex:</#55FF55> <white>%shirokai:dex_percent%</white>",
+        "<gradient:#FF5555:#AA0000><bold>✦</bold></gradient> <#FF7777>Ginásios:</#FF7777> <white>%player:objective gyms%/18</white>",
+        "<gradient:#33DD77:#008844><bold>✦</bold></gradient> <#33DD77>Dinheiro:</#33DD77> <white>$%shirokai:dollars%</white>",
+        "<gradient:#B266FF:#9B59FF><bold>✦</bold></gradient> <#B266FF>Tokens:</#B266FF> <white>%shirokai:tokens%</white>",
+        "<gradient:#FFD700:#FFAA00><bold>✦</bold></gradient> <#FFD700>Cash:</#FFD700> <white>%shirokai:cash%</white>",
+        "",
+        "<gray>Continue sua jornada e conquiste",
+        "<gray>seu lugar entre os treinadores!"
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/perfil"
+          ]
+        }
+      }
+    },
+    "normal": {
+      "item": "cobbleversebadges:johto_plain_badge",
+      "slots": [
+        12
+      ],
+      "name": "<gradient:#FFFFFF:#AAAAAA><bold>✦ GINÁSIO NORMAL</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO NORMAL",
+        "",
+        "<white>Não subestime a simplicidade.",
+        "<white>Enfrente um líder que domina",
+        "<white>o equilíbrio e a versatilidade.",
+        "",
+        "<#DDDDDD>✦ Prove seu valor na batalha!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "dragon": {
+      "item": "cobbleversebadges:johto_rising_badge",
+      "slots": [
+        13
+      ],
+      "name": "<gradient:#AA55FF:#5500AA><bold>✦ GINÁSIO DRAGÃO</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO DRAGÃO",
+        "",
+        "<light_purple>Enfrente o poder dos Pokémon",
+        "<light_purple>dracônicos e encare um dos",
+        "<light_purple>maiores desafios da Liga.",
+        "",
+        "<#CC88FF>✦ Domine o poder dos dragões!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "fire": {
+      "item": "cobbleversebadges:kanto_volcano_badge",
+      "slots": [
+        14
+      ],
+      "name": "<gradient:#FF5555:#FF8800><bold>✦ GINÁSIO FOGO</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO FOGO",
+        "",
+        "<red>Chamas intensas e adversários",
+        "<red>que não conhecem a derrota.",
+        "<red>Prepare-se para uma batalha ardente.",
+        "",
+        "<#FF8855>✦ Mostre que não teme o calor!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "water": {
+      "item": "cobbleversebadges:kanto_cascade_badge",
+      "slots": [
+        15
+      ],
+      "name": "<gradient:#55AAFF:#0055FF><bold>✦ GINÁSIO ÁGUA</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO ÁGUA",
+        "",
+        "<aqua>Enfrente a força das correntes",
+        "<aqua>e supere estratégias tão fluidas",
+        "<aqua>quanto imprevisíveis.",
+        "",
+        "<#55AAFF>✦ Não deixe a maré te vencer!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "electric": {
+      "item": "cobbleversebadges:kanto_thunder_badge",
+      "slots": [
+        16
+      ],
+      "name": "<gradient:#FFFF55:#FFAA00><bold>✦ GINÁSIO ELÉTRICO</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO ELÉTRICO",
+        "",
+        "<yellow>Velocidade, energia e ataques",
+        "<yellow>capazes de surpreender qualquer",
+        "<yellow>treinador despreparado.",
+        "",
+        "<#FFFF55>✦ Prepare-se para a descarga!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "grass": {
+      "item": "cobbleversebadges:kanto_rainbow_badge",
+      "slots": [
+        21
+      ],
+      "name": "<gradient:#55FF55:#008800><bold>✦ GINÁSIO PLANTA</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO PLANTA",
+        "",
+        "<green>A natureza esconde uma força",
+        "<green>que poucos conseguem superar.",
+        "<green>Enfrente estratégias imprevisíveis.",
+        "",
+        "<#55FF55>✦ Mostre sua conexão com a natureza!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "ice": {
+      "item": "cobbleversebadges:johto_glacier_badge",
+      "slots": [
+        22
+      ],
+      "name": "<gradient:#AAFFFF:#55AAFF><bold>✦ GINÁSIO GELO</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO GELO",
+        "",
+        "<aqua>Uma batalha congelante espera",
+        "<aqua>por você. Supere adversários",
+        "<aqua>que dominam o frio extremo.",
+        "",
+        "<#AAFFFF>✦ Não deixe sua equipe congelar!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "fighting": {
+      "item": "cobbleversebadges:johto_storm_badge",
+      "slots": [
+        23
+      ],
+      "name": "<gradient:#FFAA55:#AA5500><bold>✦ GINÁSIO LUTADOR</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO LUTADOR",
+        "",
+        "<gold>Força, disciplina e determinação",
+        "<gold>serão essenciais para superar",
+        "<gold>os desafios deste ginásio.",
+        "",
+        "<#FFBB77>✦ Demonstre sua verdadeira força!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "poison": {
+      "item": "cobbleversebadges:kanto_soul_badge",
+      "slots": [
+        24
+      ],
+      "name": "<gradient:#AA55FF:#6600AA><bold>✦ GINÁSIO VENENO</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO VENENO",
+        "",
+        "<light_purple>Estratégias perigosas e efeitos",
+        "<light_purple>inesperados tornam este desafio",
+        "<light_purple>um verdadeiro teste de habilidade.",
+        "",
+        "<#CC88FF>✦ Cuidado com cada movimento!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "ground": {
+      "item": "cobbleversebadges:kanto_earth_badge",
+      "slots": [
+        25
+      ],
+      "name": "<gradient:#DDAA55:#996633><bold>✦ GINÁSIO TERRESTRE</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO TERRESTRE",
+        "",
+        "<gold>Encare a força da terra e",
+        "<gold>supere adversários resistentes.",
+        "<gold>Somente os preparados avançam.",
+        "",
+        "<#DDAA55>✦ Mantenha-se firme na batalha!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "progress": {
+      "item": "minecraft:book",
+      "slots": [
+        19
+      ],
+      "name": "<gradient:#FFD700:#FF8800><bold>✦ PROGRESSO DA LIGA</bold></gradient>",
+      "lore": [
+        "<gray>CONQUISTAS • PROGRESSÃO",
+        "",
+        "<gold>Acompanhe sua trajetória",
+        "<gold>rumo ao título de campeão.",
+        "",
+        "<#FFD700>✦ Seu desempenho:",
+        "<yellow>Ginásios derrotados: <white>0/18",
+        "",
+        "<#FFCC55>Continue avançando e conquiste",
+        "<#FFCC55>todas as insígnias de Zorykai!"
+      ]
+    },
+    "flying": {
+      "item": "cobbleversebadges:johto_zephyr_badge",
+      "slots": [
+        30
+      ],
+      "name": "<gradient:#AAFFFF:#5599FF><bold>✦ GINÁSIO VOADOR</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO VOADOR",
+        "",
+        "<aqua>Velocidade e liberdade definem",
+        "<aqua>este desafio. Enfrente o líder",
+        "<aqua>e alcance novos horizontes.",
+        "",
+        "<#AAFFFF>✦ O céu é o limite!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "psychic": {
+      "item": "cobbleversebadges:kanto_marsh_badge",
+      "slots": [
+        31
+      ],
+      "name": "<gradient:#FF55AA:#AA00AA><bold>✦ GINÁSIO PSÍQUICO</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO PSÍQUICO",
+        "",
+        "<light_purple>Enfrente poderes misteriosos",
+        "<light_purple>e estratégias que desafiam",
+        "<light_purple>sua capacidade de pensar.",
+        "",
+        "<#FF88CC>✦ Sua mente será testada!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "bug": {
+      "item": "cobbleversebadges:johto_hive_badge",
+      "slots": [
+        32
+      ],
+      "name": "<gradient:#AAFF55:#55AA00><bold>✦ GINÁSIO INSETO</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO INSETO",
+        "",
+        "<green>Não subestime seus adversários.",
+        "<green>Descubra a força e a agilidade",
+        "<green>dos Pokémon do tipo Inseto.",
+        "",
+        "<#AAFF55>✦ Pequenos, mas poderosos!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "rock": {
+      "item": "cobbleversebadges:kanto_boulder_badge",
+      "slots": [
+        33
+      ],
+      "name": "<gradient:#AAAAAA:#666666><bold>✦ GINÁSIO PEDRA</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO PEDRA",
+        "",
+        "<gray>Resistência e defesa serão",
+        "<gray>os grandes obstáculos deste",
+        "<gray>desafio da Liga Zorykai.",
+        "",
+        "<#BBBBBB>✦ Supere uma muralha de pedra!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "ghost": {
+      "item": "cobbleversebadges:johto_fog_badge",
+      "slots": [
+        34
+      ],
+      "name": "<gradient:#AA55FF:#440088><bold>✦ GINÁSIO FANTASMA</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO FANTASMA",
+        "",
+        "<dark_purple>O desconhecido aguarda por você.",
+        "<dark_purple>Enfrente poderes sobrenaturais",
+        "<dark_purple>e descubra o que se esconde nas sombras.",
+        "",
+        "<#AA55FF>✦ Tenha coragem para avançar!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "dark": {
+      "item": "cobbleversebadges:sinnoh_relic_badge",
+      "slots": [
+        41
+      ],
+      "name": "<gradient:#777777:#111111><bold>✦ GINÁSIO SOMBRIO</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO SOMBRIO",
+        "",
+        "<dark_gray>Estratégia e imprevisibilidade",
+        "<dark_gray>marcam este confronto. Encare",
+        "<dark_gray>os desafios que surgem na escuridão.",
+        "",
+        "<#999999>✦ Não se perca nas sombras!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "steel": {
+      "item": "cobbleversebadges:johto_mineral_badge",
+      "slots": [
+        39
+      ],
+      "name": "<gradient:#CCCCCC:#777777><bold>✦ GINÁSIO AÇO</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO AÇO",
+        "",
+        "<white>Defesa impenetrável e resistência",
+        "<white>serão os maiores obstáculos.",
+        "<white>Prepare uma equipe à altura.",
+        "",
+        "<#CCCCCC>✦ Supere a fortaleza de aço!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "fairy": {
+      "item": "cobbleversebadges:hoenn_mind_badge",
+      "slots": [
+        40
+      ],
+      "name": "<gradient:#FFAAEE:#FF55AA><bold>✦ GINÁSIO FADA</bold></gradient>",
+      "lore": [
+        "<gray>DESAFIO • TIPO FADA",
+        "",
+        "<light_purple>Não se deixe enganar pela aparência.",
+        "<light_purple>O poder mágico deste ginásio</light_purple>",
+        "<light_purple>esconde desafios surpreendentes.",
+        "",
+        "<#FFAAEE>✦ Descubra a força encantada!",
+        "",
+        "<yellow>➜ Clique para desafiar!"
+      ]
+    },
+    "informacoes": {
+      "item": "minecraft:clock",
+      "slots": [],
+      "name": "<gradient:#FF7777:#CC0033><bold>✦ SOBRE A LIGA</bold></gradient>",
+      "lore": [
+        "<gray>LIGA ZORYKAI • INFORMAÇÕES",
+        "",
+        "<white>Existem <gold><bold>18 ginásios</bold></gold> espalhados",
+        "<white>pela jornada de Zorykai.",
+        "",
+        "<#FF9999>✦ Derrote os líderes, conquiste",
+        "<#FF9999>insígnias e prove seu valor.",
+        "",
+        "<gold>Seu objetivo é alcançar a glória!",
+        "",
+        "<dark_gray>ZORYKAI NETWORK"
+      ]
+    },
+    "voltar": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        37
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar ao menu principal.",
+        "",
+        "<yellow>➜ Clique para voltar!"
+      ],
+      "click_actions": {
+        "voltar_menu": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/menu"
+          ]
+        }
+      }
+    },
+    "panel": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        28,
+        9,
+        11,
+        17,
+        18,
+        20,
+        26,
+        27,
+        29,
+        35,
+        36,
+        38,
+        44,
+        45,
+        46,
+        47,
+        48,
+        50,
+        51,
+        52,
+        53,
+        49
+      ],
+      "name": " "
+    }
+  }
+}

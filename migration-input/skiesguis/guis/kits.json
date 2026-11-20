@@ -1,0 +1,184 @@
+{
+  "title": "<gradient:#00CFFF:#8A2BE2><bold>✦ CENTRAL DE KITS ✦</bold></gradient>",
+  "size": 5,
+  "alias_commands": [
+    "kit"
+  ],
+  "open_actions": {
+    "sound": {
+      "type": "PLAYSOUND",
+      "sound": "minecraft:ui.button.click"
+    }
+  },
+  "items": {
+    "kits_iniciais": {
+      "item": "cobblemon:focus_band",
+      "slots": [
+        12
+      ],
+      "amount": 1,
+      "name": "<gradient:#55FF55:#00AA00><bold>✦ KITS INICIAIS</bold></gradient>",
+      "lore": [
+        "<gray>Os recursos necessários para",
+        "<gray>dar os primeiros passos no Zorykai.",
+        "",
+        "<white>✦ Equipamentos básicos",
+        "<white>✦ Itens de exploração",
+        "<white>✦ Suprimentos para sua aventura",
+        "",
+        "<yellow>➜ Clique para visualizar!"
+      ],
+      "click_actions": {
+        "open_kitsiniciais": {
+          "type": "OPEN_GUI",
+          "click": "LEFT",
+          "id": "kitsiniciais"
+        }
+      }
+    },
+    "kits_vips": {
+      "item": "cobblemon:choice_band",
+      "slots": [
+        13
+      ],
+      "amount": 1,
+      "name": "<gradient:#00CFFF:#0055FF><bold>✦ KITS VIPS</bold></gradient>",
+      "lore": [
+        "<gray>Vantagens exclusivas para",
+        "<gray>treinadores com benefícios VIP.",
+        "",
+        "<white>✦ Recompensas exclusivas",
+        "<white>✦ Equipamentos especiais",
+        "<white>✦ Benefícios por categoria",
+        "",
+        "<yellow>➜ Clique para visualizar!"
+      ],
+      "click_actions": {
+        "open_kitsvip": {
+          "type": "OPEN_GUI",
+          "click": "LEFT",
+          "id": "kitsvip"
+        }
+      }
+    },
+    "kits_especiais": {
+      "item": "cobblemon:muscle_band",
+      "slots": [
+        14
+      ],
+      "amount": 1,
+      "name": "<gradient:#FFAA00:#FF5555><bold>✦ KITS ESPECIAIS</bold></gradient>",
+      "lore": [
+        "<gray>Presentes exclusivos disponíveis",
+        "<gray>em eventos e ocasiões especiais.",
+        "",
+		"<red>Indisponível no momento.",
+        "<white>✦ Recompensas de eventos",
+        "<white>✦ Itens de temporada",
+        "<white>✦ Kits promocionais",
+        "",
+        "<yellow>➜ Clique para visualizar!"
+      ]
+    },
+    "informacao_resgate": {
+      "item": "minecraft:clock",
+      "slots": [
+        19
+      ],
+      "name": "<gradient:#FFD700:#FFAA00><bold>✦ INFORMAÇÕES</bold></gradient>",
+      "lore": [
+        "<gray>Antes de resgatar seus kits,",
+        "<gray>fique atento a algumas regras.",
+        "",
+        "<yellow>✦ Alguns possuem tempo de espera.",
+        "<yellow>✦ Outros exigem permissões específicas.",
+        "<yellow>✦ Confira os requisitos de cada kit.",
+        "",
+        "<dark_gray>ZORYKAI"
+      ]
+    },
+    "voltar": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        28
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar ao menu principal.",
+        "",
+        "<yellow>➜ Clique para voltar!"
+      ],
+      "click_actions": {
+        "voltar_menu": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/menu"
+          ]
+        }
+      }
+    },
+    "panel": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        17,
+        18,
+        20,
+        26,
+        27,
+        29,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "name": " "
+    },
+    "player_info": {
+      "item": "playerhead",
+      "slots": [
+        10
+      ],
+      "name": "<gradient:#00E5FF:#0072FF><bold>✦ PERFIL DO TREINADOR</bold></gradient>",
+      "lore": [
+        "<gray>Suas informações no Zorykai.",
+        "",
+        "<gradient:#00D9FF:#0072FF><bold>✦</bold></gradient> <#55FFFF>Cargo:</#55FFFF> <white><bold>%luckperms:prefix%</bold></white>",
+        "<gradient:#55FF55:#00AA00><bold>✦</bold></gradient> <#55FF55>Pokédex:</#55FF55> <white>%shirokai:dex_percent%</white>",
+        "<gradient:#FF5555:#AA0000><bold>✦</bold></gradient> <#FF7777>Ginásios:</#FF7777> <white>%player:objective gyms%/18</white>",
+        "<gradient:#33DD77:#008844><bold>✦</bold></gradient> <#33DD77>Dinheiro:</#33DD77> <white>$%shirokai:dollars%</white>",
+        "<gradient:#B266FF:#9B59FF><bold>✦</bold></gradient> <#B266FF>Tokens:</#B266FF> <white>%shirokai:tokens%</white>",
+        "<gradient:#FFD700:#FFAA00><bold>✦</bold></gradient> <#FFD700>Cash:</#FFD700> <white>%shirokai:cash%</white>",
+        "",
+        "<gray>Continue sua jornada e conquiste",
+        "<gray>seu lugar entre os treinadores!"
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/perfil"
+          ]
+        }
+      }
+    }
+  }
+}

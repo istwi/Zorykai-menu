@@ -1,0 +1,11 @@
+{
+  "prefix": "<white><bold>✦ ZORYKAI</bold></white> <gray>",
+  "denied": "<red>Você não tem permissão.",
+  "missing": "<red>Menu ou loja indisponível.",
+  "pending": "<yellow>Operação pendente. Aguarde; se persistir, peça conferência ao administrador.",
+  "success": "<green>Transação concluída: {quantity} unidade(s), total ${total}.",
+  "failure": "<red>Não foi possível concluir: {reason}",
+  "reload": "<green>Configuração recarregada.",
+  "buySound": "minecraft:entity.experience_orb.pickup",
+  "sellSound": "minecraft:entity.experience_orb.pickup"
+}

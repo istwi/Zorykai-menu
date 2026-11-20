@@ -1,0 +1,30 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Fabric Loom: 1.10.5
+
+> Task :compileJava
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :jar
+> Task :compileIntegrationJava
+> Task :compileTestJava UP-TO-DATE
+> Task :processIncludeJars UP-TO-DATE
+> Task :sourcesJar
+> Task :remapSourcesJar
+> Task :processIntegrationResources UP-TO-DATE
+> Task :integrationClasses
+> Task :integrationJar
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test
+> Task :validateAccessWidener UP-TO-DATE
+> Task :check
+> Task :remapJar
+> Task :assemble
+> Task :build
+> Task :remapIntegrationJar
+
+BUILD SUCCESSFUL in 28s
+14 actionable tasks: 9 executed, 5 up-to-date

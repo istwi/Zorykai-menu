@@ -1,0 +1,266 @@
+{
+  "title": "<gradient:#55FFFF:#0077CC><bold>✦ ITENS USÁVEIS - PÁGINA 1</bold></gradient>",
+  "type": "GENERIC_9x6",
+  "open_actions": {},
+  "close_actions": {},
+  "entries": {
+    "rare_candy": {
+      "type": "ITEM",
+      "slot": 0,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:rare_candy",
+      "display": {
+        "item": "cobblemon:rare_candy"
+      },
+      "buy": {
+        "price": 120000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "exp_candy_xs": {
+      "type": "ITEM",
+      "slot": 1,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:exp_candy_xs",
+      "display": {
+        "item": "cobblemon:exp_candy_xs"
+      },
+      "buy": {
+        "price": 15000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "exp_candy_s": {
+      "type": "ITEM",
+      "slot": 2,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:exp_candy_s",
+      "display": {
+        "item": "cobblemon:exp_candy_s"
+      },
+      "buy": {
+        "price": 30000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "exp_candy_m": {
+      "type": "ITEM",
+      "slot": 3,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:exp_candy_m",
+      "display": {
+        "item": "cobblemon:exp_candy_m"
+      },
+      "buy": {
+        "price": 60000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "exp_candy_l": {
+      "type": "ITEM",
+      "slot": 4,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:exp_candy_l",
+      "display": {
+        "item": "cobblemon:exp_candy_l"
+      },
+      "buy": {
+        "price": 100000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "exp_candy_xl": {
+      "type": "ITEM",
+      "slot": 5,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:exp_candy_xl",
+      "display": {
+        "item": "cobblemon:exp_candy_xl"
+      },
+      "buy": {
+        "price": 160000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "ability_capsule": {
+      "type": "ITEM",
+      "slot": 6,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:ability_capsule",
+      "display": {
+        "item": "cobblemon:ability_capsule"
+      },
+      "buy": {
+        "price": 250000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "ability_patch": {
+      "type": "ITEM",
+      "slot": 7,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:ability_patch",
+      "display": {
+        "item": "cobblemon:ability_patch"
+      },
+      "buy": {
+        "price": 480000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "pp_up": {
+      "type": "ITEM",
+      "slot": 8,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:pp_up",
+      "display": {
+        "item": "cobblemon:pp_up"
+      },
+      "buy": {
+        "price": 70000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "pp_max": {
+      "type": "ITEM",
+      "slot": 9,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:pp_max",
+      "display": {
+        "item": "cobblemon:pp_max"
+      },
+      "buy": {
+        "price": 140000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "ether": {
+      "type": "ITEM",
+      "slot": 10,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:ether",
+      "display": {
+        "item": "cobblemon:ether"
+      },
+      "buy": {
+        "price": 35000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "max_ether": {
+      "type": "ITEM",
+      "slot": 11,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:max_ether",
+      "display": {
+        "item": "cobblemon:max_ether"
+      },
+      "buy": {
+        "price": 35000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "elixir": {
+      "type": "ITEM",
+      "slot": 12,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:elixir",
+      "display": {
+        "item": "cobblemon:elixir"
+      },
+      "buy": {
+        "price": 35000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "max_elixir": {
+      "type": "ITEM",
+      "slot": 13,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:max_elixir",
+      "display": {
+        "item": "cobblemon:max_elixir"
+      },
+      "buy": {
+        "price": 35000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    }
+  },
+  "items": {
+    "back_menu": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        49
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar à Loja Zorykai.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "back": {
+          "type": "OPEN_SHOP",
+          "id": "loja_normal"
+        }
+      }
+    }
+  }
+}

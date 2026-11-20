@@ -1,0 +1,21 @@
+{
+  "serverModsSha256": {
+    "cobblemon.jar": "a977e741eec047ebc50559812be9b3296c9090254a632006f1c8b10ed1f7f40c",
+    "fabric-api.jar": "cc531256ecce945b65b179bcedc45ca40b69d7364b95448d255270bb6fccaac8",
+    "impactor.jar": "02312d1b101e67f9d2a0476ad6aafabb0b4cabab787f85ecf871ffce8d59f8a9",
+    "luckperms.jar": "3e17d490f87761c174478f68860367610a473ff5c2a9a9daad608773bf0e81bc",
+    "placeholder-api.jar": "c0187ee299527ac7a3e0b1e83601dcdc0de631e286fe41e6be1a75958ea8e443",
+    "shirokai-core.jar": "10ee63922064674723063673dd5651e2654345e8a9b67814d7e84e6cb29f1504",
+    "shirokai-dex.jar": "cb493e8d1ea128b89231a0fb662e2bd389d98bd685b4856262ddc1e72f4e4c88",
+    "zorykaimenus-checks.jar": "ff85d625e316f215aba99df838549b53b01f85b3ef347e7bd0b15c4278316174",
+    "zorykaimenus.jar": "551e77e0abeab818842251b1084f875ad98475b700edd59319daf7546fb3dc82"
+  },
+  "clientModsSha256": {
+    "cobblemon.jar": "a977e741eec047ebc50559812be9b3296c9090254a632006f1c8b10ed1f7f40c",
+    "fabric-api.jar": "cc531256ecce945b65b179bcedc45ca40b69d7364b95448d255270bb6fccaac8"
+  },
+  "junitPassed": 11,
+  "integrationPassed": 51,
+  "pendingTransactions": 0,
+  "environment": "Minecraft 1.21.1 / Fabric 0.17.2 / Java21 / loopback-only disposable test environment"
+}

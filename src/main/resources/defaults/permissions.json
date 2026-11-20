@@ -1,0 +1,7 @@
+{
+  "use": "zorykaimenus.use",
+  "open": "zorykaimenus.open",
+  "shop": "zorykaimenus.shop",
+  "buy": "zorykaimenus.buy",
+  "sell": "zorykaimenus.sell"
+}

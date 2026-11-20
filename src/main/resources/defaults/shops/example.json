@@ -1,0 +1,42 @@
+{
+  "id": "example",
+  "size": 27,
+  "title": "<white><bold>✦ ZORYKAI</bold></white> <aqua>Loja",
+  "products": [
+    {
+      "id": "stone",
+      "slots": [
+        11
+      ],
+      "item": {
+        "id": "minecraft:stone"
+      },
+      "icon": {
+        "id": "minecraft:stone"
+      },
+      "buy": "2.50",
+      "sell": "1.25",
+      "name": "<white>Pedra",
+      "lore": [
+        "<gray>Preço por unidade."
+      ]
+    }
+  ],
+  "buttons": [
+    {
+      "id": "back",
+      "slots": [
+        18
+      ],
+      "icon": {
+        "id": "minecraft:arrow"
+      },
+      "name": "<aqua>Voltar",
+      "actions": [
+        {
+          "type": "BACK"
+        }
+      ]
+    }
+  ]
+}

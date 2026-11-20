@@ -1,0 +1,42 @@
+{
+  "id": "second",
+  "size": 9,
+  "title": "<aqua>Ajuda",
+  "buttons": [
+    {
+      "id": "back",
+      "slots": [
+        0
+      ],
+      "icon": {
+        "id": "minecraft:arrow"
+      },
+      "name": "<aqua>Voltar",
+      "actions": [
+        {
+          "type": "BACK"
+        }
+      ]
+    },
+    {
+      "id": "hello",
+      "slots": [
+        4
+      ],
+      "icon": {
+        "id": "minecraft:paper"
+      },
+      "name": "<white>Olá, {player}",
+      "actions": [
+        {
+          "type": "SEND_MESSAGE",
+          "message": "<aqua>Bem-vindo, {player}! Saldo: ${balance}"
+        },
+        {
+          "type": "PLAY_SOUND",
+          "sound": "minecraft:ui.button.click"
+        }
+      ]
+    }
+  ]
+}

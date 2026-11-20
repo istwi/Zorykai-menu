@@ -1,0 +1,339 @@
+{
+  "title": "<gradient:#F472B6:#FBCFE8><bold>✦ TMs PSYCHIC - 2/2 ✦</bold></gradient>",
+  "type": "GENERIC_9x6",
+  "open_actions": {},
+  "close_actions": {},
+  "entries": {
+    "reflect": {
+      "type": "ITEM",
+      "slot": 10,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:technical_machine",
+      "components": {
+        "cobblemon:tm_move": {
+          "move": "reflect"
+        }
+      },
+      "display": {
+        "item": "cobblemon:technical_machine",
+        "components": {
+          "cobblemon:tm_move": {
+            "move": "reflect"
+          }
+        }
+      },
+      "buy": {
+        "price": 75000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "psyshock": {
+      "type": "ITEM",
+      "slot": 11,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:technical_machine",
+      "components": {
+        "cobblemon:tm_move": {
+          "move": "psyshock"
+        }
+      },
+      "display": {
+        "item": "cobblemon:technical_machine",
+        "components": {
+          "cobblemon:tm_move": {
+            "move": "psyshock"
+          }
+        }
+      },
+      "buy": {
+        "price": 75000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "psychocut": {
+      "type": "ITEM",
+      "slot": 12,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:technical_machine",
+      "components": {
+        "cobblemon:tm_move": {
+          "move": "psychocut"
+        }
+      },
+      "display": {
+        "item": "cobblemon:technical_machine",
+        "components": {
+          "cobblemon:tm_move": {
+            "move": "psychocut"
+          }
+        }
+      },
+      "buy": {
+        "price": 75000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "psychicterrain": {
+      "type": "ITEM",
+      "slot": 13,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:technical_machine",
+      "components": {
+        "cobblemon:tm_move": {
+          "move": "psychicterrain"
+        }
+      },
+      "display": {
+        "item": "cobblemon:technical_machine",
+        "components": {
+          "cobblemon:tm_move": {
+            "move": "psychicterrain"
+          }
+        }
+      },
+      "buy": {
+        "price": 75000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "psychicnoise": {
+      "type": "ITEM",
+      "slot": 14,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:technical_machine",
+      "components": {
+        "cobblemon:tm_move": {
+          "move": "psychicnoise"
+        }
+      },
+      "display": {
+        "item": "cobblemon:technical_machine",
+        "components": {
+          "cobblemon:tm_move": {
+            "move": "psychicnoise"
+          }
+        }
+      },
+      "buy": {
+        "price": 75000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "storedpower": {
+      "type": "ITEM",
+      "slot": 15,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:technical_machine",
+      "components": {
+        "cobblemon:tm_move": {
+          "move": "storedpower"
+        }
+      },
+      "display": {
+        "item": "cobblemon:technical_machine",
+        "components": {
+          "cobblemon:tm_move": {
+            "move": "storedpower"
+          }
+        }
+      },
+      "buy": {
+        "price": 75000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "telekinesis": {
+      "type": "ITEM",
+      "slot": 16,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:technical_machine",
+      "components": {
+        "cobblemon:tm_move": {
+          "move": "telekinesis"
+        }
+      },
+      "display": {
+        "item": "cobblemon:technical_machine",
+        "components": {
+          "cobblemon:tm_move": {
+            "move": "telekinesis"
+          }
+        }
+      },
+      "buy": {
+        "price": 75000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "trick": {
+      "type": "ITEM",
+      "slot": 19,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:technical_machine",
+      "components": {
+        "cobblemon:tm_move": {
+          "move": "trick"
+        }
+      },
+      "display": {
+        "item": "cobblemon:technical_machine",
+        "components": {
+          "cobblemon:tm_move": {
+            "move": "trick"
+          }
+        }
+      },
+      "buy": {
+        "price": 75000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "trickroom": {
+      "type": "ITEM",
+      "slot": 20,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:technical_machine",
+      "components": {
+        "cobblemon:tm_move": {
+          "move": "trickroom"
+        }
+      },
+      "display": {
+        "item": "cobblemon:technical_machine",
+        "components": {
+          "cobblemon:tm_move": {
+            "move": "trickroom"
+          }
+        }
+      },
+      "buy": {
+        "price": 75000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "zenheadbutt": {
+      "type": "ITEM",
+      "slot": 21,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:technical_machine",
+      "components": {
+        "cobblemon:tm_move": {
+          "move": "zenheadbutt"
+        }
+      },
+      "display": {
+        "item": "cobblemon:technical_machine",
+        "components": {
+          "cobblemon:tm_move": {
+            "move": "zenheadbutt"
+          }
+        }
+      },
+      "buy": {
+        "price": 75000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "gravity": {
+      "type": "ITEM",
+      "slot": 22,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:technical_machine",
+      "components": {
+        "cobblemon:tm_move": {
+          "move": "gravity"
+        }
+      },
+      "display": {
+        "item": "cobblemon:technical_machine",
+        "components": {
+          "cobblemon:tm_move": {
+            "move": "gravity"
+          }
+        }
+      },
+      "buy": {
+        "price": 75000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    }
+  },
+  "items": {
+    "back_menu": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        49
+      ],
+      "name": "<yellow><bold>✦ Back to TM Categories</bold></yellow>",
+      "lore": [
+        "<gray>Click to return to the TM menu."
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms"
+        }
+      }
+    },
+    "previous_page": {
+      "item": "minecraft:arrow",
+      "slots": [
+        48
+      ],
+      "name": "<yellow><bold>← Previous Page</bold></yellow>",
+      "lore": [
+        "<gray>Click to view the previous page."
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_psychic"
+        }
+      }
+    }
+  }
+}

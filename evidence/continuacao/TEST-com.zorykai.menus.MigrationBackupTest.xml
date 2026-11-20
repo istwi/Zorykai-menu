@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zorykai.menus.MigrationBackupTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-20T10:33:01.064Z" hostname="25fbe94e65b4" time="0.014">
+  <properties/>
+  <testcase name="detectsSourceChangesAndAdditionalFiles()" classname="com.zorykai.menus.MigrationBackupTest" time="0.008"/>
+  <testcase name="refusesToOverwriteDivergentBackup()" classname="com.zorykai.menus.MigrationBackupTest" time="0.002"/>
+  <testcase name="completesPartialBackupAndCanRepeat()" classname="com.zorykai.menus.MigrationBackupTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

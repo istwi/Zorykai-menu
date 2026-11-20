@@ -1,0 +1,124 @@
+
+{
+  "title": "<gradient:#00C6FF:#0072FF><bold>✦ ZORYKAI - COMPRAR</bold></gradient>",
+  "type": "GENERIC_9x3",
+  "entry_slot": 13,
+  "back_on_transaction": true,
+  "open_actions": {},
+  "close_actions": {},
+  "amounts": {
+    "1": {
+      "item": "cobblemon:clover_sweet",
+      "amount": 1,
+      "slot": 9,
+      "type": "BUY",
+      "name": "<aqua><bold>✦ COMPRAR 1</bold>",
+      "lore": [
+        "<gray>Clique para comprar 1 unidade."
+      ],
+      "sound": {
+        "id": "minecraft:entity.item.pickup",
+        "source": "MASTER",
+        "volume": 0.5,
+        "pitch": 0.1
+      }
+    },
+    "8": {
+      "item": "cobblemon:clover_sweet",
+      "amount": 8,
+      "slot": 10,
+      "type": "BUY",
+      "name": "<aqua><bold>✦ COMPRAR 8</bold>",
+      "lore": [
+        "<gray>Clique para comprar 8 unidades."
+      ],
+      "sound": {
+        "id": "minecraft:entity.item.pickup",
+        "source": "MASTER",
+        "volume": 0.5,
+        "pitch": 0.25
+      }
+    },
+    "16": {
+      "item": "cobblemon:clover_sweet",
+      "amount": 16,
+      "slot": 11,
+      "type": "BUY",
+      "name": "<aqua><bold>✦ COMPRAR 16</bold>",
+      "lore": [
+        "<gray>Clique para comprar 16 unidades."
+      ],
+      "sound": {
+        "id": "minecraft:entity.item.pickup",
+        "source": "MASTER",
+        "volume": 0.5,
+        "pitch": 0.5
+      }
+    },
+    "32": {
+      "item": "cobblemon:clover_sweet",
+      "amount": 32,
+      "slot": 15,
+      "type": "BUY",
+      "name": "<aqua><bold>✦ COMPRAR 32</bold>",
+      "lore": [
+        "<gray>Clique para comprar 32 unidades."
+      ],
+      "sound": {
+        "id": "minecraft:entity.item.pickup",
+        "source": "MASTER",
+        "volume": 0.5,
+        "pitch": 0.75
+      }
+    },
+    "64": {
+      "item": "cobblemon:clover_sweet",
+      "amount": 64,
+      "slot": 16,
+      "type": "BUY",
+      "name": "<aqua><bold>✦ COMPRAR 64</bold>",
+      "lore": [
+        "<gray>Clique para comprar 64 unidades."
+      ],
+      "sound": {
+        "id": "minecraft:entity.item.pickup",
+        "source": "MASTER",
+        "volume": 0.5,
+        "pitch": 0.9
+      }
+    },
+    "128": {
+      "item": "cobblemon:clover_sweet",
+      "amount": 128,
+      "slot": 17,
+      "type": "BUY",
+      "name": "<aqua><bold>✦ COMPRAR 128</bold>",
+      "lore": [
+        "<gray>Clique para comprar 128 unidades."
+      ],
+      "sound": {
+        "id": "minecraft:entity.item.pickup",
+        "source": "MASTER",
+        "volume": 0.5,
+        "pitch": 1.0
+      }
+    }
+  },
+  "items": {
+    "back": {
+      "item": "cobblemon:eject_button",
+      "slot": 26,
+      "name": "<yellow><bold>VOLTAR À LOJA</bold>",
+      "lore": [
+        "<gray>Retornar à loja anterior.",
+        "",
+        "<yellow>➜ Clique para voltar!"
+      ],
+      "actions": {
+        "back": {
+          "type": "BACK"
+        }
+      }
+    }
+  }
+}

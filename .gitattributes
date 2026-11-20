@@ -1,0 +1,4 @@
+# Preserve migration originals byte for byte and retain unmodified diagnostic logs.
+migration-input/** -text -whitespace
+evidence/** -whitespace
+gradlew.bat -text whitespace=cr-at-eol

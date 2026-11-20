@@ -1,0 +1,147 @@
+{
+  "title": "<gradient:#00CFFF:#8A2BE2><bold>ZORYKAI - KITS INICIAIS</bold></gradient>",
+  "size": 5,
+  "alias_commands": [
+    "kitsiniciais"
+  ],
+  "items": {
+    "player_info": {
+      "item": "playerhead",
+      "slots": [
+        10
+      ],
+      "name": "<gradient:#00E5FF:#0072FF><bold>✦ PERFIL DO TREINADOR</bold></gradient>",
+      "lore": [
+        "<gray>Suas informações no Zorykai.",
+        "",
+        "<gradient:#00D9FF:#0072FF><bold>✦</bold></gradient> <#55FFFF>Cargo:</#55FFFF> <white><bold>%luckperms:prefix%</bold></white>",
+        "<gradient:#55FF55:#00AA00><bold>✦</bold></gradient> <#55FF55>Pokédex:</#55FF55> <white>%shirokai:dex_percent%</white>",
+        "<gradient:#FF5555:#AA0000><bold>✦</bold></gradient> <#FF7777>Ginásios:</#FF7777> <white>%player:objective gyms%/18</white>",
+        "<gradient:#33DD77:#008844><bold>✦</bold></gradient> <#33DD77>Dinheiro:</#33DD77> <white>$%shirokai:dollars%</white>",
+        "<gradient:#B266FF:#9B59FF><bold>✦</bold></gradient> <#B266FF>Tokens:</#B266FF> <white>%shirokai:tokens%</white>",
+        "<gradient:#FFD700:#FFAA00><bold>✦</bold></gradient> <#FFD700>Cash:</#FFD700> <white>%shirokai:cash%</white>",
+        "",
+        "<gray>Continue sua jornada e conquiste",
+        "<gray>seu lugar entre os treinadores!"
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/perfil"
+          ]
+        }
+      }
+    },
+    "informacoes": {
+      "item": "minecraft:clock",
+      "slots": [
+        19
+      ],
+      "name": "<gold><bold>Kits Iniciais</bold>",
+      "lore": [
+        "<gray>Kits para ajudar você",
+        "<gray>no início da sua jornada."
+      ]
+    },
+    "voltar": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        28
+      ],
+      "name": "<red><bold>Voltar</bold>",
+      "lore": [
+        "<gray>Voltar para a Central de Kits."
+      ],
+      "click_actions": {
+        "voltar_menu": {
+          "type": "OPEN_GUI",
+          "click": "LEFT",
+          "id": "kits"
+        }
+      }
+    },
+    "kit_inicial": {
+      "item": "minecraft:iron_pickaxe",
+      "slots": [
+        12
+      ],
+      "name": "<gradient:#00CFFF:#8A2BE2><bold>✦ KIT INICIAL</bold></gradient>",
+      "lore": [
+        "<gray>Recompensas para começar sua jornada.",
+        "",
+        "<yellow>➜ Clique para resgatar!"
+      ],
+      "click_actions": {
+        "resgatar": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/kit claim Inicial"
+          ]
+        }
+      }
+    },
+    "kit_terreno": {
+      "item": "minecraft:golden_hoe",
+      "slots": [
+        13
+      ],
+      "name": "<gradient:#55FF99:#00AA77><bold>✦ KIT TERRENO</bold></gradient>",
+      "lore": [
+        "<gray>Itens para começar seu terreno.",
+        "",
+        "<yellow>➜ Clique para resgatar!"
+      ],
+      "click_actions": {
+        "resgatar": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/kit claim terreno"
+          ]
+        }
+      }
+    },
+    "panel": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        17,
+        18,
+        20,
+        26,
+        27,
+        29,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "name": " "
+    }
+  },
+  "open_actions": {
+    "sound": {
+      "type": "PLAYSOUND",
+      "sound": "minecraft:ui.button.click"
+    }
+  }
+}

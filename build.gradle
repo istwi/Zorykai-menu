@@ -1,0 +1,46 @@
+plugins { id 'fabric-loom' version '1.10.5' }
+version = '1.0.0'
+group = 'com.zorykai'
+base { archivesName = 'zorykaimenus' }
+repositories { mavenCentral(); maven { url = 'https://maven.fabricmc.net/' } }
+dependencies {
+ minecraft 'com.mojang:minecraft:1.21.1'
+ mappings 'net.fabricmc:yarn:1.21.1+build.3:v2'
+ modImplementation 'net.fabricmc:fabric-loader:0.17.2'
+ modImplementation 'net.fabricmc.fabric-api:fabric-api:0.116.6+1.21.1'
+ modImplementation files('.cache/deps/impactor.jar')
+ modCompileOnly files('.cache/deps/placeholder-api.jar')
+ compileOnly 'net.luckperms:api:5.4'
+ compileOnly 'net.kyori:adventure-key:4.17.0'
+ compileOnly 'net.kyori:adventure-api:4.17.0'
+ implementation 'net.kyori:adventure-text-minimessage:4.17.0'
+ implementation 'net.kyori:adventure-text-serializer-gson:4.17.0'
+ implementation 'org.xerial:sqlite-jdbc:3.49.1.0'
+ include 'org.xerial:sqlite-jdbc:3.49.1.0'
+ testImplementation platform('org.junit:junit-bom:5.12.2')
+ testImplementation 'org.junit.jupiter:junit-jupiter'
+ testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+java { toolchain { languageVersion = JavaLanguageVersion.of(21) }; withSourcesJar() }
+tasks.withType(JavaCompile).configureEach { options.release = 21; options.encoding = 'UTF-8' }
+test { useJUnitPlatform() }
+tasks.withType(AbstractArchiveTask).configureEach { preserveFileTimestamps = false; reproducibleFileOrder = true }
+
+loom { accessWidenerPath = file("src/main/resources/zorykaimenus.accesswidener") }
+sourceSets {
+ integration {
+  compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+  runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+ }
+}
+tasks.register('integrationJar', Jar) {
+ dependsOn tasks.named('compileIntegrationJava'), tasks.named('processIntegrationResources')
+ from sourceSets.integration.output
+ archiveClassifier = 'checks-dev'
+}
+tasks.register('remapIntegrationJar', net.fabricmc.loom.task.RemapJarTask) {
+ dependsOn tasks.named('integrationJar'), tasks.named('remapJar')
+ inputFile = tasks.named('integrationJar', Jar).flatMap { it.archiveFile }
+ archiveClassifier = 'checks'
+ classpath.from(sourceSets.main.compileClasspath, sourceSets.main.output)
+}

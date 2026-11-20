@@ -1,0 +1,362 @@
+[10:26:59] [main/INFO]: Loading Minecraft 1.21.1 with Fabric Loader 0.17.2
+[10:27:00] [main/INFO]: Loading 99 mods:
+	- cobblemon 1.8.3+1.21.1
+	   |-- com_ibm_icu_icu4j 71.1
+	   |-- fabric-language-kotlin 1.13.6+kotlin.2.2.20
+	   |    |-- org_jetbrains_kotlin_kotlin-reflect 2.2.20
+	   |    |-- org_jetbrains_kotlin_kotlin-stdlib 2.2.20
+	   |    |-- org_jetbrains_kotlin_kotlin-stdlib-jdk7 2.2.20
+	   |    |-- org_jetbrains_kotlin_kotlin-stdlib-jdk8 2.2.20
+	   |    |-- org_jetbrains_kotlinx_atomicfu-jvm 0.29.0
+	   |    |-- org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm 1.10.2
+	   |    |-- org_jetbrains_kotlinx_kotlinx-coroutines-jdk8 1.10.2
+	   |    |-- org_jetbrains_kotlinx_kotlinx-datetime-jvm 0.7.1
+	   |    |-- org_jetbrains_kotlinx_kotlinx-io-bytestring-jvm 0.8.0
+	   |    |-- org_jetbrains_kotlinx_kotlinx-io-core-jvm 0.8.0
+	   |    |-- org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm 1.9.0
+	   |    |-- org_jetbrains_kotlinx_kotlinx-serialization-core-jvm 1.9.0
+	   |    \-- org_jetbrains_kotlinx_kotlinx-serialization-json-jvm 1.9.0
+	   |-- org_graalvm_js_js 22.3.0
+	   |-- org_graalvm_regex_regex 22.3.0
+	   |-- org_graalvm_sdk_graal-sdk 22.3.0
+	   |-- org_graalvm_truffle_truffle-api 22.3.0
+	   |-- org_mongodb_mongodb-driver-core 4.10.2
+	   \-- org_mongodb_mongodb-driver-sync 4.10.2
+	- fabric-api 0.116.6+1.21.1
+	   |-- fabric-api-base 0.4.42+6573ed8c19
+	   |-- fabric-api-lookup-api-v1 1.6.71+b559734419
+	   |-- fabric-biome-api-v1 13.0.31+d527f9fd19
+	   |-- fabric-block-api-v1 1.1.0+0bc3503219
+	   |-- fabric-block-view-api-v2 1.0.11+ebb2264e19
+	   |-- fabric-blockrenderlayer-v1 1.1.52+0af3f5a719
+	   |-- fabric-client-tags-api-v1 1.1.15+6573ed8c19
+	   |-- fabric-command-api-v1 1.2.49+f71b366f19
+	   |-- fabric-command-api-v2 2.2.28+6ced4dd919
+	   |-- fabric-commands-v0 0.2.66+df3654b319
+	   |-- fabric-content-registries-v0 8.0.19+b559734419
+	   |-- fabric-convention-tags-v1 2.1.5+7f945d5b19
+	   |-- fabric-convention-tags-v2 2.11.1+a406e79519
+	   |-- fabric-crash-report-info-v1 0.2.29+0af3f5a719
+	   |-- fabric-data-attachment-api-v1 1.4.5+6116a37819
+	   |-- fabric-data-generation-api-v1 20.2.33+37516cd619
+	   |-- fabric-dimensions-v1 4.0.1+65213ef819
+	   |-- fabric-entity-events-v1 1.8.0+2b27e0a419
+	   |-- fabric-events-interaction-v0 0.7.13+ba9dae0619
+	   |-- fabric-game-rule-api-v1 1.0.53+6ced4dd919
+	   |-- fabric-item-api-v1 11.2.0+3b3cb2e819
+	   |-- fabric-item-group-api-v1 4.1.7+def88e3a19
+	   |-- fabric-key-binding-api-v1 1.0.47+0af3f5a719
+	   |-- fabric-keybindings-v0 0.2.45+df3654b319
+	   |-- fabric-lifecycle-events-v1 2.6.0+0865547519
+	   |-- fabric-loot-api-v2 3.0.15+3f89f5a519
+	   |-- fabric-loot-api-v3 1.0.3+3f89f5a519
+	   |-- fabric-message-api-v1 6.0.14+8aaf3aca19
+	   |-- fabric-model-loading-api-v1 2.1.0+b4d813fc19
+	   |-- fabric-networking-api-v1 4.3.0+c7469b2119
+	   |-- fabric-object-builder-api-v1 15.2.1+40875a9319
+	   |-- fabric-particles-v1 4.0.2+6573ed8c19
+	   |-- fabric-recipe-api-v1 5.0.14+248df81c19
+	   |-- fabric-registry-sync-v0 5.3.1+e3eddc2119
+	   |-- fabric-renderer-api-v1 3.4.1+b4d813fc19
+	   |-- fabric-renderer-indigo 1.7.1+c705a49c19
+	   |-- fabric-renderer-registries-v1 3.2.69+df3654b319
+	   |-- fabric-rendering-data-attachment-v1 0.3.49+73761d2e19
+	   |-- fabric-rendering-fluids-v1 3.1.6+1daea21519
+	   |-- fabric-rendering-v0 1.1.72+df3654b319
+	   |-- fabric-rendering-v1 5.1.0+ab4c25a019
+	   |-- fabric-resource-conditions-api-v1 4.3.0+8dc279b119
+	   |-- fabric-resource-loader-v0 1.3.1+5b5275af19
+	   |-- fabric-screen-api-v1 2.0.25+8b68f1c719
+	   |-- fabric-screen-handler-api-v1 1.3.90+b559734419
+	   |-- fabric-sound-api-v1 1.0.23+6573ed8c19
+	   |-- fabric-transfer-api-v1 5.4.3+c24bd99419
+	   \-- fabric-transitive-access-wideners-v1 6.2.0+45b9699719
+	- fabricloader 0.17.2
+	   \-- mixinextras 0.5.0
+	- impactor 5.3.5+1.21.1
+	   |-- adventure-platform-fabric 5.14.1
+	   |    |-- net_kyori_adventure-api 4.17.0
+	   |    |-- net_kyori_adventure-key 4.17.0
+	   |    |-- net_kyori_adventure-platform-api 4.3.3
+	   |    |-- net_kyori_adventure-text-logger-slf4j 4.17.0
+	   |    |-- net_kyori_adventure-text-minimessage 4.17.0
+	   |    |-- net_kyori_adventure-text-serializer-ansi 4.17.0
+	   |    |-- net_kyori_adventure-text-serializer-gson 4.17.0
+	   |    |-- net_kyori_adventure-text-serializer-json 4.17.0
+	   |    |-- net_kyori_adventure-text-serializer-plain 4.17.0
+	   |    |-- net_kyori_ansi 1.1.0
+	   |    |-- net_kyori_examination-api 1.3.0
+	   |    |-- net_kyori_examination-string 1.3.0
+	   |    \-- net_kyori_option 1.0.0
+	   |-- gooeylibs-api 3.1.0
+	   |-- impactor-command-api 5.3.1+1.21.1
+	   |    \-- cloud 2.0.0-beta.9
+	   |         |-- fabric-permissions-api-v0 0.3.1
+	   |         |-- io_leangen_geantyref_geantyref 1.3.15
+	   |         |-- org_incendo_cloud-brigadier 2.0.0-beta.9
+	   |         |-- org_incendo_cloud-core 2.0.0
+	   |         |-- org_incendo_cloud-minecraft-modded-common-fabric-repack_ 2.0.0-beta.9
+	   |         \-- org_incendo_cloud-services 2.0.0
+	   |-- net_kyori_adventure-api 4.17.0
+	   |-- net_kyori_adventure-key 4.17.0
+	   |-- net_kyori_adventure-nbt 4.17.0
+	   |-- net_kyori_adventure-text-logger-slf4j 4.17.0
+	   |-- net_kyori_adventure-text-minimessage 4.17.0
+	   |-- net_kyori_adventure-text-serializer-gson 4.17.0
+	   |-- net_kyori_adventure-text-serializer-json 4.17.0
+	   |-- net_kyori_adventure-text-serializer-legacy 4.17.0
+	   |-- net_kyori_adventure-text-serializer-plain 4.17.0
+	   |-- net_kyori_event-api 5.0.0-SNAPSHOT
+	   |-- net_kyori_examination-api 1.3.0
+	   |-- net_kyori_examination-string 1.3.0
+	   |-- org_incendo_cloud-annotations 2.0.0
+	   |-- org_incendo_cloud-minecraft-extras 2.0.0-beta.10
+	   |-- org_incendo_cloud-processors-common 1.0.0-rc.1
+	   |-- org_incendo_cloud-processors-confirmation 1.0.0-rc.1
+	   \-- placeholder-api 2.4.1+1.21
+	- java 21
+	- luckperms 5.4.140
+	   \-- fabric-permissions-api-v0 0.3.1
+	- minecraft 1.21.1
+	- zorykaimenus 1.0.0
+	   \-- org_xerial_sqlite-jdbc 3.49.1.0
+	- zorykaimenus_checks 1.0.0
+	   \-- org_xerial_sqlite-jdbc 3.49.1.0
+[10:27:00] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/tmp/shirokai-daycare-server/libs/sponge-mixin-0.16.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[10:27:00] [main/INFO]: Compatibility level set to JAVA_17
+[10:27:00] [main/INFO]: Compatibility level set to JAVA_21
+[10:27:01] [main/WARN]: Error loading class: juuxel/adorn/block/variant/BlockVariantSets (java.lang.ClassNotFoundException: juuxel/adorn/block/variant/BlockVariantSets)
+[10:27:01] [main/WARN]: @Mixin target juuxel.adorn.block.variant.BlockVariantSets was not found mixins.cobblemon-common.json:invoker.AdornRegisterInvoker from mod cobblemon
+[10:27:01] [main/WARN]: Error loading class: net/minecraft/class_1140 (java.lang.ClassNotFoundException: net/minecraft/class_1140)
+[10:27:01] [main/WARN]: @Mixin target net.minecraft.class_1140 was not found mixins.cobblemon-fabric.json:FabricSoundEngineMixin from mod cobblemon
+[10:27:01] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[10:27:09] [main/INFO]: Booting LaxPermissionValidator, permissions will be checked using Minecrafts permission level system, see https://minecraft.wiki/w/Permission_level
+[10:27:09] [main/INFO]: Launching Cobblemon 1.8.3 
+[10:27:09] [main/INFO]: Booting FabricPermissionValidator, permissions will be checked using fabric-permissions-api, see https://github.com/lucko/fabric-permissions-api
+[10:27:10] [main/ERROR]: No data fixer registered for cobblemon:pokemon
+[10:27:10] [main/ERROR]: No data fixer registered for cobblemon:empty_pokeball
+[10:27:10] [main/ERROR]: No data fixer registered for cobblemon:boat
+[10:27:10] [main/ERROR]: No data fixer registered for cobblemon:chest_boat
+[10:27:10] [main/ERROR]: No data fixer registered for cobblemon:poke_bobber
+[10:27:10] [main/ERROR]: No data fixer registered for cobblemon:generic_bedrock
+[10:27:10] [main/ERROR]: No data fixer registered for cobblemon:npc
+[10:27:11] [main/INFO]: Starting the Best Spawner...
+[10:27:11] [main/INFO]: Loaded 7 spawning condition types.
+[10:27:11] [main/INFO]: Loaded 6 spawnable position types.
+[10:27:11] [main/INFO]: Loaded 4 spawn detail types.
+[10:27:11] [Cobblemon Showdown/INFO]: Starting showdown service...
+[10:27:14] [Cobblemon Showdown/INFO]: Showdown has been started!
+[10:27:14] [main/INFO]: Note: Cobblemon data registries are only loaded once per server instance as Pokémon species are not safe to reload.
+[10:27:14] [main/INFO]: Registered the cobblemon:molang registry
+[10:27:14] [main/INFO]: Registered the cobblemon:species_features registry
+[10:27:14] [main/INFO]: Registered the cobblemon:global_species_features registry
+[10:27:14] [main/INFO]: Registered the cobblemon:species_feature_assignments registry
+[10:27:14] [main/INFO]: Registered the cobblemon:action_effects registry
+[10:27:14] [main/INFO]: Registered the cobblemon:moves registry
+[10:27:14] [main/INFO]: Registered the cobblemon:moveset_builders registry
+[10:27:14] [main/INFO]: Registered the cobblemon:abilities registry
+[10:27:14] [main/INFO]: Registered the cobblemon:behaviours registry
+[10:27:14] [main/INFO]: Registered the cobblemon:marks registry
+[10:27:14] [main/INFO]: Registered the cobblemon:species registry
+[10:27:14] [main/INFO]: Registered the cobblemon:species_additions registry
+[10:27:14] [main/INFO]: Registered the cobblemon:pokeballs registry
+[10:27:14] [main/INFO]: Registered the cobblemon:properties_tab_completion registry
+[10:27:14] [main/INFO]: Registered the cobblemon:party_pools registry
+[10:27:14] [main/INFO]: Registered the cobblemon:party_compositions registry
+[10:27:14] [main/INFO]: Registered the cobblemon:spawn_detail_presets registry
+[10:27:14] [main/INFO]: Registered the cobblemon:spawn_rules registry
+[10:27:14] [main/INFO]: Registered the cobblemon:mechanics registry
+[10:27:14] [main/INFO]: Registered the cobblemon:bag_items registry
+[10:27:14] [main/INFO]: Registered the cobblemon:held_items registry
+[10:27:14] [main/INFO]: Registered the cobblemon:dialogues registry
+[10:27:14] [main/INFO]: Registered the cobblemon:natural_materials registry
+[10:27:14] [main/INFO]: Registered the cobblemon:fossils registry
+[10:27:14] [main/INFO]: Registered the cobblemon:npc_preset registry
+[10:27:14] [main/INFO]: Registered the cobblemon:npc registry
+[10:27:14] [main/INFO]: Registered the cobblemon:dex_entries registry
+[10:27:14] [main/INFO]: Registered the cobblemon:dex_entry_additions registry
+[10:27:14] [main/INFO]: Registered the cobblemon:dexes registry
+[10:27:14] [main/INFO]: Registered the cobblemon:dex_additions registry
+[10:27:14] [main/INFO]: Registered the cobblemon:cosmetic_items registry
+[10:27:14] [main/INFO]: Registered the cobblemon:callbacks registry
+[10:27:14] [main/INFO]: Registered the cobblemon:unlockable_pc_box_wallpapers registry
+[10:27:14] [main/INFO]: Registered the cobblemon:starters registry
+[10:27:14] [main/INFO]: Registered the cobblemon:spawn_pool_world registry
+[10:27:14] [main/INFO]: Registered the cobblemon:pokerods registry
+[10:27:14] [main/INFO]: Registered the cobblemon:berries registry
+[10:27:14] [main/INFO]: Registered the cobblemon:habitat_pools registry
+[10:27:14] [main/INFO]: Registered the cobblemon:seasonings registry
+[10:27:14] [main/INFO]: Registered the cobblemon:pokemon_interactions registry
+[10:27:14] [main/INFO]: Registered the cobblemon:spawn_bait_effects registry
+[10:27:14] [main/INFO]: Registered the cobblemon:ride_settings registry
+[10:27:14] [main/INFO]: Registered the cobblemon:technical_machines registry
+[10:27:14] [main/INFO]: Initializing API...
+[10:27:14] [main/INFO]: Registering modules...
+[10:27:14] [main/INFO]: Registering commands...
+[10:27:15] [main/INFO]: Setting up schedulers...
+[10:27:15] [main/INFO]: Integrating with PlaceholderAPI...
+[10:27:15] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[10:27:15] [Yggdrasil Key Fetcher/ERROR]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to api.minecraftservices.com
+	at knot/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:108) ~[authlib-6.0.54.jar:?]
+	at knot/com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:57) ~[authlib-6.0.54.jar:?]
+	at knot/com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-6.0.54.jar:?]
+	at knot/com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-6.0.54.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.net.UnknownHostException: api.minecraftservices.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1302) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at knot/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:84) ~[authlib-6.0.54.jar:?]
+	... 9 more
+[10:27:17] [main/INFO]: Loaded 2079 recipes
+[10:27:18] [main/INFO]: Loaded 2210 advancements
+[10:27:18] [main/INFO]: Loaded 11 server scripts and 1 client scripts
+[10:27:20] [main/INFO]: Loaded 936 moves
+[10:27:21] [main/INFO]: Loaded 314 abilities
+[10:27:21] [main/INFO]: Loaded 49 entity behaviours
+[10:27:21] [main/INFO]: Loaded 168 marks
+[10:27:21] [main/INFO]: Finished additions
+[10:27:22] [cobblemon Datafixer Bootstrap/INFO]: 6 Datafixer optimizations took 51 milliseconds
+[10:27:23] [main/INFO]: Loaded 1025 Pokémon species
+[10:27:23] [main/INFO]: Loaded 0 party compositions.
+[10:27:23] [main/INFO]: Loaded 28 spawn detail presets.
+[10:27:23] [main/INFO]: Starting dummy Showdown battle to force it to pre-load data.
+[10:27:23] [main/INFO]: Imported 266 held item IDs from showdown
+[10:27:24] [main/INFO]: Loaded 15 fossils
+[10:27:24] [main/INFO]: Loaded 8 callbacks and 0 client callbacks
+[10:27:25] [main/INFO]: Loaded 70 berries
+[10:27:26] [main/INFO]: Loaded 167 Pokémon interaction sets
+[10:27:28] [main/INFO]: Applied 985 biome modifications to 64 of 64 new biomes in 47.31 ms
+[10:27:29] [Server thread/INFO]: Initializing modules...
+[10:27:29] [Server thread/INFO]: Registering economy service (Provider: Impactor)
+[10:27:29] [Server thread/INFO]: Loading storage provider... [JSON]
+[10:27:29] [Server thread/WARN]: Couldn't find a suitable networking setup, no networking will be performed...
+[10:27:29] [Server thread/INFO]: Registering mail service (Provider: Impactor)
+[10:27:29] [Server thread/INFO]: Loading storage provider... [JSON]
+[10:27:29] [Server thread/INFO]: Calculating permissions service...
+[10:27:29] [Server thread/INFO]: Permissions » Selected "LuckPerms Permissions Service" (Provider: Impactor, Priority = 10)
+[10:27:29] [Server thread/INFO]: Firing placeholder registration event
+[10:27:29] [Server thread/INFO]: Initializing translations...
+
+[10:27:29] [Server thread/INFO]:         __    
+[10:27:29] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.140
+[10:27:29] [Server thread/INFO]:   |___ |      Running on Fabric - fabric@0.116.6+1.21.1
+[10:27:29] [Server thread/INFO]: 
+[10:27:29] [Server thread/INFO]: Loading configuration...
+[10:27:29] [Server thread/INFO]: Loading storage provider... [H2]
+[10:27:29] [Server thread/INFO]: Loading internal permission managers...
+[10:27:29] [Server thread/INFO]: Performing initial data load...
+[10:27:29] [Server thread/INFO]: Successfully enabled. (took 672ms)
+[10:27:29] [Server thread/INFO]: Starting minecraft server version 1.21.1
+[10:27:29] [Server thread/INFO]: Loading properties
+[10:27:29] [Server thread/INFO]: Default game type: SURVIVAL
+[10:27:29] [Server thread/INFO]: Generating keypair
+[10:27:29] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:25586
+[10:27:30] [Server thread/INFO]: Using epoll channel type
+[10:27:30] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[10:27:30] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[10:27:30] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[10:27:30] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[10:27:30] [Server thread/INFO]: Preparing level "zorykai-test-world"
+[10:27:31] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[10:27:31] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[10:27:32] [Server thread/INFO]: Time elapsed: 913 ms
+[10:27:32] [Server thread/INFO]: Done (1.426s)! For help, type "help"
+[10:27:32] [Server thread/INFO]: Optimizing spawn pools...
+[10:27:32] [Server thread/WARN]: Alias help não registrado: inválido ou conflito
+[10:27:32] [Server thread/INFO]: ZorykaiMenus 1.0.0: 13 menus, 33 lojas
+[10:27:55] [Server thread/INFO]: ShirokaiMenuTest[/127.0.0.1:51088] logged in with entity id 60 at (-3.5, -60.0, -7.5)
+[10:27:55] [Server thread/INFO]: ShirokaiMenuTest joined the game
+[10:28:11] [zorykai-real-checks/INFO]: CHECK PASS: native menu 27 slots
+[10:28:11] [zorykai-real-checks/INFO]: CHECK PASS: all six native inventory sizes
+[10:28:11] [zorykai-real-checks/INFO]: CHECK PASS: all native inventory actions cannot extract icons
+[10:28:11] [luckperms-command-executor/INFO]: [LP] Set zorykaimenus.open to false for shirokaimenutest in context global.
+[10:28:12] [zorykai-real-checks/INFO]: CHECK PASS: revoked menu permission rechecked on click
+[10:28:12] [luckperms-command-executor/INFO]: [LP] Unset zorykaimenus.open for shirokaimenutest in context global.
+[10:28:12] [zorykai-real-checks/INFO]: CHECK PASS: next page
+[10:28:12] [zorykai-real-checks/INFO]: CHECK PASS: previous page
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: open shop action
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: purchase confirmation 54 slots
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: active confirmation rejects shift drag swap throw clone
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: quick quantity 16 and exact total40
+[10:28:13] [Server thread/INFO]: Operação 038509c0-18b3-413f-998b-51f26cfa1909 concluída: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, venda=false, quantidade=16, total=40.00, sucesso=true
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: real Impactor purchase exact balance and16items
+[10:28:13] [Server thread/INFO]: Operação b2ca0a6e-0e18-42d7-9ab7-ac8cfc522112 concluída: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, venda=false, quantidade=2, total=5.00, sucesso=true
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: duplicate simultaneous requests charged once
+[10:28:13] [Server thread/INFO]: Operação d5e1f2c5-5c58-42d9-b5e9-221383ccccdf concluída: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, venda=true, quantidade=10, total=12.50, sucesso=true
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: real sell exact credit and removal
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: right click opens sale confirmation
+[10:28:13] [Server thread/INFO]: Operação d448de3e-b50e-4586-ac45-c2342311a63e concluída: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, venda=true, quantidade=8, total=10.00, sucesso=true
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: sell all eligible product
+[10:28:13] [Server thread/WARN]: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: itens elegíveis insuficientes
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: selling without items rejected
+[10:28:13] [Server thread/WARN]: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: itens elegíveis insuficientes
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: native custom components protected from plain-item sale
+[10:28:13] [Server thread/WARN]: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: inventário cheio
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: full inventory rejects before withdrawal
+[10:28:13] [Server thread/INFO]: Operação b4e56231-0903-4025-bd76-9b81b464a0a1 concluída: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, venda=false, quantidade=1, total=2.50, sucesso=false
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: insufficient funds no delivery no debit
+[10:28:13] [Server thread/WARN]: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: configuração alterada; abra novamente
+[10:28:13] [zorykai-real-checks/INFO]: CHECK PASS: stale price revision rejected
+[10:28:13] [luckperms-command-executor/INFO]: [LP] Set zorykaimenus.buy to false for shirokaimenutest in context global.
+[10:28:14] [Server thread/WARN]: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: sem permissão
+[10:28:14] [zorykai-real-checks/INFO]: CHECK PASS: LuckPerms denial at transaction execution
+[10:28:14] [luckperms-command-executor/INFO]: [LP] Unset zorykaimenus.buy for shirokaimenutest in context global.
+[10:28:14] [zorykai-real-checks/INFO]: CHECK PASS: invalid reload retains active snapshot
+[10:28:14] [zorykai-real-checks/INFO]: CHECK PASS: valid reload
+[10:28:14] [zorykai-real-checks/INFO]: CHECK PASS: registered Cobblemon item codec
+[10:28:14] [zorykai-real-checks/INFO]: CHECK PASS: invalid registered id rejected
+[10:28:14] [Server thread/INFO]: Operação 928a40ed-9436-4676-bb59-e6ca3f98236c concluída: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, venda=false, quantidade=2, total=650.0, sucesso=true
+[10:28:14] [zorykai-real-checks/INFO]: CHECK PASS: migrated Cobblemon purchase and original price
+[10:28:14] [Server thread/INFO]: Operação 07faaea9-672c-4146-a015-3eee6c614bc2 concluída: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, venda=false, quantidade=1, total=75000, sucesso=true
+[10:28:14] [zorykai-real-checks/INFO]: CHECK PASS: native Cobblemon TM component survives purchase
+[10:28:14] [zorykai-real-checks/INFO]: CHECK PASS: fault injection config loaded
+[10:28:14] [Server thread/ERROR]: Operação 8e807c00-d76c-4a95-b9d3-1a2f04d106c9 preservada em DEBIT_INTENT. NÃO repetir débito/crédito sem conferência.
+java.util.concurrent.CompletionException: java.lang.IllegalStateException: Moeda não registrada: impactor:checks_missing_currency
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.lang.IllegalStateException: Moeda não registrada: impactor:checks_missing_currency
+	at knot/com.zorykai.menus.economy.impactor.ImpactorGateway.lambda$currency$1(ImpactorGateway.java:13) ~[zorykaimenus.jar:?]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at knot/com.zorykai.menus.economy.impactor.ImpactorGateway.currency(ImpactorGateway.java:13) ~[zorykaimenus.jar:?]
+	at knot/com.zorykai.menus.economy.impactor.ImpactorGateway.lambda$change$5(ImpactorGateway.java:16) ~[zorykaimenus.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[10:28:15] [zorykai-real-checks/INFO]: CHECK PASS: provider exception preserves pending transaction
+[10:28:15] [zorykai-real-checks/INFO]: CHECK PASS: unknown finance not retried automatically
+[10:28:15] [Server thread/WARN]: Atestado administrativo: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, operação=8e807c00-d76c-4a95-b9d3-1a2f04d106c9, aplicado=false
+[10:28:15] [zorykai-real-checks/INFO]: CHECK PASS: economy restored
+[10:28:15] [zorykai-real-checks/INFO]: CHECK PASS: admin attestation no debit no item
+[10:28:15] [Server thread/INFO]: Operação d11b8bb3-b7a1-4d6d-b425-062b4d8502d8 concluída: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, venda=false, quantidade=1, total=2.50, sucesso=false
+[10:28:15] [zorykai-real-checks/INFO]: CHECK PASS: confirmed debit safely refunded after catalog change
+[10:28:15] [Server thread/INFO]: Operação 915bb346-5407-4015-ab4f-274acc948e4d concluída: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, venda=false, quantidade=1, total=2.50, sucesso=false
+[10:28:16] [zorykai-real-checks/INFO]: CHECK PASS: capacity rechecked after async debit and refunded
+[10:28:16] [Server thread/INFO]: ShirokaiMenuTest lost connection: isolated disconnect-during-purchase test
+[10:28:16] [Server thread/INFO]: ShirokaiMenuTest left the game
+[10:28:16] [Server thread/WARN]: handleDisconnection() called twice
+[10:28:16] [Server thread/INFO]: Operação 1b7683b4-9d57-40f9-b294-f7d2e2b79eef concluída: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, venda=false, quantidade=1, total=2.50, sucesso=false
+[10:28:16] [zorykai-real-checks/INFO]: CHECK PASS: real disconnect during purchase refunded without delivery

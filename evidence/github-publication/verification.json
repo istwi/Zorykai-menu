@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/istwi/Zorykai-menu",
+  "branch": "main",
+  "buildPassed": true,
+  "junitPassed": 12,
+  "junitIgnored": 0,
+  "sameJarAsPreparedDelivery": true,
+  "jarSha256": "f68f35b397c0eab2ef8da851cb9d7728a923d8ac8d558625049a06191f960f9f"
+}

@@ -1,0 +1,85 @@
+
+{
+  "title": "<gold>Loja Zorykai",
+  "type": "GENERIC_9x3",
+  "open_actions": {},
+  "close_actions": {},
+  "entries": {},
+  "items": {
+    "category_blocks": {
+      "item": "minecraft:bricks",
+      "slots": [10],
+      "name": "<green>Blocos Normais",
+      "lore": [
+        "<gray>Materiais para construção",
+        "<gray>e decoração do seu mundo"
+      ],
+      "actions": {
+        "open_blocks": {
+          "type": "OPEN_SHOP",
+          "id": "loja_blocos"
+        }
+      }
+    },
+    "category_pokeballs": {
+      "item": "cobblemon:poke_ball",
+      "slots": [11],
+      "name": "<red>Pokébolas",
+      "lore": [
+        "<gray>Encontre diferentes modelos",
+        "<gray>para capturar Pokémon"
+      ],
+      "actions": {
+        "open_pokeballs": {
+          "type": "OPEN_SHOP",
+          "id": "loja_pokebolas"
+        }
+      }
+    },
+    "category_breeding": {
+      "item": "cobblemon:destiny_knot",
+      "slots": [12],
+      "name": "<light_purple>Itens de Breeding",
+      "lore": [
+        "<gray>Itens utilizados na criação",
+        "<gray>e reprodução de Pokémon"
+      ],
+      "actions": {
+        "open_breeding": {
+          "type": "OPEN_SHOP",
+          "id": "loja_breeding"
+        }
+      }
+    },
+    "category_usable": {
+      "item": "cobblemon:rare_candy",
+      "slots": [14],
+      "name": "<aqua>Itens Usáveis",
+      "lore": [
+        "<gray>Itens para utilizar em seus",
+        "<gray>Pokémon e na sua aventura"
+      ],
+      "actions": {
+        "open_usable": {
+          "type": "OPEN_SHOP",
+          "id": "loja_usaveis"
+        }
+      }
+    },
+    "category_held": {
+      "item": "cobblemon:leftovers",
+      "slots": [15],
+      "name": "<gold>Itens Equipáveis",
+      "lore": [
+        "<gray>Itens segurados pelos Pokémon",
+        "<gray>com efeitos durante as batalhas"
+      ],
+      "actions": {
+        "open_held": {
+          "type": "OPEN_SHOP",
+          "id": "loja_equipaveis"
+        }
+      }
+    }
+  }
+}

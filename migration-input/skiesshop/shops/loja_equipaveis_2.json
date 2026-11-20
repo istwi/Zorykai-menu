@@ -1,0 +1,396 @@
+{
+  "title": "<gradient:#FFCC66:#996600><bold>✦ HELD ITEMS - PÁGINA 2</bold></gradient>",
+  "type": "GENERIC_9x6",
+  "open_actions": {},
+  "close_actions": {},
+  "entries": {
+    "safety_goggles": {
+      "type": "ITEM",
+      "slot": 0,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:safety_goggles",
+      "display": {
+        "item": "cobblemon:safety_goggles"
+      },
+      "buy": {
+        "price": 310000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "utility_umbrella": {
+      "type": "ITEM",
+      "slot": 1,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:utility_umbrella",
+      "display": {
+        "item": "cobblemon:utility_umbrella"
+      },
+      "buy": {
+        "price": 310000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "black_belt": {
+      "type": "ITEM",
+      "slot": 2,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:black_belt",
+      "display": {
+        "item": "cobblemon:black_belt"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "black_glasses": {
+      "type": "ITEM",
+      "slot": 3,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:black_glasses",
+      "display": {
+        "item": "cobblemon:black_glasses"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "mystic_water": {
+      "type": "ITEM",
+      "slot": 5,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:mystic_water",
+      "display": {
+        "item": "cobblemon:mystic_water"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "miracle_seed": {
+      "type": "ITEM",
+      "slot": 6,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:miracle_seed",
+      "display": {
+        "item": "cobblemon:miracle_seed"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "magnet": {
+      "type": "ITEM",
+      "slot": 7,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:magnet",
+      "display": {
+        "item": "cobblemon:magnet"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "sharp_beak": {
+      "type": "ITEM",
+      "slot": 8,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:sharp_beak",
+      "display": {
+        "item": "cobblemon:sharp_beak"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "poison_barb": {
+      "type": "ITEM",
+      "slot": 9,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:poison_barb",
+      "display": {
+        "item": "cobblemon:poison_barb"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "soft_sand": {
+      "type": "ITEM",
+      "slot": 10,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:soft_sand",
+      "display": {
+        "item": "cobblemon:soft_sand"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "hard_stone": {
+      "type": "ITEM",
+      "slot": 11,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:hard_stone",
+      "display": {
+        "item": "cobblemon:hard_stone"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "silver_powder": {
+      "type": "ITEM",
+      "slot": 12,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:silver_powder",
+      "display": {
+        "item": "cobblemon:silver_powder"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "spell_tag": {
+      "type": "ITEM",
+      "slot": 13,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:spell_tag",
+      "display": {
+        "item": "cobblemon:spell_tag"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "twisted_spoon": {
+      "type": "ITEM",
+      "slot": 14,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:twisted_spoon",
+      "display": {
+        "item": "cobblemon:twisted_spoon"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "never_melt_ice": {
+      "type": "ITEM",
+      "slot": 15,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:never_melt_ice",
+      "display": {
+        "item": "cobblemon:never_melt_ice"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "dragon_fang": {
+      "type": "ITEM",
+      "slot": 16,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:dragon_fang",
+      "display": {
+        "item": "cobblemon:dragon_fang"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "silk_scarf": {
+      "type": "ITEM",
+      "slot": 17,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:silk_scarf",
+      "display": {
+        "item": "cobblemon:silk_scarf"
+      },
+      "buy": {
+        "price": 180000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "metal_coat": {
+      "type": "ITEM",
+      "slot": 4,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:metal_coat",
+      "display": {
+        "item": "cobblemon:metal_coat"
+      },
+      "buy": {
+        "price": 100000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "heavy_duty_boots": {
+      "type": "ITEM",
+      "slot": 18,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:heavy_duty_boots",
+      "display": {
+        "item": "cobblemon:heavy_duty_boots"
+      },
+      "buy": {
+        "price": 480000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "protective_pads": {
+      "type": "ITEM",
+      "slot": 19,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:protective_pads",
+      "display": {
+        "item": "cobblemon:protective_pads"
+      },
+      "buy": {
+        "price": 410000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    }
+  },
+  "items": {
+    "previous_page": {
+      "item": "minecraft:arrow",
+      "slots": [
+        47
+      ],
+      "name": "<yellow><bold>PÁGINA ANTERIOR</bold>",
+      "lore": [
+        "<gray>Voltar para a página 1.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "previous": {
+          "type": "OPEN_SHOP",
+          "id": "loja_equipaveis"
+        }
+      }
+    },
+    "back_menu": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        49
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar à Loja Zorykai.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "back": {
+          "type": "OPEN_SHOP",
+          "id": "loja_normal"
+        }
+      }
+    },
+    "next_page": {
+      "item": "minecraft:arrow",
+      "slots": [
+        51
+      ],
+      "name": "<gray><bold>ÚLTIMA PÁGINA</bold>",
+      "lore": [
+        "<gray>Você está na última página."
+      ]
+    }
+  }
+}

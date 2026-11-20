@@ -1,0 +1,164 @@
+{
+  "title": "<gradient:#FF99DD:#AA44AA><bold>✦ EV & BREEDING - PÁGINA 1</bold></gradient>",
+  "type": "GENERIC_9x6",
+  "open_actions": {},
+  "close_actions": {},
+  "entries": {
+    "destiny_knot": {
+      "type": "ITEM",
+      "slot": 0,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:destiny_knot",
+      "display": {
+        "item": "cobblemon:destiny_knot"
+      },
+      "buy": {
+        "price": 200000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "everstone": {
+      "type": "ITEM",
+      "slot": 1,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:everstone",
+      "display": {
+        "item": "cobblemon:everstone"
+      },
+      "buy": {
+        "price": 120000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "power_bracer": {
+      "type": "ITEM",
+      "slot": 2,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:power_bracer",
+      "display": {
+        "item": "cobblemon:power_bracer"
+      },
+      "buy": {
+        "price": 110000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "power_belt": {
+      "type": "ITEM",
+      "slot": 3,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:power_belt",
+      "display": {
+        "item": "cobblemon:power_belt"
+      },
+      "buy": {
+        "price": 110000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "power_lens": {
+      "type": "ITEM",
+      "slot": 4,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:power_lens",
+      "display": {
+        "item": "cobblemon:power_lens"
+      },
+      "buy": {
+        "price": 110000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "power_band": {
+      "type": "ITEM",
+      "slot": 5,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:power_band",
+      "display": {
+        "item": "cobblemon:power_band"
+      },
+      "buy": {
+        "price": 110000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "power_anklet": {
+      "type": "ITEM",
+      "slot": 6,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:power_anklet",
+      "display": {
+        "item": "cobblemon:power_anklet"
+      },
+      "buy": {
+        "price": 110000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "power_weight": {
+      "type": "ITEM",
+      "slot": 7,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:power_weight",
+      "display": {
+        "item": "cobblemon:power_weight"
+      },
+      "buy": {
+        "price": 110000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    }
+  },
+  "items": {
+    "back_menu": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        49
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar à Loja Zorykai.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "back": {
+          "type": "OPEN_SHOP",
+          "id": "loja_normal"
+        }
+      }
+    }
+  }
+}

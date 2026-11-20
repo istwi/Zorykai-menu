@@ -1,0 +1,325 @@
+{
+  "title": "<gradient:#FF8C00:#FF4500><bold>✦ KITS VIPS ✦</bold></gradient>",
+  "size": 5,
+  "alias_commands": [
+    "kitsvip"
+  ],
+  "open_actions": {
+    "sound": {
+      "type": "PLAYSOUND",
+      "sound": "minecraft:ui.button.click"
+    }
+  },
+  "items": {
+    "magma_mensal": {
+      "item": "cobblemon:fire_gem",
+      "slots": [
+        12
+      ],
+      "name": "<gradient:#FF4500:#FF8C00><bold>✦ KIT MAGMA MENSAL</bold></gradient>",
+      "lore": [
+        "<gray>Recompensas para o rank Magma.",
+        "",
+        "<gold>✦ Disponível a cada <white>30 dias",
+        "",
+        "<yellow>➜ Clique para resgatar!"
+      ],
+      "click_actions": {
+        "resgatar": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/kit claim magmamensal"
+          ]
+        }
+      }
+    },
+    "aqua_mensal": {
+      "item": "cobblemon:water_gem",
+      "slots": [
+        13
+      ],
+      "name": "<gradient:#00BFFF:#1E90FF><bold>✦ KIT AQUA MENSAL</bold></gradient>",
+      "lore": [
+        "<gray>Recompensas para o rank Aqua.",
+        "",
+        "<aqua>✦ Disponível a cada <white>30 dias",
+        "",
+        "<yellow>➜ Clique para resgatar!"
+      ],
+      "click_actions": {
+        "resgatar": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/kit claim aquamensal"
+          ]
+        }
+      }
+    },
+    "plasma_mensal": {
+      "item": "cobblemon:steel_gem",
+      "slots": [
+        14
+      ],
+      "name": "<gradient:#FFFFFF:#888888><bold>✦ KIT PLASMA MENSAL</bold></gradient>",
+      "lore": [
+        "<gray>Recompensas para o rank Plasma.",
+        "",
+        "<gray>✦ Disponível a cada <white>30 dias",
+        "",
+        "<yellow>➜ Clique para resgatar!"
+      ],
+      "click_actions": {
+        "resgatar": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/kit claim plasmamensal"
+          ]
+        }
+      }
+    },
+    "galactic_mensal": {
+      "item": "cobblemon:ghost_gem",
+      "slots": [
+        15
+      ],
+      "name": " <gradient:#B266FF:#FFFFFF><bold>✦ KIT GALACTIC SEMANAL</bold></gradient>",
+      "lore": [
+        "<gray>Recompensas para o rank Galactic.",
+        "",
+        "<dark_purple>✦ Disponível a cada <white>30 dias",
+        "",
+        "<yellow>➜ Clique para resgatar!"
+      ],
+      "click_actions": {
+        "resgatar": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/kit claim galacticmensal"
+          ]
+        }
+      }
+    },
+    "proximo_vip_mensal": {
+      "item": "minecraft:barrier",
+      "slots": [
+        16
+      ],
+      "name": "<dark_gray><bold>✦ PRÓXIMO VIP</bold></dark_gray>",
+      "lore": [
+        "<gray>Uma nova categoria será adicionada",
+        "<gray>em uma atualização futura.",
+        "",
+        "<red>✦ Indisponível no momento."
+      ]
+    },
+    "informacoes": {
+      "item": "minecraft:clock",
+      "slots": [
+        19
+      ],
+      "name": "<gradient:#FFD700:#FFAA00><bold>✦ INFORMAÇÕES</bold></gradient>",
+      "lore": [
+        "<gray>Confira os detalhes antes de adquirir",
+        "<gray>seu próximo nível VIP.",
+        "",
+        "<gold>✦ Consulte os preços e benefícios",
+        "<yellow>   disponíveis em nosso site.",
+        "",
+        "<gold>✦ Entre em nosso Discord para",
+        "<yellow>   conhecer ofertas e novidades.",
+        "",
+        "<yellow>➜ Acesse os canais oficiais do Zorykai!"
+      ]
+    },
+    "magma_semanal": {
+      "item": "cobblemon:fighting_gem",
+      "slots": [
+        21
+      ],
+      "name": "<gradient:#FF4500:#FF8C00><bold>✦ KIT MAGMA SEMANAL</bold></gradient>",
+      "lore": [
+        "<gray>Recompensas para o rank Magma.",
+        "",
+        "<gold>✦ Disponível a cada <white>7 dias",
+        "",
+        "<yellow>➜ Clique para resgatar!"
+      ],
+      "click_actions": {
+        "resgatar": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/kit claim magmasemanal"
+          ]
+        }
+      }
+    },
+    "aqua_semanal": {
+      "item": "cobblemon:ice_gem",
+      "slots": [
+        22
+      ],
+      "name": "<gradient:#00BFFF:#1E90FF><bold>✦ KIT AQUA SEMANAL</bold></gradient>",
+      "lore": [
+        "<gray>Recompensas para o rank Aqua.",
+        "",
+        "<aqua>✦ Disponível a cada <white>7 dias",
+        "",
+        "<yellow>➜ Clique para resgatar!"
+      ],
+      "click_actions": {
+        "resgatar": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/kit claim aquasemanal"
+          ]
+        }
+      }
+    },
+    "plasma_semanal": {
+      "item": "cobblemon:dark_gem",
+      "slots": [
+        23
+      ],
+      "name": "<gradient:#FFFFFF:#888888><bold>✦ KIT PLASMA MENSAL</bold></gradient>",
+      "lore": [
+        "<gray>Recompensas para o rank Plasma.",
+        "",
+        "<gray>✦ Disponível a cada <white>7 dias",
+        "",
+        "<yellow>➜ Clique para resgatar!"
+      ],
+      "click_actions": {
+        "resgatar": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/kit claim plasmasemanal"
+          ]
+        }
+      }
+    },
+    "galactic_semanal": {
+      "item": "cobblemon:flying_gem",
+      "slots": [
+        24
+      ],
+      "name": " <gradient:#B266FF:#FFFFFF><bold>✦ KIT GALACTIC SEMANAL</bold></gradient>",
+      "lore": [
+        "<gray>Recompensas para o rank Galactic.",
+        "",
+        "<dark_purple>✦ Disponível a cada <white>7 dias",
+        "",
+        "<yellow>➜ Clique para resgatar!"
+      ],
+      "click_actions": {
+        "resgatar": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/kit claim galacticsemanal"
+          ]
+        }
+      }
+    },
+    "proximo_vip_semanal": {
+      "item": "minecraft:barrier",
+      "slots": [
+        25
+      ],
+      "name": "<dark_gray><bold>✦ PRÓXIMO VIP</bold></dark_gray>",
+      "lore": [
+        "<gray>Uma nova categoria será adicionada",
+        "<gray>em uma atualização futura.",
+        "",
+        "<red>✦ Indisponível no momento."
+      ]
+    },
+    "voltar": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        28
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar ao menu principal.",
+        "",
+        "<yellow>➜ Clique para voltar!"
+      ],
+      "click_actions": {
+        "voltar_menu": {
+          "type": "OPEN_GUI",
+          "click": "LEFT",
+          "id": "kits"
+        }
+      }
+    },
+    "painel": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        17,
+        18,
+        20,
+        26,
+        27,
+        29,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "name": " "
+    },
+    "player_info": {
+      "item": "playerhead",
+      "slots": [
+        10
+      ],
+      "name": "<gradient:#00E5FF:#0072FF><bold>✦ PERFIL DO TREINADOR</bold></gradient>",
+      "lore": [
+        "<gray>Suas informações no Zorykai.",
+        "",
+        "<gradient:#00D9FF:#0072FF><bold>✦</bold></gradient> <#55FFFF>Cargo:</#55FFFF> <white><bold>%luckperms:prefix%</bold></white>",
+        "<gradient:#55FF55:#00AA00><bold>✦</bold></gradient> <#55FF55>Pokédex:</#55FF55> <white>%shirokai:dex_percent%</white>",
+        "<gradient:#FF5555:#AA0000><bold>✦</bold></gradient> <#FF7777>Ginásios:</#FF7777> <white>%player:objective gyms%/18</white>",
+        "<gradient:#33DD77:#008844><bold>✦</bold></gradient> <#33DD77>Dinheiro:</#33DD77> <white>$%shirokai:dollars%</white>",
+        "<gradient:#B266FF:#9B59FF><bold>✦</bold></gradient> <#B266FF>Tokens:</#B266FF> <white>%shirokai:tokens%</white>",
+        "<gradient:#FFD700:#FFAA00><bold>✦</bold></gradient> <#FFD700>Cash:</#FFD700> <white>%shirokai:cash%</white>",
+        "",
+        "<gray>Continue sua jornada e conquiste",
+        "<gray>seu lugar entre os treinadores!"
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/perfil"
+          ]
+        }
+      }
+    }
+  }
+}

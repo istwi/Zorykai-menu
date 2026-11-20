@@ -1,0 +1,453 @@
+{
+  "title": "<gradient:#55FFAA:#00AA88><bold>✦ LOJA DE MATERIAIS ✦</bold></gradient>",
+  "type": "GENERIC_9x6",
+  "open_actions": {},
+  "close_actions": {},
+  "entries": {
+    "leather": {
+      "type": "ITEM",
+      "slot": 0,
+      "page": [
+        1
+      ],
+      "item": "minecraft:leather",
+      "display": {
+        "item": "minecraft:leather"
+      },
+      "buy": {
+        "price": 560,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "string": {
+      "type": "ITEM",
+      "slot": 1,
+      "page": [
+        1
+      ],
+      "item": "minecraft:string",
+      "display": {
+        "item": "minecraft:string"
+      },
+      "buy": {
+        "price": 400,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "bone": {
+      "type": "ITEM",
+      "slot": 2,
+      "page": [
+        1
+      ],
+      "item": "minecraft:bone",
+      "display": {
+        "item": "minecraft:bone"
+      },
+      "buy": {
+        "price": 400,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "rotten_flesh": {
+      "type": "ITEM",
+      "slot": 3,
+      "page": [
+        1
+      ],
+      "item": "minecraft:rotten_flesh",
+      "display": {
+        "item": "minecraft:rotten_flesh"
+      },
+      "buy": {
+        "price": 160,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "gunpowder": {
+      "type": "ITEM",
+      "slot": 4,
+      "page": [
+        1
+      ],
+      "item": "minecraft:gunpowder",
+      "display": {
+        "item": "minecraft:gunpowder"
+      },
+      "buy": {
+        "price": 1040,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "spider_eye": {
+      "type": "ITEM",
+      "slot": 5,
+      "page": [
+        1
+      ],
+      "item": "minecraft:spider_eye",
+      "display": {
+        "item": "minecraft:spider_eye"
+      },
+      "buy": {
+        "price": 480,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "fermented_spider_eye": {
+      "type": "ITEM",
+      "slot": 6,
+      "page": [
+        1
+      ],
+      "item": "minecraft:fermented_spider_eye",
+      "display": {
+        "item": "minecraft:fermented_spider_eye"
+      },
+      "buy": {
+        "price": 1120,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "ender_pearl": {
+      "type": "ITEM",
+      "slot": 7,
+      "page": [
+        1
+      ],
+      "item": "minecraft:ender_pearl",
+      "display": {
+        "item": "minecraft:ender_pearl"
+      },
+      "buy": {
+        "price": 5600,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "slime_ball": {
+      "type": "ITEM",
+      "slot": 8,
+      "page": [
+        1
+      ],
+      "item": "minecraft:slime_ball",
+      "display": {
+        "item": "minecraft:slime_ball"
+      },
+      "buy": {
+        "price": 2400,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "magma_cream": {
+      "type": "ITEM",
+      "slot": 9,
+      "page": [
+        1
+      ],
+      "item": "minecraft:magma_cream",
+      "display": {
+        "item": "minecraft:magma_cream"
+      },
+      "buy": {
+        "price": 3520,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "blaze_rod": {
+      "type": "ITEM",
+      "slot": 10,
+      "page": [
+        1
+      ],
+      "item": "minecraft:blaze_rod",
+      "display": {
+        "item": "minecraft:blaze_rod"
+      },
+      "buy": {
+        "price": 4800,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "ghast_tear": {
+      "type": "ITEM",
+      "slot": 11,
+      "page": [
+        1
+      ],
+      "item": "minecraft:ghast_tear",
+      "display": {
+        "item": "minecraft:ghast_tear"
+      },
+      "buy": {
+        "price": 11200,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "phantom_membrane": {
+      "type": "ITEM",
+      "slot": 12,
+      "page": [
+        1
+      ],
+      "item": "minecraft:phantom_membrane",
+      "display": {
+        "item": "minecraft:phantom_membrane"
+      },
+      "buy": {
+        "price": 7200,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "rabbit_hide": {
+      "type": "ITEM",
+      "slot": 13,
+      "page": [
+        1
+      ],
+      "item": "minecraft:rabbit_hide",
+      "display": {
+        "item": "minecraft:rabbit_hide"
+      },
+      "buy": {
+        "price": 720,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "rabbit_foot": {
+      "type": "ITEM",
+      "slot": 14,
+      "page": [
+        1
+      ],
+      "item": "minecraft:rabbit_foot",
+      "display": {
+        "item": "minecraft:rabbit_foot"
+      },
+      "buy": {
+        "price": 4800,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "feather": {
+      "type": "ITEM",
+      "slot": 15,
+      "page": [
+        1
+      ],
+      "item": "minecraft:feather",
+      "display": {
+        "item": "minecraft:feather"
+      },
+      "buy": {
+        "price": 320,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "ink_sac": {
+      "type": "ITEM",
+      "slot": 16,
+      "page": [
+        1
+      ],
+      "item": "minecraft:ink_sac",
+      "display": {
+        "item": "minecraft:ink_sac"
+      },
+      "buy": {
+        "price": 640,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "glow_ink_sac": {
+      "type": "ITEM",
+      "slot": 17,
+      "page": [
+        1
+      ],
+      "item": "minecraft:glow_ink_sac",
+      "display": {
+        "item": "minecraft:glow_ink_sac"
+      },
+      "buy": {
+        "price": 1440,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "prismarine_shard": {
+      "type": "ITEM",
+      "slot": 18,
+      "page": [
+        1
+      ],
+      "item": "minecraft:prismarine_shard",
+      "display": {
+        "item": "minecraft:prismarine_shard"
+      },
+      "buy": {
+        "price": 1440,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "prismarine_crystals": {
+      "type": "ITEM",
+      "slot": 19,
+      "page": [
+        1
+      ],
+      "item": "minecraft:prismarine_crystals",
+      "display": {
+        "item": "minecraft:prismarine_crystals"
+      },
+      "buy": {
+        "price": 1920,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "nautilus_shell": {
+      "type": "ITEM",
+      "slot": 20,
+      "page": [
+        1
+      ],
+      "item": "minecraft:nautilus_shell",
+      "display": {
+        "item": "minecraft:nautilus_shell"
+      },
+      "buy": {
+        "price": 13600,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "echo_shard": {
+      "type": "ITEM",
+      "slot": 21,
+      "page": [
+        1
+      ],
+      "item": "minecraft:echo_shard",
+      "display": {
+        "item": "minecraft:echo_shard"
+      },
+      "buy": {
+        "price": 28800,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "armadillo_scute": {
+      "type": "ITEM",
+      "slot": 22,
+      "page": [
+        1
+      ],
+      "item": "minecraft:armadillo_scute",
+      "display": {
+        "item": "minecraft:armadillo_scute"
+      },
+      "buy": {
+        "price": 4480,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "honeycomb": {
+      "type": "ITEM",
+      "slot": 23,
+      "page": [
+        1
+      ],
+      "item": "minecraft:honeycomb",
+      "display": {
+        "item": "minecraft:honeycomb"
+      },
+      "buy": {
+        "price": 800,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "honey_bottle": {
+      "type": "ITEM",
+      "slot": 24,
+      "page": [
+        1
+      ],
+      "item": "minecraft:honey_bottle",
+      "display": {
+        "item": "minecraft:honey_bottle"
+      },
+      "buy": {
+        "price": 1040,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    }
+  },
+  "items": {
+    "back_menu": {
+      "item": "minecraft:arrow",
+      "slots": [
+        49
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar à loja principal.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "back": {
+          "type": "OPEN_SHOP",
+          "id": "loja_normal"
+        }
+      }
+    }
+  }
+}

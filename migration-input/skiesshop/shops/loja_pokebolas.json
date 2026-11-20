@@ -1,0 +1,419 @@
+{
+  "title": "<gradient:#00C6FF:#0072FF><bold>✦ ZORYKAI - POKÉBOLAS</bold></gradient>",
+  "type": "GENERIC_9x6",
+  "open_actions": {},
+  "close_actions": {},
+  "entries": {
+    "poke_ball": {
+      "type": "ITEM",
+      "slot": 0,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:poke_ball",
+      "display": {
+        "item": "cobblemon:poke_ball"
+      },
+      "buy": {
+        "price": 325.0,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "great_ball": {
+      "type": "ITEM",
+      "slot": 1,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:great_ball",
+      "display": {
+        "item": "cobblemon:great_ball"
+      },
+      "buy": {
+        "price": 682.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "ultra_ball": {
+      "type": "ITEM",
+      "slot": 2,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:ultra_ball",
+      "display": {
+        "item": "cobblemon:ultra_ball"
+      },
+      "buy": {
+        "price": 1207.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "premier_ball": {
+      "type": "ITEM",
+      "slot": 3,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:premier_ball",
+      "display": {
+        "item": "cobblemon:premier_ball"
+      },
+      "buy": {
+        "price": 682.0,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "safari_ball": {
+      "type": "ITEM",
+      "slot": 4,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:safari_ball",
+      "display": {
+        "item": "cobblemon:safari_ball"
+      },
+      "buy": {
+        "price": 682.0,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "sport_ball": {
+      "type": "ITEM",
+      "slot": 5,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:sport_ball",
+      "display": {
+        "item": "cobblemon:sport_ball"
+      },
+      "buy": {
+        "price": 682.0,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "park_ball": {
+      "type": "ITEM",
+      "slot": 6,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:park_ball",
+      "display": {
+        "item": "cobblemon:park_ball"
+      },
+      "buy": {
+        "price": 682.0,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "net_ball": {
+      "type": "ITEM",
+      "slot": 7,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:net_ball",
+      "display": {
+        "item": "cobblemon:net_ball"
+      },
+      "buy": {
+        "price": 682.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "nest_ball": {
+      "type": "ITEM",
+      "slot": 8,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:nest_ball",
+      "display": {
+        "item": "cobblemon:nest_ball"
+      },
+      "buy": {
+        "price": 682.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "dive_ball": {
+      "type": "ITEM",
+      "slot": 9,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:dive_ball",
+      "display": {
+        "item": "cobblemon:dive_ball"
+      },
+      "buy": {
+        "price": 682.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "level_ball": {
+      "type": "ITEM",
+      "slot": 10,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:level_ball",
+      "display": {
+        "item": "cobblemon:level_ball"
+      },
+      "buy": {
+        "price": 682.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "lure_ball": {
+      "type": "ITEM",
+      "slot": 11,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:lure_ball",
+      "display": {
+        "item": "cobblemon:lure_ball"
+      },
+      "buy": {
+        "price": 682.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "heavy_ball": {
+      "type": "ITEM",
+      "slot": 12,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:heavy_ball",
+      "display": {
+        "item": "cobblemon:heavy_ball"
+      },
+      "buy": {
+        "price": 682.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "fast_ball": {
+      "type": "ITEM",
+      "slot": 13,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:fast_ball",
+      "display": {
+        "item": "cobblemon:fast_ball"
+      },
+      "buy": {
+        "price": 682.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "moon_ball": {
+      "type": "ITEM",
+      "slot": 14,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:moon_ball",
+      "display": {
+        "item": "cobblemon:moon_ball"
+      },
+      "buy": {
+        "price": 682.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "love_ball": {
+      "type": "ITEM",
+      "slot": 15,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:love_ball",
+      "display": {
+        "item": "cobblemon:love_ball"
+      },
+      "buy": {
+        "price": 682.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "friend_ball": {
+      "type": "ITEM",
+      "slot": 16,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:friend_ball",
+      "display": {
+        "item": "cobblemon:friend_ball"
+      },
+      "buy": {
+        "price": 682.5,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "repeat_ball": {
+      "type": "ITEM",
+      "slot": 17,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:repeat_ball",
+      "display": {
+        "item": "cobblemon:repeat_ball"
+      },
+      "buy": {
+        "price": 1125.0,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "timer_ball": {
+      "type": "ITEM",
+      "slot": 18,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:timer_ball",
+      "display": {
+        "item": "cobblemon:timer_ball"
+      },
+      "buy": {
+        "price": 682.0,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "dusk_ball": {
+      "type": "ITEM",
+      "slot": 19,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:dusk_ball",
+      "display": {
+        "item": "cobblemon:dusk_ball"
+      },
+      "buy": {
+        "price": 1125.0,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "heal_ball": {
+      "type": "ITEM",
+      "slot": 20,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:heal_ball",
+      "display": {
+        "item": "cobblemon:heal_ball"
+      },
+      "buy": {
+        "price": 682.0,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "luxury_ball": {
+      "type": "ITEM",
+      "slot": 21,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:luxury_ball",
+      "display": {
+        "item": "cobblemon:luxury_ball"
+      },
+      "buy": {
+        "price": 682.0,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "quick_ball": {
+      "type": "ITEM",
+      "slot": 22,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:quick_ball",
+      "display": {
+        "item": "cobblemon:quick_ball"
+      },
+      "buy": {
+        "price": 1125.75,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    }
+  },
+  "items": {
+    "back_menu": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        49
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar à Loja Zorykai.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "back": {
+          "type": "OPEN_SHOP",
+          "id": "loja_normal"
+        }
+      }
+    }
+  }
+}

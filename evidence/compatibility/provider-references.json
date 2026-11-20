@@ -1,0 +1,65 @@
+{
+  "repositories": [
+    {
+      "repository": "https://github.com/istwi/Shirokai-tab",
+      "treeSha": "58a4e14eb294d5ff73e8328f5f618a82c6898cb8",
+      "consultedFiles": [
+        "README.md",
+        "build.gradle",
+        "src/main/resources/fabric.mod.json",
+        "src/main/java/com/shirokai/core/ShirokaiCore.java",
+        "src/main/java/com/shirokai/core/integrations/PapiAccess.java",
+        "src/main/java/com/shirokai/core/integrations/PlaceholderBridge.java",
+        "src/main/java/com/shirokai/core/integrations/ProgressValues.java",
+        "src/main/java/com/shirokai/core/integrations/IntegrationRuntime.java",
+        "src/main/java/com/shirokai/core/integrations/IntegrationConfig.java",
+        "src/main/java/com/shirokai/core/placeholders/PlaceholderService.java"
+      ]
+    },
+    {
+      "repository": "https://github.com/istwi/Shirokai-Dex",
+      "treeSha": "2c2ef019f4074962fc47569eaf1cc6743ee815f6",
+      "consultedFiles": [
+        "README.md",
+        "build.gradle",
+        "src/main/resources/fabric.mod.json",
+        "src/main/java/br/com/shirokaidex/core/ShirokaiDex.java",
+        "src/main/java/br/com/shirokaidex/placeholders/PlaceholderValues.java",
+        "src/main/java/br/com/shirokaidex/placeholders/PlaceholderCache.java",
+        "src/main/java/br/com/shirokaidex/placeholders/PlaceholderBridge.java",
+        "src/main/java/br/com/shirokaidex/placeholders/TextPlaceholderAccess.java"
+      ]
+    },
+    {
+      "repository": "https://github.com/istwi/Shirokai-Essentials",
+      "treeSha": "1a586e0455f6feaeba1f782ae4f5769dfcd2e906",
+      "consultedFiles": [
+        "README.md",
+        "build.gradle",
+        "src/main/resources/fabric.mod.json"
+      ]
+    },
+    {
+      "repository": "https://github.com/istwi/Shirokai-Commands",
+      "treeSha": "7cc350aee8037cdbcdcf06c20966e9de4bdf4e69",
+      "consultedFiles": []
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "placeholder-api.jar",
+      "sha256": "c0187ee299527ac7a3e0b1e83601dcdc0de631e286fe41e6be1a75958ea8e443"
+    },
+    {
+      "name": "shirokai-core.jar",
+      "sha256": "10ee63922064674723063673dd5651e2654345e8a9b67814d7e84e6cb29f1504"
+    },
+    {
+      "name": "shirokai-dex.jar",
+      "sha256": "cb493e8d1ea128b89231a0fb662e2bd389d98bd685b4856262ddc1e72f4e4c88"
+    }
+  ],
+  "dexRelease": "https://github.com/istwi/Shirokai-Dex/releases/tag/v0.7.0-dev.1",
+  "dexPublishedChecksumVerified": true,
+  "date": "2026-11-20"
+}

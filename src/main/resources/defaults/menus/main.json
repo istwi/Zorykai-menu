@@ -1,0 +1,83 @@
+{
+  "id": "main",
+  "size": 27,
+  "title": "<white><bold>✦ ZORYKAI</bold></white> <aqua>Menus",
+  "pages": 2,
+  "buttons": [
+    {
+      "id": "shop",
+      "slots": [
+        11
+      ],
+      "icon": {
+        "id": "minecraft:emerald"
+      },
+      "name": "<aqua>Loja de exemplo",
+      "actions": [
+        {
+          "type": "OPEN_SHOP",
+          "id": "example"
+        }
+      ],
+      "lore": [
+        "<gray>Compra: botão esquerdo",
+        "<gray>Venda: botão direito"
+      ]
+    },
+    {
+      "id": "next",
+      "slots": [
+        26
+      ],
+      "icon": {
+        "id": "minecraft:arrow"
+      },
+      "name": "<aqua>Próxima página",
+      "actions": [
+        {
+          "type": "NEXT_PAGE"
+        }
+      ],
+      "pages": [
+        1
+      ]
+    },
+    {
+      "id": "back",
+      "slots": [
+        18
+      ],
+      "icon": {
+        "id": "minecraft:arrow"
+      },
+      "name": "<aqua>Página anterior",
+      "actions": [
+        {
+          "type": "PREVIOUS_PAGE"
+        }
+      ],
+      "pages": [
+        2
+      ]
+    },
+    {
+      "id": "help",
+      "slots": [
+        13
+      ],
+      "icon": {
+        "id": "minecraft:book"
+      },
+      "name": "<aqua>Ajuda",
+      "actions": [
+        {
+          "type": "OPEN_MENU",
+          "id": "second"
+        }
+      ],
+      "pages": [
+        2
+      ]
+    }
+  ]
+}

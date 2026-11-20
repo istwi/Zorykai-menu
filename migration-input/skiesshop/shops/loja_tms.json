@@ -1,0 +1,525 @@
+{
+  "title": "<gradient:#00CFFF:#8A2BE2><bold>✦ TM CATEGORIES ✦</bold></gradient>",
+  "type": "GENERIC_9x5",
+  "open_actions": {},
+  "close_actions": {},
+  "entries": {},
+  "items": {
+    "tm_bug": {
+      "item": "cobblemon:bug_gem",
+      "slots": [
+        10
+      ],
+      "name": "<green><bold>✦ TMs BUG</bold>",
+      "lore": [
+        "<gray>Browse Bug-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_bug"
+        }
+      }
+    },
+    "tm_fire": {
+      "item": "cobblemon:fire_gem",
+      "slots": [
+        11
+      ],
+      "name": "<red><bold>✦ TMs FIRE</bold>",
+      "lore": [
+        "<gray>Browse Fire-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_fire"
+        }
+      }
+    },
+    "tm_water": {
+      "item": "cobblemon:water_gem",
+      "slots": [
+        12
+      ],
+      "name": "<aqua><bold>✦ TMs WATER</bold>",
+      "lore": [
+        "<gray>Browse Water-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_water"
+        }
+      }
+    },
+    "tm_electric": {
+      "item": "cobblemon:electric_gem",
+      "slots": [
+        13
+      ],
+      "name": "<yellow><bold>✦ TMs ELECTRIC</bold>",
+      "lore": [
+        "<gray>Browse Electric-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_electric"
+        }
+      }
+    },
+    "tm_grass": {
+      "item": "cobblemon:grass_gem",
+      "slots": [
+        14
+      ],
+      "name": "<green><bold>✦ TMs GRASS</bold>",
+      "lore": [
+        "<gray>Browse Grass-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_grass"
+        }
+      }
+    },
+    "tm_ice": {
+      "item": "cobblemon:ice_gem",
+      "slots": [
+        15
+      ],
+      "name": "<aqua><bold>✦ TMs ICE</bold>",
+      "lore": [
+        "<gray>Browse Ice-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_ice"
+        }
+      }
+    },
+    "tm_fighting": {
+      "item": "cobblemon:fighting_gem",
+      "slots": [
+        16
+      ],
+      "name": "<red><bold>✦ TMs FIGHTING</bold>",
+      "lore": [
+        "<gray>Browse Fighting-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_fighting"
+        }
+      }
+    },
+    "tm_poison": {
+      "item": "cobblemon:poison_gem",
+      "slots": [
+        19
+      ],
+      "name": "<dark_purple><bold>✦ TMs POISON</bold>",
+      "lore": [
+        "<gray>Browse Poison-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_poison"
+        }
+      }
+    },
+    "tm_ground": {
+      "item": "cobblemon:ground_gem",
+      "slots": [
+        20
+      ],
+      "name": "<gold><bold>✦ TMs GROUND</bold>",
+      "lore": [
+        "<gray>Browse Ground-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_ground"
+        }
+      }
+    },
+    "tm_flying": {
+      "item": "cobblemon:flying_gem",
+      "slots": [
+        21
+      ],
+      "name": "<aqua><bold>✦ TMs FLYING</bold>",
+      "lore": [
+        "<gray>Browse Flying-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_flying"
+        }
+      }
+    },
+    "tm_psychic": {
+      "item": "cobblemon:psychic_gem",
+      "slots": [
+        22
+      ],
+      "name": "<light_purple><bold>✦ TMs PSYCHIC</bold>",
+      "lore": [
+        "<gray>Browse Psychic-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_psychic"
+        }
+      }
+    },
+    "tm_rock": {
+      "item": "cobblemon:rock_gem",
+      "slots": [
+        23
+      ],
+      "name": "<gold><bold>✦ TMs ROCK</bold>",
+      "lore": [
+        "<gray>Browse Rock-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_rock"
+        }
+      }
+    },
+    "tm_ghost": {
+      "item": "cobblemon:ghost_gem",
+      "slots": [
+        24
+      ],
+      "name": "<dark_purple><bold>✦ TMs GHOST</bold>",
+      "lore": [
+        "<gray>Browse Ghost-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_ghost"
+        }
+      }
+    },
+    "tm_dragon": {
+      "item": "cobblemon:dragon_gem",
+      "slots": [
+        25
+      ],
+      "name": "<dark_purple><bold>✦ TMs DRAGON</bold>",
+      "lore": [
+        "<gray>Browse Dragon-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_dragon"
+        }
+      }
+    },
+    "tm_dark": {
+      "item": "cobblemon:dark_gem",
+      "slots": [
+        28
+      ],
+      "name": "<gray><bold>✦ TMs DARK</bold>",
+      "lore": [
+        "<gray>Browse Dark-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_dark"
+        }
+      }
+    },
+    "tm_steel": {
+      "item": "cobblemon:steel_gem",
+      "slots": [
+        29
+      ],
+      "name": "<gray><bold>✦ TMs STEEL</bold>",
+      "lore": [
+        "<gray>Browse Steel-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_steel"
+        }
+      }
+    },
+    "tm_fairy": {
+      "item": "cobblemon:fairy_gem",
+      "slots": [
+        30
+      ],
+      "name": "<light_purple><bold>✦ TMs FAIRY</bold>",
+      "lore": [
+        "<gray>Browse Fairy-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_fairy"
+        }
+      }
+    },
+    "tm_normal": {
+      "item": "cobblemon:normal_gem",
+      "slots": [
+        31
+      ],
+      "name": "<white><bold>✦ TMs NORMAL</bold>",
+      "lore": [
+        "<gray>Browse Normal-type TMs.",
+        "",
+        "<yellow>➜ Click to open!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_tms_normal"
+        }
+      }
+    },
+    "glass_0": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        0
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_1": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        1
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_2": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        2
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_3": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        3
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_4": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        4
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_5": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        5
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_6": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        6
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_7": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        7
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_8": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        8
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_9": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        9
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_17": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        17
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_18": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        18
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_26": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        26
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_27": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        27
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_35": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        35
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_36": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        36
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_37": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        37
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_38": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        38
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_39": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        39
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_40": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        40
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_41": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        41
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_42": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        42
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_43": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        43
+      ],
+      "name": " ",
+      "lore": []
+    },
+    "glass_44": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        44
+      ],
+      "name": " ",
+      "lore": []
+    }
+  }
+}

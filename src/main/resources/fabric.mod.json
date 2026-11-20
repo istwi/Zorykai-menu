@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "zorykaimenus",
+  "version": "1.0.0",
+  "name": "ZorykaiMenus",
+  "description": "Menus e lojas server-side com economia Impactor",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.zorykai.menus.ZorykaiMenus"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "impactor": ">=5.3.5"
+  },
+  "suggests": {
+    "luckperms": "*",
+    "cobblemon": "*",
+    "placeholder-api": ">=2.4.2"
+  },
+  "accessWidener": "zorykaimenus.accesswidener"
+}

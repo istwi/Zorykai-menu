@@ -1,0 +1,30 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Fabric Loom: 1.10.5
+:remapping 51 mods from modImplementation (java-api)
+:remapping sources
+
+> Task :compileJava
+> Task :processResources
+> Task :classes
+> Task :jar
+> Task :compileTestJava NO-SOURCE
+
+> Task :processIncludeJars
+(3.49.1.0) is not valid semver for dependency org.xerial:sqlite-jdbc:3.49.1.0
+
+> Task :sourcesJar
+> Task :remapSourcesJar
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :validateAccessWidener NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :remapJar
+> Task :assemble
+> Task :build
+
+BUILD SUCCESSFUL in 52s
+7 actionable tasks: 7 executed

@@ -1,0 +1,238 @@
+{
+  "title": "<gradient:#FFD700:#FF8C00><bold>✦ ZORYKAI - RANKINGS ✦</bold></gradient>",
+  "size": 5,
+  "alias_commands": [
+    "rankings"
+  ],
+  "open_actions": {
+    "sound": {
+      "type": "PLAYSOUND",
+      "sound": "minecraft:ui.button.click"
+    }
+  },
+  "items": {
+    "player_info": {
+      "item": "playerhead",
+      "slots": [
+        10
+      ],
+      "name": "<gradient:#00E5FF:#0072FF><bold>✦ PERFIL DO TREINADOR</bold></gradient>",
+      "lore": [
+        "<gray>Suas informações no Zorykai.",
+        "",
+        "<gradient:#00D9FF:#0072FF><bold>✦</bold></gradient> <#55FFFF>Cargo:</#55FFFF> <white><bold>%luckperms:prefix%</bold></white>",
+        "<gradient:#55FF55:#00AA00><bold>✦</bold></gradient> <#55FF55>Pokédex:</#55FF55> <white>%shirokai:dex_percent%</white>",
+        "<gradient:#FF5555:#AA0000><bold>✦</bold></gradient> <#FF7777>Ginásios:</#FF7777> <white>%player:objective gyms%/18</white>",
+        "<gradient:#33DD77:#008844><bold>✦</bold></gradient> <#33DD77>Dinheiro:</#33DD77> <white>$%shirokai:dollars%</white>",
+        "<gradient:#B266FF:#9B59FF><bold>✦</bold></gradient> <#B266FF>Tokens:</#B266FF> <white>%shirokai:tokens%</white>",
+        "<gradient:#FFD700:#FFAA00><bold>✦</bold></gradient> <#FFD700>Cash:</#FFD700> <white>%shirokai:cash%</white>",
+        "",
+        "<gray>Continue sua jornada e conquiste",
+        "<gray>seu lugar entre os treinadores!"
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/perfil"
+          ]
+        }
+      }
+    },
+    "pokedex": {
+      "item": "minecraft:enchanted_book",
+      "slots": [
+        12
+      ],
+      "name": "<gradient:#55FFFF:#0088FF><bold>✦ TOP POKÉDEX</bold></gradient>",
+      "lore": [
+        "<gray>Conhecimento e dedicação ao mundo",
+        "<gray>Pokémon são suas maiores conquistas.",
+        "",
+        "<aqua>✦ Objetivo:</aqua>",
+        "<gray>Registrar o maior número de",
+        "<gray>espécies possíveis na Pokédex.",
+        "",
+        "<gold>✦ Recompensa:</gold>",
+        "<gray>Os 10 melhores treinadores serão",
+        "<gray>reconhecidos ao final da Season."
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/dexrank dex"
+          ]
+        }
+      }
+    },
+    "captures": {
+      "item": "cobblemon:poke_ball",
+      "slots": [
+        13
+      ],
+      "name": "<gradient:#FF5555:#AA0000><bold>✦ TOP CAPTURAS</bold></gradient>",
+      "lore": [
+        "<gray>Mostre suas habilidades como",
+        "<gray>treinador e destaque-se nas capturas.",
+        "",
+        "<red>✦ Objetivo:</red>",
+        "<gray>Capturar o maior número de",
+        "<gray>Pokémon durante a Season.",
+        "",
+        "<gold>✦ Recompensa:</gold>",
+        "<gray>Os 10 maiores capturadores serão",
+        "<gray>reconhecidos ao final da Season."
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/dexrank captura"
+          ]
+        }
+      }
+    },
+    "shinies": {
+      "item": "minecraft:nether_star",
+      "slots": [
+        15
+      ],
+      "name": "<gradient:#FF55FF:#AA00AA><bold>✦ TOP SHINIES</bold></gradient>",
+      "lore": [
+        "<gray>Este ranking está em desenvolvimento.",
+        "",
+        "<yellow>✦ Em breve disponível!"
+      ]
+    },
+    "quiz": {
+      "item": "minecraft:emerald",
+      "slots": [
+        16
+      ],
+      "name": "<gradient:#55FF55:#00AA00><bold>✦ TOP QUIZ</bold></gradient>",
+      "lore": [
+        "<gray>Este ranking está em desenvolvimento.",
+        "",
+        "<yellow>✦ Em breve disponível!"
+      ]
+    },
+    "battles": {
+      "item": "minecraft:golden_sword",
+      "slots": [
+        14
+      ],
+      "name": "<gradient:#FFAA00:#FF5500><bold>✦ TOP BATALHAS</bold></gradient>",
+      "lore": [
+        "<gray>Prove sua força e conquiste",
+        "<gray>seu lugar entre os grandes treinadores.",
+        "",
+        "<gold>✦ Objetivo:</gold>",
+        "<gray>Conquistar o maior número de",
+        "<gray>vitórias em batalhas Pokémon.",
+        "",
+        "<gold>✦ Recompensa:</gold>",
+        "<gray>Os 10 treinadores com mais vitórias",
+        "<gray>serão reconhecidos ao final da Season."
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/dexrank derrotados"
+          ]
+        }
+      }
+    },
+    "future": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        17
+      ],
+      "name": "<gradient:#AAAAAA:#666666><bold>✦ EM BREVE</bold></gradient>",
+      "lore": [
+        "<gray>Novas categorias estão sendo",
+        "<gray>preparadas para futuras Seasons.",
+        "",
+        "<dark_gray>Novos desafios aguardam",
+        "<dark_gray>os treinadores de Zorykai!"
+      ]
+    },
+    "informacoes": {
+      "item": "minecraft:clock",
+      "slots": [
+        19
+      ],
+      "name": "<gradient:#FFD700:#FFAA00><bold>✦ INFORMAÇÕES</bold></gradient>",
+      "lore": [
+        "<gray>As classificações acompanham",
+        "<gray>as conquistas dos treinadores.",
+        "",
+        "<gold>✦ Ao final de cada Season,",
+        "<yellow>os TOP 10 de cada categoria",
+        "<yellow>serão definidos e registrados.",
+        "",
+        "<gold><bold>Faça história em Zorykai!</bold>",
+        "",
+        "<dark_gray>ZORYKAI"
+      ]
+    },
+    "voltar": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        28
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar ao menu principal.",
+        "",
+        "<yellow>➜ Clique para voltar!"
+      ],
+      "click_actions": {
+        "voltar_menu": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/menu"
+          ]
+        }
+      }
+    },
+    "panel": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        18,
+        20,
+        26,
+        27,
+        29,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "name": " "
+    }
+  }
+}

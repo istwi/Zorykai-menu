@@ -1,0 +1,11 @@
+.gradle/
+build/
+.cache/
+run/
+*.log
+
+evidence/providers/
+
+*.tmp
+
+!evidence/**/*.log

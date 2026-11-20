@@ -1,0 +1,368 @@
+{
+  "title": "<gradient:#FF9955:#DD3344><bold>✦ TM/GEMS - PÁGINA 1</bold></gradient>",
+  "type": "GENERIC_9x6",
+  "open_actions": {},
+  "close_actions": {},
+  "entries": {
+    "normal_gem": {
+      "type": "ITEM",
+      "slot": 0,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:normal_gem",
+      "display": {
+        "item": "cobblemon:normal_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "fire_gem": {
+      "type": "ITEM",
+      "slot": 1,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:fire_gem",
+      "display": {
+        "item": "cobblemon:fire_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "water_gem": {
+      "type": "ITEM",
+      "slot": 2,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:water_gem",
+      "display": {
+        "item": "cobblemon:water_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "electric_gem": {
+      "type": "ITEM",
+      "slot": 3,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:electric_gem",
+      "display": {
+        "item": "cobblemon:electric_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "grass_gem": {
+      "type": "ITEM",
+      "slot": 4,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:grass_gem",
+      "display": {
+        "item": "cobblemon:grass_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "ice_gem": {
+      "type": "ITEM",
+      "slot": 5,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:ice_gem",
+      "display": {
+        "item": "cobblemon:ice_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "fighting_gem": {
+      "type": "ITEM",
+      "slot": 6,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:fighting_gem",
+      "display": {
+        "item": "cobblemon:fighting_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "poison_gem": {
+      "type": "ITEM",
+      "slot": 7,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:poison_gem",
+      "display": {
+        "item": "cobblemon:poison_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "ground_gem": {
+      "type": "ITEM",
+      "slot": 8,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:ground_gem",
+      "display": {
+        "item": "cobblemon:ground_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "flying_gem": {
+      "type": "ITEM",
+      "slot": 9,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:flying_gem",
+      "display": {
+        "item": "cobblemon:flying_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "psychic_gem": {
+      "type": "ITEM",
+      "slot": 10,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:psychic_gem",
+      "display": {
+        "item": "cobblemon:psychic_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "bug_gem": {
+      "type": "ITEM",
+      "slot": 11,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:bug_gem",
+      "display": {
+        "item": "cobblemon:bug_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "rock_gem": {
+      "type": "ITEM",
+      "slot": 12,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:rock_gem",
+      "display": {
+        "item": "cobblemon:rock_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "ghost_gem": {
+      "type": "ITEM",
+      "slot": 13,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:ghost_gem",
+      "display": {
+        "item": "cobblemon:ghost_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "dragon_gem": {
+      "type": "ITEM",
+      "slot": 14,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:dragon_gem",
+      "display": {
+        "item": "cobblemon:dragon_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "dark_gem": {
+      "type": "ITEM",
+      "slot": 15,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:dark_gem",
+      "display": {
+        "item": "cobblemon:dark_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "steel_gem": {
+      "type": "ITEM",
+      "slot": 16,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:steel_gem",
+      "display": {
+        "item": "cobblemon:steel_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "fairy_gem": {
+      "type": "ITEM",
+      "slot": 17,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:fairy_gem",
+      "display": {
+        "item": "cobblemon:fairy_gem"
+      },
+      "buy": {
+        "price": 50000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "tm_machine": {
+      "type": "ITEM",
+      "slot": 18,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:tm_machine",
+      "display": {
+        "item": "cobblemon:tm_machine"
+      },
+      "buy": {
+        "price": 25000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    },
+    "blank_tm": {
+      "type": "ITEM",
+      "slot": 19,
+      "page": [
+        1
+      ],
+      "item": "cobblemon:blank_tm",
+      "display": {
+        "item": "cobblemon:blank_tm"
+      },
+      "buy": {
+        "price": 30000,
+        "economy": "IMPACTOR",
+        "currency": "impactor:dollars",
+        "name": "Dollars"
+      }
+    }
+  },
+  "items": {
+    "back_menu": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        49
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar à Loja Zorykai.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "back": {
+          "type": "OPEN_SHOP",
+          "id": "loja_normal"
+        }
+      }
+    }
+  }
+}

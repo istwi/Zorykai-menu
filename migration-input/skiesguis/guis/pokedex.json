@@ -1,0 +1,233 @@
+{
+  "title": "<gradient:#00E5A8:#0077FF><bold>✦ ENCICLOPÉDIA ZORYKAI ✦</bold></gradient>",
+  "size": 5,
+  "alias_commands": [
+    "pdex"
+  ],
+  "open_actions": {
+    "sound": {
+      "type": "PLAYSOUND",
+      "sound": "minecraft:ui.button.click"
+    }
+  },
+  "close_actions": {},
+  "items": {
+    "player_info": {
+      "item": "playerhead",
+      "slots": [
+        10
+      ],
+      "name": "<gradient:#00E5FF:#0072FF><bold>✦ PERFIL DO TREINADOR</bold></gradient>",
+      "lore": [
+        "<gray>Suas informações no Zorykai.",
+        "",
+        "<gradient:#00D9FF:#0072FF><bold>✦</bold></gradient> <#55FFFF>Cargo:</#55FFFF> <white><bold>%luckperms:prefix%</bold></white>",
+        "<gradient:#55FF55:#00AA00><bold>✦</bold></gradient> <#55FF55>Pokédex:</#55FF55> <white>%shirokai:dex_percent%</white>",
+        "<gradient:#FF5555:#AA0000><bold>✦</bold></gradient> <#FF7777>Ginásios:</#FF7777> <white>%player:objective gyms%/18</white>",
+        "<gradient:#33DD77:#008844><bold>✦</bold></gradient> <#33DD77>Dinheiro:</#33DD77> <white>$%shirokai:dollars%</white>",
+        "<gradient:#B266FF:#9B59FF><bold>✦</bold></gradient> <#B266FF>Tokens:</#B266FF> <white>%shirokai:tokens%</white>",
+        "<gradient:#FFD700:#FFAA00><bold>✦</bold></gradient> <#FFD700>Cash:</#FFD700> <white>%shirokai:cash%</white>",
+        "",
+        "<gray>Continue sua jornada e conquiste",
+        "<gray>seu lugar entre os treinadores!"
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/perfil"
+          ]
+        }
+      }
+    },
+    "national_dex": {
+      "item": "cobblemon:pokedex_blue",
+      "slots": [
+        12
+      ],
+      "name": "<gradient:#38BDF8:#2563EB><bold>✦ NATIONAL DEX</bold></gradient>",
+      "lore": [
+        "<gray>COLEÇÃO • POKÉMON NACIONAIS",
+        "",
+        "<aqua>Descubra e registre Pokémon",
+        "<aqua>para completar a enciclopédia",
+        "<aqua>principal de Zorykai.",
+        "",
+        "<#38BDF8>✦ Seu registro:",
+        "<#7DD3FC>Pokémon registrados:",
+        "<white><bold>%shirokaidex:progress national%</bold></white><gray>",
+        "<#7DD3FC>Progresso: <green><bold>%shirokaidex:percent national%</bold></green>",
+        "",
+        "<gradient:#38BDF8:#2563EB>➜ Clique para consultar!</gradient>"
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "dex nacional"
+          ]
+        }
+      }
+    },
+    "anomaly_dex": {
+      "item": "cobblemon:pokedex_white",
+      "slots": [
+        13
+      ],
+      "name": "<gradient:#D8A4FF:#9333EA><bold>✦ SPECIAL DEX</bold></gradient>",
+      "lore": [
+        "<gray>COLEÇÃO • ESPÉCIMES RAROS",
+        "",
+        "<light_purple>Uma coleção dedicada aos",
+        "<light_purple>Pokémon extraordinários, incluindo",
+        "<light_purple>lendários, míticos e Ultra Beasts.",
+        "",
+        "<#D8A4FF>✦ Seu registro:",
+        "<#D8A4FF>Pokémon registrados:",
+        "<white><bold>%shirokaidex:progress special%</bold></white><gray>",
+        "<#D8A4FF>Progresso: <green><bold>%shirokaidex:percent special%</bold></green>",
+        "",
+        "<gradient:#D8A4FF:#9333EA>➜ Clique para descobrir!</gradient>"
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "dex special"
+          ]
+        }
+      }
+    },
+    "shiny_dex": {
+      "item": "cobblemon:pokedex_pink",
+      "slots": [
+        14
+      ],
+      "name": "<gradient:#FF80C8:#FFCC55><bold>✦ SHINY DEX</bold></gradient>",
+      "lore": [
+        "<gray>COLEÇÃO • POKÉMON BRILHANTES",
+        "",
+        "<light_purple>Encontre versões raras e",
+        "<light_purple>brilhantes dos Pokémon.",
+        "<light_purple>Uma coleção para verdadeiros caçadores!",
+        "",
+        "<#FF80C8>✦ Seu registro:",
+        "<#FFAADE>Pokémon registrados:",
+        "<white><bold>%shirokaidex:progress shiny%</bold></white><gray>",
+        "<#FFAADE>Progresso: <green><bold>%shirokaidex:percent shiny%</bold></green>",
+        "",
+        "<gradient:#FF80C8:#FFCC55>➜ Clique para consultar!</gradient>"
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "dex shiny"
+          ]
+        }
+      }
+    },
+    "prestige_dex": {
+      "item": "cobblemon:pokedex_yellow",
+      "slots": [
+        15
+      ],
+      "name": "<gradient:#FFE066:#FF9900><bold>✦ PRESTIGE DEX</bold></gradient>",
+      "lore": [
+        "<gray>COLEÇÃO • EDIÇÕES ESPECIAIS",
+        "",
+        "<gold>Uma coleção dedicada às",
+        "<gold>skins customizadas e Pokémon",
+        "<gold>exclusivos dos eventos Zorykai.",
+        "",
+        "<gradient:#FFD700:#FF8800><bold>✦ FUTURA COLEÇÃO</bold></gradient>",
+        "",
+        "<gray>Esta categoria está sendo",
+        "<gray>preparada para futuras novidades.",
+        "",
+        "<red>Indisponível no momento."
+      ]
+    },
+    "informacoes": {
+      "item": "minecraft:clock",
+      "slots": [
+        19
+      ],
+      "name": "<gradient:#00E5A8:#0077FF><bold>✦ GUIA DA POKÉDEX</bold></gradient>",
+      "lore": [
+        "<gray>ENCICLOPÉDIA • INFORMAÇÕES",
+        "",
+        "<white>Explore as diferentes coleções",
+        "<white>disponíveis em Zorykai.",
+        "",
+        "<#38BDF8>✦ National Dex",
+        "<#C084FC>✦ Special Dex",
+        "<#FF80C8>✦ Shiny Dex",
+        "<#FFD700>✦ Prestige Dex",
+        "",
+        "<aqua>Registre Pokémon e complete",
+        "<aqua>todas as suas descobertas!",
+        "",
+        "<dark_gray>ZORYKAI NETWORK"
+      ]
+    },
+    "voltar": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        28
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar ao menu principal.",
+        "",
+        "<yellow>➜ Clique para voltar!"
+      ],
+      "click_actions": {
+        "voltar_menu": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/menu"
+          ]
+        }
+      }
+    },
+    "panel": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        17,
+        18,
+        20,
+        26,
+        27,
+        29,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "name": " "
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "title": "<gradient:#00CFFF:#8A2BE2><bold>ZORYKAI - KITS ESPECIAIS</bold></gradient>",
+  "size": 5,
+  "alias_commands": [
+    "kitsespeciais"
+  ],
+  "items": {
+    "player_info": {
+      "item": "playerhead",
+      "slots": [
+        10
+      ],
+      "name": "<gradient:#00E5FF:#0072FF><bold>✦ PERFIL DO TREINADOR</bold></gradient>",
+      "lore": [
+        "<gray>Suas informações no Zorykai.",
+        "",
+        "<gradient:#00D9FF:#0072FF><bold>✦</bold></gradient> <#55FFFF>Cargo:</#55FFFF> <white><bold>%luckperms:prefix%</bold></white>",
+        "<gradient:#55FF55:#00AA00><bold>✦</bold></gradient> <#55FF55>Pokédex:</#55FF55> <white>%shirokai:dex_percent%</white>",
+        "<gradient:#FF5555:#AA0000><bold>✦</bold></gradient> <#FF7777>Ginásios:</#FF7777> <white>%player:objective gyms%/18</white>",
+        "<gradient:#33DD77:#008844><bold>✦</bold></gradient> <#33DD77>Dinheiro:</#33DD77> <white>$%shirokai:dollars%</white>",
+        "<gradient:#B266FF:#9B59FF><bold>✦</bold></gradient> <#B266FF>Tokens:</#B266FF> <white>%shirokai:tokens%</white>",
+        "<gradient:#FFD700:#FFAA00><bold>✦</bold></gradient> <#FFD700>Cash:</#FFD700> <white>%shirokai:cash%</white>",
+        "",
+        "<gray>Continue sua jornada e conquiste",
+        "<gray>seu lugar entre os treinadores!"
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/perfil"
+          ]
+        }
+      }
+    },
+    "informacoes": {
+      "item": "minecraft:clock",
+      "slots": [
+        19
+      ],
+      "name": "<gold><bold>Kits Especiais</bold>",
+      "lore": [
+        "<gray>Confira os kits especiais",
+        "<gray>disponíveis no servidor."
+      ]
+    },
+    "kit_especial_1": {
+      "item": "minecraft:barrier",
+      "slots": [
+        12
+      ],
+      "name": "<yellow><bold>Kit Especial 1</bold>",
+      "lore": [
+        "<gray>Em breve."
+      ]
+    },
+    "kit_especial_2": {
+      "item": "minecraft:barrier",
+      "slots": [
+        13
+      ],
+      "name": "<yellow><bold>Kit Especial 2</bold>",
+      "lore": [
+        "<gray>Em breve."
+      ]
+    },
+    "kit_especial_3": {
+      "item": "minecraft:barrier",
+      "slots": [
+        14
+      ],
+      "name": "<yellow><bold>Kit Especial 3</bold>",
+      "lore": [
+        "<gray>Em breve."
+      ]
+    },
+    "kit_especial_4": {
+      "item": "minecraft:barrier",
+      "slots": [
+        15
+      ],
+      "name": "<yellow><bold>Kit Especial 4</bold>",
+      "lore": [
+        "<gray>Em breve."
+      ]
+    },
+    "kit_especial_5": {
+      "item": "minecraft:barrier",
+      "slots": [
+        16
+      ],
+      "name": "<yellow><bold>Kit Especial 5</bold>",
+      "lore": [
+        "<gray>Em breve."
+      ]
+    },
+    "kit_especial_6": {
+      "item": "minecraft:barrier",
+      "slots": [
+        21
+      ],
+      "name": "<yellow><bold>Kit Especial 6</bold>",
+      "lore": [
+        "<gray>Em breve."
+      ]
+    },
+    "kit_especial_7": {
+      "item": "minecraft:barrier",
+      "slots": [
+        22
+      ],
+      "name": "<yellow><bold>Kit Especial 7</bold>",
+      "lore": [
+        "<gray>Em breve."
+      ]
+    },
+    "kit_especial_8": {
+      "item": "minecraft:barrier",
+      "slots": [
+        23
+      ],
+      "name": "<yellow><bold>Kit Especial 8</bold>",
+      "lore": [
+        "<gray>Em breve."
+      ]
+    },
+    "kit_especial_9": {
+      "item": "minecraft:barrier",
+      "slots": [
+        24
+      ],
+      "name": "<yellow><bold>Kit Especial 9</bold>",
+      "lore": [
+        "<gray>Em breve."
+      ]
+    },
+    "kit_especial_10": {
+      "item": "minecraft:barrier",
+      "slots": [
+        25
+      ],
+      "name": "<yellow><bold>Kit Especial 10</bold>",
+      "lore": [
+        "<gray>Em breve."
+      ]
+    },
+    "voltar": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        28
+      ],
+      "name": "<red><bold>Voltar</bold>",
+      "lore": [
+        "<gray>Voltar para a Central de Kits."
+      ],
+      "click_actions": {
+        "voltar_menu": {
+          "type": "OPEN_GUI",
+          "click": "LEFT",
+          "id": "kits"
+        }
+      }
+    },
+    "panel": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        17,
+        18,
+        20,
+        26,
+        27,
+        29,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "name": " "
+    }
+  }
+}

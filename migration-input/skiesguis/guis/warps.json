@@ -1,0 +1,330 @@
+{
+  "title": "<gradient:#00E5FF:#0055FF><bold>✦ CENTRAL DE VIAGENS ✦</bold></gradient>",
+  "size": 5,
+  "alias_commands": [
+    "warps"
+  ],
+  "open_actions": {
+    "sound": {
+      "type": "PLAYSOUND",
+      "sound": "minecraft:ui.button.click"
+    }
+  },
+  "items": {
+    "player_info": {
+      "item": "playerhead",
+      "slots": [
+        10
+      ],
+      "name": "<gradient:#00E5FF:#0072FF><bold>✦ PERFIL DO TREINADOR</bold></gradient>",
+      "lore": [
+        "<gray>Suas informações no Zorykai.",
+        "",
+        "<gradient:#00D9FF:#0072FF><bold>✦</bold></gradient> <#55FFFF>Cargo:</#55FFFF> <white><bold>%luckperms:prefix%</bold></white>",
+        "<gradient:#55FF55:#00AA00><bold>✦</bold></gradient> <#55FF55>Pokédex:</#55FF55> <white>%shirokai:dex_percent%</white>",
+        "<gradient:#FF5555:#AA0000><bold>✦</bold></gradient> <#FF7777>Ginásios:</#FF7777> <white>%player:objective gyms%/18</white>",
+        "<gradient:#33DD77:#008844><bold>✦</bold></gradient> <#33DD77>Dinheiro:</#33DD77> <white>$%shirokai:dollars%</white>",
+        "<gradient:#B266FF:#9B59FF><bold>✦</bold></gradient> <#B266FF>Tokens:</#B266FF> <white>%shirokai:tokens%</white>",
+        "<gradient:#FFD700:#FFAA00><bold>✦</bold></gradient> <#FFD700>Cash:</#FFD700> <white>%shirokai:cash%</white>",
+        "",
+        "<gray>Continue sua jornada e conquiste",
+        "<gray>seu lugar entre os treinadores!"
+      ],
+      "click_actions": {
+        "open": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/perfil"
+          ]
+        }
+      }
+    },
+    "zona_vip": {
+      "item": "minecraft:diamond",
+      "slots": [
+        12
+      ],
+      "name": "<gradient:#FFE066:#FF9900><bold>✦ REFÚGIO VIP</bold></gradient>",
+      "lore": [
+        "<gray>EXCLUSIVIDADE • BENEFÍCIOS",
+        "",
+        "<gold>Um espaço reservado para",
+        "<gold>treinadores com acesso VIP.",
+        "",
+        "<#FFD700>✦ Vantagens exclusivas:",
+        "<yellow>• Descontos especiais na loja",
+        "<yellow>• Maior valor na venda de itens",
+        "<yellow>• NPCs exclusivos para farm",
+        "",
+        "<red><bold>REQUER ACESSO VIP!</bold></red>",
+        "",
+        "<gold>➜ Clique para viajar!"
+      ],
+      "click_actions": {
+        "warp_zona_vip": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/warp zonavip"
+          ]
+        }
+      }
+    },
+    "loja": {
+      "item": "minecraft:emerald",
+      "slots": [
+        13
+      ],
+      "name": "<gradient:#55FFAA:#00AA55><bold>✦ CENTRO COMERCIAL</bold></gradient>",
+      "lore": [
+        "<gray>ECONOMIA • NEGOCIAÇÕES",
+        "",
+        "<green>Encontre recursos, negocie",
+        "<green>e fortaleça sua jornada.",
+        "",
+        "<#55FFAA>✦ O que você pode fazer:",
+        "<#AAFFCC>• Comprar itens e recursos",
+        "<#AAFFCC>• Vender seus materiais",
+        "<#AAFFCC>• Acumular riquezas",
+        "",
+        "<#55FFAA>➜ Clique para negociar!"
+      ],
+      "click_actions": {
+        "warp_loja": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/warp loja"
+          ]
+        }
+      }
+    },
+    "rotas": {
+      "item": "minecraft:gold_ingot",
+      "slots": [
+        14
+      ],
+      "name": "<gradient:#FFD700:#FF8800><bold>✦ ROTAS DE AVENTURA</bold></gradient>",
+      "lore": [
+        "<gray>EXPLORAÇÃO • ATIVIDADES",
+        "",
+        "<gold>Prepare-se para explorar",
+        "<gold>e conquistar novas recompensas.",
+        "",
+        "<#FFCC55>✦ Atividades disponíveis:",
+        "<yellow>• Áreas de farm",
+        "<yellow>• NPCs e desafios",
+        "<yellow>• Oportunidades de ganhar dinheiro",
+        "",
+        "<#FFD700>➜ Clique para explorar!"
+      ],
+      "click_actions": {
+        "warp_rotas": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/warp rotas"
+          ]
+        }
+      }
+    },
+    "explorar": {
+      "item": "minecraft:compass",
+      "slots": [
+        15
+      ],
+      "name": "<gradient:#55FFFF:#0088CC><bold>✦ MUNDO DE EXPLORAÇÃO</bold></gradient>",
+      "lore": [
+        "<gray>AVENTURA • DESCOBERTAS",
+        "",
+        "<aqua>Um mundo aberto espera por você.",
+        "<aqua>Explore sem limites e escreva",
+        "<aqua>sua própria história.",
+        "",
+        "<#55FFFF>✦ Sua próxima aventura:",
+        "<#AAFFFF>• Descubra novos Pokémon",
+        "<#AAFFFF>• Explore diferentes regiões",
+        "<#AAFFFF>• Construa e aventure-se livremente",
+        "",
+        "<gradient:#55FFFF:#0088CC><bold>Seu mundo, suas descobertas!</bold></gradient>",
+        "",
+        "<aqua>➜ Clique para explorar!"
+      ],
+      "click_actions": {
+        "warp_explorar": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/warp explorar"
+          ]
+        }
+      }
+    },
+    "crates": {
+      "item": "minecraft:chest",
+      "slots": [
+        16
+      ],
+      "name": "<gradient:#FFDD55:#FF8800><bold>✦ TESOUROS & CRATES</bold></gradient>",
+      "lore": [
+        "<gray>TESOUROS • RECOMPENSAS",
+        "",
+        "<gold>Grandes surpresas aguardam",
+        "<gold>por aqueles que se aventuram.",
+        "",
+        "<#FFD700>✦ Descubra seus prêmios:",
+        "<yellow>• Recompensas especiais",
+        "<yellow>• Itens exclusivos",
+        "<yellow>• Tesouros raros",
+        "",
+        "<gradient:#FFDD55:#FF8800><bold>O próximo prêmio pode ser seu!</bold></gradient>",
+        "",
+        "<gold>➜ Clique para conferir!"
+      ],
+      "click_actions": {
+        "warp_crates": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/warp crates"
+          ]
+        }
+      }
+    },
+    "raid": {
+      "item": "minecraft:nether_star",
+      "slots": [
+        21
+      ],
+      "name": "<gradient:#FF6666:#990000><bold>✦ ZONA DE RAIDS</bold></gradient>",
+      "lore": [
+        "<gray>COMBATE • DESAFIOS",
+        "",
+        "<red>Prepare seus Pokémon e",
+        "<red>encare adversários poderosos.",
+        "",
+        "<#FF7777>✦ Enfrente grandes desafios:",
+        "<#FFAAAA>• Batalhas contra Pokémon poderosos",
+        "<#FFAAAA>• Recompensas especiais",
+        "<#FFAAAA>• Desafios de alto nível",
+        "",
+        "<gradient:#FF6666:#990000><bold>Mostre a força da sua equipe!</bold></gradient>",
+        "",
+        "<red>➜ Clique para viajar!"
+      ],
+      "click_actions": {
+        "warp_raid": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/warp raid"
+          ]
+        }
+      }
+    },
+    "torneio": {
+      "item": "minecraft:gold_ingot",
+      "slots": [
+        22
+      ],
+      "name": "<gradient:#FFE066:#FFAA00><bold>✦ ARENA DE TORNEIOS</bold></gradient>",
+      "lore": [
+        "<gray>COMPETIÇÃO • GLÓRIA",
+        "",
+        "<gold>Entre na disputa e mostre",
+        "<gold>que sua equipe merece a vitória.",
+        "",
+        "<#FFD700>✦ Prove seu potencial:",
+        "<yellow>• Competições entre treinadores",
+        "<yellow>• Dispute pela vitória",
+        "<yellow>• Conquiste grandes recompensas",
+        "",
+        "<red><bold>Disponível durante eventos!</bold></red>",
+        "",
+        "<gold>➜ Clique para participar!"
+      ],
+      "click_actions": {
+        "warp_torneio": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/warp torneio"
+          ]
+        }
+      }
+    },
+    "informacoes": {
+      "item": "minecraft:clock",
+      "slots": [
+        19
+      ],
+      "name": "<gradient:#80DEFF:#448AFF><bold>✦ GUIA DE DESTINOS</bold></gradient>",
+      "lore": [
+        "<gray>CENTRAL DE VIAGENS • ZORYKAI",
+        "",
+        "<aqua>Escolha um destino e descubra",
+        "<aqua>tudo o que o servidor oferece.",
+        "",
+        "<#80DEFF>✦ Cada lugar guarda uma nova",
+        "<#80DEFF>experiência para sua jornada.",
+        "",
+        "<dark_gray>ZORYKAI NETWORK"
+      ]
+    },
+    "voltar": {
+      "item": "cobblemon:eject_button",
+      "slots": [
+        28
+      ],
+      "name": "<yellow><bold>VOLTAR AO MENU</bold></yellow>",
+      "lore": [
+        "<gray>Retornar ao menu principal.",
+        "",
+        "<yellow>➜ Clique para voltar!"
+      ],
+      "click_actions": {
+        "voltar_menu": {
+          "type": "COMMAND_PLAYER",
+          "click": "LEFT",
+          "commands": [
+            "/menu"
+          ]
+        }
+      }
+    },
+    "panel": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        17,
+        18,
+        20,
+        26,
+        27,
+        29,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "name": " "
+    }
+  }
+}

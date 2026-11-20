@@ -1,0 +1,50 @@
+{
+  "game_versions": [
+    "1.21.1"
+  ],
+  "loaders": [
+    "fabric"
+  ],
+  "environment": "dedicated_server_only",
+  "id": "KwNU9SQW",
+  "project_id": "LdBYVaPS",
+  "author_id": "5sh2xJH1",
+  "featured": false,
+  "name": "Impactor 5.3.5+1.21.1",
+  "version_number": "5.3.5+1.21.1-Fabric",
+  "changelog": "Impactor Release Version: 5.3.5+1.21.1\n\nGit Commit: da9a2fd\n\nFull Commit History: [5.3.2...5.3.5](https://github.com/NickImpact/Impactor/compare/5.3.2...5.3.5)\n\n# Release Notes\n\n## Bug Fixes\n\n* Resolve a race time condition allowing exploiters to trick the system into processing payment requests without available funds ",
+  "changelog_url": null,
+  "date_published": "2025-12-17T02:46:23.680502Z",
+  "downloads": 55719,
+  "version_type": "release",
+  "status": "listed",
+  "requested_status": null,
+  "files": [
+    {
+      "id": "gcfST0zX",
+      "hashes": {
+        "sha1": "ceff2e3529c651ef14cce700ab6c65002d93e9b4",
+        "sha512": "bfcec7e2a56b77fd874087a615aadaf71250a46dd29bf898ed0d1d280b807d4c5e34b700efe00a428067743dc672786e0467be01a1e30871a04bbf4dcf8b8020"
+      },
+      "url": "https://cdn.modrinth.com/data/LdBYVaPS/versions/KwNU9SQW/Impactor-Fabric-5.3.5%2B1.21.1.jar",
+      "filename": "Impactor-Fabric-5.3.5+1.21.1.jar",
+      "primary": true,
+      "size": 19673493,
+      "file_type": null
+    }
+  ],
+  "dependencies": [
+    {
+      "version_id": null,
+      "project_id": "eXts2L7r",
+      "file_name": null,
+      "dependency_type": "optional"
+    },
+    {
+      "version_id": null,
+      "project_id": "P7dR8mSH",
+      "file_name": null,
+      "dependency_type": "required"
+    }
+  ]
+}

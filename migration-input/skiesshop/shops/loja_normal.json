@@ -1,0 +1,163 @@
+{
+  "title": "<gradient:#00C6FF:#0072FF><bold>✦ Mercador </bold></gradient>",
+  "type": "GENERIC_9x5",
+  "open_actions": {},
+  "close_actions": {},
+  "entries": {},
+  "items": {
+    "background": {
+      "item": "minecraft:gray_stained_glass_pane",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30,
+        32,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "name": "<gray> ",
+      "lore": []
+    },
+    "category_held": {
+      "item": "cobblemon:leftovers",
+      "slots": [
+        11
+      ],
+      "name": "<yellow><bold>✦ Held Items</bold>",
+      "lore": [
+        "<gray>Itens equipáveis para batalhas.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_equipaveis"
+        }
+      }
+    },
+    "category_evolution": {
+      "item": "cobblemon:fire_stone",
+      "slots": [
+        13
+      ],
+      "name": "<gold><bold>✦ Evolution Shop</bold>",
+      "lore": [
+        "<gray>Pedras e itens de evolução.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_evolucao"
+        }
+      }
+    },
+    "category_ev_breeding": {
+      "item": "cobblemon:destiny_knot",
+      "slots": [
+        15
+      ],
+      "name": "<light_purple><bold>✦ EV / Breeding Items</bold>",
+      "lore": [
+        "<gray>Treinamento e reprodução Pokémon.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_breeding"
+        }
+      }
+    },
+    "category_gems": {
+      "item": "cobblemon:fire_gem",
+      "slots": [
+        29
+      ],
+      "name": "<gradient:#FFAA00:#FF5555><bold>✦ Tm/Gems Shop</bold></gradient>",
+      "lore": [
+        "<gray>Gemas de diferentes tipos.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_gemas"
+        }
+      }
+    },
+    "category_loja_pokebolas": {
+      "item": "cobblemon:ultra_ball",
+      "slots": [
+        31
+      ],
+      "name": "<green><bold>✦ Pokébolas</bold>",
+      "lore": [
+        "<gray>Pokébolas variadas.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_pokebolas"
+        }
+      }
+    },
+    "category_status": {
+      "item": "minecraft:string",
+      "slots": [
+        33
+      ],
+      "name": "<gray><bold>✦ Itens Vanilla</bold>",
+      "lore": [
+        "<gray>Drops vanillas.",
+        "",
+        "<yellow>➜ Clique para acessar!"
+      ],
+      "actions": {
+        "open": {
+          "type": "OPEN_SHOP",
+          "id": "loja_materiais"
+        }
+      }
+    }
+  }
+}
