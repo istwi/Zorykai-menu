@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zorykai.menus.PricingTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-20T15:48:36.492Z" hostname="25fbe94e65b4" time="0.111">
+  <properties/>
+  <testcase name="highestPermissionWithoutStacking()" classname="com.zorykai.menus.PricingTest" time="0.001"/>
+  <testcase name="[1] normal, 1000" classname="com.zorykai.menus.PricingTest" time="0.007"/>
+  <testcase name="[2] vip, 950" classname="com.zorykai.menus.PricingTest" time="0.0"/>
+  <testcase name="[3] vipplus, 900" classname="com.zorykai.menus.PricingTest" time="0.001"/>
+  <testcase name="[4] mvp, 850" classname="com.zorykai.menus.PricingTest" time="0.001"/>
+  <testcase name="[5] mvpplus, 800" classname="com.zorykai.menus.PricingTest" time="0.001"/>
+  <testcase name="permissionCanDisableDiscountForProduct()" classname="com.zorykai.menus.PricingTest" time="0.0"/>
+  <testcase name="categoryOverridesShopAndProductOverridesCategory()" classname="com.zorykai.menus.PricingTest" time="0.001"/>
+  <testcase name="productDisableAndSpecificOverride()" classname="com.zorykai.menus.PricingTest" time="0.002"/>
+  <testcase name="invalidRulesRejected()" classname="com.zorykai.menus.PricingTest" time="0.003"/>
+  <testcase name="roundingIsPerUnitAndCurrencyPrecisionExact()" classname="com.zorykai.menus.PricingTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

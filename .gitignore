@@ -9,3 +9,5 @@ evidence/providers/
 *.tmp
 
 !evidence/**/*.log
+
+/logs/

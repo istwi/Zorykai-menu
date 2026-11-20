@@ -8,8 +8,13 @@ public final class Permissions {
   if(FabricLoader.getInstance().isModLoaded("luckperms"))return Luck.check(p,node,fallback);
   return p.hasPermissionLevel(4)||fallback;
  }
+ public static boolean explicit(ServerPlayerEntity p,String node){
+  if(node==null||node.isBlank()||!FabricLoader.getInstance().isModLoaded("luckperms"))return false;
+  return Luck.explicit(p,node);
+ }
  public static boolean admin(ServerCommandSource s,String node){return s.hasPermissionLevel(4)||s.getEntity() instanceof ServerPlayerEntity p&&has(p,node,false);}
  private static final class Luck {
+  static boolean explicit(ServerPlayerEntity p,String node){var user=net.luckperms.api.LuckPermsProvider.get().getUserManager().getUser(p.getUuid());return user!=null&&user.getCachedData().getPermissionData().checkPermission(node)==net.luckperms.api.util.Tristate.TRUE;}
   static boolean check(ServerPlayerEntity p,String n,boolean f){
    var u=net.luckperms.api.LuckPermsProvider.get().getUserManager().getUser(p.getUuid());
    if(u==null)return p.hasPermissionLevel(4)||f;

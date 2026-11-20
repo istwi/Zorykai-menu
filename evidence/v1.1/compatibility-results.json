@@ -1,0 +1,90 @@
+[
+  {
+    "name": "empty party condition fails closed",
+    "passed": true
+  },
+  {
+    "name": "advanced empty party has six free slots",
+    "passed": true
+  },
+  {
+    "name": "empty first Pokemon placeholder is safe",
+    "passed": true
+  },
+  {
+    "name": "advanced empty team conditions",
+    "passed": true
+  },
+  {
+    "name": "real Cobblemon shiny Pokemon accepted",
+    "passed": true
+  },
+  {
+    "name": "advanced populated party exposes name and level",
+    "passed": true
+  },
+  {
+    "name": "read only snapshot is stable",
+    "passed": true
+  },
+  {
+    "name": "actual Cobblemon item condition",
+    "passed": true
+  },
+  {
+    "name": "real Cobblemon non shiny rejected",
+    "passed": true
+  },
+  {
+    "name": "expected false condition accepted",
+    "passed": true
+  },
+  {
+    "name": "Impactor dollars alias uses supplied exact balance",
+    "passed": true
+  },
+  {
+    "name": "unknown provider not invented",
+    "passed": true
+  },
+  {
+    "name": "actual Core cash provider resolves",
+    "passed": true
+  },
+  {
+    "name": "actual Core token provider resolves",
+    "passed": true
+  },
+  {
+    "name": "actual Dex percent provider resolves",
+    "passed": true
+  },
+  {
+    "name": "missing scoreboard objective not fabricated",
+    "passed": true
+  },
+  {
+    "name": "native scoreboard placeholder reads real score",
+    "passed": true
+  },
+  {
+    "name": "missing icon uses explicit vanilla fallback",
+    "passed": true
+  },
+  {
+    "name": "fallback does not change original id",
+    "passed": true
+  },
+  {
+    "name": "trade item remains strict despite icon fallback",
+    "passed": true
+  },
+  {
+    "name": "native migrated catalog validates",
+    "passed": true
+  },
+  {
+    "name": "all four expression menus active",
+    "passed": true
+  }
+]

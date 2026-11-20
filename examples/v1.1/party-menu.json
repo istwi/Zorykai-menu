@@ -1,0 +1,22 @@
+{
+  "id": "v11_party_example",
+  "title": "<white><bold>✦ ZORYKAI</bold></white> <aqua>Equipe",
+  "size": 9,
+  "buttons": [
+    {
+      "id": "team_info",
+      "slots": [4],
+      "icon": {"id": "minecraft:book"},
+      "name": "<aqua>Sua equipe",
+      "lore": ["<gray>Pokémon: <white>%cobblemon:party_count%", "<gray>Vagas: <white>%cobblemon:party_free%", "<gray>Primeiro: <white>%cobblemon:first_name%", "<gray>Nível: <white>%cobblemon:first_level%"]
+    },
+    {
+      "id": "conditional_button",
+      "slots": [6],
+      "icon": {"id": "minecraft:paper"},
+      "name": "<aqua>Equipe disponível",
+      "conditions": [{"type": "cobblemon:has_pokemon"}],
+      "actions": [{"type": "SEND_MESSAGE", "message": "<green>Você possui Pokémon na equipe."}]
+    }
+  ]
+}

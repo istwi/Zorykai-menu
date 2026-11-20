@@ -1,0 +1,27 @@
+{
+  "enabled": true,
+  "stackDiscounts": false,
+  "maxDiscountPercent": 50,
+  "roundingMode": "HALF_UP",
+  "groups": [
+    {
+      "permission": "zorykaimenus.discount.vip",
+      "discountPercent": 5
+    },
+    {
+      "permission": "zorykaimenus.discount.vipplus",
+      "discountPercent": 10
+    },
+    {
+      "permission": "zorykaimenus.discount.mvp",
+      "discountPercent": 15
+    },
+    {
+      "permission": "zorykaimenus.discount.mvpplus",
+      "discountPercent": 20
+    }
+  ],
+  "shops": {},
+  "categories": {},
+  "products": {}
+}

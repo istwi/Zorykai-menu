@@ -1,0 +1,47 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Fabric Loom: 1.10.5
+
+> Task :clean
+
+> Task :compileJava
+/workspace/Zorykai-menu/src/main/java/com/zorykai/menus/shops/TradeEvents.java:18: warning: [removal] ThreadDeath in java.lang has been deprecated and marked for removal
+ private static void observerFailure(Throwable failure){if(failure instanceof VirtualMachineError fatal)throw fatal;if(failure instanceof ThreadDeath death)throw death;ZorykaiMenus.LOG.warn("Observador de comércio falhou",failure);}
+                                                                                                                                          ^
+1 warning
+
+> Task :processResources
+> Task :classes
+> Task :jar
+> Task :compileExampleJava
+> Task :compileIntegrationJava
+> Task :compileTestJava
+
+> Task :processIncludeJars
+(3.49.1.0) is not valid semver for dependency org.xerial:sqlite-jdbc:3.49.1.0
+
+> Task :sourcesJar
+> Task :remapSourcesJar
+> Task :processExampleResources
+> Task :exampleClasses
+> Task :exampleJar
+> Task :processIntegrationResources
+> Task :integrationClasses
+> Task :integrationJar
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+> Task :test
+> Task :validateAccessWidener UP-TO-DATE
+> Task :check
+> Task :remapJar
+> Task :assemble
+> Task :build
+> Task :remapIntegrationJar
+> Task :remapExampleJar
+
+[Incubating] Problems report is available at: file:///workspace/Zorykai-menu/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 34s
+19 actionable tasks: 18 executed, 1 up-to-date

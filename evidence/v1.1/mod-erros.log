@@ -1,0 +1,215 @@
+[2026-11-20 12:39:04.887] [Server thread/WARN] zorykaimenus: Alias help não registrado: inválido ou conflito
+[2026-11-20 12:41:15.682] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: preço ou desconto mudou; abra a confirmação novamente
+[2026-11-20 12:41:18.823] [Server thread/WARN] zorykaimenus: Observador falhou após operação confirmada 761f799f-1438-4d9e-9fc2-b4fee6b45ab5
+java.lang.IllegalStateException: expected external observer failure
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$run$28(UpgradeChecks.java:79)
+	at knot//com.zorykai.menus.api.ZorykaiMenusAPI.confirmed(ZorykaiMenusAPI.java:78)
+	at knot//com.zorykai.menus.shops.Trades.finish(Trades.java:88)
+	at knot//com.zorykai.menus.shops.Trades.deliver(Trades.java:62)
+	at knot//com.zorykai.menus.shops.Trades.lambda$debit$0(Trades.java:50)
+	at knot//net.minecraft.class_3738.run(class_3738.java:18)
+	at knot//net.minecraft.class_1255.method_18859(class_1255.java:162)
+	at knot//net.minecraft.class_4093.method_18859(class_4093.java:23)
+	at knot//net.minecraft.server.MinecraftServer.method_24306(MinecraftServer.java:864)
+	at knot//net.minecraft.server.MinecraftServer.method_18859(MinecraftServer.java:173)
+	at knot//net.minecraft.class_1255.method_16075(class_1255.java:136)
+	at knot//net.minecraft.server.MinecraftServer.method_20415(MinecraftServer.java:846)
+	at knot//net.minecraft.server.MinecraftServer.method_16075(MinecraftServer.java:840)
+	at knot//net.minecraft.class_1255.method_18857(class_1255.java:145)
+	at knot//net.minecraft.server.MinecraftServer.method_18857(MinecraftServer.java:810)
+	at knot//net.minecraft.server.MinecraftServer.method_16208(MinecraftServer.java:815)
+	at knot//net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:702)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:281)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2026-11-20 12:41:19.036] [Server thread/WARN] zorykaimenus: Ação de extensão recusada: zorykai_example:message
+java.lang.IllegalArgumentException: Sem permissão para ação: zorykai.example.action
+	at knot//com.zorykai.menus.api.ZorykaiMenusAPI.executeAction(ZorykaiMenusAPI.java:50)
+	at knot//com.zorykai.menus.gui.Menus.execute(Menus.java:98)
+	at knot//com.zorykai.menus.gui.Menus.lambda$render$6(Menus.java:65)
+	at knot//com.zorykai.menus.gui.LockedMenu.method_7593(LockedMenu.java:28)
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$click$10(UpgradeChecks.java:43)
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$act$4(UpgradeChecks.java:34)
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$server$3(UpgradeChecks.java:33)
+	at knot//net.minecraft.class_3738.run(class_3738.java:18)
+	at knot//net.minecraft.class_1255.method_18859(class_1255.java:162)
+	at knot//net.minecraft.class_4093.method_18859(class_4093.java:23)
+	at knot//net.minecraft.server.MinecraftServer.method_24306(MinecraftServer.java:864)
+	at knot//net.minecraft.server.MinecraftServer.method_18859(MinecraftServer.java:173)
+	at knot//net.minecraft.class_1255.method_16075(class_1255.java:136)
+	at knot//net.minecraft.server.MinecraftServer.method_20415(MinecraftServer.java:846)
+	at knot//net.minecraft.server.MinecraftServer.method_16075(MinecraftServer.java:840)
+	at knot//net.minecraft.class_1255.method_18857(class_1255.java:145)
+	at knot//net.minecraft.server.MinecraftServer.method_18857(MinecraftServer.java:810)
+	at knot//net.minecraft.server.MinecraftServer.method_16208(MinecraftServer.java:815)
+	at knot//net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:702)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:281)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2026-11-20 12:41:19.160] [Server thread/ERROR] zorykaimenus: Validação de configuração: Configuração/discounts.json: maxDiscountPercent: intervalo0..100
+[2026-11-20 12:45:06.655] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: itens elegíveis insuficientes
+[2026-11-20 12:45:06.668] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: itens elegíveis insuficientes
+[2026-11-20 12:45:06.680] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: inventário cheio
+[2026-11-20 12:45:06.720] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: configuração alterada; abra novamente
+[2026-11-20 12:45:07.256] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: sem permissão
+[2026-11-20 12:45:07.818] [Server thread/ERROR] zorykaimenus: Validação de configuração: ./config/zorykaimenus/menus/second.json: ./config/zorykaimenus/menus/second.json: JSON: com.google.gson.stream.MalformedJsonException: Expected ':' at line 1 column 7 path $.bad
+[2026-11-20 12:45:07.819] [Server thread/ERROR] zorykaimenus: Validação de configuração: menus/main.json.buttons[help]: actions.id: menu inexistente second
+[2026-11-20 12:45:08.253] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalStateException: Moeda não registrada: impactor:checks_missing_currency
+[2026-11-20 12:45:08.316] [Server thread/ERROR] zorykaimenus: Operação 6ca6d184-898a-4ce4-b848-072436fee730 preservada em DEBIT_INTENT. NÃO repetir débito/crédito sem conferência.
+java.util.concurrent.CompletionException: java.io.IOException: injected lost response after real account save
+	at knot//com.zorykai.menus.checks.Checks$1.lambda$change$0(Checks.java:85)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1810)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.io.IOException: injected lost response after real account save
+	... 10 more
+[2026-11-20 12:45:09.275] [Server thread/WARN] zorykaimenus: Atestado administrativo: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, operação=6ca6d184-898a-4ce4-b848-072436fee730, aplicado=true
+[2026-11-20 12:45:09.772] [zorykai-real-checks/ERROR] zorykaimenus: INTEGRATION CHECK FAILED
+java.lang.AssertionError: real disconnect during purchase refunded without delivery
+	at knot//com.zorykai.menus.checks.Checks.check(Checks.java:33)
+	at knot//com.zorykai.menus.checks.Checks.run(Checks.java:96)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2026-11-20 15:30:17.411] [Server thread/WARN] zorykaimenus: Alias help não registrado: inválido ou conflito
+[2026-11-20 15:32:48.211] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: preço ou desconto mudou; abra a confirmação novamente
+[2026-11-20 15:32:51.410] [Server thread/WARN] zorykaimenus: Observador de comércio falhou
+java.lang.IllegalStateException: expected external observer failure
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$run$31(UpgradeChecks.java:83)
+	at knot//com.zorykai.menus.shops.TradeEvents.confirmed(TradeEvents.java:20)
+	at knot//com.zorykai.menus.shops.Trades.finish(Trades.java:88)
+	at knot//com.zorykai.menus.shops.Trades.deliver(Trades.java:62)
+	at knot//com.zorykai.menus.shops.Trades.lambda$debit$0(Trades.java:50)
+	at knot//net.minecraft.class_3738.run(class_3738.java:18)
+	at knot//net.minecraft.class_1255.method_18859(class_1255.java:162)
+	at knot//net.minecraft.class_4093.method_18859(class_4093.java:23)
+	at knot//net.minecraft.server.MinecraftServer.method_24306(MinecraftServer.java:864)
+	at knot//net.minecraft.server.MinecraftServer.method_18859(MinecraftServer.java:173)
+	at knot//net.minecraft.class_1255.method_16075(class_1255.java:136)
+	at knot//net.minecraft.server.MinecraftServer.method_20415(MinecraftServer.java:846)
+	at knot//net.minecraft.server.MinecraftServer.method_16075(MinecraftServer.java:840)
+	at knot//net.minecraft.class_1255.method_18857(class_1255.java:145)
+	at knot//net.minecraft.server.MinecraftServer.method_18857(MinecraftServer.java:810)
+	at knot//net.minecraft.server.MinecraftServer.method_16208(MinecraftServer.java:815)
+	at knot//net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:702)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:281)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2026-11-20 15:32:51.551] [Server thread/WARN] zorykaimenus: Ação de extensão recusada: zorykai_example:message
+java.lang.IllegalArgumentException: Sem permissão para ação: zorykai.example.action
+	at knot//com.zorykai.menus.api.ZorykaiMenusAPI.executeAction(ZorykaiMenusAPI.java:48)
+	at knot//com.zorykai.menus.gui.Menus.execute(Menus.java:98)
+	at knot//com.zorykai.menus.gui.Menus.lambda$render$6(Menus.java:65)
+	at knot//com.zorykai.menus.gui.LockedMenu.method_7593(LockedMenu.java:28)
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$click$10(UpgradeChecks.java:43)
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$act$4(UpgradeChecks.java:34)
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$server$3(UpgradeChecks.java:33)
+	at knot//net.minecraft.class_3738.run(class_3738.java:18)
+	at knot//net.minecraft.class_1255.method_18859(class_1255.java:162)
+	at knot//net.minecraft.class_4093.method_18859(class_4093.java:23)
+	at knot//net.minecraft.server.MinecraftServer.method_24306(MinecraftServer.java:864)
+	at knot//net.minecraft.server.MinecraftServer.method_18859(MinecraftServer.java:173)
+	at knot//net.minecraft.class_1255.method_16075(class_1255.java:136)
+	at knot//net.minecraft.server.MinecraftServer.method_20415(MinecraftServer.java:846)
+	at knot//net.minecraft.server.MinecraftServer.method_16075(MinecraftServer.java:840)
+	at knot//net.minecraft.class_1255.method_18857(class_1255.java:145)
+	at knot//net.minecraft.server.MinecraftServer.method_18857(MinecraftServer.java:810)
+	at knot//net.minecraft.server.MinecraftServer.method_16208(MinecraftServer.java:815)
+	at knot//net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:702)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:281)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2026-11-20 15:32:51.676] [Server thread/ERROR] zorykaimenus: Validação de configuração: Configuração/discounts.json: maxDiscountPercent: intervalo0..100
+[2026-11-20 15:34:40.104] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: itens elegíveis insuficientes
+[2026-11-20 15:34:40.106] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: itens elegíveis insuficientes
+[2026-11-20 15:34:40.108] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: inventário cheio
+[2026-11-20 15:34:40.184] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: configuração alterada; abra novamente
+[2026-11-20 15:34:40.692] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: sem permissão
+[2026-11-20 15:34:41.222] [Server thread/ERROR] zorykaimenus: Validação de configuração: ./config/zorykaimenus/menus/second.json: ./config/zorykaimenus/menus/second.json: JSON: com.google.gson.stream.MalformedJsonException: Expected ':' at line 1 column 7 path $.bad
+[2026-11-20 15:34:41.223] [Server thread/ERROR] zorykaimenus: Validação de configuração: menus/main.json.buttons[help]: actions.id: menu inexistente second
+[2026-11-20 15:34:41.422] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalStateException: Moeda não registrada: impactor:checks_missing_currency
+[2026-11-20 15:34:41.479] [Server thread/ERROR] zorykaimenus: Operação dc13b619-8da5-484a-9d95-eb8e9723fbeb preservada em DEBIT_INTENT. NÃO repetir débito/crédito sem conferência.
+java.util.concurrent.CompletionException: java.io.IOException: injected lost response after real account save
+	at knot//com.zorykai.menus.checks.Checks$1.lambda$change$0(Checks.java:94)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1810)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.io.IOException: injected lost response after real account save
+	... 10 more
+[2026-11-20 15:34:42.381] [Server thread/WARN] zorykaimenus: Atestado administrativo: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, operação=dc13b619-8da5-484a-9d95-eb8e9723fbeb, aplicado=true
+[2026-11-20 15:51:52.011] [Server thread/WARN] zorykaimenus: Alias help não registrado: inválido ou conflito
+[2026-11-20 15:53:37.589] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: preço ou desconto mudou; abra a confirmação novamente
+[2026-11-20 15:53:40.741] [Server thread/WARN] zorykaimenus: Observador de comércio falhou
+java.lang.IllegalStateException: expected external observer failure
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$run$31(UpgradeChecks.java:83)
+	at knot//com.zorykai.menus.shops.TradeEvents.confirmed(TradeEvents.java:20)
+	at knot//com.zorykai.menus.shops.Trades.finish(Trades.java:88)
+	at knot//com.zorykai.menus.shops.Trades.deliver(Trades.java:62)
+	at knot//com.zorykai.menus.shops.Trades.lambda$debit$0(Trades.java:50)
+	at knot//net.minecraft.class_3738.run(class_3738.java:18)
+	at knot//net.minecraft.class_1255.method_18859(class_1255.java:162)
+	at knot//net.minecraft.class_4093.method_18859(class_4093.java:23)
+	at knot//net.minecraft.server.MinecraftServer.method_24306(MinecraftServer.java:864)
+	at knot//net.minecraft.server.MinecraftServer.method_18859(MinecraftServer.java:173)
+	at knot//net.minecraft.class_1255.method_16075(class_1255.java:136)
+	at knot//net.minecraft.server.MinecraftServer.method_20415(MinecraftServer.java:846)
+	at knot//net.minecraft.server.MinecraftServer.method_16075(MinecraftServer.java:840)
+	at knot//net.minecraft.class_1255.method_18857(class_1255.java:145)
+	at knot//net.minecraft.server.MinecraftServer.method_18857(MinecraftServer.java:810)
+	at knot//net.minecraft.server.MinecraftServer.method_16208(MinecraftServer.java:815)
+	at knot//net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:702)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:281)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2026-11-20 15:53:40.945] [Server thread/WARN] zorykaimenus: Ação de extensão recusada: zorykai_example:message
+java.lang.IllegalArgumentException: Sem permissão para ação: zorykai.example.action
+	at knot//com.zorykai.menus.api.ZorykaiMenusAPI.executeAction(ZorykaiMenusAPI.java:48)
+	at knot//com.zorykai.menus.gui.Menus.execute(Menus.java:98)
+	at knot//com.zorykai.menus.gui.Menus.lambda$render$6(Menus.java:65)
+	at knot//com.zorykai.menus.gui.LockedMenu.method_7593(LockedMenu.java:28)
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$click$10(UpgradeChecks.java:43)
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$act$4(UpgradeChecks.java:34)
+	at knot//com.zorykai.menus.checks.UpgradeChecks.lambda$server$3(UpgradeChecks.java:33)
+	at knot//net.minecraft.class_3738.run(class_3738.java:18)
+	at knot//net.minecraft.class_1255.method_18859(class_1255.java:162)
+	at knot//net.minecraft.class_4093.method_18859(class_4093.java:23)
+	at knot//net.minecraft.server.MinecraftServer.method_24306(MinecraftServer.java:864)
+	at knot//net.minecraft.server.MinecraftServer.method_18859(MinecraftServer.java:173)
+	at knot//net.minecraft.class_1255.method_16075(class_1255.java:136)
+	at knot//net.minecraft.server.MinecraftServer.method_20415(MinecraftServer.java:846)
+	at knot//net.minecraft.server.MinecraftServer.method_16075(MinecraftServer.java:840)
+	at knot//net.minecraft.class_1255.method_18857(class_1255.java:145)
+	at knot//net.minecraft.server.MinecraftServer.method_18857(MinecraftServer.java:810)
+	at knot//net.minecraft.server.MinecraftServer.method_16208(MinecraftServer.java:815)
+	at knot//net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:702)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:281)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2026-11-20 15:53:41.081] [Server thread/ERROR] zorykaimenus: Validação de configuração: Configuração/discounts.json: maxDiscountPercent: intervalo0..100
+[2026-11-20 15:54:47.952] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: itens elegíveis insuficientes
+[2026-11-20 15:54:47.955] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: itens elegíveis insuficientes
+[2026-11-20 15:54:47.956] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: inventário cheio
+[2026-11-20 15:54:48.020] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: configuração alterada; abra novamente
+[2026-11-20 15:54:48.523] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalArgumentException: sem permissão
+[2026-11-20 15:54:49.085] [Server thread/ERROR] zorykaimenus: Validação de configuração: ./config/zorykaimenus/menus/second.json: ./config/zorykaimenus/menus/second.json: JSON: com.google.gson.stream.MalformedJsonException: Expected ':' at line 1 column 7 path $.bad
+[2026-11-20 15:54:49.085] [Server thread/ERROR] zorykaimenus: Validação de configuração: menus/main.json.buttons[help]: actions.id: menu inexistente second
+[2026-11-20 15:54:49.225] [Server thread/WARN] zorykaimenus: Transação recusada/preservada para f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8: java.lang.IllegalStateException: Moeda não registrada: impactor:checks_missing_currency
+[2026-11-20 15:54:49.251] [Server thread/ERROR] zorykaimenus: Operação 5c5e2e32-bf1f-4ef5-a2bf-1061b1d43b52 preservada em DEBIT_INTENT. NÃO repetir débito/crédito sem conferência.
+java.util.concurrent.CompletionException: java.io.IOException: injected lost response after real account save
+	at knot//com.zorykai.menus.checks.Checks$1.lambda$change$0(Checks.java:94)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1810)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.io.IOException: injected lost response after real account save
+	... 10 more
+[2026-11-20 15:54:50.162] [Server thread/WARN] zorykaimenus: Atestado administrativo: player=f2c78ead-4e24-3e62-a2e8-fafa82e7f4b8, operação=5c5e2e32-bf1f-4ef5-a2bf-1061b1d43b52, aplicado=true

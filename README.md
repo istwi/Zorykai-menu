@@ -1,73 +1,59 @@
-# ZorykaiMenus 1.0.0
+# ZorykaiMenus1.1.0
 
-Mod de menus e lojas para Fabric1.21.1, Java21 e Impactor. Instalação do ZorykaiMenus somente no servidor.
+Atualização do mod existente de menus e lojas para **Minecraft1.21.1 / Fabric / Java21**, com Impactor e instalação somente no servidor. Mod ID preservado: `zorykaimenus`.
 
-**Downloads:** [JAR](dist/pronto-github/zorykaimenus-1.0.0.jar) · [Configurações migradas](dist/pronto-github/zorykaimenus-configs-migradas.zip) · [Projeto completo](dist/pronto-github/zorykaimenus-1.0.0-projeto.zip).
+**Downloads1.1:** [JAR](dist/v1.1.0/zorykaimenus-1.1.0.jar) · [Projeto completo](dist/v1.1.0/zorykaimenus-1.1.0-projeto.zip) · [Exemplos JSON](dist/v1.1.0/zorykaimenus-1.1.0-exemplos.zip). A entrega1.0 permanece em dist/pronto-github/.
 
-A revisão final remove a referência antiga à loja de blocos. `/zmenu shop <nome>` substitui `/tentavip open <nome>`, sem necessidade de configurar uma loja fixa. [Estado da entrega e testes](reports/PRONTO_GITHUB.md).
+## O que mudou
 
-> Entrega atual: [pronto para GitHub](reports/PRONTO_GITHUB.md). Os arquivos finais estão em `dist/pronto-github/`.
+- Descontos VIP por permissões, com regras por loja/categoria/produto, teto e exclusões. Não altera preços-base nem preços de venda.
+- Comprar máximo usando saldo, desconto, espaço, componentes e limites reais, seguido de confirmação.
+- Condições e placeholders opcionais de equipe Cobblemon, somente de leitura.
+- API pública para menus/lojas, ações, placeholders, condições, preços/descontos e eventos de comércio.
+- Logs automáticos em **config/zorykaimenus/logs/erros.log**, com stack trace e rotação.
 
-> Revisão atual de compatibilidade: [documentação](docs/COMPATIBILITY.md). Os avisos abaixo sobre Molang e placeholders sem suporte descrevem a entrega anterior; a cobertura atual e seus limites estão no documento da revisão.
+**Validação:**30 testes JUnit e105 verificações de integração aprovadas. [Relatório e limites](docs/v1.1/TESTING.md).
 
+## Atualizar ou instalar
 
-Mod independente para menus e lojas de inventário vanilla, instalado somente no servidor Fabric **Minecraft 1.21.1 / Java 21**. Integração direta com **Impactor 5.3.5+1.21.1**, moeda `impactor:dollars`. Fabric Loader 0.17.2 e Fabric API 0.116.6+1.21.1 usados no desenvolvimento. LuckPerms é opcional; Cobblemon só é necessário para usar seus itens.
+1. Pare o servidor e preserve uma cópia do mundo/configuração.
+2. Instale somente **zorykaimenus-1.1.0.jar** na pasta mods, removendo o JAR1.0 do mesmo mod.
+3. Mantenha FabricAPI0.116.6+1.21.1 e Impactor5.3.5+1.21.1, versões usadas na homologação. Java21 é necessário.
+4. Inicie o servidor. discounts.json ausente será criado; configurações existentes não são sobrescritas.
+5. Configure grupos no LuckPerms, valide com /zmenu validate e use /zmenu reload. Sem permissão VIP válida, o preço é integral.
 
-**Revisão atual:** compatibilidade com as expressões shiny fornecidas, placeholders do Core/Dex e ícones temporários explícitos. A referência antiga à loja de blocos foi removida e o comando antigo foi esclarecido; não se declara substituição irrestrita de todas as funções dos mods antigos. Consulte [migração](docs/MIGRATION.md), [testes](docs/TESTING.md) e o relatório JSON produzido pelo importador.
+O cliente não precisa de ZorykaiMenus. Para itens/modelos Cobblemon, continuam necessários os mods de conteúdo habituais. Os exemplos/diagnósticos Java são módulos de laboratório e não devem ser instalados junto ao produto em produção.
 
-## Instalação
+A1.1 lê JSONs1.0, inclusive arquivos diretamente em menus/shops ou subpastas. Não duplique IDs ao mover arquivos. /zmenu shop <nome> continua sendo o equivalente de /tentavip open <nome>. Nenhuma loja de blocos precisa ser criada.
 
-1. Instale Fabric, Fabric API e Impactor nas versões acima no servidor de homologação. Faça uma cópia externa do mundo e das configurações antes de trocar mods.
-2. Copie **somente** `zorykaimenus-1.0.0.jar` de `build/libs/` para `mods/`. O arquivo `*-checks.jar` é exclusivo do laboratório e não faz parte da instalação.
-3. Inicie o servidor. Arquivos ausentes são criados em `config/zorykaimenus/`; arquivos existentes são preservados.
-4. Abra `/zmenu` e `/zmenu shop example`. O exemplo usa pedra: compra $2,50/unidade e venda $1,25/unidade. **Esses são preços de exemplo, não preços migrados.**
-5. Edite os JSONs e execute `/zmenu validate`, depois `/zmenu reload`. JSON inválido conserva a configuração ativa anterior. Para aliases novos, reinicie o servidor.
+## Documentação1.1
 
-O cliente não precisa do ZorykaiMenus. Itens de outros mods exigem os clientes normalmente necessários para esses mods; não é uma promessa de que o Cobblemon funcione em cliente vanilla.
+- [Análise da arquitetura1.0](docs/v1.1/ARCHITECTURE_BEFORE.md)
+- [Descontos e comandos VIP](docs/v1.1/DISCOUNTS.md)
+- [Comprar máximo](docs/v1.1/MAXIMUM.md)
+- [Cobblemon opcional](docs/v1.1/COBBLEMON.md)
+- [API e exemplos compiláveis](docs/v1.1/API.md)
+- [Atualização e logs](docs/v1.1/UPGRADE.md)
+- [Alterações](docs/v1.1/CHANGES.md)
+- [Testes](docs/v1.1/TESTING.md)
 
-## Construção
+Continuam disponíveis os comandos /zmenu, open, shop, reload, validate, migrate, status, recover e resolve. Os novos comandos administrativos são /zmenu discount reload, check <jogador> e list. Permissão: zorykaimenus.discount.admin ou operador4.
+
+## Construir
 
 ```bash
 python3 tools/prepare_dependencies.py
-./gradlew build
+./gradlew clean build
 ```
 
-Java 21 deve estar no PATH ou em JAVA_HOME. O preparador baixa o Impactor oficial e confere SHA-512 contra os metadados fixados em `evidence/impactor-version.json`. Gradle baixa as demais dependências. Saída: `build/libs/zorykaimenus-1.0.0.jar`; o `*-sources.jar` contém o código.
+Gradle Wrapper8.14.3 e Loom1.10.5 preservados. O preparador baixa os artefatos oficiais fixados de Impactor e Text Placeholder API com conferência de hash. Esta última é opcional no runtime das integrações externas e dependência de compilação do adaptador existente.
 
-## Comandos
+Saída: build/libs/zorykaimenus-1.1.0.jar. O build também compila o addon Java de exemplo; remapExampleJar produz seu JAR separado. As integrações registradas usam o namespace do addon, sem sobrescrever recursos nativos.
 
-| Comando | Uso |
-|---|---|
-| `/zmenu` | Abrir menu principal |
-| `/zmenu open <menu>` | Abrir menu; sugestões automáticas |
-| `/zmenu shop <loja>` | Abrir loja; sugestões automáticas |
-| `/zmenu reload` | Validar e substituir a configuração ativa de uma só vez |
-| `/zmenu validate` | Validar sem aplicar |
-| `/zmenu migrate` | Converter os arquivos antigos na pasta de origem definida |
-| `/zmenu status` | Contagens e operação pendente do próprio jogador |
-| `/zmenu recover` | Recuperar etapas comprovadas; nunca repetir débito/crédito incerto |
-| `/zmenu resolve <uuid> <operação> applied\|not_applied` | Atestado administrativo **após conferir no Impactor** |
+## Configuração e migração preservadas
 
-Os dois últimos comandos dão acesso à recuperação necessária para falhas parciais; não implementam o histórico pesquisável planejado para versões futuras. As permissões administrativas são `zorykaimenus.reload`, `.validate`, `.migrate`, `.status` e `.resolve`, ou operador nível 4. Jogadores comuns podem usar `.use`, `.open`, `.shop`, `.buy`, `.sell` por padrão; LuckPerms pode negá-las explicitamente. Permissão personalizada de menu, produto, botão ou ação exige concessão explícita ou operador. Sem LuckPerms, esses acessos restritos ficam limitados a operadores.
+[Formato JSON](docs/CONFIGURATION.md), [migração Skies](docs/MIGRATION.md), [recuperação financeira](docs/TRANSACTIONS.md) e [compatibilidade1.0](docs/COMPATIBILITY.md) continuam documentados. As diferenças atuais estão nos documentos1.1 acima.
 
-## Funcionalidades
+A migração conserva510 produtos e preços dos arquivos fornecidos. Ícones ausentes podem usar o fallback explícito de papel sem mudar o ID original; ações dependentes de outros mods ainda precisam de seus serviços. Para cash/tokens/dex externos, mantenha Core/Dex e Text Placeholder API2.4.2+1.21. A integração Cobblemon não é um interpretador Molang geral.
 
-Menus de 9 a 54 slots; itens registrados e componentes nativos; MiniMessage, degradês e lore; navegação, páginas, mensagens, sons, ações e aliases com detecção de conflito. Categorias e subcategorias são lojas/menus ligados por ações `OPEN_SHOP` e `OPEN_MENU`.
-
-Compra com seleção `-64/-10/-1/+1/+10/+64`, atalhos 1/16/32/64, preço unitário, total e saldo estimado. Venda por botão direito, mesma seleção, quantidade elegível e opção de vender todos. Quantidade máxima configurável. O servidor recalcula o total e verifica permissões e componentes.
-
-Apenas os 36 slots principais entram nas compras/vendas; armadura, mão secundária e outros contêineres não são vendidos. Nome, encantamentos, componentes de TM e outros dados precisam coincidir com o produto configurado. Slots decorativos não são retirados pelo jogador.
-
-## Limites de segurança e escopo
-
-Valores usam BigDecimal e o Impactor é a autoridade do saldo. O journal SQLite interno registra intenções antes das etapas financeiras e de inventário; o salvamento do inventário é conferido no arquivo de jogador. Operações incertas ficam bloqueadas para conferência: **não apagar `internal/pending.sqlite` para desbloqueá-las**, pois isso remove a proteção contra repetição. Não há transação distribuída atômica entre Minecraft e Impactor; veja [recuperação](docs/TRANSACTIONS.md).
-
-Ações de console ficam desativadas por padrão. Exigem `allowServerCommands: true`, permissão explícita na ação e concessão ao jogador. Comandos do jogador mantêm as permissões dele. Um administrador que libera um comando de console assume responsabilidade pelo comando configurado.
-
-Esta revisão dá suporte às expressões shiny fornecidas e à Text Placeholder API do Core/Dex. Não é um interpretador Molang geral. Descontos VIP, busca, editor visual e histórico pesquisável continuam fora do escopo. Veja docs/COMPATIBILITY.md.
-
-## Instalação da revisão de compatibilidade
-
-Use o JAR atualizado em `dist/compatibilidade/`. Para os valores externos, instale no servidor [Text Placeholder API2.4.2+1.21](https://github.com/Patbox/TextPlaceholderAPI/releases/download/2.4.2%2B1.21/placeholder-api-2.4.2%2B1.21.jar), junto aos seus Shirokai Core e Shirokai Dex. Essas dependências não foram incorporadas ao JAR. Nenhuma delas é exigida no cliente para exibir os menus.
-
-Depois da troca do JAR e do reinício, use `/zmenu migrate`, confira `migration/report.json`, depois `/zmenu validate` e `/zmenu reload`. A migração preserva arquivos convertidos que você tenha editado; conflitos exigem revisão manual. O ZIP de JSONs é uma alternativa para instalação limpa em homologação e não deve ser extraído sobre configurações personalizadas sem revisão.
+Não apague internal/pending.sqlite para desbloquear operações incertas. Consulte os logs e a recuperação administrativa. Eventos não substituem a conciliação e não prometem entrega exatamente uma vez entre quedas.

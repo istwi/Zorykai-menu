@@ -15,24 +15,31 @@ public final class Trades {
  public Trades(ZorykaiMenus a,Journal j){app=a;journal=j;}
  public int pending()throws Exception{return journal.count();}
  public void submit(ServerPlayerEntity p,String shopId,String productId,boolean sell,int quantity,long revision){
-  UUID id=p.getUuid();try{
+  submit(p,shopId,productId,sell,quantity,revision,null);
+ }
+ public void submit(ServerPlayerEntity p,String shopId,String productId,boolean sell,int quantity,long revision,java.math.BigDecimal expectedTotal){
+  UUID id=p.getUuid();boolean ownsLock=false;try{
    if(running.contains(id)||journal.get(id)!=null){app.message(p,"pending",Map.of());return;}
    var snapshot=app.catalog.get();if(snapshot.revision()!=revision)throw new IllegalArgumentException("configuração alterada; abra novamente");
    var shop=snapshot.shops().get(shopId);if(shop==null)throw new IllegalArgumentException("loja indisponível");
    JsonObject product=null;for(var e:arr(shop,"products"))if(str(e.getAsJsonObject(),"id","").equals(productId)){product=e.getAsJsonObject();break;}
    if(product==null||!product.has(sell?"sell":"buy"))throw new IllegalArgumentException("produto indisponível");
-   authorize(p,shop,product,sell);
-   if(quantity<1||quantity>num(snapshot.config(),"maxQuantity",2304))throw new IllegalArgumentException("quantidade inválida");
+   validateAccess(p,shop,product,sell);
+   if(quantity<1||quantity>app.pricing.limit(product))throw new IllegalArgumentException("quantidade inválida");
    var unit=ItemsJson.read(app.server,obj(product,"item"));var plan=sell?InventoryPlan.remove(p.getInventory().main,unit,quantity):InventoryPlan.add(p.getInventory().main,unit,quantity);
    if(plan==null)throw new IllegalArgumentException(sell?"itens elegíveis insuficientes":"inventário cheio");
+   var quote=app.pricing.quote(p,shopId,shop,product,sell,quantity);
+   if(expectedTotal!=null&&quote.total().compareTo(expectedTotal)!=0)throw new IllegalArgumentException("preço ou desconto mudou; abra a confirmação novamente");
    var tx=new JsonObject();tx.addProperty("id",UUID.randomUUID().toString());tx.addProperty("player",id.toString());tx.addProperty("sell",sell);tx.addProperty("quantity",quantity);
    tx.addProperty("shop",shopId);tx.addProperty("product",productId);tx.addProperty("revision",revision);
-   tx.addProperty("currency",str(snapshot.economy(),"currency","impactor:dollars"));tx.addProperty("total",product.get(sell?"sell":"buy").getAsBigDecimal().multiply(BigDecimal.valueOf(quantity)).toPlainString());tx.add("item",ItemsJson.write(app.server,unit));
-   stage(tx,"PREPARED");running.add(id);p.closeHandledScreen();
+   tx.addProperty("currency",str(snapshot.economy(),"currency","impactor:dollars"));tx.addProperty("total",quote.total().toPlainString());tx.addProperty("originalTotal",quote.originalTotal().toPlainString());tx.addProperty("discountPercent",quote.discountPercent().toPlainString());tx.add("item",ItemsJson.write(app.server,unit));
+   stage(tx,"PREPARED");running.add(id);ownsLock=true;
+   if(!TradeEvents.before(TradeEvents.snapshot(tx))){finish(tx,false,"operação cancelada por integração");return;}
+   p.closeHandledScreen();
    if(sell){inventoryIntent(p,tx,plan,"REMOVE_INTENT");stage(tx,"ITEMS_REMOVED");credit(tx);}else debit(tx);
-  }catch(Exception e){running.remove(id);failure(p,e.getMessage());app.LOG.warn("Transação recusada/preservada para {}: {}",id,e.toString());}
+  }catch(Exception e){if(ownsLock)running.remove(id);failure(p,e.getMessage());app.LOG.warn("Transação recusada/preservada para {}: {}",id,e.toString());}
  }
- private void authorize(ServerPlayerEntity p,JsonObject shop,JsonObject product,boolean sell){
+ public void validateAccess(ServerPlayerEntity p,JsonObject shop,JsonObject product,boolean sell){
   var permissions=app.catalog.get().permissions();for(String key:List.of("use","shop",sell?"sell":"buy"))if(!Permissions.has(p,str(permissions,key,"zorykaimenus."+key),true))throw new IllegalArgumentException("sem permissão");
   if(!app.menus.allowed(p,shop,"")||!app.menus.allowed(p,product,"")||!com.zorykai.menus.gui.Conditions.visible(p,product))throw new IllegalArgumentException("sem permissão para o produto");
  }
@@ -48,7 +55,7 @@ public final class Trades {
   boolean allowed=p!=null&&!p.isDisconnected()&&app.catalog.get().revision()==tx.get("revision").getAsLong();
   if(allowed)try{
    var shop=app.catalog.get().shops().get(str(tx,"shop",""));JsonObject product=null;for(var e:arr(shop,"products"))if(str(e.getAsJsonObject(),"id","").equals(str(tx,"product","")))product=e.getAsJsonObject();
-   if(product==null)allowed=false;else authorize(p,shop,product,false);
+   if(product==null)allowed=false;else {validateAccess(p,shop,product,false);var current=app.pricing.quote(p,str(tx,"shop",""),shop,product,false,num(tx,"quantity",1));if(current.total().compareTo(tx.get("total").getAsBigDecimal())!=0)allowed=false;}
   }catch(Exception e){allowed=false;}
   var item=ItemsJson.restore(app.server,tx.get("item"));var plan=allowed?InventoryPlan.add(p.getInventory().main,item,num(tx,"quantity",1)):null;
   if(plan==null){refund(tx);return;}
@@ -78,7 +85,7 @@ public final class Trades {
   tx.add("before",stacks(p.getInventory().main));tx.add("after",stacks(after));stage(tx,step);DurableInventory.apply(p,after);
  }
  private void finish(JsonObject tx,boolean success,String reason)throws Exception{
-  journal.done(tx);UUID id=UUID.fromString(str(tx,"player",""));running.remove(id);var p=app.server.getPlayerManager().getPlayer(id);
+  journal.done(tx);if(success)TradeEvents.confirmed(TradeEvents.snapshot(tx));UUID id=UUID.fromString(str(tx,"player",""));running.remove(id);var p=app.server.getPlayerManager().getPlayer(id);
   app.LOG.info("Operação {} concluída: player={}, venda={}, quantidade={}, total={}, sucesso={}",str(tx,"id",""),id,bool(tx,"sell",false),num(tx,"quantity",0),str(tx,"total",""),success);
   if(p!=null){if(success){app.message(p,"success",Map.of("quantity",str(tx,"quantity",""),"total",str(tx,"total","")));app.menus.sound(p,str(app.catalog.get().messages(),bool(tx,"sell",false)?"sellSound":"buySound","minecraft:entity.experience_orb.pickup"));}else failure(p,reason);}
  }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zorykai.menus.MaximumTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-20T15:48:36.426Z" hostname="25fbe94e65b4" time="0.048">
+  <properties/>
+  <testcase name="exampleVipMaximum50()" classname="com.zorykai.menus.MaximumTest" time="0.018"/>
+  <testcase name="fullEmptyZeroAndLimits()" classname="com.zorykai.menus.MaximumTest" time="0.001"/>
+  <testcase name="matchesBruteForceUsingActualRoundedQuotes()" classname="com.zorykai.menus.MaximumTest" time="0.027"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

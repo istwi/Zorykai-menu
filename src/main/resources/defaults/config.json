@@ -3,5 +3,9 @@
   "mainMenu": "main",
   "maxQuantity": 2304,
   "allowServerCommands": false,
-  "aliases": {}
+  "aliases": {},
+  "cobblemon": {
+    "enabled": true,
+    "fallback": "N/D"
+  }
 }

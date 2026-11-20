@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "zorykaimenus",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "ZorykaiMenus",
   "description": "Menus e lojas server-side com economia Impactor",
   "environment": "server",

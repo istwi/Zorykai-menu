@@ -6,11 +6,12 @@ import java.math.*;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.function.Supplier;
-public final class ImpactorGateway implements AutoCloseable {
+public class ImpactorGateway implements AutoCloseable {
  private final ExecutorService executor=Executors.newSingleThreadExecutor(r->new Thread(r,"zorykai-economy"));
  private final Supplier<String> currency;
  public ImpactorGateway(Supplier<String> c){currency=c;}
  private Currency currency(String key){return EconomyService.instance().currencies().currency(Key.key(key)).orElseThrow(()->new IllegalStateException("Moeda não registrada: "+key));}
+ public int decimals(){return currency(currency.get()).decimals();}
  public CompletableFuture<BigDecimal> balance(UUID id){return CompletableFuture.supplyAsync(()->currency(currency.get()),executor).thenCompose(c->EconomyService.instance().account(c,id)).thenApply(a->a.balance());}
  public CompletableFuture<Boolean> change(UUID id,String key,BigDecimal amount,boolean deposit){
   return CompletableFuture.supplyAsync(()->currency(key),executor).thenCompose(c->{

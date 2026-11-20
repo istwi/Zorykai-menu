@@ -1,0 +1,22 @@
+[
+  {
+    "name": "server starts without Cobblemon or LuckPerms",
+    "passed": true
+  },
+  {
+    "name": "optional party returns unavailable",
+    "passed": true
+  },
+  {
+    "name": "placeholder uses safe fallback",
+    "passed": true
+  },
+  {
+    "name": "optional condition fails closed",
+    "passed": true
+  },
+  {
+    "name": "normal price without permission provider",
+    "passed": true
+  }
+]

@@ -38,6 +38,15 @@ public final class Checks implements ModInitializer {
  private void waitDone()throws Exception{for(int i=0;i<200;i++){if(server(()->{try{return app.trades.pending()==0;}catch(Exception e){throw new RuntimeException(e);}}))return;Thread.sleep(50);}throw new IllegalStateException("pending: "+server(()->{try{return app.trades.status(p.getUuid());}catch(Exception e){return e.toString();}}));}
  private void trade(boolean sell,int n){act(()->app.trades.submit(p,"example","stone",sell,n,app.catalog.get().revision()));}
  private void click(int slot,int button){act(()->p.currentScreenHandler.onSlotClick(slot,button,SlotActionType.PICKUP,p));try{Thread.sleep(70);}catch(Exception e){throw new RuntimeException(e);}}
+ private void deferredDelivery(Runnable interruption,boolean disconnected)throws Exception{
+  var original=app.economy;var delayed=new DeferredDebit();
+  try{
+   act(()->{app.economy=delayed;app.trades.submit(p,"example","stone",false,1,app.catalog.get().revision());});
+   if(!delayed.saved.get(10,TimeUnit.SECONDS))throw new IllegalStateException("debit refused in fixture");
+   act(interruption);
+   if(disconnected){for(int i=0;i<100&&server(()->app.server.getPlayerManager().getPlayer(p.getUuid())!=null);i++)Thread.sleep(50);}
+  }finally{act(()->app.economy=original);delayed.release.complete(null);waitDone();delayed.close();}
+ }
  private void run(){try{
   clear();funds("10000");ItemStack stone=new ItemStack(Items.STONE);
   act(()->app.menus.open(p,false,"main",1,false));check("native menu 27 slots",server(()->p.currentScreenHandler instanceof LockedMenu m&&m.getInventory().size()==27));
@@ -78,13 +87,22 @@ public final class Checks implements ModInitializer {
   act(()->app.trades.submit(p,"loja_tms_bug",str(tm,"id",""),false,1,app.catalog.get().revision()));waitDone();check("native Cobblemon TM component survives purchase",count(tmItem)==1&&balance().compareTo(previous.subtract(tm.get("buy").getAsBigDecimal()))==0);
   clear();funds("10000");
   Path ecoPath=ZorykaiMenus.ROOT.resolve("economy.json");String ecoOriginal=Files.readString(ecoPath);Files.writeString(ecoPath,"{\"currency\":\"impactor:checks_missing_currency\"}");check("fault injection config loaded",server(()->app.catalog.reload(app.server,true)).isEmpty());
-  trade(false,1);Thread.sleep(800);check("provider exception preserves pending transaction",server(()->{try{return app.trades.pending()==1;}catch(Exception e){throw new RuntimeException(e);}})&&count(stone)==0);
+  trade(false,1);waitDone();check("unregistered currency fails before any monetary intent",server(()->{try{return app.trades.pending()==0;}catch(Exception e){throw new RuntimeException(e);}})&&count(stone)==0);
+  Files.writeString(ecoPath,ecoOriginal);check("economy restored",server(()->app.catalog.reload(app.server,true)).isEmpty());
+  var originalGateway=app.economy;
+  var losingResponse=new com.zorykai.menus.economy.impactor.ImpactorGateway(()->"impactor:dollars"){
+   @Override public CompletableFuture<Boolean> change(UUID player,String key,BigDecimal amount,boolean deposit){return super.change(player,key,amount,deposit).thenApply(ok->{if(!deposit&&ok)throw new CompletionException(new java.io.IOException("injected lost response after real account save"));return ok;});}
+  };
+  act(()->app.economy=losingResponse);trade(false,1);Thread.sleep(800);
+  check("lost response after real debit preserves pending",server(()->{try{return app.trades.pending()==1;}catch(Exception e){throw new RuntimeException(e);}})&&balance().compareTo(new BigDecimal("9997.50"))==0&&count(stone)==0);
   act(()->app.trades.recover(p));Thread.sleep(100);check("unknown finance not retried automatically",server(()->{try{return app.trades.pending()==1;}catch(Exception e){throw new RuntimeException(e);}}));
-  String pending=server(()->{try{return app.trades.status(p.getUuid());}catch(Exception e){throw new RuntimeException(e);}});String txid=pending.split(" · ")[0];act(()->{try{app.trades.resolve(p.getUuid(),txid,false);}catch(Exception e){throw new RuntimeException(e);}});Files.writeString(ecoPath,ecoOriginal);check("economy restored",server(()->app.catalog.reload(app.server,true)).isEmpty());waitDone();check("admin attestation no debit no item",balance().compareTo(new BigDecimal("10000"))==0&&count(stone)==0);
+  String pending=server(()->{try{return app.trades.status(p.getUuid());}catch(Exception e){throw new RuntimeException(e);}});String txid=pending.split(" · ")[0];
+  act(()->{app.economy=originalGateway;try{app.trades.resolve(p.getUuid(),txid,true);app.trades.recover(p);}catch(Exception e){throw new RuntimeException(e);}});losingResponse.close();waitDone();check("confirmed debit attestation safely refunds once",balance().compareTo(new BigDecimal("10000"))==0&&count(stone)==0);
 
-  // A real confirmed debit is followed by a revision change before the delivery callback.
-  clear();funds("10000");act(()->{app.trades.submit(p,"example","stone",false,1,app.catalog.get().revision());if(!app.catalog.reload(app.server,true).isEmpty())throw new IllegalStateException("reload failed");});waitDone();check("confirmed debit safely refunded after catalog change",balance().compareTo(new BigDecimal("10000"))==0&&count(stone)==0);
-  act(()->{app.trades.submit(p,"example","stone",false,1,app.catalog.get().revision());for(int i=0;i<36;i++)p.getInventory().main.set(i,new ItemStack(Items.DIRT,64));});waitDone();check("capacity rechecked after async debit and refunded",balance().compareTo(new BigDecimal("10000"))==0&&count(stone)==0);
-  clear();act(()->{app.trades.submit(p,"example","stone",false,1,app.catalog.get().revision());p.networkHandler.disconnect(Text.literal("isolated disconnect-during-purchase test"));});waitDone();check("real disconnect during purchase refunded without delivery",balance().compareTo(new BigDecimal("10000"))==0&&count(stone)==0);
+  // Wait for actual persisted debit, then control interruption before releasing the response.
+  clear();funds("10000");deferredDelivery(()->{if(!app.catalog.reload(app.server,true).isEmpty())throw new IllegalStateException("reload failed");},false);check("confirmed debit safely refunded after catalog change",balance().compareTo(new BigDecimal("10000"))==0&&count(stone)==0);
+  deferredDelivery(()->{for(int i=0;i<36;i++)p.getInventory().main.set(i,new ItemStack(Items.DIRT,64));},false);check("capacity rechecked after async debit and refunded",balance().compareTo(new BigDecimal("10000"))==0&&count(stone)==0);
+  clear();deferredDelivery(()->p.networkHandler.disconnect(Text.literal("isolated disconnect-during-purchase test")),true);check("real disconnect during purchase refunded without delivery",balance().compareTo(new BigDecimal("10000"))==0&&count(stone)==0);
+
  }catch(Throwable e){var j=new JsonObject();j.addProperty("fatal",e.toString());results.add(j);ZorykaiMenus.LOG.error("INTEGRATION CHECK FAILED",e);}finally{try{Files.writeString(ZorykaiMenus.ROOT.resolve("integration-results.json"),GSON.toJson(results));}catch(Exception e){ZorykaiMenus.LOG.error("test report write",e);}running=false;}}
 }

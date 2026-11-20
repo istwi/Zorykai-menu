@@ -1,0 +1,1 @@
+{"schemaVersion":1,"id":"zorykaimenus_example","version":"1.1.0","name":"ZorykaiMenus public API example","environment":"server","entrypoints":{"main":["com.zorykai.example.ExampleAddon"]},"depends":{"fabricloader":">=0.17.2","minecraft":"1.21.1","java":">=21","fabric-api":"*","zorykaimenus":">=1.1.0"}}

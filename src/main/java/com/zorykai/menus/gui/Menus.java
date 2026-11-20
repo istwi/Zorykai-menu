@@ -27,7 +27,7 @@ public final class Menus {
   return data!=null&&Permissions.has(p,str(snap.permissions(),"use","zorykaimenus.use"),true)
    &&Permissions.has(p,str(snap.permissions(),location.shop?"shop":"open","zorykaimenus."+(location.shop?"shop":"open")),true)&&allowed(p,data,"");
  }
- public boolean allowed(ServerPlayerEntity p,JsonObject j,String fallback){return Permissions.has(p,str(j,"permission",fallback),!j.has("permission"));}
+ public boolean allowed(ServerPlayerEntity p,JsonObject j,String fallback){return bool(j,"available",true)&&Permissions.has(p,str(j,"permission",fallback),!j.has("permission"))&&Conditions.visible(p,j);}
  public void open(ServerPlayerEntity p,boolean shop,String id,int page,boolean push){
   var snap=app.catalog.get();var data=(shop?snap.shops():snap.menus()).get(id);
   if(data==null){app.message(p,"missing",Map.of());return;}
@@ -52,6 +52,10 @@ public final class Menus {
    var lore=new ArrayList<>(strings(b,"lore"));if(kind.equals("products")){
     if(b.has("buy")&&!bool(b,"priceLoreProvided",false))lore.add("<aqua>Comprar: <white>$"+b.get("buy").getAsBigDecimal().toPlainString()+" <gray>por unidade · botão esquerdo");
     if(b.has("sell")&&!bool(b,"priceLoreProvided",false))lore.add("<green>Vender: <white>$"+b.get("sell").getAsBigDecimal().toPlainString()+" <gray>por unidade · botão direito");
+   }
+   if(kind.equals("products")&&b.has("buy")){
+    var quote=app.pricing.quote(p,loc.id,data,b,false,1);
+    if(quote.discountPercent().signum()>0)lore.addAll(List.of("<gray>Original: $"+Texts.money(quote.originalUnit()),"<aqua>Benefício VIP: "+Texts.money(quote.discountPercent())+"%","<green>Preço VIP: $"+Texts.money(quote.effectiveUnit()),"<gray>Economia/unidade: $"+Texts.money(quote.savings())));
    }
    var stack=icon(p,obj(b,"icon"),b.has("name")?b.get("name").getAsString():null,lore,balance);
    for(var sl:arr(b,"slots"))menu.button(sl.getAsInt(),stack.copy(),button->{
@@ -91,6 +95,7 @@ public final class Menus {
     case "PREVIOUS_PAGE" -> open(p,location.shop,location.id,location.page-1,false);
     case "SEND_MESSAGE" -> app.literal(p,str(a,"message",""));
     case "PLAY_SOUND" -> sound(p,str(a,"sound","minecraft:ui.button.click"));
+    default -> {try{com.zorykai.menus.api.ZorykaiMenusAPI.executeAction(type,new com.zorykai.menus.api.ZorykaiMenusAPI.ActionContext(p,location.id,location.shop,location.page,button,GSON.toJson(a)));}catch(RuntimeException|LinkageError failure){app.LOG.warn("Ação de extensão recusada: "+type,failure);app.literal(p,"<red>Ação indisponível ou sem permissão.");}}
     case "PLAYER_COMMAND","SERVER_COMMAND" -> {
      if(privileged&&!bool(app.catalog.get().config(),"allowServerCommands",false)){app.literal(p,"<red>Ações de console desativadas na configuração.");return;}
      for(String command:strings(a,"commands")){
@@ -107,23 +112,42 @@ public final class Menus {
  public void confirm(ServerPlayerEntity p,Location parent,JsonObject product,boolean sell,int quantity,long revision){
   if(app.catalog.get().revision()!=revision)return;
   if(!Permissions.has(p,str(app.catalog.get().permissions(),sell?"sell":"buy","zorykaimenus."+(sell?"sell":"buy")),true)||!allowed(p,product,"")){app.message(p,"denied",Map.of());return;}
-  int q=Math.max(1,Math.min(num(app.catalog.get().config(),"maxQuantity",2304),quantity));
+  int q=Math.max(1,Math.min(app.pricing.limit(product),quantity));
   LockedMenu m=display(p,6,sell?"<aqua>Confirmar venda":"<aqua>Confirmar compra",null);
   renderConfirm(p,m,parent,product,sell,q,revision,null);
   app.economy.balance(p.getUuid()).whenComplete((balance,error)->p.getServer().execute(()->{if(p.currentScreenHandler==m&&app.catalog.get().revision()==revision)renderConfirm(p,m,parent,product,sell,q,revision,error==null?balance:null);}));
  }
  private void renderConfirm(ServerPlayerEntity p,LockedMenu m,Location parent,JsonObject product,boolean sell,int q,long revision,BigDecimal balance){
-  BigDecimal unit=product.get(sell?"sell":"buy").getAsBigDecimal(),total=unit.multiply(BigDecimal.valueOf(q));
+  var shop=app.catalog.get().shops().get(parent.id);
+  var quote=app.pricing.quote(p,parent.id,shop,product,sell,q);
+  BigDecimal unit=quote.effectiveUnit(),total=quote.total();
   var item=ItemsJson.read(p.getServer(),obj(product,"item"));int available=com.zorykai.menus.shops.InventoryPlan.available(p.getInventory().main,item);
   List<String> lore=new ArrayList<>(List.of("<gray>Quantidade: <white>"+q,"<gray>Preço unitário: <white>$"+Texts.money(unit),"<aqua>Total: <white>$"+Texts.money(total),"<gray>Saldo atual: <white>$"+Texts.money(balance)));
+  if(!sell)lore.addAll(List.of("<gray>Preço original/unidade: $"+Texts.money(quote.originalUnit()),"<aqua>Desconto: "+Texts.money(quote.discountPercent())+"%","<green>Economia total: $"+Texts.money(quote.savings())));
   lore.add(sell?"<gray>Disponíveis: <white>"+available:"<gray>Saldo estimado: <white>$"+Texts.money(balance==null?null:balance.subtract(total)));
   m.button(13,icon(p,obj(product,"icon"),product.has("name")?product.get("name").getAsString():null,lore,balance),null);
   int[] deltas={-64,-10,-1,1,10,64};int[] slots={19,20,21,23,24,25};
   for(int i=0;i<6;i++){int delta=deltas[i];plain(p,m,slots[i],delta<0?Items.RED_DYE:Items.LIME_DYE,"<white>"+(delta>0?"+":"")+delta,List.of("<gray>Alterar quantidade"),b->confirm(p,parent,product,sell,q+delta,revision),balance);}
   int[] quick={1,16,32,64};for(int i=0;i<4;i++){int n=quick[i];plain(p,m,29+i,Items.PAPER,"<aqua>"+n+" unidade(s)",List.of(),b->confirm(p,parent,product,sell,n,revision),balance);}
   if(sell)plain(p,m,34,Items.CHEST,"<aqua>Vender todos os elegíveis",List.of("<gray>Somente este produto, com componentes idênticos.","<gray>Disponíveis: "+available),b->confirm(p,parent,product,true,available,revision),balance);
+  if(!sell)plain(p,m,34,Items.CHEST,"<aqua><bold>COMPRAR MÁXIMO",List.of("<gray>Considera saldo, desconto e espaço.","<gray>A compra ainda exige confirmação."),b->selectMaximum(p,m,parent,product,revision),balance);
   plain(p,m,45,Items.ARROW,"<aqua>Voltar",List.of(),b->open(p,true,parent.id,parent.page,false),balance);
-  plain(p,m,49,Items.LIME_CONCRETE,"<green>Confirmar "+(sell?"venda":"compra"),List.of("<gray>"+q+" unidade(s) · $"+Texts.money(total)),b->app.trades.submit(p,parent.id,str(product,"id",""),sell,q,revision),balance);
+  plain(p,m,49,Items.LIME_CONCRETE,"<green>Confirmar "+(sell?"venda":"compra"),List.of("<gray>"+q+" unidade(s) · $"+Texts.money(total)),b->app.trades.submit(p,parent.id,str(product,"id",""),sell,q,revision,quote.total()),balance);
   plain(p,m,53,Items.RED_CONCRETE,"<red>Cancelar",List.of(),b->p.closeHandledScreen(),balance);m.sendContentUpdates();
+ }
+ private void selectMaximum(ServerPlayerEntity p,LockedMenu screen,Location parent,JsonObject product,long revision){
+  app.economy.balance(p.getUuid()).whenComplete((balance,error)->p.getServer().execute(()->{
+   if(p.currentScreenHandler!=screen||app.catalog.get().revision()!=revision)return;
+   try{
+    if(error!=null)throw new IllegalStateException("saldo indisponível");
+    if(!access(p,parent)||!allowed(p,product,"")||!Conditions.visible(p,product)||!Permissions.has(p,str(app.catalog.get().permissions(),"buy","zorykaimenus.buy"),true))throw new IllegalArgumentException("sem permissão ou condição indisponível");
+    var shop=app.catalog.get().shops().get(parent.id);var unit=ItemsJson.read(p.getServer(),obj(product,"item"));
+    int limit=app.pricing.limit(product);int capacity=com.zorykai.menus.shops.InventoryPlan.capacity(p.getInventory().main,unit,limit);
+    if(capacity==0)throw new IllegalArgumentException("inventário cheio");
+    int max=com.zorykai.menus.pricing.PriceEngine.maximum(balance,capacity,limit,n->app.pricing.quote(p,parent.id,shop,product,false,n).total());
+    if(max==0)throw new IllegalArgumentException("saldo insuficiente para uma unidade");
+    confirm(p,parent,product,false,max,revision);
+   }catch(Exception failure){app.message(p,"failure",Map.of("reason",failure.getMessage()==null?"cálculo indisponível":failure.getMessage()));}
+  }));
  }
 }

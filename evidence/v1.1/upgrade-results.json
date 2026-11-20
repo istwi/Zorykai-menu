@@ -1,0 +1,170 @@
+[
+  {
+    "name": "normal operator has no implicit VIP",
+    "passed": true
+  },
+  {
+    "name": "VIP quote vip",
+    "passed": true
+  },
+  {
+    "name": "real discounted purchase vip",
+    "passed": true
+  },
+  {
+    "name": "VIP quote vipplus",
+    "passed": true
+  },
+  {
+    "name": "real discounted purchase vipplus",
+    "passed": true
+  },
+  {
+    "name": "VIP quote mvp",
+    "passed": true
+  },
+  {
+    "name": "real discounted purchase mvp",
+    "passed": true
+  },
+  {
+    "name": "VIP quote mvpplus",
+    "passed": true
+  },
+  {
+    "name": "real discounted purchase mvpplus",
+    "passed": true
+  },
+  {
+    "name": "multiple permissions select20 without stacking",
+    "passed": true
+  },
+  {
+    "name": "product explicitly disables discount",
+    "passed": true
+  },
+  {
+    "name": "specific product overrides general",
+    "passed": true
+  },
+  {
+    "name": "removed VIP before confirmation rejects stale quote",
+    "passed": true
+  },
+  {
+    "name": "removed VIP after debit safely refunds",
+    "passed": true
+  },
+  {
+    "name": "maximum selects50 with real VIP and balance",
+    "passed": true
+  },
+  {
+    "name": "maximum confirmed once despite duplicate click",
+    "passed": true
+  },
+  {
+    "name": "maximum accounts for partial stack capacity4",
+    "passed": true
+  },
+  {
+    "name": "full inventory does not select quantity",
+    "passed": true
+  },
+  {
+    "name": "native stack maximum16 respected",
+    "passed": true
+  },
+  {
+    "name": "per product maximum10 respected",
+    "passed": true
+  },
+  {
+    "name": "zero price selects product limit without division",
+    "passed": true
+  },
+  {
+    "name": "real free purchase changes only inventory",
+    "passed": true
+  },
+  {
+    "name": "maximum insufficient balance remains unconfirmed",
+    "passed": true
+  },
+  {
+    "name": "separate mod cancels before wallet or inventory changes",
+    "passed": true
+  },
+  {
+    "name": "post purchase event has confirmed immutable price data",
+    "passed": true
+  },
+  {
+    "name": "throwing observer does not duplicate or invalidate result",
+    "passed": true
+  },
+  {
+    "name": "before sale cancellation preserves items and balance",
+    "passed": true
+  },
+  {
+    "name": "sale event and full undiscounted price",
+    "passed": true
+  },
+  {
+    "name": "separate addon opens menu through API",
+    "passed": true
+  },
+  {
+    "name": "custom placeholder rendered",
+    "passed": true
+  },
+  {
+    "name": "custom condition hides button",
+    "passed": true
+  },
+  {
+    "name": "custom action executes once",
+    "passed": true
+  },
+  {
+    "name": "custom action permission rechecked",
+    "passed": true
+  },
+  {
+    "name": "public product queries preserve base price",
+    "passed": true
+  },
+  {
+    "name": "separate API opens shop",
+    "passed": true
+  },
+  {
+    "name": "API open respects core permissions",
+    "passed": true
+  },
+  {
+    "name": "Cobblemon party snapshot valid and read only",
+    "passed": true
+  },
+  {
+    "name": "Cobblemon placeholders resolve",
+    "passed": true
+  },
+  {
+    "name": "native party conditions",
+    "passed": true
+  },
+  {
+    "name": "invalid discounts retain previous snapshot",
+    "passed": true
+  },
+  {
+    "name": "restore valid discounts",
+    "passed": true
+  },
+  {
+    "name": "errors persist inside config with stack trace",
+    "passed": true
+  }
+]

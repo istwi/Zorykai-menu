@@ -25,7 +25,7 @@ public final class LockedMenu extends GenericContainerScreenHandler {
  @Override public void onSlotClick(int slot,int button,SlotActionType type,PlayerEntity p){
   if(p!=owner||p.currentScreenHandler!=this||slot<0||slot>=size||button<0||button>1||type!=SlotActionType.PICKUP)return;
   long now=owner.getServer().getTicks();if(lastClick==now)return;lastClick=now;
-  var handler=buttons.get(slot);if(handler!=null)handler.accept(button);
+  var handler=buttons.get(slot);if(handler!=null)try{handler.accept(button);}catch(RuntimeException|LinkageError failure){com.zorykai.menus.ZorykaiMenus.LOG.error("Falha em botão de menu, jogador="+owner.getUuid()+", slot="+slot,failure);owner.sendMessage(net.minecraft.text.Text.literal("Não foi possível executar a ação. Consulte os logs do ZorykaiMenus."),false);}
  }
  @Override public void onClosed(PlayerEntity p){super.onClosed(p);if(closeAction!=null){var action=closeAction;closeAction=null;action.run();}}
 }

@@ -4,6 +4,11 @@ import java.util.*;
 public final class InventoryPlan {
  public static List<ItemStack> copy(List<ItemStack> in){return new ArrayList<>(in.stream().map(ItemStack::copy).toList());}
  public static int available(List<ItemStack> inventory,ItemStack unit){int n=0;for(var stack:inventory)if(ItemStack.areItemsAndComponentsEqual(stack,unit))n=Math.addExact(n,stack.getCount());return n;}
+ public static int capacity(List<ItemStack> inventory,ItemStack unit,int limit){
+  if(limit<0)throw new IllegalArgumentException("Limite negativo");long free=0;
+  for(var stack:inventory){if(stack.isEmpty())free+=unit.getMaxCount();else if(ItemStack.areItemsAndComponentsEqual(stack,unit))free+=Math.max(0,stack.getMaxCount()-stack.getCount());if(free>=limit)return limit;}
+  return (int)free;
+ }
  public static boolean same(List<ItemStack> a,List<ItemStack> b){if(a.size()!=b.size())return false;for(int i=0;i<a.size();i++)if(!ItemStack.areEqual(a.get(i),b.get(i)))return false;return true;}
  public static List<ItemStack> add(List<ItemStack> inventory,ItemStack unit,int quantity){
   var result=copy(inventory);int left=quantity;

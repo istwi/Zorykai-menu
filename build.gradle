@@ -1,5 +1,5 @@
 plugins { id 'fabric-loom' version '1.10.5' }
-version = '1.0.0'
+version = '1.1.0'
 group = 'com.zorykai'
 base { archivesName = 'zorykaimenus' }
 repositories { mavenCentral(); maven { url = 'https://maven.fabricmc.net/' } }
@@ -42,5 +42,25 @@ tasks.register('remapIntegrationJar', net.fabricmc.loom.task.RemapJarTask) {
  dependsOn tasks.named('integrationJar'), tasks.named('remapJar')
  inputFile = tasks.named('integrationJar', Jar).flatMap { it.archiveFile }
  archiveClassifier = 'checks'
+ addNestedDependencies.set(false)
+ classpath.from(sourceSets.main.compileClasspath, sourceSets.main.output)
+}
+sourceSets {
+ example {
+  compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+  runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+ }
+}
+tasks.named('check') { dependsOn tasks.named('compileExampleJava') }
+tasks.register('exampleJar', Jar) {
+ dependsOn tasks.named('compileExampleJava'), tasks.named('processExampleResources')
+ from sourceSets.example.output
+ archiveClassifier = 'example-dev'
+}
+tasks.register('remapExampleJar', net.fabricmc.loom.task.RemapJarTask) {
+ dependsOn tasks.named('exampleJar'), tasks.named('remapJar')
+ inputFile = tasks.named('exampleJar', Jar).flatMap { it.archiveFile }
+ archiveClassifier = 'example'
+ addNestedDependencies.set(false)
  classpath.from(sourceSets.main.compileClasspath, sourceSets.main.output)
 }

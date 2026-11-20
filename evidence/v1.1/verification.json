@@ -1,0 +1,31 @@
+{
+  "version": "1.1.0",
+  "date": "2026-11-20",
+  "unitTests": 30,
+  "nativeAssertions": {
+    "upgrade-results.json": 42,
+    "compatibility-results.json": 22,
+    "regression-results.json": 36,
+    "absence-results.json": 5
+  },
+  "jarSha256": "9a9b0cb00c1849fc099b94b565482091e8358336529a1e7478d4a70c7f792d3b",
+  "testedProductionJarIdentical": true,
+  "serverMods": {
+    "shirokai-core.jar": "10ee63922064674723063673dd5651e2654345e8a9b67814d7e84e6cb29f1504",
+    "zorykaimenus.jar": "9a9b0cb00c1849fc099b94b565482091e8358336529a1e7478d4a70c7f792d3b",
+    "zorykaimenus-checks.jar": "7b3460181249b54a6d73af533a1ba25807a650d89d36ddc2f1e20452e091bbde",
+    "zorykaimenus-example.jar": "f288d31cf01d656dff846b750c327a678f45508f0da3c3b5f2ac138d48ea2194",
+    "impactor.jar": "02312d1b101e67f9d2a0476ad6aafabb0b4cabab787f85ecf871ffce8d59f8a9",
+    "cobblemon.jar": "a977e741eec047ebc50559812be9b3296c9090254a632006f1c8b10ed1f7f40c",
+    "fabric-api.jar": "cc531256ecce945b65b179bcedc45ca40b69d7364b95448d255270bb6fccaac8",
+    "luckperms.jar": "3e17d490f87761c174478f68860367610a473ff5c2a9a9daad608773bf0e81bc",
+    "shirokai-dex.jar": "cb493e8d1ea128b89231a0fb662e2bd389d98bd685b4856262ddc1e72f4e4c88",
+    "placeholder-api.jar": "c0187ee299527ac7a3e0b1e83601dcdc0de631e286fe41e6be1a75958ea8e443"
+  },
+  "clientMods": {
+    "cobblemon.jar": "a977e741eec047ebc50559812be9b3296c9090254a632006f1c8b10ed1f7f40c",
+    "fabric-api.jar": "cc531256ecce945b65b179bcedc45ca40b69d7364b95448d255270bb6fccaac8"
+  },
+  "pendingTransactions": 0,
+  "productionContainsDiagnosticOrExampleClasses": false
+}

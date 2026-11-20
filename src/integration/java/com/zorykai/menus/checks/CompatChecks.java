@@ -25,10 +25,21 @@ public final class CompatChecks implements ModInitializer {
    var player=new ServerPlayerEntity(server,server.getOverworld(),new GameProfile(UUID.randomUUID(),"ZorykaiCompat"),SyncedClientOptions.createDefault());
    var condition=parse("{\"partyShinySlot\":0,\"shinyExpected\":true}");
    check(results,"empty party condition fails closed",!Conditions.visible(player,condition));
+   var empty=com.zorykai.menus.integrations.cobblemon.CobblemonAccess.snapshot(player);
+   check(results,"advanced empty party has six free slots",empty.available()&&empty.count()==0&&empty.free()==6);
+   check(results,"empty first Pokemon placeholder is safe",NativePlaceholders.resolve("cobblemon:first_name",player,null).equals(Component.text("N/D")));
+   check(results,"advanced empty team conditions",!Conditions.visible(player,parse("{\"conditions\":[{\"type\":\"cobblemon:has_pokemon\"}]}"))&&Conditions.visible(player,parse("{\"conditions\":[{\"type\":\"cobblemon:party_space\",\"min\":6}]}")));
+
    Class<?> cobblemon=Class.forName("com.cobblemon.mod.common.Cobblemon");var instance=cobblemon.getField("INSTANCE").get(null);var storage=cobblemon.getMethod("getStorage").invoke(instance);var party=storage.getClass().getMethod("getParty",ServerPlayerEntity.class).invoke(storage,player);
    Class<?> properties=Class.forName("com.cobblemon.mod.common.api.pokemon.PokemonProperties");var companion=properties.getField("Companion").get(null);var props=companion.getClass().getMethod("parse",String.class).invoke(companion,"pikachu shiny=true");var pokemon=properties.getMethod("create").invoke(props);
    party.getClass().getMethod("set",int.class,pokemon.getClass()).invoke(party,0,pokemon);
    check(results,"real Cobblemon shiny Pokemon accepted",Conditions.visible(player,condition));
+   var occupied=com.zorykai.menus.integrations.cobblemon.CobblemonAccess.snapshot(player);
+   check(results,"advanced populated party exposes name and level",occupied.count()==1&&occupied.free()==5&&!occupied.firstName().isBlank()&&occupied.firstLevel()>0);
+   check(results,"read only snapshot is stable",occupied.equals(com.zorykai.menus.integrations.cobblemon.CobblemonAccess.snapshot(player)));
+   player.getInventory().main.set(0,com.zorykai.menus.util.ItemsJson.read(server,parse("{\"id\":\"cobblemon:poke_ball\"}")));
+   check(results,"actual Cobblemon item condition",Conditions.visible(player,parse("{\"conditions\":[{\"type\":\"cobblemon:has_item\",\"item\":{\"id\":\"cobblemon:poke_ball\"}}]}")));
+
    pokemon.getClass().getMethod("setShiny",boolean.class).invoke(pokemon,false);
    check(results,"real Cobblemon non shiny rejected",!Conditions.visible(player,condition));condition.addProperty("shinyExpected",false);
    check(results,"expected false condition accepted",Conditions.visible(player,condition));
