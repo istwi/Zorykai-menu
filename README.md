@@ -1,8 +1,20 @@
-# ZorykaiMenus1.1.0
+# ZorykaiMenus 1.2.0
 
 Atualização do mod existente de menus e lojas para **Minecraft1.21.1 / Fabric / Java21**, com Impactor e instalação somente no servidor. Mod ID preservado: `zorykaimenus`.
 
+**Downloads 1.2:** [JAR](dist/v1.2.0/zorykaimenus-1.2.0.jar) · [Exemplo da bolsa](examples/dynamic-market/shops/farm_market.json) · [Configuração e testes](docs/market/README.md).
+
+## Bolsa de valores
+
+Escolha a loja adicionando `"market": {"enabled": true}` no JSON dela e use `/zmenu reload`. Vendas confirmadas reduzem a cotação global daquele produto; após intervalos sem novas vendas, o preço recupera gradualmente até a base. Piso, queda e recuperação são configuráveis. Os padrões são piso de 25%, queda de 1 ponto percentual da base por 64 unidades e recuperação de 64 unidades de pressão a cada 5 minutos sem nova venda confirmada.
+
+O lote inteiro entra no cálculo progressivo, com o total exibido antes da confirmação. Se a cotação mudar, o jogador precisa revisar a confirmação; não há alteração silenciosa do valor. Lojas não selecionadas continuam com os preços fixos. Compra e descontos VIP mantêm suas regras.
+
+Veja [como ativar em uma loja existente](docs/market/README.md), [JSON completo de exemplo](examples/dynamic-market/shops/farm_market.json) e [evidências e limites](docs/market/TESTING.md).
+
 **Downloads1.1:** [JAR](dist/v1.1.0/zorykaimenus-1.1.0.jar) · [Projeto completo](dist/v1.1.0/zorykaimenus-1.1.0-projeto.zip) · [Exemplos JSON](dist/v1.1.0/zorykaimenus-1.1.0-exemplos.zip). A entrega1.0 permanece em dist/pronto-github/.
+
+**Validação 1.2:** 41 testes automatizados e 32 verificações dedicadas aprovados com jogadores simulados. [Relatório](docs/market/TESTING.md).
 
 ## O que mudou
 
@@ -12,19 +24,19 @@ Atualização do mod existente de menus e lojas para **Minecraft1.21.1 / Fabric 
 - API pública para menus/lojas, ações, placeholders, condições, preços/descontos e eventos de comércio.
 - Logs automáticos em **config/zorykaimenus/logs/erros.log**, com stack trace e rotação.
 
-**Validação:**30 testes JUnit e105 verificações de integração aprovadas. [Relatório e limites](docs/v1.1/TESTING.md).
+**Validação histórica da 1.1:**30 testes JUnit e105 verificações de integração aprovadas. [Relatório e limites](docs/v1.1/TESTING.md).
 
 ## Atualizar ou instalar
 
 1. Pare o servidor e preserve uma cópia do mundo/configuração.
-2. Instale somente **zorykaimenus-1.1.0.jar** na pasta mods, removendo o JAR1.0 do mesmo mod.
+2. Instale somente **zorykaimenus-1.2.0.jar** na pasta mods, removendo a versão anterior do mesmo mod.
 3. Mantenha FabricAPI0.116.6+1.21.1 e Impactor5.3.5+1.21.1, versões usadas na homologação. Java21 é necessário.
 4. Inicie o servidor. discounts.json ausente será criado; configurações existentes não são sobrescritas.
 5. Configure grupos no LuckPerms, valide com /zmenu validate e use /zmenu reload. Sem permissão VIP válida, o preço é integral.
 
 O cliente não precisa de ZorykaiMenus. Para itens/modelos Cobblemon, continuam necessários os mods de conteúdo habituais. Os exemplos/diagnósticos Java são módulos de laboratório e não devem ser instalados junto ao produto em produção.
 
-A1.1 lê JSONs1.0, inclusive arquivos diretamente em menus/shops ou subpastas. Não duplique IDs ao mover arquivos. /zmenu shop <nome> continua sendo o equivalente de /tentavip open <nome>. Nenhuma loja de blocos precisa ser criada.
+A1.2 lê JSONs1.0/1.1, inclusive arquivos diretamente em menus/shops ou subpastas. Não duplique IDs ao mover arquivos. /zmenu shop <nome> continua sendo o equivalente de /tentavip open <nome>. Nenhuma loja de blocos precisa ser criada.
 
 ## Documentação1.1
 
@@ -48,7 +60,7 @@ python3 tools/prepare_dependencies.py
 
 Gradle Wrapper8.14.3 e Loom1.10.5 preservados. O preparador baixa os artefatos oficiais fixados de Impactor e Text Placeholder API com conferência de hash. Esta última é opcional no runtime das integrações externas e dependência de compilação do adaptador existente.
 
-Saída: build/libs/zorykaimenus-1.1.0.jar. O build também compila o addon Java de exemplo; remapExampleJar produz seu JAR separado. As integrações registradas usam o namespace do addon, sem sobrescrever recursos nativos.
+Saída: build/libs/zorykaimenus-1.2.0.jar. O build também compila o addon Java de exemplo; remapExampleJar produz seu JAR separado. As integrações registradas usam o namespace do addon, sem sobrescrever recursos nativos.
 
 ## Configuração e migração preservadas
 

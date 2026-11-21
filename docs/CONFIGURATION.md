@@ -1,5 +1,7 @@
 # Configuração
 
+A versão 1.2 acrescenta o objeto opcional `market` em lojas/produtos para preços dinâmicos de venda. Veja [bolsa de valores](market/README.md). Os formatos anteriores permanecem válidos sem esse campo.
+
 Arquivos: `config.json`, `economy.json`, `permissions.json`, `messages/pt_br.json`, `menus/*.json`, `shops/*.json`. Subpastas são lidas recursivamente. Os exemplos completos acompanham `src/main/resources/defaults/`.
 
 Menu mínimo:

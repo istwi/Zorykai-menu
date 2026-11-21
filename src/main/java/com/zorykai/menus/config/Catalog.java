@@ -44,6 +44,7 @@ public final class Catalog {
    String path=(group==menus?"menus/":"shops/")+entry.getKey()+".json";JsonObject j=entry.getValue();
    try{
     com.zorykai.menus.pricing.Discounts.validateRule(obj(j,"discount"),discountCap,"discount");
+    if(group==shops)com.zorykai.menus.market.MarketPolicy.validate(obj(j,"market"));
     com.zorykai.menus.gui.Conditions.validate(j,server);
     int size=num(j,"size",54),pages=num(j,"pages",1);if(size<9||size>54||size%9!=0)throw new IllegalArgumentException("size: deve ser 9,18,27,36,45 ou54");if(pages<1||pages>1000)throw new IllegalArgumentException("pages: intervalo1..1000");
     Map<String,JsonObject> used=new HashMap<>();Set<String> ids=new HashSet<>();
@@ -57,6 +58,7 @@ public final class Catalog {
       String id=str(b,"id","");if(id.isBlank()||!ids.add(id))throw new IllegalArgumentException("id vazio ou duplicado: "+id);
       ItemsJson.readIcon(server,obj(b,"icon"));if(kind.equals("products")){
        var stack=ItemsJson.read(server,obj(b,"item"));if(stack.getCount()!=1)throw new IllegalArgumentException("item.count: produto unitário precisa ser1");
+       com.zorykai.menus.market.MarketPolicy.validate(obj(b,"market"));
        if(!b.has("buy")&&!b.has("sell"))throw new IllegalArgumentException("buy/sell: preço ausente");
        for(String price:List.of("buy","sell"))if(b.has(price)){var x=b.get(price).getAsBigDecimal();if(x.signum()<0||x.precision()>30||Math.max(0,x.scale())>8)throw new IllegalArgumentException(price+": preço inválido");}
       }

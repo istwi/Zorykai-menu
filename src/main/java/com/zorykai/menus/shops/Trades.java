@@ -32,7 +32,8 @@ public final class Trades {
    if(expectedTotal!=null&&quote.total().compareTo(expectedTotal)!=0)throw new IllegalArgumentException("preço ou desconto mudou; abra a confirmação novamente");
    var tx=new JsonObject();tx.addProperty("id",UUID.randomUUID().toString());tx.addProperty("player",id.toString());tx.addProperty("sell",sell);tx.addProperty("quantity",quantity);
    tx.addProperty("shop",shopId);tx.addProperty("product",productId);tx.addProperty("revision",revision);
-   tx.addProperty("currency",str(snapshot.economy(),"currency","impactor:dollars"));tx.addProperty("total",quote.total().toPlainString());tx.addProperty("originalTotal",quote.originalTotal().toPlainString());tx.addProperty("discountPercent",quote.discountPercent().toPlainString());tx.add("item",ItemsJson.write(app.server,unit));
+   tx.addProperty("currency",str(snapshot.economy(),"currency","impactor:dollars"));tx.addProperty("total",quote.total().toPlainString());tx.addProperty("effectiveUnit",quote.effectiveUnit().toPlainString());tx.addProperty("originalTotal",quote.originalTotal().toPlainString());tx.addProperty("discountPercent",quote.discountPercent().toPlainString());tx.add("item",ItemsJson.write(app.server,unit));
+   if(sell){var rule=com.zorykai.menus.market.MarketPolicy.of(shop,product);if(rule.isPresent()){tx.addProperty("marketKey",com.zorykai.menus.market.Market.key(shopId,productId));tx.add("marketPolicy",rule.get().json());}}
    stage(tx,"PREPARED");running.add(id);ownsLock=true;
    if(!TradeEvents.before(TradeEvents.snapshot(tx))){finish(tx,false,"operação cancelada por integração");return;}
    p.closeHandledScreen();
@@ -85,7 +86,7 @@ public final class Trades {
   tx.add("before",stacks(p.getInventory().main));tx.add("after",stacks(after));stage(tx,step);DurableInventory.apply(p,after);
  }
  private void finish(JsonObject tx,boolean success,String reason)throws Exception{
-  journal.done(tx);if(success)TradeEvents.confirmed(TradeEvents.snapshot(tx));UUID id=UUID.fromString(str(tx,"player",""));running.remove(id);var p=app.server.getPlayerManager().getPlayer(id);
+  if(!journal.complete(tx,success,System.currentTimeMillis()))return;if(success)TradeEvents.confirmed(TradeEvents.snapshot(tx));UUID id=UUID.fromString(str(tx,"player",""));running.remove(id);var p=app.server.getPlayerManager().getPlayer(id);
   app.LOG.info("Operação {} concluída: player={}, venda={}, quantidade={}, total={}, sucesso={}",str(tx,"id",""),id,bool(tx,"sell",false),num(tx,"quantity",0),str(tx,"total",""),success);
   if(p!=null){if(success){app.message(p,"success",Map.of("quantity",str(tx,"quantity",""),"total",str(tx,"total","")));app.menus.sound(p,str(app.catalog.get().messages(),bool(tx,"sell",false)?"sellSound":"buySound","minecraft:entity.experience_orb.pickup"));}else failure(p,reason);}
  }
@@ -112,7 +113,7 @@ public final class Trades {
   if(running.contains(player))throw new IllegalStateException("operação em execução");var tx=journal.get(player);if(tx==null||!str(tx,"id","").equals(txId))throw new IllegalArgumentException("operação não encontrada");
   switch(str(tx,"stage","")){
    case "DEBIT_INTENT" -> {if(applied)stage(tx,"DEBITED");else journal.done(tx);}
-   case "CREDIT_INTENT" -> {if(applied)journal.done(tx);else stage(tx,"RETURN_PENDING");}
+   case "CREDIT_INTENT" -> {if(applied)finish(tx,true,"");else stage(tx,"RETURN_PENDING");}
    case "REFUND_INTENT" -> {if(applied)journal.done(tx);else stage(tx,"REFUND_PENDING");}
    default -> throw new IllegalArgumentException("etapa não permite atestado financeiro");
   }

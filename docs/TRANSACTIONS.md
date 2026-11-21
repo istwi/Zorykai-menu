@@ -1,5 +1,7 @@
 # Operações e recuperação
 
+Desde a versão 1.2, vendas dinâmicas reservam o produto no mesmo journal. A pressão de mercado é atualizada no mesmo commit que remove a pendência, somente após confirmar o crédito. A conciliação financeira anterior continua aplicável; veja [persistência e recuperação da bolsa](market/README.md).
+
 O Impactor fornece contas, `balance`, `withdraw`, `deposit`, resultados de transação e `save`; não oferece aqui um comprovante idempotente compartilhado com o inventário Minecraft. Portanto, o mod não promete uma transação distribuída atômica.
 
 Compra: validar catálogo, revisão, quantidade, permissões e capacidade; persistir intenção; debitar e salvar a conta Impactor; registrar confirmação; revalidar revisão/permissões/capacidade; registrar inventário anterior/posterior; entregar e salvar jogador; conferir NBT salvo e sincronizar o arquivo; remover pendência. Se a entrega for inviável após débito confirmado, tentar estorno com intenção persistida antes do crédito.

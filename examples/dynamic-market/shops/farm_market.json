@@ -1,0 +1,44 @@
+{
+  "id": "farm_market",
+  "size": 27,
+  "title": "<white><bold>✦ ZORYKAI</bold></white> <aqua>Bolsa de valores",
+  "market": {
+    "enabled": true,
+    "minimumPercent": 25,
+    "dropPercent": 1,
+    "volumePerDrop": 64,
+    "recoveryVolume": 64,
+    "recoverySeconds": 300
+  },
+  "products": [
+    {
+      "id": "cactus",
+      "slots": [11],
+      "item": {"id": "minecraft:cactus"},
+      "icon": {"id": "minecraft:cactus"},
+      "sell": "1.00",
+      "name": "<green>Cacto",
+      "lore": ["<gray>Venda os cactos da sua farm.", "<gray>A cotação acompanha as vendas desta loja."]
+    },
+    {
+      "id": "sugar_cane",
+      "slots": [13],
+      "item": {"id": "minecraft:sugar_cane"},
+      "icon": {"id": "minecraft:sugar_cane"},
+      "sell": "0.50",
+      "name": "<green>Cana-de-açúcar"
+    },
+    {
+      "id": "stone_fixed",
+      "slots": [15],
+      "market": {"enabled": false},
+      "item": {"id": "minecraft:stone"},
+      "icon": {"id": "minecraft:stone"},
+      "sell": "0.10",
+      "name": "<white>Pedra · preço fixo"
+    }
+  ],
+  "buttons": [
+    {"id": "back", "slots": [18], "icon": {"id": "minecraft:arrow"}, "name": "<aqua>Voltar", "actions": [{"type": "BACK"}]}
+  ]
+}

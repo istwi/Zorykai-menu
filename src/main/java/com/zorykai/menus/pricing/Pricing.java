@@ -9,6 +9,7 @@ public final class Pricing {
  private final ZorykaiMenus app;public Pricing(ZorykaiMenus a){app=a;}
  public PriceEngine.Quote quote(ServerPlayerEntity player,String shopId,JsonObject shop,JsonObject product,boolean sell,int quantity){
   if(!bool(shop,"available",true)||!bool(product,"available",true))throw new IllegalArgumentException("produto indisponível");
+  if(sell){var policy=com.zorykai.menus.market.MarketPolicy.of(shop,product);if(policy.isPresent())return app.market.quote(shopId,str(product,"id",""),policy.get().json(),product.get("sell").getAsBigDecimal(),quantity,app.economy.decimals());}
   var snapshot=app.catalog.get();BigDecimal percent=sell?BigDecimal.ZERO:Discounts.applicable(snapshot.discounts(),shopId,shop,product,node->Permissions.explicit(player,node));
   return PriceEngine.quote(product.get(sell?"sell":"buy").getAsBigDecimal(),percent,quantity,app.economy.decimals(),RoundingMode.valueOf(str(snapshot.discounts(),"roundingMode","HALF_UP")));
  }

@@ -51,7 +51,13 @@ public final class Menus {
    var b=el.getAsJsonObject();if(!Catalog.pages(b,num(data,"pages",1)).contains(loc.page)||!allowed(p,b,"")||!Conditions.visible(p,b))continue;
    var lore=new ArrayList<>(strings(b,"lore"));if(kind.equals("products")){
     if(b.has("buy")&&!bool(b,"priceLoreProvided",false))lore.add("<aqua>Comprar: <white>$"+b.get("buy").getAsBigDecimal().toPlainString()+" <gray>por unidade · botão esquerdo");
-    if(b.has("sell")&&!bool(b,"priceLoreProvided",false))lore.add("<green>Vender: <white>$"+b.get("sell").getAsBigDecimal().toPlainString()+" <gray>por unidade · botão direito");
+    boolean dynamic=b.has("sell")&&com.zorykai.menus.market.MarketPolicy.of(data,b).isPresent();
+    if(dynamic){
+     var quote=app.pricing.quote(p,loc.id,data,b,true,1);var rule=com.zorykai.menus.market.MarketPolicy.of(data,b).orElseThrow();
+     String percent=quote.originalUnit().signum()==0?"100":quote.total().multiply(new BigDecimal("100")).divide(quote.originalUnit(),2,java.math.RoundingMode.HALF_UP).stripTrailingZeros().toPlainString();
+     lore.replaceAll(line->line.replace("{market_sell}",Texts.money(quote.total())).replace("{market_base}",Texts.money(quote.originalUnit())).replace("{market_percent}",percent));
+     lore.addAll(List.of("<aqua><bold>Bolsa de valores</bold>","<gray>Preço base: <white>$"+Texts.money(quote.originalUnit()),"<green>Vender agora (1 un.): <white>$"+Texts.money(quote.total())+" <gray>· botão direito","<gray>Cotação: "+percent+"% da base · mínimo "+Texts.money(rule.minimumPercent())+"%","<gray>Mais vendas reduzem o preço.","<gray>Sem novas vendas, recupera aos poucos."));
+    }else if(b.has("sell")&&!bool(b,"priceLoreProvided",false))lore.add("<green>Vender: <white>$"+b.get("sell").getAsBigDecimal().toPlainString()+" <gray>por unidade · botão direito");
    }
    if(kind.equals("products")&&b.has("buy")){
     var quote=app.pricing.quote(p,loc.id,data,b,false,1);
@@ -113,16 +119,19 @@ public final class Menus {
   if(app.catalog.get().revision()!=revision)return;
   if(!Permissions.has(p,str(app.catalog.get().permissions(),sell?"sell":"buy","zorykaimenus."+(sell?"sell":"buy")),true)||!allowed(p,product,"")){app.message(p,"denied",Map.of());return;}
   int q=Math.max(1,Math.min(app.pricing.limit(product),quantity));
+  var frozen=app.pricing.quote(p,parent.id,app.catalog.get().shops().get(parent.id),product,sell,q);
   LockedMenu m=display(p,6,sell?"<aqua>Confirmar venda":"<aqua>Confirmar compra",null);
-  renderConfirm(p,m,parent,product,sell,q,revision,null);
-  app.economy.balance(p.getUuid()).whenComplete((balance,error)->p.getServer().execute(()->{if(p.currentScreenHandler==m&&app.catalog.get().revision()==revision)renderConfirm(p,m,parent,product,sell,q,revision,error==null?balance:null);}));
+  renderConfirm(p,m,parent,product,sell,q,revision,null,frozen);
+  app.economy.balance(p.getUuid()).whenComplete((balance,error)->p.getServer().execute(()->{if(p.currentScreenHandler==m&&app.catalog.get().revision()==revision)renderConfirm(p,m,parent,product,sell,q,revision,error==null?balance:null,frozen);}));
  }
- private void renderConfirm(ServerPlayerEntity p,LockedMenu m,Location parent,JsonObject product,boolean sell,int q,long revision,BigDecimal balance){
+ private void renderConfirm(ServerPlayerEntity p,LockedMenu m,Location parent,JsonObject product,boolean sell,int q,long revision,BigDecimal balance,com.zorykai.menus.pricing.PriceEngine.Quote frozen){
   var shop=app.catalog.get().shops().get(parent.id);
-  var quote=app.pricing.quote(p,parent.id,shop,product,sell,q);
+  var quote=frozen;
+  boolean market=sell&&com.zorykai.menus.market.MarketPolicy.of(shop,product).isPresent();
   BigDecimal unit=quote.effectiveUnit(),total=quote.total();
   var item=ItemsJson.read(p.getServer(),obj(product,"item"));int available=com.zorykai.menus.shops.InventoryPlan.available(p.getInventory().main,item);
-  List<String> lore=new ArrayList<>(List.of("<gray>Quantidade: <white>"+q,"<gray>Preço unitário: <white>$"+Texts.money(unit),"<aqua>Total: <white>$"+Texts.money(total),"<gray>Saldo atual: <white>$"+Texts.money(balance)));
+  List<String> lore=new ArrayList<>(List.of("<gray>Quantidade: <white>"+q,(market?"<gray>Preço médio por unidade: <white>$":"<gray>Preço unitário: <white>$")+Texts.money(unit),"<aqua>Total: <white>$"+Texts.money(total),"<gray>Saldo atual: <white>$"+Texts.money(balance)));
+  if(market)lore.addAll(List.of("<aqua>Bolsa de valores · cotação global nesta loja","<gray>O total inclui a queda causada por este lote.","<gray>Se a cotação mudar, reabra a confirmação."));
   if(!sell)lore.addAll(List.of("<gray>Preço original/unidade: $"+Texts.money(quote.originalUnit()),"<aqua>Desconto: "+Texts.money(quote.discountPercent())+"%","<green>Economia total: $"+Texts.money(quote.savings())));
   lore.add(sell?"<gray>Disponíveis: <white>"+available:"<gray>Saldo estimado: <white>$"+Texts.money(balance==null?null:balance.subtract(total)));
   m.button(13,icon(p,obj(product,"icon"),product.has("name")?product.get("name").getAsString():null,lore,balance),null);

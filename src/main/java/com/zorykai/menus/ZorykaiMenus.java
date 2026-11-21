@@ -19,7 +19,7 @@ public final class ZorykaiMenus implements ModInitializer {
  public static volatile ZorykaiMenus instance;
  public static final Path ROOT=FabricLoader.getInstance().getConfigDir().resolve("zorykaimenus");
  public static final org.slf4j.Logger LOG=org.slf4j.LoggerFactory.getLogger("zorykaimenus");
- public com.zorykai.menus.pricing.Pricing pricing;
+ public com.zorykai.menus.pricing.Pricing pricing;public com.zorykai.menus.market.Market market;
  public final Catalog catalog=new Catalog(ROOT);public MinecraftServer server;public Menus menus;public ImpactorGateway economy;public Trades trades;private Journal journal;private com.zorykai.menus.logging.ErrorLogs errorLogs;
  @Override public void onInitialize(){
   instance=this;
@@ -28,8 +28,8 @@ public final class ZorykaiMenus implements ModInitializer {
   CommandRegistrationCallback.EVENT.register((dispatcher,access,environment)->Commands.register(this,dispatcher));
   ServerLifecycleEvents.SERVER_STARTED.register(s->{
    server=s;var errors=catalog.reload(s,true);if(!errors.isEmpty())throw new IllegalStateException("Configuração inválida:\n"+String.join("\n",errors));
-   try{journal=new Journal(ROOT.resolve("internal/pending.sqlite"));economy=new ImpactorGateway(()->str(catalog.get().economy(),"currency","impactor:dollars"));pricing=new com.zorykai.menus.pricing.Pricing(this);menus=new Menus(this);trades=new Trades(this,journal);Commands.aliases(this,s.getCommandManager().getDispatcher());
-    LOG.info("ZorykaiMenus 1.1.0: {} menus, {} lojas",catalog.get().menus().size(),catalog.get().shops().size());
+   try{journal=new Journal(ROOT.resolve("internal/pending.sqlite"));market=new com.zorykai.menus.market.Market(journal);economy=new ImpactorGateway(()->str(catalog.get().economy(),"currency","impactor:dollars"));pricing=new com.zorykai.menus.pricing.Pricing(this);menus=new Menus(this);trades=new Trades(this,journal);Commands.aliases(this,s.getCommandManager().getDispatcher());
+    LOG.info("ZorykaiMenus 1.2.0: {} menus, {} lojas",catalog.get().menus().size(),catalog.get().shops().size());
    }catch(Exception e){LOG.error("Falha ao iniciar ZorykaiMenus",e);throw new IllegalStateException("Falha ao iniciar ZorykaiMenus",e);}
   });
   ServerPlayConnectionEvents.JOIN.register((handler,sender,s)->{try{if(journal.get(handler.player.getUuid())!=null)trades.recover(handler.player);}catch(Exception e){LOG.error("Recuperação indisponível",e);}});

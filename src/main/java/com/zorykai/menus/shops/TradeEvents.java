@@ -20,6 +20,6 @@ public final class TradeEvents {
  static void confirmed(Trade trade){thread();for(var listener:trade.direction()==Direction.BUY?AFTER_BUY:AFTER_SELL)try{listener.accept(trade);}catch(Throwable failure){observerFailure(failure);}}
  static Trade snapshot(JsonObject tx){
   int quantity=num(tx,"quantity",1);BigDecimal total=tx.get("total").getAsBigDecimal(),original=tx.has("originalTotal")?tx.get("originalTotal").getAsBigDecimal():total;
-  return new Trade(UUID.fromString(str(tx,"id","")),UUID.fromString(str(tx,"player","")),str(tx,"shop",""),str(tx,"product",""),bool(tx,"sell",false)?Direction.SELL:Direction.BUY,quantity,original.divide(BigDecimal.valueOf(quantity)),original,tx.has("discountPercent")?tx.get("discountPercent").getAsBigDecimal():BigDecimal.ZERO,total.divide(BigDecimal.valueOf(quantity)),total,str(tx,"currency","impactor:dollars"));
+  return new Trade(UUID.fromString(str(tx,"id","")),UUID.fromString(str(tx,"player","")),str(tx,"shop",""),str(tx,"product",""),bool(tx,"sell",false)?Direction.SELL:Direction.BUY,quantity,original.divide(BigDecimal.valueOf(quantity)),original,tx.has("discountPercent")?tx.get("discountPercent").getAsBigDecimal():BigDecimal.ZERO,tx.has("effectiveUnit")?tx.get("effectiveUnit").getAsBigDecimal():total.divide(BigDecimal.valueOf(quantity),java.math.MathContext.DECIMAL128),total,str(tx,"currency","impactor:dollars"));
  }
 }
