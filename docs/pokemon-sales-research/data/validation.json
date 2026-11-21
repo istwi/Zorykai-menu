@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "1025 definitions",
+      "passed": true
+    },
+    {
+      "name": "905 implemented",
+      "passed": true
+    },
+    {
+      "name": "world buckets sum100",
+      "passed": true
+    },
+    {
+      "name": "fishing buckets sum100",
+      "passed": true
+    },
+    {
+      "name": "magikarp known route",
+      "passed": true
+    },
+    {
+      "name": "gyarados known route",
+      "passed": true
+    },
+    {
+      "name": "feebas known route",
+      "passed": true
+    },
+    {
+      "name": "dratini known route",
+      "passed": true
+    },
+    {
+      "name": "bulbasaur known route",
+      "passed": true
+    },
+    {
+      "name": "Undefined Dratini structure tag flagged",
+      "passed": true
+    },
+    {
+      "name": "Mewtwo no row",
+      "passed": true
+    },
+    {
+      "name": "herd weights separate",
+      "passed": true
+    },
+    {
+      "name": "Every row known species",
+      "passed": true
+    }
+  ]
+}

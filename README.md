@@ -69,3 +69,13 @@ Saída: build/libs/zorykaimenus-1.2.0.jar. O build também compila o addon Java 
 A migração conserva510 produtos e preços dos arquivos fornecidos. Ícones ausentes podem usar o fallback explícito de papel sem mudar o ID original; ações dependentes de outros mods ainda precisam de seus serviços. Para cash/tokens/dex externos, mantenha Core/Dex e Text Placeholder API2.4.2+1.21. A integração Cobblemon não é um interpretador Molang geral.
 
 Não apague internal/pending.sqlite para desbloquear operações incertas. Consulte os logs e a recuperação administrativa. Eventos não substituem a conciliação e não prometem entrega exatamente uma vez entre quedas.
+
+
+## Pesquisa para loja de venda de Pokémon
+
+Levantamento do Cobblemon Fabric 1.8.3 oficial, com planilha, CSVs de espécies/rotas/pesca, pesos e condições. Inclui ressalvas sobre tags não resolvidas e uma proposta econômica separada dos fatos. **Esta pesquisa ainda não implementa negociação de Pokémon no mod.**
+
+- [Relatório e fontes](docs/pokemon-sales-research/README.md)
+- [Planilha](docs/pokemon-sales-research/pesquisa-spawns-1.8.3.xlsx)
+- [Lista por grupo observado](docs/pokemon-sales-research/lista-por-grupo.md)
+- [Download completo da pesquisa](docs/pokemon-sales-research/pesquisa-spawns-cobblemon-1.8.3.zip)

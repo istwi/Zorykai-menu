@@ -1,0 +1,104 @@
+{
+  "version": "1.8.3+1.21.1",
+  "license": "MPL-2.0",
+  "jar_sha512": "0cfcbc811c0434a6a8cbeda32fae5c39328a699e28b4292de635da99fc283f40166d25055594abf4eff56dd9a7a453313a5aa43f4a9969940d9e1a18dd222166",
+  "jar_sha256": "a977e741eec047ebc50559812be9b3296c9090254a632006f1c8b10ed1f7f40c",
+  "official_download": "https://cdn.modrinth.com/data/MdwFAVRL/versions/IgUZQKm8/Cobblemon-fabric-1.8.3%2B1.21.1.jar",
+  "species_definitions": 1025,
+  "species_implemented_true": 905,
+  "spawn_pool_files": 1591,
+  "disabled_pool_files": 0,
+  "parent_entry_types": {
+    "empty": 2,
+    "pokemon": 3117,
+    "pokemon-herd": 2059
+  },
+  "parent_entry_buckets": {
+    "common": 2421,
+    "ultra-rare": 421,
+    "uncommon": 945,
+    "rare": 251,
+    "boss": 1140
+  },
+  "flattened_species_rows": 8716,
+  "species_with_any_row": 876,
+  "species_with_normal_row": 876,
+  "rows_requiring_undefined_cobblemon_tag": 871,
+  "undefined_cobblemon_tags": [
+    "#cobblemon:ruins/arch",
+    "#cobblemon:spawns/is_civilization",
+    "#cobblemon:spawns/is_desert_monument",
+    "#cobblemon:spawns/is_dungeon",
+    "#cobblemon:spawns/is_end_structure",
+    "#cobblemon:spawns/is_graveyard",
+    "#cobblemon:spawns/is_igloo",
+    "#cobblemon:spawns/is_illager_outpost",
+    "#cobblemon:spawns/is_illager_structure",
+    "#cobblemon:spawns/is_jungle_monument",
+    "#cobblemon:spawns/is_nether_structure",
+    "#cobblemon:spawns/is_ocean_monument",
+    "#cobblemon:spawns/is_ocean_ruins",
+    "#cobblemon:spawns/is_ruins",
+    "#cobblemon:spawns/is_shipwreck",
+    "#cobblemon:spawns/is_witch_structure"
+  ],
+  "categories_observed": {
+    "ultrarraro": 108,
+    "comum": 446,
+    "incomum": 140,
+    "comum_condicionado": 136,
+    "raro": 40,
+    "sem_rota_neste_pool": 29,
+    "sem_implemented_true": 120,
+    "rotas_dependentes_ou_nao_resolvidas": 6
+  },
+  "default_bucket_weights": {
+    "worldBuckets": {
+      "boss": 0.3,
+      "common": 94.0,
+      "rare": 0.5,
+      "ultra-rare": 0.2,
+      "uncommon": 5.0
+    },
+    "fishingBuckets": {
+      "common": 83.25,
+      "rare": 4.125,
+      "ultra-rare": 1.375,
+      "uncommon": 11.25
+    },
+    "activatedHabitatBuckets": {
+      "common": 83.25,
+      "rare": 4.125,
+      "ultra-rare": 1.375,
+      "uncommon": 11.25
+    },
+    "pokeSnackBuckets": {
+      "common": 83.25,
+      "rare": 4.125,
+      "ultra-rare": 1.375,
+      "uncommon": 11.25
+    }
+  },
+  "empty_spawn_entries": [
+    {
+      "file": "data/cobblemon/spawn_pool_world/0000_empty.json",
+      "id": null,
+      "bucket": "common",
+      "weight": 200.0
+    },
+    {
+      "file": "data/cobblemon/spawn_pool_world/0000_empty.json",
+      "id": null,
+      "bucket": "common",
+      "weight": 200.0
+    }
+  ],
+  "probabilities_per_species_computed": false,
+  "limits": [
+    "Peso não é probabilidade final.",
+    "Registro de membro de grupo não é tentativa independente.",
+    "Core exclui apenas referências explicitamente externas; não simula biomas/tags/eventos ou presets no mundo real.",
+    "Categoria observada não é preço aprovado.",
+    "Sem rota neste pool não significa impossibilidade de obter por evolução, reprodução, fóssil, recompensa ou addons."
+  ]
+}
