@@ -1,0 +1,74 @@
+[
+  {
+    "name": "PC menu uses six rows",
+    "passed": true
+  },
+  {
+    "name": "native Pokemon model in menu",
+    "passed": true
+  },
+  {
+    "name": "model also appears in confirmation",
+    "passed": true
+  },
+  {
+    "name": "cancel leaves PC Pokemon untouched",
+    "passed": true
+  },
+  {
+    "name": "successful menu sale returns to refreshed PC listing",
+    "passed": true
+  },
+  {
+    "name": "sold Pokemon model disappears from refreshed menu",
+    "passed": true
+  },
+  {
+    "name": "PC sale pays exact quote once",
+    "passed": true
+  },
+  {
+    "name": "sold PC UUID absent",
+    "passed": true
+  },
+  {
+    "name": "party remains intact",
+    "passed": true
+  },
+  {
+    "name": "sold UUID cannot sell twice",
+    "passed": true
+  },
+  {
+    "name": "rejected payment returns Pokemon to PC",
+    "passed": true
+  },
+  {
+    "name": "PC refund preserves complete metadata",
+    "passed": true
+  },
+  {
+    "name": "another owner's PC UUID cannot sell",
+    "passed": true
+  },
+  {
+    "name": "PC menu has next page button",
+    "passed": true
+  },
+  {
+    "name": "second PC page contains native model",
+    "passed": true
+  },
+  {
+    "name": "eleventh rare sale blocked before PC removal/payment",
+    "passed": true
+  },
+  {
+    "name": "common still sells after rare quota",
+    "passed": true
+  },
+  {
+    "name": "icons never enter real inventory",
+    "passed": true
+  }
+]

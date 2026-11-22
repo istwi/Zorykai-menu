@@ -1,3 +1,7 @@
+# ZorykaiMenus 1.3.3 — voltar ao menu após vender
+
+Venda concluída pelo menu retorna automaticamente à lista atualizada do PC, na mesma página quando possível. [Baixar JAR1.3.3](dist/v1.3.3/zorykaimenus-1.3.3.jar) · [Detalhes](docs/pokemon-sales/RETURN-MENU-1.3.3.md). Substitua o JAR e reinicie; configurações/dados e correção Windows preservados.
+
 # ZorykaiMenus 1.3.2 — correção de gravação no Windows
 
 Corrige `AccessDeniedException` ao sincronizar diretório do PC no Windows, preservando a gravação do arquivo e troca atômica. [Baixar JAR1.3.2](dist/v1.3.2/zorykaimenus-1.3.2.jar) · [Atualização, recuperação e erro separado do Spawn](docs/pokemon-sales/WINDOWS-1.3.2.md). Após substituir o JAR e reiniciar, use `/zmenu recover` para a operação pendente. Preserve mundo, configurações e journal.

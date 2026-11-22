@@ -13,9 +13,11 @@ import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 import static com.zorykai.menus.config.Json.*;
 
-/** Own-party, one-at-a-time sale with durable Pokemon escrow before payment. */
+/** Own-PC, one-at-a-time sale with durable Pokemon escrow before payment. */
 public final class PokemonSales {
  private final ZorykaiMenus app;private final Journal journal;public final PokemonStorage storage=new PokemonStorage();
+ private record ReturnMenu(ServerPlayerEntity player,int page){}
+ private final Map<String,ReturnMenu> returnMenus=new HashMap<>();
  private final PokemonPrices prices;private final Set<UUID> running=new HashSet<>();private Map<String,String> live=Map.of();private long liveRevision=-1;
  public PokemonSales(ZorykaiMenus app,Journal journal)throws Exception{
   this.app=app;this.journal=journal;
@@ -45,7 +47,7 @@ public final class PokemonSales {
    try{storage.pcEligible(p,mon.uuid());var q=quote(p,mon);lore.add("<green>Venda: "+q.total().toPlainString());lore.add("<gray>"+safe(q.explanation()));if(prices.dailyLimited(mon.species(),live)){int remaining=remaining(p);lore.add("<gray>Vendas raras restantes hoje: "+remaining);if(remaining<=0)throw new IllegalStateException("Limite diário de vendas raras atingido");}lore.add("<yellow>Clique para revisar a venda");}
    catch(Exception e){allowed=false;lore.add("<red>"+safe(e.getMessage()));}
    var icon=storage.model(p,mon.uuid());decorate(p,icon,"<white>"+safe(mon.name()),lore);boolean enabled=allowed;
-   menu.button(i-page*45,icon,enabled?button->confirm(p,mon.uuid()):null);
+   menu.button(i-page*45,icon,enabled?button->confirm(p,mon.uuid(),page):null);
   }
   if(page>0)app.menus.plain(p,menu,45,Items.ARROW,"<yellow>Anterior",List.of(),b->open(p,page-1),null);
   if(page+1<pages)app.menus.plain(p,menu,53,Items.ARROW,"<yellow>Próxima",List.of(),b->open(p,page+1),null);
@@ -54,23 +56,26 @@ public final class PokemonSales {
  private void decorate(ServerPlayerEntity p,net.minecraft.item.ItemStack icon,String name,List<String> lore){icon.set(net.minecraft.component.DataComponentTypes.CUSTOM_NAME,com.zorykai.menus.placeholders.Texts.text(name,p,null));icon.set(net.minecraft.component.DataComponentTypes.LORE,new net.minecraft.component.type.LoreComponent(lore.stream().map(v->com.zorykai.menus.placeholders.Texts.text(v,p,null)).toList()));}
  private int remaining(ServerPlayerEntity p)throws Exception{var zone=java.time.ZoneId.of(str(cfg(),"dailyTimezone","America/Sao_Paulo"));var day=java.time.LocalDate.now(zone);return Math.max(0,num(cfg(),"rareDailyLimit",10)-journal.pokemonSoldBetween(p.getUuid(),day.atStartOfDay(zone).toInstant().toEpochMilli(),day.plusDays(1).atStartOfDay(zone).toInstant().toEpochMilli()));}
  private void quota(ServerPlayerEntity p,PokemonStorage.Mon mon)throws Exception{if(prices.dailyLimited(mon.species(),live)&&remaining(p)<=0)throw new IllegalStateException("Limite diário de vendas raras atingido");}
- public void confirm(ServerPlayerEntity p,UUID uuid){try{
+ public void confirm(ServerPlayerEntity p,UUID uuid){confirm(p,uuid,0);}
+ private void confirm(ServerPlayerEntity p,UUID uuid,int page){try{
   access(p);var mon=storage.pcEligible(p,uuid);var q=quote(p,mon);quota(p,mon);long revision=app.catalog.get().revision();long deadline=System.nanoTime()+TimeUnit.SECONDS.toNanos(num(cfg(),"confirmationSeconds",60));
   LockedMenu menu=app.menus.display(p,3,"<dark_green>Confirmar venda do Pokémon",null);
   var model=storage.model(p,uuid);
   app.menus.plain(p,menu,13,Items.PAPER,"<white>"+safe(mon.name()),List.of("<gray>Espécie: "+safe(mon.species()),"<gray>Nível: "+mon.level()+" · Shiny: "+(mon.shiny()?"Sim":"Não"),"<green>Você receberá: "+q.total().toPlainString(),"<gray>"+safe(q.explanation()),"<red>O Pokémon será entregue ao servidor.","<gray>A venda não pode ser desfeita pelo jogador."),null,null);
   model.set(net.minecraft.component.DataComponentTypes.CUSTOM_NAME,menu.getSlot(13).getStack().get(net.minecraft.component.DataComponentTypes.CUSTOM_NAME));model.set(net.minecraft.component.DataComponentTypes.LORE,menu.getSlot(13).getStack().get(net.minecraft.component.DataComponentTypes.LORE));menu.button(13,model,null);
   boolean[] consumed={false};
-  app.menus.plain(p,menu,11,Items.LIME_CONCRETE,"<green>Confirmar venda",List.of("<gray>Receber "+q.total().toPlainString()),b->{if(consumed[0]||p.currentScreenHandler!=menu)return;consumed[0]=true;p.closeHandledScreen();if(System.nanoTime()>deadline){notice(p,"Confirmação expirada; abra novamente.");return;}submit(p,mon,q.total(),revision);},null);
-  app.menus.plain(p,menu,15,Items.RED_CONCRETE,"<red>Cancelar",List.of(),b->open(p),null);
+  app.menus.plain(p,menu,11,Items.LIME_CONCRETE,"<green>Confirmar venda",List.of("<gray>Receber "+q.total().toPlainString()),b->{if(consumed[0]||p.currentScreenHandler!=menu)return;consumed[0]=true;p.closeHandledScreen();if(System.nanoTime()>deadline){notice(p,"Confirmação expirada; abra novamente.");return;}submit(p,mon,q.total(),revision,page);},null);
+  app.menus.plain(p,menu,15,Items.RED_CONCRETE,"<red>Cancelar",List.of(),b->open(p,page),null);
  }catch(Exception e){notice(p,e.getMessage());}}
- public void submit(ServerPlayerEntity p,PokemonStorage.Mon offer,BigDecimal expected,long revision){
+ public void submit(ServerPlayerEntity p,PokemonStorage.Mon offer,BigDecimal expected,long revision){submit(p,offer,expected,revision,-1);}
+ private void submit(ServerPlayerEntity p,PokemonStorage.Mon offer,BigDecimal expected,long revision,int returnPage){
   JsonObject tx=null;try{
    access(p);if(!running.add(p.getUuid())){notice(p,"Aguarde a operação atual");return;}
    if(journal.get(p.getUuid())!=null)throw new IllegalStateException("Operação pendente; use /zmenu recover");
    checkOffer(p,offer,expected,revision);
    var mon=storage.pcEligible(p,offer.uuid());
    tx=new JsonObject();tx.addProperty("source","pc");tx.addProperty("dailyLimited",prices.dailyLimited(mon.species(),live));tx.addProperty("speciesBucket",prices.speciesBucket(mon.species(),live));tx.addProperty("kind","pokemon_sale");tx.addProperty("id",UUID.randomUUID().toString());tx.addProperty("player",p.getUuidAsString());tx.addProperty("pokemon",mon.uuid().toString());tx.addProperty("snapshot",mon.snapshot());tx.addProperty("fingerprint",mon.fingerprint());tx.addProperty("currency",str(app.catalog.get().economy(),"currency","impactor:dollars"));tx.addProperty("total",expected.toPlainString());tx.add("beforeIds",partyIds(p));stage(tx,"POKEMON_PREPARED");
+   if(returnPage>=0)returnMenus.put(str(tx,"id",""),new ReturnMenu(p,returnPage));
    final JsonObject sale=tx;
    // Read-only economy preflight. Pending is already journaled, excluding simultaneous item trades.
    app.economy.balance(p.getUuid()).whenComplete((balance,error)->app.server.execute(()->{
@@ -109,9 +114,10 @@ public final class PokemonSales {
  }
  private void finish(JsonObject tx,boolean sold,String message)throws Exception{
   journal.finishPokemon(tx,sold?"sold":"cancelled");UUID player=UUID.fromString(str(tx,"player",""));running.remove(player);app.LOG.info("Venda Pokémon {}: player={}, pokemon={}, total={}, sold={}",str(tx,"id",""),player,str(tx,"pokemon",""),str(tx,"total",""),sold);
-  var p=app.server.getPlayerManager().getPlayer(player);if(p!=null)notice(p,message);
+  var back=returnMenus.remove(str(tx,"id",""));var p=app.server.getPlayerManager().getPlayer(player);if(p!=null)notice(p,message);
+  if(sold&&back!=null&&p==back.player()&&p.currentScreenHandler==p.playerScreenHandler)open(p,back.page());
  }
- private void uncertain(JsonObject tx,Throwable error){UUID id=UUID.fromString(str(tx,"player",""));running.remove(id);app.LOG.error("Venda Pokémon {} preservada em {}. Conferir antes de repetir pagamento.",str(tx,"id",""),str(tx,"stage",""),error);var p=app.server.getPlayerManager().getPlayer(id);if(p!=null)notice(p,"Operação preservada. Use /zmenu recover; se houver pagamento sem confirmação, a staff precisa conferir no Impactor.");}
+ private void uncertain(JsonObject tx,Throwable error){returnMenus.remove(str(tx,"id",""));UUID id=UUID.fromString(str(tx,"player",""));running.remove(id);app.LOG.error("Venda Pokémon {} preservada em {}. Conferir antes de repetir pagamento.",str(tx,"id",""),str(tx,"stage",""),error);var p=app.server.getPlayerManager().getPlayer(id);if(p!=null)notice(p,"Operação preservada. Use /zmenu recover; se houver pagamento sem confirmação, a staff precisa conferir no Impactor.");}
  private void notice(ServerPlayerEntity p,String text){app.literal(p,"<gray>"+safe(text==null?"Operação indisponível":text));}
  public boolean owns(JsonObject tx){return tx!=null&&str(tx,"kind","").equals("pokemon_sale");}
  public void recover(ServerPlayerEntity p){try{

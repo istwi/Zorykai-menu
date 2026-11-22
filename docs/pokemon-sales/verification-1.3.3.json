@@ -1,0 +1,8 @@
+{
+  "version": "1.3.3",
+  "sha256": "9076e98a4c3dadcef219360bb33e0a0632def062f1d34b8e1ab32e2478ff6c6f",
+  "unitTests": 51,
+  "nativeChecks": 18,
+  "realClients": 0,
+  "limitations": "Synthetic server players; no graphical client or Windows run repeated."
+}
