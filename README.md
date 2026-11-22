@@ -1,3 +1,7 @@
+# ZorykaiMenus 1.3.4 — abrir venda pelo NPC
+
+Abertura direta bloqueada. Configure o NPC para executar no console `zmenu pokemon open %player%` (placeholder do Shirokai Trainers). [Baixar JAR1.3.4](dist/v1.3.4/zorykaimenus-1.3.4.jar) · [Configuração do NPC e limites](docs/pokemon-sales/NPC-ONLY-1.3.4.md).
+
 # ZorykaiMenus 1.3.3 — voltar ao menu após vender
 
 Venda concluída pelo menu retorna automaticamente à lista atualizada do PC, na mesma página quando possível. [Baixar JAR1.3.3](dist/v1.3.3/zorykaimenus-1.3.3.jar) · [Detalhes](docs/pokemon-sales/RETURN-MENU-1.3.3.md). Substitua o JAR e reinicie; configurações/dados e correção Windows preservados.
