@@ -114,7 +114,7 @@ public final class Menus {
    }
   }
  }
- public void back(ServerPlayerEntity p){var h=history.get(p.getUuid());if(h==null||h.isEmpty()){open(p,false,str(app.catalog.get().config(),"mainMenu","main"),1,false);return;}Location l=h.pop();open(p,l.shop,l.id,l.page,false);}
+ public void back(ServerPlayerEntity p){var h=history.get(p.getUuid());if(h==null||h.isEmpty()){String main=com.zorykai.menus.config.MenuConfiguration.main(app.catalog.get().config(),app.catalog.get().menus());if(main==null)p.closeHandledScreen();else open(p,false,main,1,false);return;}Location l=h.pop();open(p,l.shop,l.id,l.page,false);}
  public void sound(ServerPlayerEntity p,String id){Identifier key=Identifier.tryParse(id);if(key==null||!Registries.SOUND_EVENT.containsId(key))return;p.playSoundToPlayer(Registries.SOUND_EVENT.get(key),SoundCategory.MASTER,0.5f,1f);}
  public void confirm(ServerPlayerEntity p,Location parent,JsonObject product,boolean sell,int quantity,long revision){
   if(app.catalog.get().revision()!=revision)return;

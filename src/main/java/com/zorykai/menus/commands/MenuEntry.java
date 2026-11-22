@@ -13,6 +13,12 @@ public final class MenuEntry {
  private MenuEntry(){}
  public static boolean administrative(ServerCommandSource s){return Permissions.admin(s,ADMIN);}
  public static boolean console(ServerCommandSource s){return s.getEntity()==null&&s.hasPermissionLevel(4);}
+ public static int main(ZorykaiMenus app,ServerCommandSource source){
+  if(!administrative(source))return own(app,source,false,"");
+  String id=com.zorykai.menus.config.MenuConfiguration.main(app.catalog.get().config(),app.catalog.get().menus());
+  if(id==null){source.sendFeedback(()->net.minecraft.text.Text.literal("Nenhum menu principal configurado. Use um alias ou informe o ID pelo comando administrativo."),false);return 0;}
+  return own(app,source,false,id);
+ }
  public static int own(ZorykaiMenus app,ServerCommandSource s,boolean shop,String id){
   if(!administrative(s)){s.sendFeedback(()->net.minecraft.text.Text.literal("Use os aliases de menu liberados pelo servidor ou fale com o NPC."),false);return 0;}
   var p=s.getPlayer();if(p==null){s.sendError(net.minecraft.text.Text.literal("Informe o jogador: zmenu "+(shop?"shop":"open")+" <id> <jogador>"));return 0;}

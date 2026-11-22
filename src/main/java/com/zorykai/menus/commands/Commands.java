@@ -12,7 +12,7 @@ import static net.minecraft.server.command.CommandManager.*;
 import static com.zorykai.menus.config.Json.*;
 public final class Commands {
  public static void register(ZorykaiMenus a,CommandDispatcher<ServerCommandSource> d){
-  d.register(literal("zmenu").executes(c->MenuEntry.own(a,c.getSource(),false,str(a.catalog.get().config(),"mainMenu","main")))
+  d.register(literal("zmenu").executes(c->MenuEntry.main(a,c.getSource()))
    .then(literal("open").requires(MenuEntry::administrative)
     .then(argument("menu",StringArgumentType.word()).suggests((c,b)->CommandSource.suggestMatching(a.catalog.get().menus().keySet(),b))
      .executes(c->MenuEntry.own(a,c.getSource(),false,StringArgumentType.getString(c,"menu")))
@@ -30,7 +30,7 @@ public final class Commands {
    .then(literal("reload").requires(s->Permissions.admin(s,"zorykaimenus.reload")).executes(c->{var errors=a.catalog.reload(a.server,true);feedback(c.getSource(),errors.isEmpty()?"Configuração recarregada. Alterações em aliases exigem reinício.":"Configuração anterior preservada:\n"+String.join("\n",errors));return errors.isEmpty()?1:0;}))
    .then(literal("validate").requires(s->Permissions.admin(s,"zorykaimenus.validate")).executes(c->{var errors=a.catalog.reload(a.server,false);feedback(c.getSource(),errors.isEmpty()?"Configurações válidas.":String.join("\n",errors));return errors.isEmpty()?1:0;}))
    .then(literal("migrate").requires(s->Permissions.admin(s,"zorykaimenus.migrate")).executes(c->{try{feedback(c.getSource(),new Migrator(a).run());return 1;}catch(Exception e){feedback(c.getSource(),"Migração não aplicada: "+e.getMessage());ZorykaiMenus.LOG.error("Falha na migração",e);return 0;}}))
-   .then(literal("status").executes(c->{try{String msg="ZorykaiMenus 1.3.5: "+a.catalog.get().menus().size()+" menus, "+a.catalog.get().shops().size()+" lojas";if(c.getSource().getEntity() instanceof net.minecraft.server.network.ServerPlayerEntity p)msg+=" · "+a.trades.status(p.getUuid());if(Permissions.admin(c.getSource(),"zorykaimenus.status"))msg+=" · pendências globais: "+a.trades.pending();feedback(c.getSource(),msg);return 1;}catch(Exception e){feedback(c.getSource(),e.getMessage());return 0;}}))
+   .then(literal("status").executes(c->{try{String msg="ZorykaiMenus 1.3.6: "+a.catalog.get().menus().size()+" menus, "+a.catalog.get().shops().size()+" lojas";if(c.getSource().getEntity() instanceof net.minecraft.server.network.ServerPlayerEntity p)msg+=" · "+a.trades.status(p.getUuid());if(Permissions.admin(c.getSource(),"zorykaimenus.status"))msg+=" · pendências globais: "+a.trades.pending();feedback(c.getSource(),msg);return 1;}catch(Exception e){feedback(c.getSource(),e.getMessage());return 0;}}))
    .then(literal("discount").requires(source->Permissions.admin(source,"zorykaimenus.discount.admin"))
     .then(literal("reload").executes(c->{var errors=a.catalog.reload(a.server,true);feedback(c.getSource(),errors.isEmpty()?"Descontos/configurações recarregados.":String.join("\n",errors));return errors.isEmpty()?1:0;}))
     .then(literal("list").executes(c->{feedback(c.getSource(),GSON.toJson(a.catalog.get().discounts()));return 1;}))
@@ -45,10 +45,14 @@ public final class Commands {
   var aliases=obj(a.catalog.get().config(),"aliases").deepCopy();
   for(var entry:a.catalog.get().menus().entrySet())for(String alias:strings(entry.getValue(),"aliases"))if(!aliases.has(alias)){var value=new com.google.gson.JsonObject();value.addProperty("menu",entry.getKey());aliases.add(alias,value);}
   for(var entry:aliases.entrySet()){
-   String alias=entry.getKey();if(!alias.matches("[a-z0-9_-]+")||d.getRoot().getChild(alias)!=null){ZorykaiMenus.LOG.warn("Alias {} não registrado: inválido ou conflito",alias);continue;}
+   String alias=entry.getKey();if(!alias.matches("[a-z0-9_-]+")||alias.equals("zmenu")){ZorykaiMenus.LOG.warn("Alias {} não registrado: inválido ou reservado",alias);continue;}
    var spec=entry.getValue().getAsJsonObject();boolean shop=spec.has("shop");String id=str(spec,shop?"shop":"menu","");
    if(!(shop?a.catalog.get().shops():a.catalog.get().menus()).containsKey(id)){ZorykaiMenus.LOG.warn("Alias {} aponta para destino ausente {}",alias,id);continue;}
-   d.register(literal(alias).requires(source->MenuEntry.aliasAllowed(a,alias,source)).executes(c->MenuEntry.openAlias(a,alias,c.getSource())));
+   var node=literal(alias).requires(source->MenuEntry.aliasAllowed(a,alias,source)).executes(c->MenuEntry.openAlias(a,alias,c.getSource())).build();
+   if(d.getRoot().getChild(alias)!=null){
+    if(!com.zorykai.menus.config.MenuConfiguration.override(a.catalog.get().config(),alias,spec)){ZorykaiMenus.LOG.warn("Alias {} não registrado: conflito; habilite aliasOverrides para assumir este nome",alias);continue;}
+    CommandPriority.replace(d.getRoot(),alias,node);ZorykaiMenus.LOG.warn("Alias {} assumiu prioridade sobre o comando anterior; reinicie para desfazer a substituição",alias);
+   }else d.getRoot().addChild(node);
   }
   a.server.getPlayerManager().getPlayerList().forEach(a.server.getCommandManager()::sendCommandTree);
  }

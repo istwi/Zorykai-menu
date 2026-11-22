@@ -1,11 +1,12 @@
 {
   "schema": 1,
-  "mainMenu": "main",
+  "mainMenu": "",
   "maxQuantity": 2304,
   "allowServerCommands": false,
   "aliases": {},
   "cobblemon": {
     "enabled": true,
     "fallback": "N/D"
-  }
+  },
+  "aliasOverrides": []
 }

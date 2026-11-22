@@ -1,0 +1,9 @@
+{
+  "mainMenu": "",
+  "aliasOverrides": ["help", "kit", "warps"],
+  "aliases": {
+    "help": {"menu": "ajuda"},
+    "kit": {"menu": "kits"},
+    "warps": {"menu": "destinos"}
+  }
+}

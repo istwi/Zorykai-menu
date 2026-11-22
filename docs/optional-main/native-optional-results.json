@@ -1,0 +1,86 @@
+[
+  {
+    "name": "fresh server starts with no example menus or shops",
+    "passed": true
+  },
+  {
+    "name": "empty mainMenu does not block validation",
+    "passed": true
+  },
+  {
+    "name": "stale deleted mainMenu reference no longer blocks reload",
+    "passed": true
+  },
+  {
+    "name": "back and bare player command work safely without main menu",
+    "passed": true
+  },
+  {
+    "name": "admin gets safe no-main response rather than a missing menu error",
+    "passed": true
+  },
+  {
+    "name": "custom menus load without main or second examples",
+    "passed": true
+  },
+  {
+    "name": "conflict remains original without explicit priority",
+    "passed": true
+  },
+  {
+    "name": "priority configuration validates",
+    "passed": true
+  },
+  {
+    "name": "explicit priority opens selected menu for /help",
+    "passed": true
+  },
+  {
+    "name": "explicit priority opens selected menu for /kit",
+    "passed": true
+  },
+  {
+    "name": "explicit priority opens selected menu for /warps",
+    "passed": true
+  },
+  {
+    "name": "old unqualified subcommands are not merged into menu alias",
+    "passed": true
+  },
+  {
+    "name": "existing namespaced original remains available",
+    "passed": true
+  },
+  {
+    "name": "unselected conflicting command remains unchanged",
+    "passed": true
+  },
+  {
+    "name": "priority aliases do not unlock generic player commands",
+    "passed": true
+  },
+  {
+    "name": "trusted console opens selected menu without main",
+    "passed": true
+  },
+  {
+    "name": "trusted console opens selected shop without examples",
+    "passed": true
+  },
+  {
+    "name": "overridden alias preserves viewer target permission",
+    "passed": true
+  },
+  {
+    "name": "deleting the remaining menu still permits reload",
+    "passed": true
+  },
+  {
+    "name": "seeding again never recreates deleted examples or custom menu",
+    "passed": true
+  },
+  {
+    "name": "removed alias target cannot use stale menu data",
+    "passed": true
+  }
+]

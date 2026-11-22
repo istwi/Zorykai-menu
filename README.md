@@ -1,3 +1,7 @@
+# ZorykaiMenus 1.3.6 — principal opcional e aliases prioritários
+
+[Baixar JAR 1.3.6](dist/v1.3.6/zorykaimenus-1.3.6.jar) · [Configuração e testes](docs/optional-main/README.md). Não exige menu principal, não recria exemplos apagados e permite assumir comandos escolhidos com `aliasOverrides`. As permissões do destino, bloqueio de comandos genéricos, venda pelo PC e correção de cargos são preservados.
+
 # ZorykaiMenus 1.3.5 — acesso por aliases/console e correção de cargo
 
 [Baixar JAR 1.3.5](dist/v1.3.5/zorykaimenus-1.3.5.jar) · [Configurar aliases e comandos de console](docs/menu-access/README.md). Jogadores comuns não abrem arquivos arbitrários por `zmenu open/shop`; console usa `zmenu open <menu> <jogador>` ou `zmenu shop <loja> <jogador>`. Preserva venda de Pokémon pelo PC e corrige prefixos LuckPerms misturando códigos legados e MiniMessage.

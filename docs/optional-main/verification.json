@@ -1,0 +1,12 @@
+{
+  "version": "1.3.6",
+  "sha256": "9e921ea9e753133889be1c379a47c63b73f2397b70444147890d5a718054fea3",
+  "unitTests": 59,
+  "nativeOptionalMainAndPriorityChecks": 21,
+  "nativePcRegressionChecks": 21,
+  "sameProductionJarInBothRuns": true,
+  "minecraft": "1.21.1",
+  "cobblemon": "1.8.3",
+  "visualClientTested": false,
+  "productionModified": false
+}

@@ -11,7 +11,8 @@ public final class Catalog {
  public Catalog(Path root){this.root=root;}
  public Snapshot get(){if(current==null)throw new IllegalStateException("Configuração não carregada");return current;}
  public static void seed(Path root)throws Exception{
-  for(String name:List.of("config.json","pokemon-sales.json","economy.json","discounts.json","permissions.json","messages/pt_br.json","menus/main.json","menus/second.json","shops/example.json")){
+  Files.createDirectories(root.resolve("menus"));Files.createDirectories(root.resolve("shops"));
+  for(String name:List.of("config.json","pokemon-sales.json","economy.json","discounts.json","permissions.json","messages/pt_br.json")){
    Path dst=root.resolve(name);Files.createDirectories(dst.getParent());if(Files.exists(dst))continue;
    try(var in=Catalog.class.getResourceAsStream("/defaults/"+name)){if(in==null)throw new IllegalStateException(name);Files.copy(in,dst);}
   }
@@ -21,12 +22,12 @@ public final class Catalog {
   List<String> errors=new ArrayList<>();Map<String,JsonObject> menus=load("menus",errors),shops=load("shops",errors);
   JsonObject cfg=new JsonObject(),eco=new JsonObject(),perms=new JsonObject(),msgs=new JsonObject(),discounts=new JsonObject();
   java.math.BigDecimal discountCap=new java.math.BigDecimal("50");
-  try{discounts=read(root.resolve("discounts.json"));com.zorykai.menus.pricing.Discounts.validate(discounts);discountCap=discounts.has("maxDiscountPercent")?discounts.get("maxDiscountPercent").getAsBigDecimal():discountCap;cfg=read(root.resolve("config.json"));cfg.add("pokemonSales",read(root.resolve("pokemon-sales.json")));com.zorykai.menus.pokemon.PokemonPrices.validate(obj(cfg,"pokemonSales"));eco=read(root.resolve("economy.json"));perms=read(root.resolve("permissions.json"));msgs=read(root.resolve("messages/pt_br.json"));
+  try{discounts=read(root.resolve("discounts.json"));com.zorykai.menus.pricing.Discounts.validate(discounts);discountCap=discounts.has("maxDiscountPercent")?discounts.get("maxDiscountPercent").getAsBigDecimal():discountCap;cfg=read(root.resolve("config.json"));MenuConfiguration.validate(cfg);cfg.add("pokemonSales",read(root.resolve("pokemon-sales.json")));com.zorykai.menus.pokemon.PokemonPrices.validate(obj(cfg,"pokemonSales"));eco=read(root.resolve("economy.json"));perms=read(root.resolve("permissions.json"));msgs=read(root.resolve("messages/pt_br.json"));
    if(!str(eco,"currency","impactor:dollars").matches("[a-z0-9_.-]+:[a-z0-9_./-]+"))errors.add("economy.json.currency: identificador inválido");
    if(num(cfg,"maxQuantity",2304)<1||num(cfg,"maxQuantity",2304)>1000000)errors.add("config.json.maxQuantity: intervalo 1..1000000");
   }catch(Exception e){errors.add("Configuração/discounts.json: "+e.getMessage());}
   validate(server,menus,shops,errors,discountCap);
-  if(!menus.containsKey(str(cfg,"mainMenu","main")))errors.add("config.json.mainMenu: menu inexistente");
+  // mainMenu is optional, including stale references to deleted example menus.
   if(errors.isEmpty()&&apply)current=new Snapshot(++revision,cfg,eco,perms,msgs,discounts,Map.copyOf(menus),Map.copyOf(shops));
   for(String error:errors)com.zorykai.menus.ZorykaiMenus.LOG.error("Validação de configuração: {}",error);
   return errors;
