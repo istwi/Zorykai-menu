@@ -1,3 +1,7 @@
+# Atualização1.3.1
+
+Os resultados abaixo documentam1.3.0 e não devem ser confundidos com o teste da venda pelo PC. O ensaio atual está em `PcSaleChecks`, propriedade `zorykai.pcTest`, com entrypoint isolado. Resultados e hash1.3.1 em `verification-1.3.1.json` e `native-pc-results.json`. Testes antigos de equipe descrevem a versão anterior.
+
 # Validação executada — venda de Pokémon 1.3.0
 
 Minecraft 1.21.1 / Fabric Loader 0.17.2 / Java 21 / Cobblemon 1.8.3 / Impactor 5.3.5, em runtimes descartáveis ligados a 127.0.0.1. As verificações de menus/armazenamento usam jogadores simulados do lado do servidor, com inventários, storage Cobblemon e carteira Impactor reais. Não são capturas de cliente gráfico nem testes de produção.

@@ -38,26 +38,36 @@ public final class PokemonStorage {
   UUID uuid=(UUID)call(mon,"getUuid");Object species=call(mon,"getSpecies");String id=call(species,"getResourceIdentifier").toString();
   String form=String.valueOf(call(call(mon,"getForm"),"getName"));boolean shiny=(Boolean)call(mon,"getShiny");int level=(Integer)call(mon,"getLevel");
   String snapshot=call(mon,"saveToJSON",p.getServer().getRegistryManager(),new JsonObject()).toString();
-  String fingerprint=uuid+"|"+id+"|"+form+"|"+shiny+"|"+level;
+  String fingerprint=snapshot;
   return new Mon(slot,uuid,id,((net.minecraft.text.Text)call(mon,"getDisplayName",false)).getString(),form,shiny,level,fingerprint,snapshot);
  }
+ private Object pc(ServerPlayerEntity p)throws Exception{return call(manager(),"getPC",p);}
+ public List<Mon> pcList(ServerPlayerEntity p)throws Exception{var out=new ArrayList<Mon>();int i=0;for(Object mon:(Iterable<?>)pc(p))out.add(describe(p,mon,i++));return out;}
+ private Object findInPc(ServerPlayerEntity p,UUID uuid)throws Exception{for(Object mon:(Iterable<?>)pc(p))if(call(mon,"getUuid").equals(uuid))return mon;return null;}
+ public net.minecraft.item.ItemStack model(ServerPlayerEntity p,UUID uuid)throws Exception{var mon=findInPc(p,uuid);if(mon==null)throw new IllegalStateException("Pokémon mudou de local");return ((net.minecraft.item.ItemStack)call(Class.forName("com.cobblemon.mod.common.item.PokemonItem"),"from",mon)).copy();}
+ public Mon pcEligible(ServerPlayerEntity p,UUID uuid)throws Exception{return eligible(p,uuid,1,true);}
+ public void removePc(ServerPlayerEntity p,UUID uuid)throws Exception{Object mon=findInPc(p,uuid);if(mon==null||!(Boolean)call(pc(p),"remove",mon))throw new IllegalStateException("Pokémon mudou de local no PC");}
+ public boolean restorePc(ServerPlayerEntity p,UUID uuid,String snapshot)throws Exception{if(anywhere(p,uuid))return false;Object mon=Class.forName("com.cobblemon.mod.common.pokemon.Pokemon").getConstructor().newInstance();call(mon,"loadFromJSON",p.getServer().getRegistryManager(),parse(snapshot));if(!call(mon,"getUuid").equals(uuid))throw new IllegalStateException("UUID divergente");if(!(Boolean)call(pc(p),"add",mon))throw new IllegalStateException("Libere uma vaga no PC para recuperar seu Pokémon");return true;}
  private Object findInParty(ServerPlayerEntity p,UUID uuid)throws Exception{for(Object mon:(Iterable<?>)party(p))if(call(mon,"getUuid").equals(uuid))return mon;return null;}
  public boolean anywhere(ServerPlayerEntity p,UUID uuid)throws Exception{for(Object s:stores(p))for(Object mon:(Iterable<?>)s)if(call(mon,"getUuid").equals(uuid))return true;return false;}
  public Mon eligible(ServerPlayerEntity p,UUID uuid,int keepParty)throws Exception{
+  return eligible(p,uuid,keepParty,false);
+ }
+ private Mon eligible(ServerPlayerEntity p,UUID uuid,int keepParty,boolean fromPc)throws Exception{
   if(!p.isAlive()||p.isSpectator())throw new IllegalStateException("Você não pode vender nesse estado");
   Class<?> reg=Class.forName("com.cobblemon.mod.common.battles.BattleRegistry");Object registry;
   try{registry=reg.getField("INSTANCE").get(null);}catch(NoSuchFieldException e){registry=reg;}
   if(call(registry,"getBattleByParticipatingPlayer",p)!=null)throw new IllegalStateException("Termine a batalha antes de vender");
-  var list=partyList(p);if(list.size()<=keepParty)throw new IllegalStateException("Mantenha pelo menos "+keepParty+" Pokémon na equipe");
-  Object mon=findInParty(p,uuid);if(mon==null)throw new IllegalStateException("O Pokémon não está mais na sua equipe");
+  var list=fromPc?List.<Mon>of():partyList(p);if(!fromPc&&list.size()<=keepParty)throw new IllegalStateException("Mantenha pelo menos "+keepParty+" Pokémon na equipe");
+  Object mon=fromPc?findInPc(p,uuid):findInParty(p,uuid);if(mon==null)throw new IllegalStateException("O Pokémon não está mais no armazenamento selecionado");
   if(!p.getUuid().equals(call(mon,"getOwnerUUID")))throw new IllegalStateException("Esse Pokémon não pertence à sua equipe");
   if(!(Boolean)call(mon,"getTradeable"))throw new IllegalStateException("Esse Pokémon não pode ser negociado");
   if(call(mon,"getEntity")!=null||call(mon,"getTetheringId")!=null)throw new IllegalStateException("Recolha o Pokémon antes de vender");
   if(!((net.minecraft.item.ItemStack)call(mon,"getHeldItem$common")).isEmpty())throw new IllegalStateException("Retire o item equipado antes de vender");
-  Mon info=list.stream().filter(v->v.uuid.equals(uuid)).findFirst().orElseThrow();
+  Mon info=fromPc?describe(p,mon,-1):list.stream().filter(v->v.uuid.equals(uuid)).findFirst().orElseThrow();
   String lower=info.snapshot.toLowerCase(Locale.ROOT);
   if(info.species.endsWith(":egg")||lower.contains("egg=true")||lower.contains("is_egg=true")||lower.contains("breed_egg"))throw new IllegalStateException("Ovos não podem ser vendidos");
-  backend(party(p)); // Capability checked before removal.
+  backend(fromPc?pc(p):party(p)); // Capability checked before removal.
   return info;
  }
  private record Backend(Object factory,Object adapter,Executor executor){}
@@ -82,7 +92,11 @@ public final class PokemonStorage {
  }
  /** Snapshot on main thread; serialized writes queue behind native autosaves, then atomic replace+fsync. */
  public CompletableFuture<Void> durable(ServerPlayerEntity p)throws Exception{
-  Object store=party(p);Backend b=backend(store);Object serialized=call(b.adapter,"serialize",store,p.getServer().getRegistryManager());UUID id=(UUID)call(store,"getUuid");
+  return durableStore(p,party(p));
+ }
+ public CompletableFuture<Void> durablePc(ServerPlayerEntity p)throws Exception{return durableStore(p,pc(p));}
+ private CompletableFuture<Void> durableStore(ServerPlayerEntity p,Object store)throws Exception{
+  Backend b=backend(store);Object serialized=call(b.adapter,"serialize",store,p.getServer().getRegistryManager());UUID id=(UUID)call(store,"getUuid");
   File destination=(File)call(b.adapter,"getFile",store.getClass(),id);
   return CompletableFuture.runAsync(()->{
    Path temp=null;try{

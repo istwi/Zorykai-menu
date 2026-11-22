@@ -61,6 +61,11 @@ public final class Journal implements AutoCloseable {
    db.commit();
   }catch(Exception e){db.rollback();throw e;}finally{db.setAutoCommit(true);}
  }
+ public synchronized int pokemonSoldBetween(UUID player,long start,long end)throws Exception{
+  try(var s=db.prepareStatement("SELECT COUNT(*) FROM pokemon_sale_history WHERE player=? AND result='sold' AND finished>=? AND finished<? AND json_extract(payload,'$.dailyLimited')=1")){
+   s.setString(1,player.toString());s.setLong(2,start);s.setLong(3,end);try(var r=s.executeQuery()){return r.getInt(1);}
+  }
+ }
  public synchronized int count()throws Exception{try(var s=db.createStatement();var r=s.executeQuery("SELECT COUNT(*) FROM pending")){return r.getInt(1);}}
  public synchronized void close()throws Exception{db.close();}
 }

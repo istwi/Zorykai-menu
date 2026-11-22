@@ -16,7 +16,7 @@ import java.nio.file.*;
 import static com.zorykai.menus.config.Json.*;
 
 /** Isolated real Cobblemon stores and Impactor payments; simulated players, not a visual client. */
-public final class PokemonSaleChecks extends MarketChecks {
+public class PokemonSaleChecks extends MarketChecks {
  Object nativeStorage;Class<?> monType;Journal journal;ImpactorGateway original;
  @Override public void onInitialize(){if(!Boolean.getBoolean("zorykai.pokemonTest"))return;ServerTickEvents.END_SERVER_TICK.register(s->{if(!started&&++ticks==20){started=true;app=ZorykaiMenus.instance;new Thread(()->run(s),"pokemon-sale-checks").start();}});}
  Object invoke(Object target,String method,Object...args){try{for(var m:target.getClass().getMethods())if(m.getName().equals(method)&&m.getParameterCount()==args.length){boolean ok=true;for(int i=0;i<args.length;i++){Class<?> p=m.getParameterTypes()[i];if(p==int.class)p=Integer.class;if(p==boolean.class)p=Boolean.class;if(args[i]!=null&&!p.isInstance(args[i]))ok=false;}if(ok)return m.invoke(target,args);}throw new NoSuchMethodException(method);}catch(Exception e){throw new RuntimeException(e);}}

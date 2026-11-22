@@ -14,6 +14,8 @@ public final class PokemonPrices {
   if(num(cfg,"schemaVersion",0)!=1)throw new IllegalArgumentException("pokemon-sales.schemaVersion: esperado 1");
   amount(cfg,"referencePrice",true);amount(cfg,"maxPrice",true);
   multiplier(cfg,"shinyMultiplier",1,100);multiplier(cfg,"evolutionMultiplier",1,10);
+  if(num(cfg,"rareDailyLimit",10)<1||num(cfg,"rareDailyLimit",10)>100000)throw new IllegalArgumentException("rareDailyLimit inválido");
+  java.time.ZoneId.of(str(cfg,"dailyTimezone","America/Sao_Paulo"));
   if(num(cfg,"keepParty",1)<1||num(cfg,"keepParty",1)>6)throw new IllegalArgumentException("keepParty: 1 a 6");
   if(num(cfg,"confirmationSeconds",60)<10||num(cfg,"confirmationSeconds",60)>300)throw new IllegalArgumentException("confirmationSeconds: 10 a 300");
   for(String bucket:List.of("common","uncommon","rare","ultra-rare"))amount(obj(cfg,"bucketMultipliers"),bucket,true);
@@ -41,6 +43,13 @@ public final class PokemonPrices {
   BigDecimal total=base.min(cfg.get("maxPrice").getAsBigDecimal()).setScale(decimals,RoundingMode.DOWN);
   if(total.signum()<=0)throw new IllegalArgumentException("Preço arredondado para zero");return new Quote(total,bucket,reason);
  }
+ public String speciesBucket(String species,Map<String,String> live){
+  String key=species.replaceFirst("^cobblemon:","");var rank=Map.of("common",0,"uncommon",1,"rare",2,"ultra-rare",3);
+  String a=profiles.has(key)?str(profiles.getAsJsonObject(key),"bucket",""):"",b=live.getOrDefault(key,"");
+  if(!rank.containsKey(a))return rank.containsKey(b)?b:"unknown";
+  return rank.containsKey(b)&&rank.get(b)<rank.get(a)?b:a;
+ }
+ public boolean dailyLimited(String species,Map<String,String> live){return !Set.of("common","uncommon").contains(speciesBucket(species,live));}
  private Quote cheapest(JsonObject cfg,String key,Map<String,String> live,Set<String> seen){
   if(!seen.add(key))return null;JsonObject profile=profiles.has(key)?profiles.getAsJsonObject(key):new JsonObject();
   Quote best=null;var weights=obj(cfg,"bucketMultipliers");

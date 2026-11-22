@@ -1,3 +1,9 @@
+# ZorykaiMenus 1.3.1 — venda pelo PC
+
+`/zmenu pokemon` lista o PC com modelos nativos de Pokémon,45 por página e confirmação. A equipe permanece intacta. Limite compartilhado de10 vendas diárias por jogador para espécies acima de Uncommon, renovado à meia-noite de São Paulo; Common/Uncommon não consomem cota. Preços originais preservados, sem o novo bônus por IVs solicitado anteriormente e cancelado.
+
+[Baixar JAR1.3.1](dist/v1.3.1/zorykaimenus-1.3.1.jar) · [Instalação, configuração e limites](docs/pokemon-sales/UPDATE-1.3.1.md). Substitua o JAR do ZorykaiMenus e reinicie, preservando `config/zorykaimenus` e seus dados. Não apague o journal interno. Campos novos ausentes recebem os padrões em memória.
+
 # ZorykaiMenus 1.3.0
 
 **Venda de Pokémon 1.3:** [JAR](dist/v1.3.0/zorykaimenus-1.3.0.jar) · [Preços e configuração](docs/pokemon-sales/README.md). Use `/zmenu pokemon`; referência de Magikarp comum = **250**. Menor dificuldade de obtenção entre spawn, pesca e evolução prevalece; rotas de datapacks podem reduzir a avaliação. Confirmação por UUID, retirada durável antes do crédito e recuperação com snapshot completo.
