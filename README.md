@@ -1,3 +1,7 @@
+# ZorykaiMenus 1.3.2 — correção de gravação no Windows
+
+Corrige `AccessDeniedException` ao sincronizar diretório do PC no Windows, preservando a gravação do arquivo e troca atômica. [Baixar JAR1.3.2](dist/v1.3.2/zorykaimenus-1.3.2.jar) · [Atualização, recuperação e erro separado do Spawn](docs/pokemon-sales/WINDOWS-1.3.2.md). Após substituir o JAR e reiniciar, use `/zmenu recover` para a operação pendente. Preserve mundo, configurações e journal.
+
 # ZorykaiMenus 1.3.1 — venda pelo PC
 
 `/zmenu pokemon` lista o PC com modelos nativos de Pokémon,45 por página e confirmação. A equipe permanece intacta. Limite compartilhado de10 vendas diárias por jogador para espécies acima de Uncommon, renovado à meia-noite de São Paulo; Common/Uncommon não consomem cota. Preços originais preservados, sem o novo bônus por IVs solicitado anteriormente e cancelado.

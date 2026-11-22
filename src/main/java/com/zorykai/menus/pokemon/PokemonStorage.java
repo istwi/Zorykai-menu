@@ -107,7 +107,9 @@ public final class PokemonStorage {
     if(serialized instanceof NbtCompound nbt&&!NbtIo.readCompressed(temp,NbtSizeTracker.ofUnlimitedBytes()).equals(nbt))throw new java.io.IOException("Verificação NBT divergente");
     try(var c=FileChannel.open(temp,StandardOpenOption.WRITE)){c.force(true);}
     Files.move(temp,target,StandardCopyOption.ATOMIC_MOVE,StandardCopyOption.REPLACE_EXISTING);
-    try(var c=FileChannel.open(target.getParent(),StandardOpenOption.READ)){c.force(true);}
+    // Windows does not expose directory handles through FileChannel (AccessDeniedException).
+    // The file is still fsynced and atomically replaced; keep directory fsync on Unix.
+    if(File.separatorChar!='\\')try(var c=FileChannel.open(target.getParent(),StandardOpenOption.READ)){c.force(true);}
    }catch(Exception error){throw new CompletionException(error);}finally{if(temp!=null)try{Files.deleteIfExists(temp);}catch(Exception ignored){}}
   },b.executor);
  }

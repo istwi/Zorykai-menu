@@ -1,0 +1,8 @@
+{
+  "version": "1.3.2",
+  "sha256": "79b842ba8ec7c992ee9341edb0bbe701e1bdb9fb750705480c4b89d3ae09efaf",
+  "unitTests": 51,
+  "nativeChecksLinux": 16,
+  "windowsRuntimeTested": false,
+  "windowsFix": "skip unsupported FileChannel directory fsync only on Windows; retain file fsync and atomic replacement"
+}
