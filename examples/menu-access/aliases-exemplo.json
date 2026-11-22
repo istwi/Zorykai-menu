@@ -1,0 +1,7 @@
+{
+  "aliases": {
+    "menu": {"menu": "main"},
+    "loja": {"shop": "example"},
+    "lojavip": {"shop": "example", "permission": "meusmenus.lojavip"}
+  }
+}

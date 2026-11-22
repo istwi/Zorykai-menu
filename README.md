@@ -1,3 +1,7 @@
+# ZorykaiMenus 1.3.5 — acesso por aliases/console e correção de cargo
+
+[Baixar JAR 1.3.5](dist/v1.3.5/zorykaimenus-1.3.5.jar) · [Configurar aliases e comandos de console](docs/menu-access/README.md). Jogadores comuns não abrem arquivos arbitrários por `zmenu open/shop`; console usa `zmenu open <menu> <jogador>` ou `zmenu shop <loja> <jogador>`. Preserva venda de Pokémon pelo PC e corrige prefixos LuckPerms misturando códigos legados e MiniMessage.
+
 # ZorykaiMenus 1.3.4 — abrir venda pelo NPC
 
 Abertura direta bloqueada. Configure o NPC para executar no console `zmenu pokemon open %player%` (placeholder do Shirokai Trainers). [Baixar JAR1.3.4](dist/v1.3.4/zorykaimenus-1.3.4.jar) · [Configuração do NPC e limites](docs/pokemon-sales/NPC-ONLY-1.3.4.md).

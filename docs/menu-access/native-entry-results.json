@@ -1,0 +1,110 @@
+[
+  {
+    "name": "menu and alias configuration loads",
+    "passed": true
+  },
+  {
+    "name": "ordinary viewer is not OP",
+    "passed": true
+  },
+  {
+    "name": "bare zmenu cannot open a menu for ordinary players",
+    "passed": true
+  },
+  {
+    "name": "generic open cannot bypass aliases",
+    "passed": true
+  },
+  {
+    "name": "generic shop cannot bypass aliases",
+    "passed": true
+  },
+  {
+    "name": "player cannot invoke targeted console entry",
+    "passed": true
+  },
+  {
+    "name": "generic open command requirement rejects ordinary viewer",
+    "passed": true
+  },
+  {
+    "name": "configured public alias opens its chosen menu",
+    "passed": true
+  },
+  {
+    "name": "configured internal navigation still works",
+    "passed": true
+  },
+  {
+    "name": "alias declared in menu JSON still works",
+    "passed": true
+  },
+  {
+    "name": "configured shop alias works without generic command permission",
+    "passed": true
+  },
+  {
+    "name": "alias still enforces target menu permission",
+    "passed": true
+  },
+  {
+    "name": "console opens chosen menu for non-OP viewer",
+    "passed": true
+  },
+  {
+    "name": "console open never grants OP",
+    "passed": true
+  },
+  {
+    "name": "console opens chosen shop for viewer",
+    "passed": true
+  },
+  {
+    "name": "console still respects viewer target permission",
+    "passed": true
+  },
+  {
+    "name": "administrator can open own target menu",
+    "passed": true
+  },
+  {
+    "name": "alias retarget reload succeeds",
+    "passed": true
+  },
+  {
+    "name": "existing alias resolves new target after reload",
+    "passed": true
+  },
+  {
+    "name": "removed alias cannot use a stale registered target",
+    "passed": true
+  },
+  {
+    "name": "explicit command permission allows own open without OP",
+    "passed": true
+  },
+  {
+    "name": "revoked direct command permission blocks the next open",
+    "passed": true
+  },
+  {
+    "name": "real LuckPerms mixed prefix contains no literal bold markup",
+    "passed": true
+  },
+  {
+    "name": "real LuckPerms prefix preserves bold and red color",
+    "passed": true
+  },
+  {
+    "name": "own transaction recovery remains available",
+    "passed": true
+  },
+  {
+    "name": "Pokemon console-only opening remains protected",
+    "passed": true
+  },
+  {
+    "name": "existing trusted Pokemon console command remains functional",
+    "passed": true
+  }
+]

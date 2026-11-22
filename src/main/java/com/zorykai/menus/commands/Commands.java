@@ -12,9 +12,17 @@ import static net.minecraft.server.command.CommandManager.*;
 import static com.zorykai.menus.config.Json.*;
 public final class Commands {
  public static void register(ZorykaiMenus a,CommandDispatcher<ServerCommandSource> d){
-  d.register(literal("zmenu").executes(c->{a.menus.open(c.getSource().getPlayerOrThrow(),false,str(a.catalog.get().config(),"mainMenu","main"),1,false);return 1;})
-   .then(literal("open").then(argument("menu",StringArgumentType.word()).suggests((c,b)->CommandSource.suggestMatching(a.catalog.get().menus().keySet(),b)).executes(c->{a.menus.open(c.getSource().getPlayerOrThrow(),false,StringArgumentType.getString(c,"menu"),1,false);return 1;})))
-   .then(literal("shop").then(argument("shop",StringArgumentType.word()).suggests((c,b)->CommandSource.suggestMatching(a.catalog.get().shops().keySet(),b)).executes(c->{a.menus.open(c.getSource().getPlayerOrThrow(),true,StringArgumentType.getString(c,"shop"),1,false);return 1;})))
+  d.register(literal("zmenu").executes(c->MenuEntry.own(a,c.getSource(),false,str(a.catalog.get().config(),"mainMenu","main")))
+   .then(literal("open").requires(MenuEntry::administrative)
+    .then(argument("menu",StringArgumentType.word()).suggests((c,b)->CommandSource.suggestMatching(a.catalog.get().menus().keySet(),b))
+     .executes(c->MenuEntry.own(a,c.getSource(),false,StringArgumentType.getString(c,"menu")))
+     .then(argument("player",net.minecraft.command.argument.EntityArgumentType.player()).requires(MenuEntry::console)
+      .executes(c->{a.menus.open(net.minecraft.command.argument.EntityArgumentType.getPlayer(c,"player"),false,StringArgumentType.getString(c,"menu"),1,false);return 1;}))))
+   .then(literal("shop").requires(MenuEntry::administrative)
+    .then(argument("shop",StringArgumentType.word()).suggests((c,b)->CommandSource.suggestMatching(a.catalog.get().shops().keySet(),b))
+     .executes(c->MenuEntry.own(a,c.getSource(),true,StringArgumentType.getString(c,"shop")))
+     .then(argument("player",net.minecraft.command.argument.EntityArgumentType.player()).requires(MenuEntry::console)
+      .executes(c->{a.menus.open(net.minecraft.command.argument.EntityArgumentType.getPlayer(c,"player"),true,StringArgumentType.getString(c,"shop"),1,false);return 1;}))))
    .then(literal("pokemon").executes(c->{feedback(c.getSource(),"Fale com o NPC de venda de Pokémon.");return 0;})
     .then(literal("sell").executes(c->{feedback(c.getSource(),"Fale com o NPC de venda de Pokémon.");return 0;}))
     .then(literal("open").requires(s->s.getEntity()==null&&s.hasPermissionLevel(4))
@@ -22,7 +30,7 @@ public final class Commands {
    .then(literal("reload").requires(s->Permissions.admin(s,"zorykaimenus.reload")).executes(c->{var errors=a.catalog.reload(a.server,true);feedback(c.getSource(),errors.isEmpty()?"Configuração recarregada. Alterações em aliases exigem reinício.":"Configuração anterior preservada:\n"+String.join("\n",errors));return errors.isEmpty()?1:0;}))
    .then(literal("validate").requires(s->Permissions.admin(s,"zorykaimenus.validate")).executes(c->{var errors=a.catalog.reload(a.server,false);feedback(c.getSource(),errors.isEmpty()?"Configurações válidas.":String.join("\n",errors));return errors.isEmpty()?1:0;}))
    .then(literal("migrate").requires(s->Permissions.admin(s,"zorykaimenus.migrate")).executes(c->{try{feedback(c.getSource(),new Migrator(a).run());return 1;}catch(Exception e){feedback(c.getSource(),"Migração não aplicada: "+e.getMessage());ZorykaiMenus.LOG.error("Falha na migração",e);return 0;}}))
-   .then(literal("status").executes(c->{try{String msg="ZorykaiMenus 1.3.0: "+a.catalog.get().menus().size()+" menus, "+a.catalog.get().shops().size()+" lojas";if(c.getSource().getEntity() instanceof net.minecraft.server.network.ServerPlayerEntity p)msg+=" · "+a.trades.status(p.getUuid());if(Permissions.admin(c.getSource(),"zorykaimenus.status"))msg+=" · pendências globais: "+a.trades.pending();feedback(c.getSource(),msg);return 1;}catch(Exception e){feedback(c.getSource(),e.getMessage());return 0;}}))
+   .then(literal("status").executes(c->{try{String msg="ZorykaiMenus 1.3.5: "+a.catalog.get().menus().size()+" menus, "+a.catalog.get().shops().size()+" lojas";if(c.getSource().getEntity() instanceof net.minecraft.server.network.ServerPlayerEntity p)msg+=" · "+a.trades.status(p.getUuid());if(Permissions.admin(c.getSource(),"zorykaimenus.status"))msg+=" · pendências globais: "+a.trades.pending();feedback(c.getSource(),msg);return 1;}catch(Exception e){feedback(c.getSource(),e.getMessage());return 0;}}))
    .then(literal("discount").requires(source->Permissions.admin(source,"zorykaimenus.discount.admin"))
     .then(literal("reload").executes(c->{var errors=a.catalog.reload(a.server,true);feedback(c.getSource(),errors.isEmpty()?"Descontos/configurações recarregados.":String.join("\n",errors));return errors.isEmpty()?1:0;}))
     .then(literal("list").executes(c->{feedback(c.getSource(),GSON.toJson(a.catalog.get().discounts()));return 1;}))
@@ -40,7 +48,7 @@ public final class Commands {
    String alias=entry.getKey();if(!alias.matches("[a-z0-9_-]+")||d.getRoot().getChild(alias)!=null){ZorykaiMenus.LOG.warn("Alias {} não registrado: inválido ou conflito",alias);continue;}
    var spec=entry.getValue().getAsJsonObject();boolean shop=spec.has("shop");String id=str(spec,shop?"shop":"menu","");
    if(!(shop?a.catalog.get().shops():a.catalog.get().menus()).containsKey(id)){ZorykaiMenus.LOG.warn("Alias {} aponta para destino ausente {}",alias,id);continue;}
-   d.register(literal(alias).executes(c->{a.menus.open(c.getSource().getPlayerOrThrow(),shop,id,1,false);return 1;}));
+   d.register(literal(alias).requires(source->MenuEntry.aliasAllowed(a,alias,source)).executes(c->MenuEntry.openAlias(a,alias,c.getSource())));
   }
   a.server.getPlayerManager().getPlayerList().forEach(a.server.getCommandManager()::sendCommandTree);
  }

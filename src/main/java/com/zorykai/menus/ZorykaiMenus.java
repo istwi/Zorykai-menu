@@ -29,7 +29,7 @@ public final class ZorykaiMenus implements ModInitializer {
   ServerLifecycleEvents.SERVER_STARTED.register(s->{
    server=s;var errors=catalog.reload(s,true);if(!errors.isEmpty())throw new IllegalStateException("Configuração inválida:\n"+String.join("\n",errors));
    try{journal=new Journal(ROOT.resolve("internal/pending.sqlite"));market=new com.zorykai.menus.market.Market(journal);economy=new ImpactorGateway(()->str(catalog.get().economy(),"currency","impactor:dollars"));pricing=new com.zorykai.menus.pricing.Pricing(this);menus=new Menus(this);trades=new Trades(this,journal);pokemonSales=new com.zorykai.menus.pokemon.PokemonSales(this,journal);Commands.aliases(this,s.getCommandManager().getDispatcher());
-    LOG.info("ZorykaiMenus 1.3.0: {} menus, {} lojas",catalog.get().menus().size(),catalog.get().shops().size());
+    LOG.info("ZorykaiMenus 1.3.5: {} menus, {} lojas",catalog.get().menus().size(),catalog.get().shops().size());
    }catch(Exception e){LOG.error("Falha ao iniciar ZorykaiMenus",e);throw new IllegalStateException("Falha ao iniciar ZorykaiMenus",e);}
   });
   ServerPlayConnectionEvents.JOIN.register((handler,sender,s)->{try{if(journal.get(handler.player.getUuid())!=null)recover(handler.player);}catch(Exception e){LOG.error("Recuperação indisponível",e);}});

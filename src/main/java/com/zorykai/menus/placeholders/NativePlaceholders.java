@@ -43,7 +43,7 @@ public final class NativePlaceholders {
             String value=user.getCachedData().getMetaData().getPrefix();
             if(value==null)return Component.empty();
             // Only administrators can define LuckPerms prefixes. Preserve MiniMessage styling.
-            try{return MiniMessage.miniMessage().deserialize(value);}catch(IllegalArgumentException e){return Component.text(value);}
+            try{return RankText.render(value);}catch(IllegalArgumentException e){return Component.text(value);}
         }
     }
 }

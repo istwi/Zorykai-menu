@@ -13,7 +13,8 @@
       "com.zorykai.menus.checks.MarketChecks",
       "com.zorykai.menus.checks.PokemonSaleChecks",
       "com.zorykai.menus.checks.PokemonRestartChecks",
-      "com.zorykai.menus.checks.PcSaleChecks"
+      "com.zorykai.menus.checks.PcSaleChecks",
+      "com.zorykai.menus.checks.MenuEntryChecks"
     ]
   },
   "depends": {
