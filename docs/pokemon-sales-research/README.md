@@ -1,3 +1,5 @@
+> Pesquisa original da 1.2. A implementação de venda está na [versão 1.3](../pokemon-sales/README.md).
+
 # Pesquisa de spawns e raridade para venda de Pokémon
 
 Base: **Cobblemon Fabric 1.8.3+1.21.1**, distribuição oficial cujo SHA-512 foi conferido contra os metadados da versão publicada. Esta entrega é **pesquisa e proposta econômica**; não adiciona ainda compra/venda de Pokémon ao ZorykaiMenus. O JAR 1.2 continua negociando itens, não aceita automaticamente esses CSVs como lojas.

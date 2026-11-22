@@ -1,4 +1,7 @@
-# ZorykaiMenus 1.2.0
+# ZorykaiMenus 1.3.0
+
+**Venda de Pokémon 1.3:** [JAR](dist/v1.3.0/zorykaimenus-1.3.0.jar) · [Preços e configuração](docs/pokemon-sales/README.md). Use `/zmenu pokemon`; referência de Magikarp comum = **250**. Menor dificuldade de obtenção entre spawn, pesca e evolução prevalece; rotas de datapacks podem reduzir a avaliação. Confirmação por UUID, retirada durável antes do crédito e recuperação com snapshot completo.
+
 
 Atualização do mod existente de menus e lojas para **Minecraft1.21.1 / Fabric / Java21**, com Impactor e instalação somente no servidor. Mod ID preservado: `zorykaimenus`.
 
@@ -29,14 +32,14 @@ Veja [como ativar em uma loja existente](docs/market/README.md), [JSON completo 
 ## Atualizar ou instalar
 
 1. Pare o servidor e preserve uma cópia do mundo/configuração.
-2. Instale somente **zorykaimenus-1.2.0.jar** na pasta mods, removendo a versão anterior do mesmo mod.
+2. Instale somente **zorykaimenus-1.3.0.jar** na pasta mods, removendo a versão anterior do mesmo mod.
 3. Mantenha FabricAPI0.116.6+1.21.1 e Impactor5.3.5+1.21.1, versões usadas na homologação. Java21 é necessário.
 4. Inicie o servidor. discounts.json ausente será criado; configurações existentes não são sobrescritas.
 5. Configure grupos no LuckPerms, valide com /zmenu validate e use /zmenu reload. Sem permissão VIP válida, o preço é integral.
 
 O cliente não precisa de ZorykaiMenus. Para itens/modelos Cobblemon, continuam necessários os mods de conteúdo habituais. Os exemplos/diagnósticos Java são módulos de laboratório e não devem ser instalados junto ao produto em produção.
 
-A1.2 lê JSONs1.0/1.1, inclusive arquivos diretamente em menus/shops ou subpastas. Não duplique IDs ao mover arquivos. /zmenu shop <nome> continua sendo o equivalente de /tentavip open <nome>. Nenhuma loja de blocos precisa ser criada.
+A1.3 lê JSONs1.0/1.1/1.2, inclusive arquivos diretamente em menus/shops ou subpastas. Não duplique IDs ao mover arquivos. /zmenu shop <nome> continua sendo o equivalente de /tentavip open <nome>. Nenhuma loja de blocos precisa ser criada.
 
 ## Documentação1.1
 
@@ -60,7 +63,7 @@ python3 tools/prepare_dependencies.py
 
 Gradle Wrapper8.14.3 e Loom1.10.5 preservados. O preparador baixa os artefatos oficiais fixados de Impactor e Text Placeholder API com conferência de hash. Esta última é opcional no runtime das integrações externas e dependência de compilação do adaptador existente.
 
-Saída: build/libs/zorykaimenus-1.2.0.jar. O build também compila o addon Java de exemplo; remapExampleJar produz seu JAR separado. As integrações registradas usam o namespace do addon, sem sobrescrever recursos nativos.
+Saída: build/libs/zorykaimenus-1.3.0.jar. O build também compila o addon Java de exemplo; remapExampleJar produz seu JAR separado. As integrações registradas usam o namespace do addon, sem sobrescrever recursos nativos.
 
 ## Configuração e migração preservadas
 

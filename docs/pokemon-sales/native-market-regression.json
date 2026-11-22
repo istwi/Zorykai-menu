@@ -1,0 +1,130 @@
+[
+  {
+    "name": "new shop valid",
+    "passed": true
+  },
+  {
+    "name": "base quote1",
+    "passed": true
+  },
+  {
+    "name": "batch64 includes own downward pressure",
+    "passed": true
+  },
+  {
+    "name": "shop shows live market lore",
+    "passed": true
+  },
+  {
+    "name": "confirmation shows batch total",
+    "passed": true
+  },
+  {
+    "name": "real menu sale paid exact total",
+    "passed": true
+  },
+  {
+    "name": "real inventory removed64",
+    "passed": true
+  },
+  {
+    "name": "global price falls for another player",
+    "passed": true
+  },
+  {
+    "name": "stale other-player confirmation rejected without loss",
+    "passed": true
+  },
+  {
+    "name": "product override remains static",
+    "passed": true
+  },
+  {
+    "name": "buy price unchanged",
+    "passed": true
+  },
+  {
+    "name": "provider persisted gated deposit",
+    "passed": true
+  },
+  {
+    "name": "same product in-flight lock preserves second inventory",
+    "passed": true
+  },
+  {
+    "name": "non-terminating average price accepted",
+    "passed": true
+  },
+  {
+    "name": "ambiguous provider deposit really saved",
+    "passed": true
+  },
+  {
+    "name": "ambiguous payment does not alter market yet",
+    "passed": true
+  },
+  {
+    "name": "admin financial attestation counts confirmed sale",
+    "passed": true
+  },
+  {
+    "name": "attestation never credits twice",
+    "passed": true
+  },
+  {
+    "name": "repeated attestation cannot duplicate payment",
+    "passed": true
+  },
+  {
+    "name": "rejected credit returns items",
+    "passed": true
+  },
+  {
+    "name": "rejected credit leaves balance intact",
+    "passed": true
+  },
+  {
+    "name": "rejected credit adds no pressure",
+    "passed": true
+  },
+  {
+    "name": "cancelled sale leaves pressure and items",
+    "passed": true
+  },
+  {
+    "name": "short recovery test rule valid",
+    "passed": true
+  },
+  {
+    "name": "idle gradual recovery restores base",
+    "passed": true
+  },
+  {
+    "name": "another seller lowers shared price",
+    "passed": true
+  },
+  {
+    "name": "admin reset restores base",
+    "passed": true
+  },
+  {
+    "name": "real purchase still debits and delivers",
+    "passed": true
+  },
+  {
+    "name": "real fixed-price sale preserved",
+    "passed": true
+  },
+  {
+    "name": "purchase and fixed sale do not change market",
+    "passed": true
+  },
+  {
+    "name": "invalid market reload preserves snapshot",
+    "passed": true
+  },
+  {
+    "name": "configuration errors persist in config log",
+    "passed": true
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Magikarp common fishing reference is exactly 250",
+    "passed": true
+  },
+  {
+    "name": "active custom datapack common route is visible",
+    "passed": true
+  },
+  {
+    "name": "active easier route lowers Beldum price to 250",
+    "passed": true
+  },
+  {
+    "name": "CCC rare legendary route enables configured ultra-rare valuation",
+    "passed": true
+  },
+  {
+    "name": "party click opens a real confirmation inventory",
+    "passed": true
+  },
+  {
+    "name": "cancel never removes Pokemon or pays money",
+    "passed": true
+  },
+  {
+    "name": "confirmed sale credits real Impactor balance once",
+    "passed": true
+  },
+  {
+    "name": "sold UUID is absent from both real party and PC",
+    "passed": true
+  },
+  {
+    "name": "unsold Pokemon remains in its native party",
+    "passed": true
+  },
+  {
+    "name": "replaying a sold UUID never pays again",
+    "passed": true
+  },
+  {
+    "name": "real deposit is saved before delayed response",
+    "passed": true
+  },
+  {
+    "name": "shared journal blocks repeated Pokemon sale while payment is pending",
+    "passed": true
+  },
+  {
+    "name": "known rejected payment returns the same UUID without credit",
+    "passed": true
+  },
+  {
+    "name": "refund restores complete native Pokemon metadata",
+    "passed": true
+  },
+  {
+    "name": "lost acknowledgement actually credited Impactor",
+    "passed": true
+  },
+  {
+    "name": "ambiguous payment is not automatically repeated",
+    "passed": true
+  },
+  {
+    "name": "admin applied attestation closes sale without second payment",
+    "passed": true
+  },
+  {
+    "name": "admin not-applied attestation returns Pokemon without creating money",
+    "passed": true
+  },
+  {
+    "name": "held item prevents sale and remains equipped",
+    "passed": true
+  },
+  {
+    "name": "non-tradeable Pokemon cannot be sold",
+    "passed": true
+  },
+  {
+    "name": "another player's UUID cannot be sold",
+    "passed": true
+  },
+  {
+    "name": "last party Pokemon is preserved",
+    "passed": true
+  },
+  {
+    "name": "stale configuration confirmation cannot sell or pay",
+    "passed": true
+  },
+  {
+    "name": "native party file is durable before sale completion",
+    "passed": true
+  },
+  {
+    "name": "no Pokemon sale changed normal item inventory",
+    "passed": true
+  }
+]

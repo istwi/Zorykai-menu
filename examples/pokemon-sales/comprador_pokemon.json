@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "comprador_pokemon",
+  "title": "&2Comprador de Pokémon",
+  "startPage": "inicio",
+  "timeoutSeconds": 120,
+  "pages": [{
+    "id": "inicio",
+    "speaker": "npc",
+    "text": "Olá, %player%! Posso avaliar os Pokémon da sua equipe. Você verá o valor antes de confirmar qualquer venda.",
+    "buttons": [
+      {"id": "vender", "label": "Avaliar meus Pokémon", "action": "command", "executor": "player", "command": "zmenu pokemon"},
+      {"id": "sair", "label": "Sair", "action": "close"}
+    ]
+  }]
+}

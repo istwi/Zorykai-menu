@@ -1,0 +1,7096 @@
+{
+  "abomasnow": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "snover"
+    ]
+  },
+  "abra": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "absol": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "accelgor": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "shelmet"
+    ]
+  },
+  "aegislash": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "doublade"
+    ]
+  },
+  "aerodactyl": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "aggron": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "lairon"
+    ]
+  },
+  "aipom": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "alakazam": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "kadabra"
+    ]
+  },
+  "alcremie": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "milcery"
+    ]
+  },
+  "alomomola": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "altaria": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "swablu"
+    ]
+  },
+  "amaura": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "ambipom": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "aipom"
+    ]
+  },
+  "amoonguss": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "foongus"
+    ]
+  },
+  "ampharos": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "flaaffy"
+    ]
+  },
+  "annihilape": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "primeape"
+    ]
+  },
+  "anorith": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "appletun": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "applin"
+    ]
+  },
+  "applin": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "araquanid": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "dewpider"
+    ]
+  },
+  "arbok": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "ekans"
+    ]
+  },
+  "arboliva": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "dolliv"
+    ]
+  },
+  "arcanine": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "growlithe"
+    ]
+  },
+  "arceus": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "archaludon": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "duraludon"
+    ]
+  },
+  "archen": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "archeops": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "archen"
+    ]
+  },
+  "arctibax": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "frigibax"
+    ]
+  },
+  "arctovish": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "arctozolt": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "ariados": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "spinarak"
+    ]
+  },
+  "armaldo": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "anorith"
+    ]
+  },
+  "armarouge": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "charcadet"
+    ]
+  },
+  "aromatisse": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "spritzee"
+    ]
+  },
+  "aron": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "arrokuda": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "articuno": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "audino": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "aurorus": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "amaura"
+    ]
+  },
+  "avalugg": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "bergmite"
+    ]
+  },
+  "axew": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "azelf": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "azumarill": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "marill"
+    ]
+  },
+  "azurill": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "bagon": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "baltoy": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "banette": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "shuppet"
+    ]
+  },
+  "barbaracle": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "binacle"
+    ]
+  },
+  "barboach": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "barraskewda": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "arrokuda"
+    ]
+  },
+  "basculegion": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "basculin": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "bastiodon": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "shieldon"
+    ]
+  },
+  "baxcalibur": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "arctibax"
+    ]
+  },
+  "bayleef": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "chikorita"
+    ]
+  },
+  "beartic": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "cubchoo"
+    ]
+  },
+  "beautifly": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "silcoon"
+    ]
+  },
+  "beedrill": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "kakuna"
+    ]
+  },
+  "beheeyem": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "elgyem"
+    ]
+  },
+  "beldum": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "bellibolt": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "tadbulb"
+    ]
+  },
+  "bellossom": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "gloom"
+    ]
+  },
+  "bellsprout": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "bergmite": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "bewear": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "stufful"
+    ]
+  },
+  "bibarel": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "bidoof"
+    ]
+  },
+  "bidoof": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "binacle": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "bisharp": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "pawniard"
+    ]
+  },
+  "blacephalon": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "blastoise": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "wartortle"
+    ]
+  },
+  "blaziken": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "combusken"
+    ]
+  },
+  "blipbug": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "blissey": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "chansey"
+    ]
+  },
+  "blitzle": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "boldore": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "roggenrola"
+    ]
+  },
+  "boltund": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "yamper"
+    ]
+  },
+  "bombirdier": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "bonsly": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "bouffalant": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "bounsweet": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "braixen": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "fennekin"
+    ]
+  },
+  "brambleghast": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "bramblin"
+    ]
+  },
+  "bramblin": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "braviary": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "rufflet"
+    ]
+  },
+  "breloom": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "shroomish"
+    ]
+  },
+  "brionne": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "popplio"
+    ]
+  },
+  "bronzong": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "bronzor"
+    ]
+  },
+  "bronzor": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "brutebonnet": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "bruxish": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "budew": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "buizel": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "bulbasaur": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "buneary": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "bunnelby": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "burmy": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "butterfree": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "metapod"
+    ]
+  },
+  "buzzwole": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "cacnea": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "cacturne": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "cacnea"
+    ]
+  },
+  "calyrex": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "camerupt": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "numel"
+    ]
+  },
+  "capsakid": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "carbink": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "carkol": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "rolycoly"
+    ]
+  },
+  "carnivine": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "carracosta": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "tirtouga"
+    ]
+  },
+  "carvanha": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "cascoon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "wurmple"
+    ]
+  },
+  "castform": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "caterpie": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "celebi": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "celesteela": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "centiskorch": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "sizzlipede"
+    ]
+  },
+  "ceruledge": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "charcadet"
+    ]
+  },
+  "cetitan": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "cetoddle"
+    ]
+  },
+  "cetoddle": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "chandelure": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "lampent"
+    ]
+  },
+  "chansey": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "happiny"
+    ]
+  },
+  "charcadet": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "charizard": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "charmeleon"
+    ]
+  },
+  "charjabug": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "grubbin"
+    ]
+  },
+  "charmander": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "charmeleon": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "charmander"
+    ]
+  },
+  "chatot": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "cherrim": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "cherubi"
+    ]
+  },
+  "cherubi": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "chesnaught": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "quilladin"
+    ]
+  },
+  "chespin": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "chewtle": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "chienpao": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "chikorita": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "chimchar": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "chimecho": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "chingling"
+    ]
+  },
+  "chinchou": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "chingling": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "chiyu": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "cinccino": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "minccino"
+    ]
+  },
+  "cinderace": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "raboot"
+    ]
+  },
+  "clamperl": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": true,
+    "parents": []
+  },
+  "clauncher": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "clawitzer": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "clauncher"
+    ]
+  },
+  "claydol": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "baltoy"
+    ]
+  },
+  "clefable": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "clefairy"
+    ]
+  },
+  "clefairy": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "cleffa"
+    ]
+  },
+  "cleffa": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "clobbopus": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "clodsire": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "cloyster": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "shellder"
+    ]
+  },
+  "coalossal": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "carkol"
+    ]
+  },
+  "cobalion": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "cofagrigus": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "yamask"
+    ]
+  },
+  "combee": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "combusken": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "torchic"
+    ]
+  },
+  "comfey": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "conkeldurr": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "gurdurr"
+    ]
+  },
+  "copperajah": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "cufant"
+    ]
+  },
+  "corphish": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "corsola": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "corviknight": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "corvisquire"
+    ]
+  },
+  "corvisquire": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "rookidee"
+    ]
+  },
+  "cosmoem": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "cosmog"
+    ]
+  },
+  "cosmog": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "cottonee": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "crabominable": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "crabrawler"
+    ]
+  },
+  "crabrawler": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "cradily": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "lileep"
+    ]
+  },
+  "cramorant": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "cranidos": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "crawdaunt": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "corphish"
+    ]
+  },
+  "cresselia": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "croagunk": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "crobat": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "golbat"
+    ]
+  },
+  "crocalor": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "fuecoco"
+    ]
+  },
+  "croconaw": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "totodile"
+    ]
+  },
+  "crustle": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "dwebble"
+    ]
+  },
+  "cryogonal": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "cubchoo": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "cubone": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "cufant": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "cursola": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "cutiefly": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "cyclizar": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "cyndaquil": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "dachsbun": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "fidough"
+    ]
+  },
+  "darkrai": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "darmanitan": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "darumaka"
+    ]
+  },
+  "dartrix": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "rowlet"
+    ]
+  },
+  "darumaka": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "decidueye": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "dartrix"
+    ]
+  },
+  "dedenne": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "deerling": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "deino": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "delcatty": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "skitty"
+    ]
+  },
+  "delibird": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "delphox": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "braixen"
+    ]
+  },
+  "deoxys": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "dewgong": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "seel"
+    ]
+  },
+  "dewott": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "oshawott"
+    ]
+  },
+  "dewpider": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "dhelmise": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "dialga": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "diancie": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "diggersby": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "bunnelby"
+    ]
+  },
+  "diglett": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "dipplin": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "applin"
+    ]
+  },
+  "ditto": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "dodrio": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "doduo"
+    ]
+  },
+  "doduo": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "dolliv": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "smoliv"
+    ]
+  },
+  "dondozo": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": true,
+    "parents": []
+  },
+  "donphan": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "phanpy"
+    ]
+  },
+  "dottler": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "blipbug"
+    ]
+  },
+  "doublade": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "honedge"
+    ]
+  },
+  "dracovish": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "dracozolt": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "dragalge": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": [
+      "skrelp"
+    ]
+  },
+  "dragapult": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "drakloak"
+    ]
+  },
+  "dragonair": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": true,
+    "parents": [
+      "dratini"
+    ]
+  },
+  "dragonite": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": true,
+    "parents": [
+      "dragonair"
+    ]
+  },
+  "drakloak": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "dreepy"
+    ]
+  },
+  "drampa": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "drapion": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "skorupi"
+    ]
+  },
+  "dratini": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": true,
+    "parents": []
+  },
+  "drednaw": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "chewtle"
+    ]
+  },
+  "dreepy": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": []
+  },
+  "drifblim": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "drifloon"
+    ]
+  },
+  "drifloon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "drilbur": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "drizzile": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "sobble"
+    ]
+  },
+  "drowzee": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "druddigon": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "dubwool": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "wooloo"
+    ]
+  },
+  "ducklett": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "dudunsparce": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "dunsparce"
+    ]
+  },
+  "dugtrio": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "diglett"
+    ]
+  },
+  "dunsparce": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "duosion": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "solosis"
+    ]
+  },
+  "duraludon": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "durant": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "dusclops": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "duskull"
+    ]
+  },
+  "dusknoir": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "dusclops"
+    ]
+  },
+  "duskull": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "dustox": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "cascoon"
+    ]
+  },
+  "dwebble": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "eelektrik": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "tynamo"
+    ]
+  },
+  "eelektross": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "eelektrik"
+    ]
+  },
+  "eevee": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "eiscue": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "ekans": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "eldegoss": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "gossifleur"
+    ]
+  },
+  "electabuzz": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "elekid"
+    ]
+  },
+  "electivire": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "electabuzz"
+    ]
+  },
+  "electrike": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "electrode": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "voltorb"
+    ]
+  },
+  "elekid": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "elgyem": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "emboar": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "pignite"
+    ]
+  },
+  "emolga": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "empoleon": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "prinplup"
+    ]
+  },
+  "enamorus": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "entei": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "escavalier": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "karrablast"
+    ]
+  },
+  "espathra": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "flittle"
+    ]
+  },
+  "espeon": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "eevee"
+    ]
+  },
+  "espurr": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "eternatus": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "excadrill": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "drilbur"
+    ]
+  },
+  "exeggcute": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "exeggutor": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "exeggcute"
+    ]
+  },
+  "exploud": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "loudred"
+    ]
+  },
+  "falinks": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "farfetchd": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "farigiraf": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "girafarig"
+    ]
+  },
+  "fearow": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "spearow"
+    ]
+  },
+  "feebas": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "fennekin": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "feraligatr": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "croconaw"
+    ]
+  },
+  "ferroseed": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "ferrothorn": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "ferroseed"
+    ]
+  },
+  "fezandipiti": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "fidough": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "finizen": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "finneon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "flaaffy": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "mareep"
+    ]
+  },
+  "flabebe": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "flamigo": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "flapple": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "applin"
+    ]
+  },
+  "flareon": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "eevee"
+    ]
+  },
+  "fletchinder": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "fletchling"
+    ]
+  },
+  "fletchling": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "flittle": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "floatzel": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "buizel"
+    ]
+  },
+  "floette": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "flabebe"
+    ]
+  },
+  "floragato": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "sprigatito"
+    ]
+  },
+  "florges": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "floette"
+    ]
+  },
+  "fluttermane": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "flygon": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "vibrava"
+    ]
+  },
+  "fomantis": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "foongus": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "forretress": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "pineco"
+    ]
+  },
+  "fraxure": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "axew"
+    ]
+  },
+  "frigibax": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "frillish": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "froakie": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": []
+  },
+  "frogadier": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "froakie"
+    ]
+  },
+  "froslass": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "snorunt"
+    ]
+  },
+  "frosmoth": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "snom"
+    ]
+  },
+  "fuecoco": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "furfrou": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "furret": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "sentret"
+    ]
+  },
+  "gabite": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "gible"
+    ]
+  },
+  "gallade": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "kirlia"
+    ]
+  },
+  "galvantula": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "joltik"
+    ]
+  },
+  "garbodor": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "trubbish"
+    ]
+  },
+  "garchomp": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "gabite"
+    ]
+  },
+  "gardevoir": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "kirlia"
+    ]
+  },
+  "garganacl": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "naclstack"
+    ]
+  },
+  "gastly": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "gastrodon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "shellos"
+    ]
+  },
+  "genesect": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "gengar": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "haunter"
+    ]
+  },
+  "geodude": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "gholdengo": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": [
+      "gimmighoul"
+    ]
+  },
+  "gible": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "gigalith": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "boldore"
+    ]
+  },
+  "gimmighoul": {
+    "bucket": "",
+    "category": "rotas_dependentes_ou_nao_resolvidas",
+    "fishing": false,
+    "parents": []
+  },
+  "girafarig": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "giratina": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "glaceon": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "eevee"
+    ]
+  },
+  "glalie": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "snorunt"
+    ]
+  },
+  "glameow": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "glastrier": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "gligar": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "glimmet": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "glimmora": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "glimmet"
+    ]
+  },
+  "gliscor": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "gligar"
+    ]
+  },
+  "gloom": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "oddish"
+    ]
+  },
+  "gogoat": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "skiddo"
+    ]
+  },
+  "golbat": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "zubat"
+    ]
+  },
+  "goldeen": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "golduck": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "psyduck"
+    ]
+  },
+  "golem": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "graveler"
+    ]
+  },
+  "golett": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "golisopod": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "wimpod"
+    ]
+  },
+  "golurk": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "golett"
+    ]
+  },
+  "goodra": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": [
+      "sliggoo"
+    ]
+  },
+  "goomy": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "gorebyss": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": true,
+    "parents": [
+      "clamperl"
+    ]
+  },
+  "gossifleur": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "gothita": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "gothitelle": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "gothorita"
+    ]
+  },
+  "gothorita": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "gothita"
+    ]
+  },
+  "gougingfire": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "gourgeist": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "pumpkaboo"
+    ]
+  },
+  "grafaiai": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "shroodle"
+    ]
+  },
+  "granbull": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "snubbull"
+    ]
+  },
+  "grapploct": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": [
+      "clobbopus"
+    ]
+  },
+  "graveler": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "geodude"
+    ]
+  },
+  "greattusk": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "greavard": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "greedent": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "skwovet"
+    ]
+  },
+  "greninja": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "frogadier"
+    ]
+  },
+  "grimer": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "grimmsnarl": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "morgrem"
+    ]
+  },
+  "grookey": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "grotle": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "turtwig"
+    ]
+  },
+  "groudon": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "grovyle": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "treecko"
+    ]
+  },
+  "growlithe": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "grubbin": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "grumpig": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "spoink"
+    ]
+  },
+  "gulpin": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "gumshoos": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "yungoos"
+    ]
+  },
+  "gurdurr": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "timburr"
+    ]
+  },
+  "guzzlord": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "gyarados": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "magikarp"
+    ]
+  },
+  "hakamoo": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "jangmoo"
+    ]
+  },
+  "happiny": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "hariyama": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "makuhita"
+    ]
+  },
+  "hatenna": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "hatterene": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "hattrem"
+    ]
+  },
+  "hattrem": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "hatenna"
+    ]
+  },
+  "haunter": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "gastly"
+    ]
+  },
+  "hawlucha": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "haxorus": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "fraxure"
+    ]
+  },
+  "heatmor": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "heatran": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "heliolisk": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "helioptile"
+    ]
+  },
+  "helioptile": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "heracross": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "herdier": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "lillipup"
+    ]
+  },
+  "hippopotas": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "hippowdon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "hippopotas"
+    ]
+  },
+  "hitmonchan": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "tyrogue"
+    ]
+  },
+  "hitmonlee": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "tyrogue"
+    ]
+  },
+  "hitmontop": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "tyrogue"
+    ]
+  },
+  "honchkrow": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "murkrow"
+    ]
+  },
+  "honedge": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "hooh": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "hoopa": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "hoothoot": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "hoppip": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "horsea": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "houndoom": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "houndour"
+    ]
+  },
+  "houndour": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "houndstone": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "greavard"
+    ]
+  },
+  "huntail": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": true,
+    "parents": [
+      "clamperl"
+    ]
+  },
+  "hydrapple": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "dipplin"
+    ]
+  },
+  "hydreigon": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "zweilous"
+    ]
+  },
+  "hypno": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "drowzee"
+    ]
+  },
+  "igglybuff": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "illumise": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "impidimp": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "incineroar": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "torracat"
+    ]
+  },
+  "indeedee": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "infernape": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "monferno"
+    ]
+  },
+  "inkay": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "inteleon": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "drizzile"
+    ]
+  },
+  "ironboulder": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "ironbundle": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "ironcrown": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "ironhands": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "ironjugulis": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "ironleaves": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "ironmoth": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "ironthorns": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "irontreads": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "ironvaliant": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "ivysaur": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "bulbasaur"
+    ]
+  },
+  "jangmoo": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "jellicent": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "frillish"
+    ]
+  },
+  "jigglypuff": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "igglybuff"
+    ]
+  },
+  "jirachi": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "jolteon": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "eevee"
+    ]
+  },
+  "joltik": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "jumpluff": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "skiploom"
+    ]
+  },
+  "jynx": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "smoochum"
+    ]
+  },
+  "kabuto": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "kabutops": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "kabuto"
+    ]
+  },
+  "kadabra": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "abra"
+    ]
+  },
+  "kakuna": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "weedle"
+    ]
+  },
+  "kangaskhan": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "karrablast": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "kartana": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "kecleon": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "keldeo": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "kilowattrel": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "wattrel"
+    ]
+  },
+  "kingambit": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "bisharp"
+    ]
+  },
+  "kingdra": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "seadra"
+    ]
+  },
+  "kingler": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "krabby"
+    ]
+  },
+  "kirlia": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "ralts"
+    ]
+  },
+  "klang": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "klink"
+    ]
+  },
+  "klawf": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "kleavor": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "scyther"
+    ]
+  },
+  "klefki": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "klink": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "klinklang": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "klang"
+    ]
+  },
+  "koffing": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "komala": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "kommoo": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "hakamoo"
+    ]
+  },
+  "koraidon": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "krabby": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "kricketot": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "kricketune": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "kricketot"
+    ]
+  },
+  "krokorok": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "sandile"
+    ]
+  },
+  "krookodile": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "krokorok"
+    ]
+  },
+  "kubfu": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "kyogre": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "kyurem": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "lairon": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "aron"
+    ]
+  },
+  "lampent": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "litwick"
+    ]
+  },
+  "landorus": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "lanturn": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "chinchou"
+    ]
+  },
+  "lapras": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "larvesta": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "larvitar": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "latias": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "latios": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "leafeon": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "eevee"
+    ]
+  },
+  "leavanny": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "swadloon"
+    ]
+  },
+  "lechonk": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "ledian": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "ledyba"
+    ]
+  },
+  "ledyba": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "lickilicky": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "lickitung"
+    ]
+  },
+  "lickitung": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "liepard": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "purrloin"
+    ]
+  },
+  "lileep": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "lilligant": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "petilil"
+    ]
+  },
+  "lillipup": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "linoone": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "zigzagoon"
+    ]
+  },
+  "litleo": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "litten": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "litwick": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "lokix": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "nymble"
+    ]
+  },
+  "lombre": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "lotad"
+    ]
+  },
+  "lopunny": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "buneary"
+    ]
+  },
+  "lotad": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "loudred": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "whismur"
+    ]
+  },
+  "lucario": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "riolu"
+    ]
+  },
+  "ludicolo": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "lombre"
+    ]
+  },
+  "lugia": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "lumineon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "finneon"
+    ]
+  },
+  "lunala": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "cosmoem"
+    ]
+  },
+  "lunatone": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "lurantis": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "fomantis"
+    ]
+  },
+  "luvdisc": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "luxio": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "shinx"
+    ]
+  },
+  "luxray": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "luxio"
+    ]
+  },
+  "lycanroc": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "rockruff"
+    ]
+  },
+  "mabosstiff": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "maschiff"
+    ]
+  },
+  "machamp": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "machoke"
+    ]
+  },
+  "machoke": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "machop"
+    ]
+  },
+  "machop": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "magby": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "magcargo": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "slugma"
+    ]
+  },
+  "magearna": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "magikarp": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "magmar": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "magby"
+    ]
+  },
+  "magmortar": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "magmar"
+    ]
+  },
+  "magnemite": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "magneton": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "magnemite"
+    ]
+  },
+  "magnezone": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "magneton"
+    ]
+  },
+  "makuhita": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "malamar": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": [
+      "inkay"
+    ]
+  },
+  "mamoswine": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "piloswine"
+    ]
+  },
+  "manaphy": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "mandibuzz": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "vullaby"
+    ]
+  },
+  "manectric": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "electrike"
+    ]
+  },
+  "mankey": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "mantine": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": [
+      "mantyke"
+    ]
+  },
+  "mantyke": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "maractus": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "mareanie": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "mareep": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "marill": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "azurill"
+    ]
+  },
+  "marowak": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "cubone"
+    ]
+  },
+  "marshadow": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "marshtomp": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "mudkip"
+    ]
+  },
+  "maschiff": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "masquerain": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "surskit"
+    ]
+  },
+  "maushold": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "tandemaus"
+    ]
+  },
+  "mawile": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "medicham": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "meditite"
+    ]
+  },
+  "meditite": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "meganium": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "bayleef"
+    ]
+  },
+  "melmetal": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "meloetta": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "meltan": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "meowscarada": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "floragato"
+    ]
+  },
+  "meowstic": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "espurr"
+    ]
+  },
+  "meowth": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "mesprit": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "metagross": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "metang"
+    ]
+  },
+  "metang": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "beldum"
+    ]
+  },
+  "metapod": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "caterpie"
+    ]
+  },
+  "mew": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "mewtwo": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "mienfoo": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "mienshao": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "mienfoo"
+    ]
+  },
+  "mightyena": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "poochyena"
+    ]
+  },
+  "milcery": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "milotic": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": [
+      "feebas"
+    ]
+  },
+  "miltank": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "mimejr": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "mimikyu": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "minccino": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "minior": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "minun": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "miraidon": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "misdreavus": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "mismagius": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "misdreavus"
+    ]
+  },
+  "moltres": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "monferno": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "chimchar"
+    ]
+  },
+  "morelull": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "morgrem": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "impidimp"
+    ]
+  },
+  "morpeko": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "mothim": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "burmy"
+    ]
+  },
+  "mrmime": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "mimejr"
+    ]
+  },
+  "mrrime": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "mudbray": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "mudkip": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": []
+  },
+  "mudsdale": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "mudbray"
+    ]
+  },
+  "muk": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "grimer"
+    ]
+  },
+  "munchlax": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "munkidori": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "munna": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "murkrow": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "musharna": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "munna"
+    ]
+  },
+  "nacli": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "naclstack": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "nacli"
+    ]
+  },
+  "naganadel": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": [
+      "poipole"
+    ]
+  },
+  "natu": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "necrozma": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "nickit": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "nidoking": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "nidorino"
+    ]
+  },
+  "nidoqueen": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "nidorina"
+    ]
+  },
+  "nidoranf": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "nidoranm": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "nidorina": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "nidoranf"
+    ]
+  },
+  "nidorino": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "nidoranm"
+    ]
+  },
+  "nihilego": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "nincada": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "ninetales": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "vulpix"
+    ]
+  },
+  "ninjask": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "nincada"
+    ]
+  },
+  "noctowl": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "hoothoot"
+    ]
+  },
+  "noibat": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "noivern": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "noibat"
+    ]
+  },
+  "nosepass": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "numel": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "nuzleaf": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "seedot"
+    ]
+  },
+  "nymble": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "obstagoon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "octillery": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "remoraid"
+    ]
+  },
+  "oddish": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "ogerpon": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "oinkologne": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "lechonk"
+    ]
+  },
+  "okidogi": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "omanyte": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "omastar": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "omanyte"
+    ]
+  },
+  "onix": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "oranguru": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "orbeetle": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "dottler"
+    ]
+  },
+  "oricorio": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "orthworm": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "oshawott": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": []
+  },
+  "overqwil": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "pachirisu": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "palafin": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": [
+      "finizen"
+    ]
+  },
+  "palkia": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "palossand": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "sandygast"
+    ]
+  },
+  "palpitoad": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "tympole"
+    ]
+  },
+  "pancham": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "pangoro": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "pancham"
+    ]
+  },
+  "panpour": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "pansage": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "pansear": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "paras": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "parasect": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "paras"
+    ]
+  },
+  "passimian": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "patrat": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "pawmi": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "pawmo": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "pawmi"
+    ]
+  },
+  "pawmot": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "pawmo"
+    ]
+  },
+  "pawniard": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "pecharunt": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "pelipper": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "wingull"
+    ]
+  },
+  "perrserker": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "persian": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "meowth"
+    ]
+  },
+  "petilil": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "phanpy": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "phantump": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "pheromosa": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "phione": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "pichu": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "pidgeot": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "pidgeotto"
+    ]
+  },
+  "pidgeotto": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "pidgey"
+    ]
+  },
+  "pidgey": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "pidove": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "pignite": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "tepig"
+    ]
+  },
+  "pikachu": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "pichu"
+    ]
+  },
+  "pikipek": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "piloswine": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "swinub"
+    ]
+  },
+  "pincurchin": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "pineco": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "pinsir": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "piplup": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": []
+  },
+  "plusle": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "poipole": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "politoed": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "poliwhirl"
+    ]
+  },
+  "poliwag": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "poliwhirl": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "poliwag"
+    ]
+  },
+  "poliwrath": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "poliwhirl"
+    ]
+  },
+  "poltchageist": {
+    "bucket": "",
+    "category": "rotas_dependentes_ou_nao_resolvidas",
+    "fishing": false,
+    "parents": []
+  },
+  "polteageist": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "sinistea"
+    ]
+  },
+  "ponyta": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "poochyena": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "popplio": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": []
+  },
+  "porygon": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "porygon2": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "porygon"
+    ]
+  },
+  "porygonz": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "porygon2"
+    ]
+  },
+  "primarina": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "brionne"
+    ]
+  },
+  "primeape": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "mankey"
+    ]
+  },
+  "prinplup": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "piplup"
+    ]
+  },
+  "probopass": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "nosepass"
+    ]
+  },
+  "psyduck": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "pumpkaboo": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "pupitar": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "larvitar"
+    ]
+  },
+  "purrloin": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "purugly": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "glameow"
+    ]
+  },
+  "pyroar": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "litleo"
+    ]
+  },
+  "pyukumuku": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "quagsire": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "wooper"
+    ]
+  },
+  "quaquaval": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "quaxwell"
+    ]
+  },
+  "quaxly": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": []
+  },
+  "quaxwell": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "quaxly"
+    ]
+  },
+  "quilava": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "cyndaquil"
+    ]
+  },
+  "quilladin": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "chespin"
+    ]
+  },
+  "qwilfish": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "raboot": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "scorbunny"
+    ]
+  },
+  "rabsca": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "rellor"
+    ]
+  },
+  "ragingbolt": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "raichu": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "pikachu"
+    ]
+  },
+  "raikou": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "ralts": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "rampardos": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "cranidos"
+    ]
+  },
+  "rapidash": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "ponyta"
+    ]
+  },
+  "raticate": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "rattata"
+    ]
+  },
+  "rattata": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "rayquaza": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "regice": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "regidrago": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "regieleki": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "regigigas": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "regirock": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "registeel": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "relicanth": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "rellor": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "remoraid": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "reshiram": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "reuniclus": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "duosion"
+    ]
+  },
+  "revavroom": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "varoom"
+    ]
+  },
+  "rhydon": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "rhyhorn"
+    ]
+  },
+  "rhyhorn": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "rhyperior": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "rhydon"
+    ]
+  },
+  "ribombee": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "cutiefly"
+    ]
+  },
+  "rillaboom": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "thwackey"
+    ]
+  },
+  "riolu": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "roaringmoon": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "rockruff": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "roggenrola": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "rolycoly": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "rookidee": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "roselia": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "budew"
+    ]
+  },
+  "roserade": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "roselia"
+    ]
+  },
+  "rotom": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "rowlet": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "rufflet": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "runerigus": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "sableye": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "salamence": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "shelgon"
+    ]
+  },
+  "salandit": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "salazzle": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "salandit"
+    ]
+  },
+  "samurott": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "dewott"
+    ]
+  },
+  "sandaconda": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "silicobra"
+    ]
+  },
+  "sandile": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "sandshrew": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "sandslash": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "sandshrew"
+    ]
+  },
+  "sandygast": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "sandyshocks": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "sawk": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "sawsbuck": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "deerling"
+    ]
+  },
+  "scatterbug": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "sceptile": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "grovyle"
+    ]
+  },
+  "scizor": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "scyther"
+    ]
+  },
+  "scolipede": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "whirlipede"
+    ]
+  },
+  "scorbunny": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "scovillain": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "capsakid"
+    ]
+  },
+  "scrafty": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "scraggy"
+    ]
+  },
+  "scraggy": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "screamtail": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "scyther": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "seadra": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "horsea"
+    ]
+  },
+  "seaking": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "goldeen"
+    ]
+  },
+  "sealeo": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "spheal"
+    ]
+  },
+  "seedot": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "seel": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "seismitoad": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "palpitoad"
+    ]
+  },
+  "sentret": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "serperior": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "servine"
+    ]
+  },
+  "servine": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "snivy"
+    ]
+  },
+  "seviper": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "sewaddle": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "sharpedo": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "carvanha"
+    ]
+  },
+  "shaymin": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "shedinja": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "shelgon": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "bagon"
+    ]
+  },
+  "shellder": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "shellos": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "shelmet": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "shieldon": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "shiftry": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "nuzleaf"
+    ]
+  },
+  "shiinotic": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "morelull"
+    ]
+  },
+  "shinx": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "shroodle": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "shroomish": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "shuckle": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "shuppet": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "sigilyph": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "silcoon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "wurmple"
+    ]
+  },
+  "silicobra": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "silvally": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "typenull"
+    ]
+  },
+  "simipour": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "panpour"
+    ]
+  },
+  "simisage": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "pansage"
+    ]
+  },
+  "simisear": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "pansear"
+    ]
+  },
+  "sinistcha": {
+    "bucket": "",
+    "category": "rotas_dependentes_ou_nao_resolvidas",
+    "fishing": false,
+    "parents": [
+      "poltchageist"
+    ]
+  },
+  "sinistea": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "sirfetchd": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "sizzlipede": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "skarmory": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "skeledirge": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "crocalor"
+    ]
+  },
+  "skiddo": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "skiploom": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "hoppip"
+    ]
+  },
+  "skitty": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "skorupi": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "skrelp": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "skuntank": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "stunky"
+    ]
+  },
+  "skwovet": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "slaking": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "vigoroth"
+    ]
+  },
+  "slakoth": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "sliggoo": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": [
+      "goomy"
+    ]
+  },
+  "slitherwing": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "slowbro": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "slowpoke"
+    ]
+  },
+  "slowking": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "slowpoke"
+    ]
+  },
+  "slowpoke": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "slugma": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "slurpuff": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "swirlix"
+    ]
+  },
+  "smeargle": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "smoliv": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "smoochum": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "sneasel": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "sneasler": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "snivy": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "snom": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "snorlax": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "munchlax"
+    ]
+  },
+  "snorunt": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "snover": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "snubbull": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "sobble": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": []
+  },
+  "solgaleo": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "cosmoem"
+    ]
+  },
+  "solosis": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "solrock": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "spearow": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "spectrier": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "spewpa": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "scatterbug"
+    ]
+  },
+  "spheal": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "spidops": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "tarountula"
+    ]
+  },
+  "spinarak": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "spinda": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "spiritomb": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "spoink": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "sprigatito": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "spritzee": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "squawkabilly": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "squirtle": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": []
+  },
+  "stakataka": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "stantler": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "staraptor": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "staravia"
+    ]
+  },
+  "staravia": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "starly"
+    ]
+  },
+  "starly": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "starmie": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": [
+      "staryu"
+    ]
+  },
+  "staryu": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "steelix": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "onix"
+    ]
+  },
+  "steenee": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "bounsweet"
+    ]
+  },
+  "stonjourner": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "stoutland": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "herdier"
+    ]
+  },
+  "stufful": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "stunfisk": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "stunky": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "sudowoodo": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "bonsly"
+    ]
+  },
+  "suicune": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "sunflora": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "sunkern"
+    ]
+  },
+  "sunkern": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "surskit": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "swablu": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "swadloon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "sewaddle"
+    ]
+  },
+  "swalot": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "gulpin"
+    ]
+  },
+  "swampert": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "marshtomp"
+    ]
+  },
+  "swanna": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "ducklett"
+    ]
+  },
+  "swellow": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "taillow"
+    ]
+  },
+  "swinub": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "swirlix": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "swoobat": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "woobat"
+    ]
+  },
+  "sylveon": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "eevee"
+    ]
+  },
+  "tadbulb": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "taillow": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "talonflame": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "fletchinder"
+    ]
+  },
+  "tandemaus": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "tangela": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "tangrowth": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "tangela"
+    ]
+  },
+  "tapubulu": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "tapufini": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "tapukoko": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "tapulele": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "tarountula": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "tatsugiri": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": true,
+    "parents": []
+  },
+  "tauros": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "teddiursa": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "tentacool": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "tentacruel": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "tentacool"
+    ]
+  },
+  "tepig": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "terapagos": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "terrakion": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "thievul": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "nickit"
+    ]
+  },
+  "throh": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "thundurus": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "thwackey": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "grookey"
+    ]
+  },
+  "timburr": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "tinglu": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "tinkatink": {
+    "bucket": "",
+    "category": "rotas_dependentes_ou_nao_resolvidas",
+    "fishing": false,
+    "parents": []
+  },
+  "tinkaton": {
+    "bucket": "",
+    "category": "rotas_dependentes_ou_nao_resolvidas",
+    "fishing": false,
+    "parents": [
+      "tinkatuff"
+    ]
+  },
+  "tinkatuff": {
+    "bucket": "",
+    "category": "rotas_dependentes_ou_nao_resolvidas",
+    "fishing": false,
+    "parents": [
+      "tinkatink"
+    ]
+  },
+  "tirtouga": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "toedscool": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "toedscruel": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "toedscool"
+    ]
+  },
+  "togedemaru": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "togekiss": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "togetic"
+    ]
+  },
+  "togepi": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "togetic": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "togepi"
+    ]
+  },
+  "torchic": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "torkoal": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "tornadus": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "torracat": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "litten"
+    ]
+  },
+  "torterra": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "grotle"
+    ]
+  },
+  "totodile": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": []
+  },
+  "toucannon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "trumbeak"
+    ]
+  },
+  "toxapex": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "mareanie"
+    ]
+  },
+  "toxel": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "toxicroak": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "croagunk"
+    ]
+  },
+  "toxtricity": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": [
+      "toxel"
+    ]
+  },
+  "tranquill": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "pidove"
+    ]
+  },
+  "trapinch": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "treecko": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "trevenant": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "phantump"
+    ]
+  },
+  "tropius": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "trubbish": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "trumbeak": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "pikipek"
+    ]
+  },
+  "tsareena": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "steenee"
+    ]
+  },
+  "turtonator": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "turtwig": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "tympole": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "tynamo": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "typenull": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "typhlosion": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "quilava"
+    ]
+  },
+  "tyranitar": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "pupitar"
+    ]
+  },
+  "tyrantrum": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "tyrunt"
+    ]
+  },
+  "tyrogue": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "tyrunt": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": []
+  },
+  "umbreon": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "eevee"
+    ]
+  },
+  "unfezant": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "tranquill"
+    ]
+  },
+  "unown": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "ursaluna": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "ursaring"
+    ]
+  },
+  "ursaring": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "teddiursa"
+    ]
+  },
+  "urshifu": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": [
+      "kubfu"
+    ]
+  },
+  "uxie": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "vanillish": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "vanillite"
+    ]
+  },
+  "vanillite": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "vanilluxe": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "vanillish"
+    ]
+  },
+  "vaporeon": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": true,
+    "parents": [
+      "eevee"
+    ]
+  },
+  "varoom": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "veluza": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "venipede": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "venomoth": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "venonat"
+    ]
+  },
+  "venonat": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "venusaur": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": false,
+    "parents": [
+      "ivysaur"
+    ]
+  },
+  "vespiquen": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "combee"
+    ]
+  },
+  "vibrava": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "trapinch"
+    ]
+  },
+  "victini": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "victreebel": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "weepinbell"
+    ]
+  },
+  "vigoroth": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "slakoth"
+    ]
+  },
+  "vikavolt": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "charjabug"
+    ]
+  },
+  "vileplume": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "gloom"
+    ]
+  },
+  "virizion": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "vivillon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "spewpa"
+    ]
+  },
+  "volbeat": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "volcanion": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "volcarona": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "larvesta"
+    ]
+  },
+  "voltorb": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "vullaby": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "vulpix": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "wailmer": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": []
+  },
+  "wailord": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": true,
+    "parents": [
+      "wailmer"
+    ]
+  },
+  "walkingwake": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "walrein": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "sealeo"
+    ]
+  },
+  "wartortle": {
+    "bucket": "ultra-rare",
+    "category": "ultrarraro",
+    "fishing": true,
+    "parents": [
+      "squirtle"
+    ]
+  },
+  "watchog": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "patrat"
+    ]
+  },
+  "wattrel": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "weavile": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "sneasel"
+    ]
+  },
+  "weedle": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "weepinbell": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "bellsprout"
+    ]
+  },
+  "weezing": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "koffing"
+    ]
+  },
+  "whimsicott": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "cottonee"
+    ]
+  },
+  "whirlipede": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "venipede"
+    ]
+  },
+  "whiscash": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": [
+      "barboach"
+    ]
+  },
+  "whismur": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "wigglytuff": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "jigglypuff"
+    ]
+  },
+  "wiglett": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "wimpod": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "wingull": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "wishiwashi": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "wobbuffet": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "wynaut"
+    ]
+  },
+  "wochien": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "woobat": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "wooloo": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "wooper": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": true,
+    "parents": []
+  },
+  "wormadam": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "burmy"
+    ]
+  },
+  "wugtrio": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "wiglett"
+    ]
+  },
+  "wurmple": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "wynaut": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": []
+  },
+  "wyrdeer": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "stantler"
+    ]
+  },
+  "xatu": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "natu"
+    ]
+  },
+  "xerneas": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "xurkitree": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "yamask": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "yamper": {
+    "bucket": "common",
+    "category": "comum_condicionado",
+    "fishing": false,
+    "parents": []
+  },
+  "yanma": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "yanmega": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "yanma"
+    ]
+  },
+  "yungoos": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "yveltal": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "zacian": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "zamazenta": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "zangoose": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "zapdos": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "zarude": {
+    "bucket": "",
+    "category": "sem_rota_neste_pool",
+    "fishing": false,
+    "parents": []
+  },
+  "zebstrika": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": [
+      "blitzle"
+    ]
+  },
+  "zekrom": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "zeraora": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  },
+  "zigzagoon": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "zoroark": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": [
+      "zorua"
+    ]
+  },
+  "zorua": {
+    "bucket": "uncommon",
+    "category": "incomum",
+    "fishing": false,
+    "parents": []
+  },
+  "zubat": {
+    "bucket": "common",
+    "category": "comum",
+    "fishing": false,
+    "parents": []
+  },
+  "zweilous": {
+    "bucket": "rare",
+    "category": "raro",
+    "fishing": false,
+    "parents": [
+      "deino"
+    ]
+  },
+  "zygarde": {
+    "bucket": "",
+    "category": "sem_implemented_true",
+    "fishing": false,
+    "parents": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "permission": "zorykaimenus.pokemon.sell",
+  "referencePrice": 250,
+  "bucketMultipliers": {"common": 1, "uncommon": 3, "rare": 10, "ultra-rare": 30},
+  "shinyMultiplier": 2,
+  "evolutionMultiplier": 1.25,
+  "maxPrice": 100000,
+  "keepParty": 1,
+  "confirmationSeconds": 60,
+  "speciesPrices": {},
+  "blockedSpecies": []
+}

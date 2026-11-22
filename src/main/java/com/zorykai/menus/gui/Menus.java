@@ -95,6 +95,7 @@ public final class Menus {
    if(!Permissions.has(p,str(a,"permission",privileged?"zorykaimenus.actions.server":""),!privileged&&!a.has("permission"))){app.message(p,"denied",Map.of());return;}
    switch(type){
     case "OPEN_MENU","OPEN_SHOP" -> open(p,type.equals("OPEN_SHOP"),str(a,"id",""),1,true);
+    case "OPEN_POKEMON_SELL" -> app.pokemonSales.open(p);
     case "CLOSE_MENU" -> p.closeHandledScreen();
     case "BACK" -> back(p);
     case "NEXT_PAGE" -> open(p,location.shop,location.id,location.page+1,false);

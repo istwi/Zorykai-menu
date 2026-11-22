@@ -11,7 +11,7 @@ public final class Catalog {
  public Catalog(Path root){this.root=root;}
  public Snapshot get(){if(current==null)throw new IllegalStateException("Configuração não carregada");return current;}
  public static void seed(Path root)throws Exception{
-  for(String name:List.of("config.json","economy.json","discounts.json","permissions.json","messages/pt_br.json","menus/main.json","menus/second.json","shops/example.json")){
+  for(String name:List.of("config.json","pokemon-sales.json","economy.json","discounts.json","permissions.json","messages/pt_br.json","menus/main.json","menus/second.json","shops/example.json")){
    Path dst=root.resolve(name);Files.createDirectories(dst.getParent());if(Files.exists(dst))continue;
    try(var in=Catalog.class.getResourceAsStream("/defaults/"+name)){if(in==null)throw new IllegalStateException(name);Files.copy(in,dst);}
   }
@@ -21,7 +21,7 @@ public final class Catalog {
   List<String> errors=new ArrayList<>();Map<String,JsonObject> menus=load("menus",errors),shops=load("shops",errors);
   JsonObject cfg=new JsonObject(),eco=new JsonObject(),perms=new JsonObject(),msgs=new JsonObject(),discounts=new JsonObject();
   java.math.BigDecimal discountCap=new java.math.BigDecimal("50");
-  try{discounts=read(root.resolve("discounts.json"));com.zorykai.menus.pricing.Discounts.validate(discounts);discountCap=discounts.has("maxDiscountPercent")?discounts.get("maxDiscountPercent").getAsBigDecimal():discountCap;cfg=read(root.resolve("config.json"));eco=read(root.resolve("economy.json"));perms=read(root.resolve("permissions.json"));msgs=read(root.resolve("messages/pt_br.json"));
+  try{discounts=read(root.resolve("discounts.json"));com.zorykai.menus.pricing.Discounts.validate(discounts);discountCap=discounts.has("maxDiscountPercent")?discounts.get("maxDiscountPercent").getAsBigDecimal():discountCap;cfg=read(root.resolve("config.json"));cfg.add("pokemonSales",read(root.resolve("pokemon-sales.json")));com.zorykai.menus.pokemon.PokemonPrices.validate(obj(cfg,"pokemonSales"));eco=read(root.resolve("economy.json"));perms=read(root.resolve("permissions.json"));msgs=read(root.resolve("messages/pt_br.json"));
    if(!str(eco,"currency","impactor:dollars").matches("[a-z0-9_.-]+:[a-z0-9_./-]+"))errors.add("economy.json.currency: identificador inválido");
    if(num(cfg,"maxQuantity",2304)<1||num(cfg,"maxQuantity",2304)>1000000)errors.add("config.json.maxQuantity: intervalo 1..1000000");
   }catch(Exception e){errors.add("Configuração/discounts.json: "+e.getMessage());}
@@ -72,7 +72,7 @@ public final class Catalog {
  }
  public static List<Integer> pages(JsonObject b,int max){List<Integer> out=new ArrayList<>();if(!b.has("pages")){for(int i=1;i<=max;i++)out.add(i);}else for(var p:arr(b,"pages")){int v=p.getAsInt();if(v<1||v>max)throw new IllegalArgumentException("pages: página fora do intervalo");out.add(v);}return out;}
  private void validateAction(JsonObject a,Map<String,JsonObject> menus,Map<String,JsonObject> shops){
-  String t=str(a,"type","");if(!com.zorykai.menus.api.ZorykaiMenusAPI.actionRegistered(t)&&!Set.of("OPEN_MENU","OPEN_SHOP","PLAYER_COMMAND","SERVER_COMMAND","CLOSE_MENU","BACK","NEXT_PAGE","PREVIOUS_PAGE","SEND_MESSAGE","PLAY_SOUND").contains(t))throw new IllegalArgumentException("actions.type desconhecido: "+t);
+  String t=str(a,"type","");if(!com.zorykai.menus.api.ZorykaiMenusAPI.actionRegistered(t)&&!Set.of("OPEN_MENU","OPEN_SHOP","OPEN_POKEMON_SELL","PLAYER_COMMAND","SERVER_COMMAND","CLOSE_MENU","BACK","NEXT_PAGE","PREVIOUS_PAGE","SEND_MESSAGE","PLAY_SOUND").contains(t))throw new IllegalArgumentException("actions.type desconhecido: "+t);
   if(t.equals("OPEN_MENU")&&!menus.containsKey(str(a,"id","")))throw new IllegalArgumentException("actions.id: menu inexistente "+str(a,"id",""));
   if(t.equals("OPEN_SHOP")&&!shops.containsKey(str(a,"id","")))throw new IllegalArgumentException("actions.id: loja inexistente "+str(a,"id",""));
   if(t.equals("SERVER_COMMAND")&&str(a,"permission","").isBlank())throw new IllegalArgumentException("SERVER_COMMAND exige permission explícita");

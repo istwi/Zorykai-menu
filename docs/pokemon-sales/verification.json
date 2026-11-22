@@ -1,0 +1,41 @@
+{
+  "version": "1.3.0",
+  "sha256": "e8b0e3bfd018429eec44069c07fedc9ca5c79b6d837ad0bc044086cc4f63a5b1",
+  "minecraft": "1.21.1",
+  "cobblemon": "1.8.3",
+  "impactor": "5.3.5",
+  "referencePokemon": "magikarp",
+  "referencePrice": 250,
+  "unitTests": 48,
+  "nativeRuns": {
+    "native-sale-results.json": {
+      "checks": 22,
+      "passed": true
+    },
+    "native-restart-results.json": {
+      "checks": 7,
+      "passed": true
+    },
+    "native-market-regression.json": {
+      "checks": 32,
+      "passed": true
+    },
+    "native-absence-results.json": {
+      "checks": 5,
+      "passed": true
+    },
+    "native-datapack-results.json": {
+      "checks": 25,
+      "passed": true
+    }
+  },
+  "nativeChecksExecuted": 91,
+  "sameProductionJarInAllNativeRuns": true,
+  "storageBackendTested": "native flat-file NBT",
+  "actualImpactorDepositsTested": true,
+  "cleanServerRestartTested": true,
+  "providerLostAcknowledgementTested": true,
+  "powerFailureTested": false,
+  "graphicalClientTested": false,
+  "productionModified": false
+}

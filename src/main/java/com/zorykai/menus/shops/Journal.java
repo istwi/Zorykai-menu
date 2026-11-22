@@ -14,6 +14,7 @@ public final class Journal implements AutoCloseable {
   try(var s=db.createStatement()){
    s.execute("PRAGMA journal_mode=WAL");s.execute("PRAGMA synchronous=FULL");
    s.execute("CREATE TABLE IF NOT EXISTS pending(id TEXT PRIMARY KEY, player TEXT UNIQUE NOT NULL, payload TEXT NOT NULL)");
+   s.execute("CREATE TABLE IF NOT EXISTS pokemon_sale_history(id TEXT PRIMARY KEY, player TEXT NOT NULL, pokemon TEXT NOT NULL, payload TEXT NOT NULL, result TEXT NOT NULL, finished INTEGER NOT NULL)");
    s.execute("CREATE TABLE IF NOT EXISTS market_state(key TEXT PRIMARY KEY, volume TEXT NOT NULL, updated INTEGER NOT NULL)");
    s.execute("CREATE UNIQUE INDEX IF NOT EXISTS pending_market_key ON pending(json_extract(payload,'$.marketKey')) WHERE json_extract(payload,'$.marketKey') IS NOT NULL");
   }
@@ -49,6 +50,16 @@ public final class Journal implements AutoCloseable {
    try(var s=db.prepareStatement("DELETE FROM pending WHERE id=?")){s.setString(1,str(saved,"id",""));s.executeUpdate();}
    db.commit();return true;
   }catch(Exception failure){db.rollback();throw failure;}finally{db.setAutoCommit(true);}
+ }
+ /** Keep the full original Pokemon snapshot as audit evidence, atomically with pending completion. */
+ public synchronized void finishPokemon(JsonObject tx,String result)throws Exception{
+  db.setAutoCommit(false);try{
+   try(var s=db.prepareStatement("INSERT OR IGNORE INTO pokemon_sale_history VALUES(?,?,?,?,?,?)")){
+    s.setString(1,str(tx,"id",""));s.setString(2,str(tx,"player",""));s.setString(3,str(tx,"pokemon",""));s.setString(4,GSON.toJson(tx));s.setString(5,result);s.setLong(6,System.currentTimeMillis());s.executeUpdate();
+   }
+   try(var s=db.prepareStatement("DELETE FROM pending WHERE id=?")){s.setString(1,str(tx,"id",""));s.executeUpdate();}
+   db.commit();
+  }catch(Exception e){db.rollback();throw e;}finally{db.setAutoCommit(true);}
  }
  public synchronized int count()throws Exception{try(var s=db.createStatement();var r=s.executeQuery("SELECT COUNT(*) FROM pending")){return r.getInt(1);}}
  public synchronized void close()throws Exception{db.close();}

@@ -10,7 +10,9 @@
       "com.zorykai.menus.checks.CompatChecks",
       "com.zorykai.menus.checks.UpgradeChecks",
       "com.zorykai.menus.checks.AbsenceChecks",
-      "com.zorykai.menus.checks.MarketChecks"
+      "com.zorykai.menus.checks.MarketChecks",
+      "com.zorykai.menus.checks.PokemonSaleChecks",
+      "com.zorykai.menus.checks.PokemonRestartChecks"
     ]
   },
   "depends": {

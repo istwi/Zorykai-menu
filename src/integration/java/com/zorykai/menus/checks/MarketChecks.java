@@ -26,7 +26,7 @@ import java.nio.file.*;
 import static com.zorykai.menus.config.Json.*;
 
 /** Real Minecraft inventory, menus and Impactor payments; no graphical clients. */
-public final class MarketChecks implements ModInitializer {
+public class MarketChecks implements ModInitializer {
  ZorykaiMenus app;ServerPlayerEntity x,y;boolean started;int ticks,checks;final JsonArray results=new JsonArray();
  @Override public void onInitialize(){if(!Boolean.getBoolean("zorykai.marketTest"))return;ServerTickEvents.END_SERVER_TICK.register(s->{if(!started&&++ticks==20){started=true;app=ZorykaiMenus.instance;new Thread(()->run(s),"market-checks").start();}});}
  <T>T server(Supplier<T> call){var future=new CompletableFuture<T>();app.server.execute(()->{try{future.complete(call.get());}catch(Throwable error){future.completeExceptionally(error);}});return future.join();}

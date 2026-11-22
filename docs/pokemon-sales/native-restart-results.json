@@ -1,0 +1,30 @@
+[
+  {
+    "name": "sold UUID stays absent after a real server restart",
+    "passed": true
+  },
+  {
+    "name": "Impactor balance survives restart without duplicate payment",
+    "passed": true
+  },
+  {
+    "name": "recover after completed sale is a no-op",
+    "passed": true
+  },
+  {
+    "name": "durable removal intent resumes with one payment",
+    "passed": true
+  },
+  {
+    "name": "repeated recovery never credits a second time",
+    "passed": true
+  },
+  {
+    "name": "pending return restores shiny level and all serialized metadata",
+    "passed": true
+  },
+  {
+    "name": "pending return does not credit money",
+    "passed": true
+  }
+]

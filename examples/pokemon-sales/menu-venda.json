@@ -1,0 +1,16 @@
+{
+  "id": "venda_pokemon",
+  "enabled": true,
+  "size": 27,
+  "title": "<dark_green>Comprador de Pokémon",
+  "buttons": [
+    {
+      "id": "abrir_venda",
+      "slots": [13],
+      "name": "<green>Vender um Pokémon",
+      "lore": ["<gray>Veja o valor de cada Pokémon da sua equipe.", "<yellow>A venda exige confirmação."],
+      "icon": {"id": "minecraft:emerald"},
+      "actions": [{"type": "OPEN_POKEMON_SELL"}]
+    }
+  ]
+}
