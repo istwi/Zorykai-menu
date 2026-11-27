@@ -149,7 +149,7 @@ public final class Menus {
   app.economy.balance(p.getUuid()).whenComplete((balance,error)->p.getServer().execute(()->{
    if(p.currentScreenHandler!=screen||app.catalog.get().revision()!=revision)return;
    try{
-    if(error!=null)throw new IllegalStateException("saldo indisponível");
+    if(error!=null)throw new IllegalStateException("saldo indisponível",error);
     if(!access(p,parent)||!allowed(p,product,"")||!Conditions.visible(p,product)||!Permissions.has(p,str(app.catalog.get().permissions(),"buy","zorykaimenus.buy"),true))throw new IllegalArgumentException("sem permissão ou condição indisponível");
     var shop=app.catalog.get().shops().get(parent.id);var unit=ItemsJson.read(p.getServer(),obj(product,"item"));
     int limit=app.pricing.limit(product);int capacity=com.zorykai.menus.shops.InventoryPlan.capacity(p.getInventory().main,unit,limit);
@@ -157,7 +157,11 @@ public final class Menus {
     int max=com.zorykai.menus.pricing.PriceEngine.maximum(balance,capacity,limit,n->app.pricing.quote(p,parent.id,shop,product,false,n).total());
     if(max==0)throw new IllegalArgumentException("saldo insuficiente para uma unidade");
     confirm(p,parent,product,false,max,revision);
-   }catch(Exception failure){app.message(p,"failure",Map.of("reason",failure.getMessage()==null?"cálculo indisponível":failure.getMessage()));}
+   }catch(IllegalArgumentException rejected){
+    app.message(p,"failure",Map.of("reason",rejected.getMessage()==null?"compra indisponível":rejected.getMessage()));
+   }catch(Exception failure){
+    app.LOG.error("Falha ao calcular compra máxima para {} na loja {}",p.getUuid(),parent.id,failure);
+   }
   }));
  }
 }

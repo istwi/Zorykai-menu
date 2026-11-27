@@ -19,17 +19,17 @@ public final class Trades {
  }
  public void submit(ServerPlayerEntity p,String shopId,String productId,boolean sell,int quantity,long revision,java.math.BigDecimal expectedTotal){
   UUID id=p.getUuid();boolean ownsLock=false;try{
-   if(running.contains(id)){app.message(p,"pending",Map.of());return;}
+   if(running.contains(id))return;
    var pending=journal.get(id);
    if(pending!=null){
     if(!str(pending,"stage","").equals("DELIVER_INTENT")||bool(pending,"sell",false)){
-     app.message(p,"pending",Map.of());return;
+     app.LOG.warn("Compra bloqueada para {} pela operação {} em {}",id,str(pending,"id",""),str(pending,"stage",""));
+     return;
     }
     if(!confirmDeliveredPurchase(p,pending)){
      String previousId=str(pending,"id","");
      journal.deferDelivery(id,previousId);
      app.LOG.warn("Compra {} de {} separada para conferência; novas compras liberadas.",previousId,id);
-     app.literal(p,"<yellow>Compra anterior em conferência. Você pode continuar comprando. ID: "+previousId);
     }
    }
    var snapshot=app.catalog.get();if(snapshot.revision()!=revision)throw new IllegalArgumentException("configuração alterada; abra novamente");
@@ -50,7 +50,11 @@ public final class Trades {
    if(!TradeEvents.before(TradeEvents.snapshot(tx))){finish(tx,false,"operação cancelada por integração");return;}
    p.closeHandledScreen();
    if(sell){inventoryIntent(p,tx,plan,"REMOVE_INTENT");stage(tx,"ITEMS_REMOVED");credit(tx);}else debit(tx);
-  }catch(Exception e){if(ownsLock)running.remove(id);failure(p,e.getMessage());app.LOG.warn("Transação recusada/preservada para {}: {}",id,e.toString());}
+  }catch(Exception e){
+   if(ownsLock)running.remove(id);
+   if(!ownsLock&&e instanceof IllegalArgumentException)failure(p,e.getMessage());
+   else app.LOG.error("Erro interno na transação de {} na loja {} produto {}",id,shopId,productId,e);
+  }
  }
  public void validateAccess(ServerPlayerEntity p,JsonObject shop,JsonObject product,boolean sell){
   var permissions=app.catalog.get().permissions();for(String key:List.of("use","shop",sell?"sell":"buy"))if(!Permissions.has(p,str(permissions,key,"zorykaimenus."+key),true))throw new IllegalArgumentException("sem permissão");
@@ -107,7 +111,6 @@ public final class Trades {
   running.remove(id);
   var p=app.server.getPlayerManager().getPlayer(id);
   logTradeFailure(tx,id,p,error);
-  if(p!=null)app.message(p,"pending",Map.of());
  }
 
  private void logTradeFailure(JsonObject tx,UUID id,ServerPlayerEntity player,Throwable error){
@@ -148,7 +151,7 @@ public final class Trades {
   }finally{running.remove(id);}
  }
  public void recover(ServerPlayerEntity p){UUID id=p.getUuid();try{
-  if(!running.add(id)){app.message(p,"pending",Map.of());return;}var tx=journal.get(id);if(tx==null){running.remove(id);app.literal(p,"<gray>Nenhuma operação pendente.");return;}
+  if(!running.add(id))return;var tx=journal.get(id);if(tx==null){running.remove(id);app.literal(p,"<gray>Nenhuma operação pendente.");return;}
   switch(str(tx,"stage","")){
    case "PREPARED" -> finish(tx,false,"operação não iniciada, cancelada com segurança");
    case "DEBITED","REFUND_PENDING" -> refund(tx); // known debit: recovery returns money instead of surprising item delivery
@@ -159,7 +162,7 @@ public final class Trades {
      String previousId=str(tx,"id","");
      journal.deferDelivery(id,previousId);
      running.remove(id);
-     app.literal(p,"<yellow>Entrega em conferência. Você pode continuar comprando. ID: "+previousId);
+     app.LOG.warn("Entrega {} de {} separada para conferência; novas compras liberadas.",previousId,id);
     }
    }
    case "REMOVE_INTENT","RETURN_INTENT" -> {
@@ -167,9 +170,9 @@ public final class Trades {
     if(InventoryPlan.same(p.getInventory().main,before)){DurableInventory.apply(p,after);}else if(InventoryPlan.same(p.getInventory().main,after)){DurableInventory.apply(p,after);}else throw new IllegalStateException("inventário alterado; requer conferência manual");
     if(str(tx,"stage","").equals("REMOVE_INTENT")){stage(tx,"ITEMS_REMOVED");credit(tx);}else finish(tx,false,"itens devolvidos após recuperação");
    }
-   default -> {running.remove(id);app.literal(p,"<yellow>Etapa financeira sem confirmação. Administrador deve conferir no Impactor. Operação: "+str(tx,"id",""));}
+   default -> {running.remove(id);app.LOG.warn("Etapa financeira {} sem confirmação na operação {} de {}",str(tx,"stage",""),str(tx,"id",""),id);}
   }
- }catch(Exception e){running.remove(id);failure(p,e.getMessage());app.LOG.error("Falha na recuperação de "+id,e);}}
+ }catch(Exception e){running.remove(id);app.LOG.error("Falha na recuperação de "+id,e);}}
  /** Explicit admin attestation after checking the economy provider; never an automatic retry. */
  public String resolve(UUID player,String txId,boolean applied)throws Exception{
   if(running.contains(player))throw new IllegalStateException("operação em execução");var tx=journal.get(player);
