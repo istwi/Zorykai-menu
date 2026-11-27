@@ -19,7 +19,19 @@ public final class Trades {
  }
  public void submit(ServerPlayerEntity p,String shopId,String productId,boolean sell,int quantity,long revision,java.math.BigDecimal expectedTotal){
   UUID id=p.getUuid();boolean ownsLock=false;try{
-   if(running.contains(id)||journal.get(id)!=null){app.message(p,"pending",Map.of());return;}
+   if(running.contains(id)){app.message(p,"pending",Map.of());return;}
+   var pending=journal.get(id);
+   if(pending!=null){
+    if(!str(pending,"stage","").equals("DELIVER_INTENT")||bool(pending,"sell",false)){
+     app.message(p,"pending",Map.of());return;
+    }
+    if(!confirmDeliveredPurchase(p,pending)){
+     String previousId=str(pending,"id","");
+     journal.deferDelivery(id,previousId);
+     app.LOG.warn("Compra {} de {} separada para conferência; novas compras liberadas.",previousId,id);
+     app.literal(p,"<yellow>Compra anterior em conferência. Você pode continuar comprando. ID: "+previousId);
+    }
+   }
    var snapshot=app.catalog.get();if(snapshot.revision()!=revision)throw new IllegalArgumentException("configuração alterada; abra novamente");
    var shop=snapshot.shops().get(shopId);if(shop==null)throw new IllegalArgumentException("loja indisponível");
    JsonObject product=null;for(var e:arr(shop,"products"))if(str(e.getAsJsonObject(),"id","").equals(productId)){product=e.getAsJsonObject();break;}
@@ -90,9 +102,51 @@ public final class Trades {
   app.LOG.info("Operação {} concluída: player={}, venda={}, quantidade={}, total={}, sucesso={}",str(tx,"id",""),id,bool(tx,"sell",false),num(tx,"quantity",0),str(tx,"total",""),success);
   if(p!=null){if(success){app.message(p,"success",Map.of("quantity",str(tx,"quantity",""),"total",str(tx,"total","")));app.menus.sound(p,str(app.catalog.get().messages(),bool(tx,"sell",false)?"sellSound":"buySound","minecraft:entity.experience_orb.pickup"));}else failure(p,reason);}
  }
- private void uncertain(JsonObject tx,Throwable error){UUID id=UUID.fromString(str(tx,"player",""));running.remove(id);app.LOG.error("Operação {} preservada em {}. NÃO repetir débito/crédito sem conferência.",str(tx,"id",""),str(tx,"stage",""),error);var p=app.server.getPlayerManager().getPlayer(id);if(p!=null)app.message(p,"pending",Map.of());}
+ private void uncertain(JsonObject tx,Throwable error){
+  UUID id=UUID.fromString(str(tx,"player",""));
+  running.remove(id);
+  var p=app.server.getPlayerManager().getPlayer(id);
+  logTradeFailure(tx,id,p,error);
+  if(p!=null)app.message(p,"pending",Map.of());
+ }
+
+ private void logTradeFailure(JsonObject tx,UUID id,ServerPlayerEntity player,Throwable error){
+  var slots=new ArrayList<String>();
+  int total=0;
+  if(player!=null){
+   var inventory=player.getInventory();
+   for(int slot=0;slot<inventory.size();slot++){
+    var stack=inventory.getStack(slot);
+    if(stack.isEmpty())continue;
+    total+=stack.getCount();
+    slots.add(slot+"="+net.minecraft.registry.Registries.ITEM.getId(stack.getItem())+" x"+stack.getCount());
+   }
+  }
+  String version=net.fabricmc.loader.api.FabricLoader.getInstance().getModContainer("zorykaimenus")
+      .map(mod->mod.getMetadata().getVersion().getFriendlyString()).orElse("desconhecida");
+  app.LOG.error("Compra/venda preservada: horário={}, versão={}, operação={}, etapa={}, jogador={}, loja={}, produto={}, venda={}, quantidade={}, total={}, moeda={}, inventárioOnline={}, unidades={}, slots={}",
+      java.time.Instant.now(),version,str(tx,"id",""),str(tx,"stage",""),id,str(tx,"shop",""),str(tx,"product",""),
+      bool(tx,"sell",false),num(tx,"quantity",0),str(tx,"total",""),str(tx,"currency",""),player!=null,total,slots,error);
+ }
  private void failure(ServerPlayerEntity p,String reason){app.message(p,"failure",Map.of("reason",reason==null?"falha interna":reason));}
- public String status(UUID player)throws Exception{var tx=journal.get(player);return tx==null?"sem operação pendente":str(tx,"id","")+" · "+str(tx,"stage","");}
+ public String status(UUID player)throws Exception{
+  var tx=journal.get(player);
+  var reviews=journal.deliveryReviews(player);
+  String active=tx==null?"sem operação pendente":str(tx,"id","")+" · "+str(tx,"stage","");
+  return reviews.isEmpty()?active:active+" · entregas em conferência: "+reviews.size()+" · "+reviews.getLast();
+ }
+ private boolean confirmDeliveredPurchase(ServerPlayerEntity player,JsonObject tx)throws Exception{
+  if(!str(tx,"stage","").equals("DELIVER_INTENT")||bool(tx,"sell",false))return false;
+  if(!InventoryPlan.same(player.getInventory().main,restore(arr(tx,"after"))))return false;
+  var id=player.getUuid();
+  running.add(id);
+  try{
+   try{DurableInventory.confirmCurrent(player);}
+   catch(java.io.IOException failure){logTradeFailure(tx,id,player,failure);return false;}
+   finish(tx,true,"");
+   return journal.get(id)==null;
+  }finally{running.remove(id);}
+ }
  public void recover(ServerPlayerEntity p){UUID id=p.getUuid();try{
   if(!running.add(id)){app.message(p,"pending",Map.of());return;}var tx=journal.get(id);if(tx==null){running.remove(id);app.literal(p,"<gray>Nenhuma operação pendente.");return;}
   switch(str(tx,"stage","")){
@@ -100,21 +154,38 @@ public final class Trades {
    case "DEBITED","REFUND_PENDING" -> refund(tx); // known debit: recovery returns money instead of surprising item delivery
    case "ITEMS_REMOVED" -> credit(tx);
    case "RETURN_PENDING" -> returnItems(tx);
-   case "REMOVE_INTENT","DELIVER_INTENT","RETURN_INTENT" -> {
+   case "DELIVER_INTENT" -> {
+    if(!confirmDeliveredPurchase(p,tx)){
+     String previousId=str(tx,"id","");
+     journal.deferDelivery(id,previousId);
+     running.remove(id);
+     app.literal(p,"<yellow>Entrega em conferência. Você pode continuar comprando. ID: "+previousId);
+    }
+   }
+   case "REMOVE_INTENT","RETURN_INTENT" -> {
     var before=restore(arr(tx,"before"));var after=restore(arr(tx,"after"));
     if(InventoryPlan.same(p.getInventory().main,before)){DurableInventory.apply(p,after);}else if(InventoryPlan.same(p.getInventory().main,after)){DurableInventory.apply(p,after);}else throw new IllegalStateException("inventário alterado; requer conferência manual");
-    if(str(tx,"stage","").equals("REMOVE_INTENT")){stage(tx,"ITEMS_REMOVED");credit(tx);}else finish(tx,str(tx,"stage","").equals("DELIVER_INTENT"),"itens devolvidos após recuperação");
+    if(str(tx,"stage","").equals("REMOVE_INTENT")){stage(tx,"ITEMS_REMOVED");credit(tx);}else finish(tx,false,"itens devolvidos após recuperação");
    }
    default -> {running.remove(id);app.literal(p,"<yellow>Etapa financeira sem confirmação. Administrador deve conferir no Impactor. Operação: "+str(tx,"id",""));}
   }
  }catch(Exception e){running.remove(id);failure(p,e.getMessage());app.LOG.error("Falha na recuperação de "+id,e);}}
  /** Explicit admin attestation after checking the economy provider; never an automatic retry. */
  public String resolve(UUID player,String txId,boolean applied)throws Exception{
-  if(running.contains(player))throw new IllegalStateException("operação em execução");var tx=journal.get(player);if(tx==null||!str(tx,"id","").equals(txId))throw new IllegalArgumentException("operação não encontrada");
+  if(running.contains(player))throw new IllegalStateException("operação em execução");var tx=journal.get(player);
+  if(tx==null||!str(tx,"id","").equals(txId)){
+   if(!journal.resolveDeliveryReview(player,txId,applied))throw new IllegalArgumentException("operação não encontrada");
+   app.LOG.warn("Conferência de entrega: player={}, operação={}, entregue={}",player,txId,applied);
+   return applied?"Entrega confirmada.":"Estorno autorizado. Jogador pode usar /zmenu recover.";
+  }
   switch(str(tx,"stage","")){
    case "DEBIT_INTENT" -> {if(applied)stage(tx,"DEBITED");else journal.done(tx);}
    case "CREDIT_INTENT" -> {if(applied)finish(tx,true,"");else stage(tx,"RETURN_PENDING");}
    case "REFUND_INTENT" -> {if(applied)journal.done(tx);else stage(tx,"REFUND_PENDING");}
+   case "DELIVER_INTENT" -> {
+    if(bool(tx,"sell",false))throw new IllegalArgumentException("operação não é uma compra");
+    if(applied)finish(tx,true,"");else stage(tx,"REFUND_PENDING");
+   }
    default -> throw new IllegalArgumentException("etapa não permite atestado financeiro");
   }
   app.LOG.warn("Atestado administrativo: player={}, operação={}, aplicado={}",player,txId,applied);return "Atestado registrado. Jogador pode usar /zmenu recover.";

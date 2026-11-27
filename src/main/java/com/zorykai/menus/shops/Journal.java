@@ -14,6 +14,7 @@ public final class Journal implements AutoCloseable {
   try(var s=db.createStatement()){
    s.execute("PRAGMA journal_mode=WAL");s.execute("PRAGMA synchronous=FULL");
    s.execute("CREATE TABLE IF NOT EXISTS pending(id TEXT PRIMARY KEY, player TEXT UNIQUE NOT NULL, payload TEXT NOT NULL)");
+   s.execute("CREATE TABLE IF NOT EXISTS delivery_review(id TEXT PRIMARY KEY, player TEXT NOT NULL, payload TEXT NOT NULL)");
    s.execute("CREATE TABLE IF NOT EXISTS pokemon_sale_history(id TEXT PRIMARY KEY, player TEXT NOT NULL, pokemon TEXT NOT NULL, payload TEXT NOT NULL, result TEXT NOT NULL, finished INTEGER NOT NULL)");
    s.execute("CREATE TABLE IF NOT EXISTS market_state(key TEXT PRIMARY KEY, volume TEXT NOT NULL, updated INTEGER NOT NULL)");
    s.execute("CREATE UNIQUE INDEX IF NOT EXISTS pending_market_key ON pending(json_extract(payload,'$.marketKey')) WHERE json_extract(payload,'$.marketKey') IS NOT NULL");
@@ -27,6 +28,37 @@ public final class Journal implements AutoCloseable {
   try(var s=db.prepareStatement("SELECT 1 FROM pending WHERE json_extract(payload,'$.marketKey')=? AND id<>? LIMIT 1")){s.setString(1,key);s.setString(2,except);try(var r=s.executeQuery()){return r.next();}}
  }
  public synchronized JsonObject get(UUID player)throws Exception{try(var s=db.prepareStatement("SELECT payload FROM pending WHERE player=?")){s.setString(1,player.toString());try(var r=s.executeQuery()){return r.next()?parse(r.getString(1)):null;}}}
+ synchronized void deferDelivery(UUID player,String id)throws SQLException {
+  db.setAutoCommit(false);
+  try(var copy=db.prepareStatement("INSERT INTO delivery_review SELECT id,player,payload FROM pending WHERE id=? AND player=? AND json_extract(payload,'$.stage')='DELIVER_INTENT'");
+      var remove=db.prepareStatement("DELETE FROM pending WHERE id=? AND player=?")){
+   copy.setString(1,id);copy.setString(2,player.toString());
+   if(copy.executeUpdate()!=1)throw new SQLException("Entrega pendente não encontrada");
+   remove.setString(1,id);remove.setString(2,player.toString());remove.executeUpdate();
+   db.commit();
+  }catch(SQLException failure){db.rollback();throw failure;}finally{db.setAutoCommit(true);}
+ }
+ synchronized List<String> deliveryReviews(UUID player)throws SQLException {
+  try(var s=db.prepareStatement("SELECT id FROM delivery_review WHERE player=? ORDER BY rowid")){
+   s.setString(1,player.toString());
+   try(var rows=s.executeQuery()){
+    var ids=new ArrayList<String>();
+    while(rows.next())ids.add(rows.getString(1));
+    return ids;
+   }
+  }
+ }
+ synchronized boolean resolveDeliveryReview(UUID player,String id,boolean delivered)throws SQLException {
+  db.setAutoCommit(false);
+  try(var refund=db.prepareStatement("INSERT INTO pending SELECT id,player,json_set(payload,'$.stage','REFUND_PENDING') FROM delivery_review WHERE id=? AND player=?");
+      var remove=db.prepareStatement("DELETE FROM delivery_review WHERE id=? AND player=?")){
+   if(!delivered){refund.setString(1,id);refund.setString(2,player.toString());refund.executeUpdate();}
+   remove.setString(1,id);remove.setString(2,player.toString());
+   boolean found=remove.executeUpdate()==1;
+   db.commit();
+   return found;
+  }catch(SQLException failure){db.rollback();throw failure;}finally{db.setAutoCommit(true);}
+ }
  public synchronized MarketEngine.State market(String key)throws Exception{
   try(var s=db.prepareStatement("SELECT volume,updated FROM market_state WHERE key=?")){s.setString(1,key);try(var r=s.executeQuery()){return r.next()?new MarketEngine.State(new BigDecimal(r.getString(1)),r.getLong(2)):new MarketEngine.State(BigDecimal.ZERO,0);}}
  }
